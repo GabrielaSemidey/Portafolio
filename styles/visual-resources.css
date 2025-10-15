@@ -1,0 +1,327 @@
+/* ==========================================================================
+   RECURSOS VISUALES - CSS REUTILIZABLE
+   Estilos para galerías de imágenes, videos y recursos visuales en proyectos
+   ========================================================================== */
+
+/* ==========================================================================
+   VISUAL RESOURCE - IMAGEN INDIVIDUAL GRANDE
+   ========================================================================== */
+
+.visual-resource {
+    margin: 2rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.visual-resource:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.visual-resource img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: zoom-in;
+}
+
+.visual-resource video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.image-caption {
+    padding: 1rem 1.5rem;
+    background: #f8f9fa;
+    color: #6c757d;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin: 0;
+    text-align: center;
+}
+
+/* ==========================================================================
+   VISUAL GALLERY - GRID DE IMÁGENES
+   ========================================================================== */
+
+.visual-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.gallery-item {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: zoom-in;
+}
+
+.gallery-item .image-caption {
+    padding: 1rem;
+    background: white;
+    color: #495057;
+    font-size: 0.9rem;
+    text-align: center;
+    border-top: 1px solid #e9ecef;
+}
+
+/* ==========================================================================
+   VIDEO EMBED
+   ========================================================================== */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    margin: 2rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Para videos locales que NO usan aspect ratio */
+.video-local {
+    width: 100%;
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.video-local video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================================================
+   GIF CONTAINER
+   ========================================================================== */
+
+.gif-demo {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.gif-demo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   LIGHTBOX SIMPLE (opcional)
+   ========================================================================== */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ==========================================================================
+   PROTOTYPE SHOWCASE - Para prototipos interactivos
+   ========================================================================== */
+
+.prototype-showcase {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 16px;
+    text-align: center;
+}
+
+.prototype-showcase h4 {
+    margin-bottom: 1rem;
+    color: #495057;
+}
+
+.prototype-showcase .btn {
+    margin-top: 1rem;
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .visual-gallery {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .visual-resource {
+        margin: 1.5rem 0;
+    }
+    
+    .lightbox img {
+        max-width: 95%;
+        max-height: 80%;
+    }
+    
+    .lightbox-close {
+        top: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+}
+
+/* ==========================================================================
+   FINDING ACT STYLES (para Teleconsulta storytelling)
+   ========================================================================== */
+
+.story-findings {
+    margin-top: 2rem;
+}
+
+.finding-act {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.finding-act:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.act-number {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.finding-act h5 {
+    margin: 0.5rem 0;
+    color: #2d3748;
+    font-size: 1.2rem;
+}
+
+.finding-act p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+.finding-act p strong {
+    color: var(--primary-color);
+}
+
+/* Banner de imagen en cards */
+.project-card__banner {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-color: #e0e0e0; /* Fallback si no hay imagen */
+    border-radius: 12px 12px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card__banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+}
+
+.project-card__category {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.project-card__content {
+    padding: 20px;
+}
