@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/sections.css">
     <link rel="stylesheet" href="styles/visual-resources.css">
 
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
 </head>
 <body>
     <!-- Header -->
@@ -104,19 +104,17 @@
                 <div class="projects__grid">
                     
                     <!-- Proyecto 1: Lumi -->
-                    <article class="project-card card" data-category="frontend">
-                        <div class="project-card__header">
-                            <div class="project-card__icon">
-                                <i class="fas fa-brain"></i>
-                            </div>
+                    <article class="project-card card scroll-reveal" data-category="frontend">
+                    <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/lumi/banner.png')">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="project-card__content">
+                        <div style="margin-bottom: 12px;">
+                            <span class="badge badge--info">
+                                <i class="fas fa-book-open"></i>
+                                Case Study
+                            </span>
                         </div>
-                        <div class="project-card__content">
-                            <div style="margin-bottom: 12px;">
-                                <span class="badge badge--info">
-                                    <i class="fas fa-book-open"></i>
-                                    Case Study
-                                </span>
-                            </div>
 
                             <div class="project-card__meta">
                                 <span><i class="fas fa-code"></i> JavaScript + AI</span>
@@ -158,7 +156,7 @@
                                 <a href="https://gabrielasemidey.github.io/Lumi--proyecto-educativo/" target="_blank" class="project-link">
                                     <i class="fas fa-external-link-alt"></i> Demo
                                 </a>
-                                <a href="Proyectos/lumi.html" class="project-link">
+                                <a href="./proyectos/lumi.html" class="project-link">
                                     Ver caso completo <i class="fas fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -166,11 +164,9 @@
                     </article>
 
                     <!-- Proyecto 2: Weather -->
-                    <article class="project-card card" data-category="frontend">
-                        <div class="project-card__header">
-                            <div class="project-card__icon">
-                                <i class="fas fa-cloud-sun"></i>
-                            </div>
+                                    <article class="project-card card scroll-reveal" data-category="frontend">
+                     <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/wheather/banner.png')">
+
                         </div>
                         <div class="project-card__content">
                             <div style="margin-bottom: 12px;">
@@ -224,11 +220,9 @@
                     </article>
 
                     <!-- Proyecto 3: Pomodoro -->
-                    <article class="project-card card" data-category="frontend">
-                        <div class="project-card__header">
-                            <div class="project-card__icon">
-                                <i class="fas fa-stopwatch"></i>
-                            </div>
+                                    <article class="project-card card scroll-reveal" data-category="frontend">
+                     <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/pomodoro/banner.png')">
+                        
                         </div>
                         <div class="project-card__content">
                             <div style="margin-bottom: 12px;">
@@ -270,15 +264,15 @@
                             </div>
                             
                             <div class="project-card__actions">
-                                <a href="https://gabrielasemidey.github.io/pomodoro-timer/" target="_blank" class="project-link">
+                                <a href="https://github.com/GabrielaSemidey/pomodoro-timer" target="_blank" class="project-link">
                                     <i class="fab fa-github"></i> Código
                                 </a>
-                                <a href="https://github.com/GabrielaSemidey/pomodoro-timer" target="_blank" class="project-link">
+                                <a href="https://gabrielasemidey.github.io/pomodoro-timer/" target="_blank" class="project-link">
                                     <i class="fas fa-external-link-alt"></i> Demo
                                 </a>
                             </div>
                         </div>
-                    </article>
+                    </article> 
                     
                 </div>
             </div>
@@ -296,19 +290,17 @@
                     
                     <!-- Proyecto 4: Clínica Teleconsulta -->
                     
-                    <article class="project-card card" data-category="ux-ui">
-                        <div class="project-card__header">
-                            <div class="project-card__icon">
-                                <i class="fas fa-hospital"></i>
-                            </div>
+                    <article class="project-card card scroll-reveal" data-category="ux-ui">
+                     <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/teleconsulta/banner.jpg')">
+                        
+                    </div>
+                    <div class="project-card__content">
+                        <div style="margin-bottom: 12px;">
+                            <span class="badge badge--success">
+                                <i class="fas fa-check-circle"></i>
+                                Live
+                            </span>
                         </div>
-                        <div class="project-card__content">
-                            <div style="margin-bottom: 12px;">
-                                <span class="badge badge--success">
-                                    <i class="fas fa-check-circle"></i>
-                                    Live
-                                </span>
-                            </div>
 
 
                             <div class="project-card__meta">
@@ -344,7 +336,7 @@
                             </div>
                             
                             <div class="project-card__actions">
-                                <a href="Proyectos/clinica-teleconsulta.html" class="project-link">
+                                <a href="./proyectos/clinica-teleconsulta.html" class="project-link">
                                     Ver proyecto completo <i class="fas fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -352,19 +344,17 @@
                     </article>
                 
                     <!-- Proyecto 5: Clínica Agenda -->
-                    <article class="project-card card" data-category="ux-ui">
-                        <div class="project-card__header">
-                            <div class="project-card__icon">
-                                <i class="fas fa-calendar-alt"></i>
-                            </div>
+                    <article class="project-card card scroll-reveal" data-category="ux-ui">
+                     <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/agenda-web/banner.jpg')">
+                        
+                    </div>
+                    <div class="project-card__content">
+                        <div style="margin-bottom: 12px;">
+                            <span class="badge badge--success">
+                                <i class="fas fa-check-circle"></i>
+                                Live
+                            </span>
                         </div>
-                        <div class="project-card__content">
-                            <div style="margin-bottom: 12px;">
-                                <span class="badge badge--success">
-                                    <i class="fas fa-check-circle"></i>
-                                    Live
-                                </span>
-                            </div>
 
                             <div class="project-card__meta">
                                 <span><i class="fas fa-map-marker-alt"></i> Chile</span>
@@ -399,7 +389,7 @@
                             </div>
                             
                             <div class="project-card__actions">
-                                <a href="Proyectos/clinica-agenda-web.html" class="project-link">
+                                <a href="./proyectos/clinica-agenda-web.html" class="project-link">
                                     Ver proyecto completo <i class="fas fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -407,11 +397,8 @@
                     </article>
 
                     <!-- Proyecto 6: Spotify -->
-                    <article class="project-card card" data-category="ux-ui">
-                        <div class="project-card__header">
-                            <div class="project-card__icon">
-                                <i class="fab fa-spotify"></i>
-                            </div>
+                    <article class="project-card card scroll-reveal" data-category="ux-ui">
+                     <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/spotify/banner.jpg')">
                         </div>
                          <div class="project-card__content">
                             <div style="margin-bottom: 12px;">
@@ -454,7 +441,7 @@
                             </div>
                             
                             <div class="project-card__actions">
-                                <a href="Proyectos/spotify.html" class="project-link">
+                                <a href="./proyectos/spotify.html" class="project-link">
                                     Ver proyecto completo <i class="fas fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -476,19 +463,18 @@
                 <div class="projects__grid">
                     
                     <!-- Proyecto 7: BID -->
-                    <article class="project-card card" data-category="service-design">
-                        <div class="project-card__header">
-                            <div class="project-card__icon">
-                                <i class="fas fa-building"></i>
-                            </div>
+                                    <article class="project-card card scroll-reveal" data-category="service-design">
+                    <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/bid/banner.png')">
+                        
+                        
+                    </div>
+                    <div class="project-card__content">
+                        <div style="margin-bottom: 12px;">
+                            <span class="badge badge--success">
+                                <i class="fas fa-check-circle"></i>
+                                Implemented
+                            </span>
                         </div>
-                        <div class="project-card__content">
-                            <div style="margin-bottom: 12px;">
-                                <span class="badge badge--success">
-                                    <i class="fas fa-check-circle"></i>
-                                    Implemented
-                                </span>
-                            </div>
 
                             <div class="project-card__meta">
                                 <span><i class="fas fa-map-marker-alt"></i> Chile/USA</span>
@@ -523,7 +509,7 @@
                             </div>
                             
                             <div class="project-card__actions">
-                                <a href="Proyectos/bid-secretaria.html" class="project-link">
+                                <a href="./proyectos/bid-secretaria.html" class="project-link">
                                     Ver proyecto completo <i class="fas fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -531,19 +517,17 @@
                     </article>
 
                     <!-- Proyecto 8: CUBICO -->
-                    <article class="project-card card" data-category="service-design">
-                        <div class="project-card__header">
-                            <div class="project-card__icon">
-                                <i class="fas fa-leaf"></i>
-                            </div>
+                    <article class="project-card card scroll-reveal" data-category="service-design">
+                    <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/cubico/banner.png')">
+
+                    </div>
+                    <div class="project-card__content">
+                        <div style="margin-bottom: 12px;">
+                            <span class="badge badge--success">
+                                <i class="fas fa-check-circle"></i>
+                                Implemented
+                            </span>
                         </div>
-                        <div class="project-card__content">
-                            <div style="margin-bottom: 12px;">
-                                <span class="badge badge--success">
-                                    <i class="fas fa-check-circle"></i>
-                                    Implemented
-                                </span>
-                            </div>
 
                             <div class="project-card__meta">
                                 <span><i class="fas fa-map-marker-alt"></i> España</span>
@@ -578,7 +562,7 @@
                             </div>
                             
                             <div class="project-card__actions">
-                                <a href="Proyectos/fruta.html" class="project-link">
+                                <a href="./proyectos/fruta.html" class="project-link">
                                     Ver proyecto completo <i class="fas fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -586,11 +570,9 @@
                     </article>
 
                     <!-- Proyecto 9: UPC -->
-                    <article class="project-card card" data-category="service-design">
-                        <div class="project-card__header">
-                            <div class="project-card__icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
+                    <article class="project-card card scroll-reveal" data-category="service-design">
+                     <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/upc/banner.jpeg')">
+
                         </div>
                         <div class="project-card__content">
                             <div style="margin-bottom: 12px;">
@@ -633,7 +615,7 @@
                             </div>
                             
                             <div class="project-card__actions">
-                                <a href="Proyectos/upc.html" class="project-link">
+                                <a href="./proyectos/upc.html" class="project-link">
                                     Ver proyecto completo <i class="fas fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -641,11 +623,9 @@
                     </article>
 
                     <!-- Proyecto 10: MINCETUR -->
-                    <article class="project-card card" data-category="service-design">
-                        <div class="project-card__header">
-                            <div class="project-card__icon">
-                                <i class="fas fa-project-diagram"></i>
-                            </div>
+                    <article class="project-card card scroll-reveal" data-category="service-design">
+                     <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/mincetur/banner.png')">
+
                         </div>
                         <div class="project-card__content">
                             <div style="margin-bottom: 12px;">
@@ -688,7 +668,7 @@
                             </div>
                             
                             <div class="project-card__actions">
-                                <a href="Proyectos/mincetur.html" class="project-link">
+                                <a href="./proyectos/mincetur.html" class="project-link">
                                     Ver proyecto completo <i class="fas fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -696,11 +676,9 @@
                     </article>
 
                     <!-- Proyecto 11: TALI -->
-                    <article class="project-card card" data-category="service-design">
-                        <div class="project-card__header">
-                            <div class="project-card__icon">
-                                <i class="fas fa-plane"></i>
-                            </div>
+                    <article class="project-card card scroll-reveal" data-category="service-design">
+                     <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/tali/banner.jpg')">
+
                         </div>
                         <div class="project-card__content">
                             <div style="margin-bottom: 12px;">
@@ -743,7 +721,7 @@
                             </div>
                             
                             <div class="project-card__actions">
-                                <a href="Proyectos/tali.html" class="project-link">
+                                <a href="./proyectos/tali.html" class="project-link">
                                     Ver proyecto completo <i class="fas fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -786,3 +764,7 @@
         </p>
     </div>
 </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>    

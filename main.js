@@ -101,66 +101,63 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// ================================
-// 5. FILTROS DE PROYECTOS
-// ================================
-const filterBtns = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
-const categoryGroups = document.querySelectorAll('.category-group');
-
-if (filterBtns.length > 0) {
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            const filter = this.dataset.filter;
+// ========================================
+// FILTROS DE PROYECTOS
+// ========================================
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // 1. Seleccionar todos los botones de filtro
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    
+    // 2. Seleccionar todas las cards de proyecto
+    const projectCards = document.querySelectorAll('[data-category]');
+    
+    // 3. Verificar que existan elementos
+    if (filterButtons.length === 0) {
+        console.log('⚠️ No se encontraron botones de filtro');
+        return;
+    }
+    
+    if (projectCards.length === 0) {
+        console.log('⚠️ No se encontraron cards de proyecto');
+        return;
+    }
+    
+    console.log(`✅ Filtros cargados: ${filterButtons.length} botones, ${projectCards.length} proyectos`);
+    
+    // 4. Agregar evento click a cada botón
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
             
-            // Actualizar botón activo
-            filterBtns.forEach(b => b.classList.remove('active'));
+            // 5. Obtener el filtro seleccionado
+            const filterValue = this.getAttribute('data-filter');
+            console.log(`🔍 Filtro seleccionado: ${filterValue}`);
+            
+            // 6. Remover "active" de todos los botones
+            filterButtons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // 7. Agregar "active" al botón clickeado
             this.classList.add('active');
             
-            // Filtrar proyectos
-            if (filter === 'all') {
-                // Mostrar todos
-                categoryGroups.forEach(group => {
-                    group.style.display = 'block';
-                    fadeIn(group);
-                });
-            } else {
-                // Filtrar por categoría
-                categoryGroups.forEach(group => {
-                    const cards = group.querySelectorAll('.project-card');
-                    const hasCategory = Array.from(cards).some(card => 
-                        card.dataset.category === filter
-                    );
-                    
-                    if (hasCategory) {
-                        group.style.display = 'block';
-                        fadeIn(group);
-                    } else {
-                        fadeOut(group);
-                    }
-                });
-            }
-            
-            // Scroll suave a la primera categoría visible
-            setTimeout(() => {
-                const firstVisibleGroup = Array.from(categoryGroups).find(
-                    group => group.style.display !== 'none' && group.offsetHeight > 0
-                );
+            // 8. Filtrar las cards
+            projectCards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
                 
-                if (firstVisibleGroup) {
-                    const headerOffset = 150;
-                    const elementPosition = firstVisibleGroup.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                    
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
+                // Si el filtro es "all" O la categoría coincide
+                if (filterValue === 'all' || cardCategory === filterValue) {
+                    // Mostrar la card
+                    card.classList.remove('hidden');
+                    card.style.animation = 'fadeInUp 0.5s ease';
+                } else {
+                    // Ocultar la card
+                    card.classList.add('hidden');
                 }
-            }, 100);
+            });
         });
     });
-}
+});
 
 // Helpers para fade in/out
 function fadeIn(element) {

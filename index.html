@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/components.css">
-    <link rel="stylesheet" href="styles/sections.css">
-    <link rel="stylesheet" href="styles/visual-resources.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/sections.css">
+    <link rel="stylesheet" href="./styles/visual-resources.css">
 
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
 </head>
 <body>
     <!-- Header -->
@@ -99,7 +99,7 @@
                         <i class="fas fa-rocket"></i>
                         <span>Ver proyectos</span>
                     </a>
-                    <a href="assets/Gabriela Ojeda Semidey - Es.pdf" download class="btn btn--secondary btn--download">
+                    <a href="./assets/Gabriela Ojeda Semidey - Es.pdf" download class="btn btn--secondary btn--download">
                         <i class="fas fa-download"></i>
                         <span>Descargar CV</span>
                     </a>
@@ -255,10 +255,8 @@
                 
                 <!-- Proyecto 1: Lumi -->
                 <article class="project-card card scroll-reveal" data-category="frontend">
-                    <div class="project-card__header">
-                        <div class="project-card__icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
+                    <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/lumi/banner.png')">
+                        <i class="fas fa-brain"></i>
                     </div>
                     <div class="project-card__content">
                         <div style="margin-bottom: 12px;">
@@ -308,7 +306,7 @@
                             <a href="https://gabrielasemidey.github.io/Lumi--proyecto-educativo/" target="_blank" class="project-link">
                                 <i class="fas fa-external-link-alt"></i> Demo
                             </a>
-                            <a href="Proyectos/lumi.html" class="project-link">
+                            <a href="./proyectos/lumi.html" class="project-link">
                                 Ver caso completo <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
@@ -317,10 +315,8 @@
 
                 <!-- Proyecto 2: Clínica Alemana -->
                 <article class="project-card card scroll-reveal" data-category="ux-ui">
-                    <div class="project-card__header">
-                        <div class="project-card__icon">
-                            <i class="fas fa-hospital"></i>
-                        </div>
+                     <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/teleconsulta/banner.jpg')">
+                        
                     </div>
                     <div class="project-card__content">
                         <div style="margin-bottom: 12px;">
@@ -363,7 +359,7 @@
                         </div>
                         
                         <div class="project-card__actions">
-                            <a href="Proyectos/clinica-teleconsulta.html" class="project-link">
+                            <a href="./proyectos/clinica-teleconsulta.html" class="project-link">
                                 Ver proyecto completo <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
@@ -372,10 +368,9 @@
 
                 <!-- Proyecto 3: BID -->
                 <article class="project-card card scroll-reveal" data-category="service-design">
-                    <div class="project-card__header">
-                        <div class="project-card__icon">
-                            <i class="fas fa-building"></i>
-                        </div>
+                    <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/bid/banner.png')">
+                        
+                        
                     </div>
                     <div class="project-card__content">
                         <div style="margin-bottom: 12px;">
@@ -418,7 +413,7 @@
                         </div>
                         
                         <div class="project-card__actions">
-                            <a href="Proyectos/bid-secretaria.html" class="project-link">
+                            <a href="./proyectos/bid-secretaria.html" class="project-link">
                                 Ver proyecto completo <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
@@ -691,7 +686,7 @@
                         <span>Enviar mensaje</span>
                     </a>
 
-                    <a href="assets/Gabriela Ojeda Semidey - Es.pdf" download class="btn btn--secondary btn--block btn--download" style="margin-top: 12px;">
+                    <a href="./assets/Gabriela Ojeda Semidey - Es.pdf" download class="btn btn--secondary btn--block btn--download" style="margin-top: 12px;">
                         <i class="fas fa-download"></i>
                         <span>Descargar CV</span>
                     </a>
@@ -710,7 +705,6 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="main.js"></script>
 </body>
 </html>

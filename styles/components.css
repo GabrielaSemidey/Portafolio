@@ -260,6 +260,9 @@ nav {
   display: flex;
   flex-direction: column;
   height: 100%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 100%;
 }
 
 .project-card__header {
@@ -346,6 +349,10 @@ nav {
   margin-bottom: 1rem;
 }
 
+.project-card.hidden {
+    display: none !important;
+}
+
 .project-card__metrics {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -383,6 +390,8 @@ nav {
   flex-wrap: wrap;
   margin-top: auto;
   padding-top: 1rem;
+  position: relative;
+    z-index: 10;
 }
 
 .project-link {
@@ -399,6 +408,7 @@ nav {
   color: var(--primary-hover);
   transform: translateX(2px);
 }
+
 
 /* Variantes por categoría */
 .project-card[data-category="frontend"] .project-card__header {
@@ -449,6 +459,7 @@ nav {
 .project-card[data-category="service-design"] .project-link {
   color: var(--service-accent);
 }
+
 
 /* ================================
    RESPONSIVE COMPONENTS

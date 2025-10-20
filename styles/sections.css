@@ -289,10 +289,22 @@
    ================================ */
 .projects__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1.5rem;
-  align-items: stretch;
+ grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
+
+.project-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .projects__cta {
   margin-top: 3.75rem;
@@ -325,7 +337,7 @@
 }
 
 .filter-btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.625rem 1.25rem;
@@ -340,14 +352,16 @@
 }
 
 .filter-btn:hover {
-  border-color: var(--primary);
-  color: var(--primary);
+    border-color: #6366f1;
+    color: #6366f1;
+    transform: translateY(-2px);
 }
 
 .filter-btn.active {
-  background: var(--primary);
-  color: white;
-  border-color: var(--primary);
+    background: #6366f1;
+    color: white;
+    border-color: #6366f1;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 }
 
 .filter-btn__count {
@@ -359,6 +373,10 @@
 
 .filter-btn.active .filter-btn__count {
   background: rgba(255, 255, 255, 0.2);
+}
+
+.filter-btn i {
+    font-size: 0.9rem;
 }
 
 /* Category groups */
@@ -385,6 +403,63 @@
 .category-group__title i {
   font-size: 1.5rem;
   color: var(--primary);
+}
+
+/* ========================================
+   CARDS COMPLETAMENTE CLICKEABLES
+   ======================================== */
+
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+/* Efecto hover en toda la card */
+.project-card-link:hover .project-card {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* El banner se escala al hacer hover */
+.project-card-link:hover .project-card__banner {
+    transform: scale(1.05);
+}
+
+/* Los links externos dentro de la card */
+.project-card__actions .project-link {
+    position: relative;
+    z-index: 10;
+    transition: all 0.2s ease;
+}
+
+.project-card__actions .project-link:hover {
+    transform: translateX(3px);
+}
+
+.project-link--primary {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.project-card-link:hover .project-link--primary {
+    color: var(--primary-dark);
+}
+
+.project-card__actions {
+    position: relative;
+    z-index: 10;
+}
+
+.section-cta {
+    text-align: center;
+    margin-top: 48px;
+}
+
+.btn--large {
+    padding: 16px 32px;
+    font-size: 1.1rem;
 }
 
 /* ================================
@@ -1122,6 +1197,10 @@
   .project-nav__item--next {
     order: 3;
   }
+
+  .projects__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -1188,10 +1267,6 @@
     align-items: center;
   }
   
-  .projects__grid {
-    grid-template-columns: 1fr;
-  }
-  
   .filter-section {
     position: static;
   }
@@ -1237,6 +1312,10 @@
     height: 36px;
     font-size: 0.875rem;
   }
+
+  .projects__grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Job Search Section */
