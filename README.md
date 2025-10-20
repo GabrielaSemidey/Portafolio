@@ -48,7 +48,7 @@ Design: UX Research · Service Design · Prototyping
 
 ## 📬 Contacto
 
-🌐 [gabrielasemidey.github.io](https://gabrielasemidey.github.io)  
+🌐 [gabrielasemidey.github.io](https://github.com/GabrielaSemidey)  
 💼 [LinkedIn](https://www.linkedin.com/in/gabrielaojedasemidey/)  
 📧 gabrielaojedasemidey@gmail.com
 
