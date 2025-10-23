@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/components.css">
     <link rel="stylesheet" href="../styles/sections.css">
-    <link rel="stylesheet" href="../styles/visual-resources.css">
+    <link rel="stylesheet" href="../styles/project-detail.css">
 
     <link rel="icon" type="image/png" href="../assets/images/favicon.png">
 </head>
@@ -22,7 +22,7 @@
     <header id="header">
         <nav class="container">
             <a href="../index.html" class="logo">
-                <span>Gabriela OS</span>
+                <span>&lt;&gt;Gabriela OS</span>
             </a>
             <ul class="nav-links">
                 <li><a href="../index.html#inicio" class="nav-link">Inicio</a></li>
@@ -38,7 +38,8 @@
     </header>
 
     <!-- Hero Visual -->
-    <section class="project-hero--visual">
+    <section class="project-hero project-hero--visual" id="hero">
+    <div class="project-hero__banner" style="background-image: url('../assets/images/proyectos/agenda-web/banner.jpg');"></div>
         <div class="container">
             <a href="../todos-proyectos.html" class="back-link back-link--light">
                 <i class="fas fa-arrow-left"></i>
@@ -70,8 +71,8 @@
                     <i class="fas fa-book-open"></i>
                     <span>Ver caso completo</span>
                 </a>
-            </div>
         </div>
+    </div>
     </section>
 
     <!-- Quick Info Bar -->
@@ -145,6 +146,7 @@
                             </p>
                             <ul class="content-list">
                                 <li><strong>Continuum</strong> (mi equipo): Diseño de la agenda web</li>
+                                <li><strong>Equipo paralelo de Continuum:</strong> Diseño de teleconsulta</li>
                                 <li><strong>Globant:</strong> Desarrollo de la app Alemana Go</li>
                                 <li><strong>2Brains:</strong> Otra plataforma complementaria</li>
                                 <li><strong>Clínica Alemana:</strong> Equipo de diseño interno</li>
@@ -184,7 +186,7 @@
                                 <strong>Composición del equipo Continuum:</strong>
                             </p>
                             <ul class="content-list">
-                                <li>Yo (UX/Service Designer)</li>
+                                <li>Yo (UX/Service Designer + Researcher)</li>
                                 <li>1 UX/UI Designer</li>
                                 <li>7 Developers</li>
                                 <li>1 Project Manager</li>
@@ -470,11 +472,13 @@
                                     Tu navegador no soporta el tag de video.
                                 </video>
                                 <p class="image-caption">Demo: Buscador de especialidades y médicos disponibles</p>
-                            </div>
+                              </div>
+                            
+
                         </div>
                     </div>
+
                 </div>
-            </div>
 
                 <!-- Sidebar -->
                 <aside class="sidebar-sticky">
@@ -534,7 +538,7 @@
                                 <span class="sidebar-card__icon"><i class="fas fa-pencil-ruler"></i></span>
                                 <div>
                                     <span class="sidebar-card__label">Continuum</span>
-                                    <span class="sidebar-card__value">Agenda Web</span>
+                                    <span class="sidebar-card__value">Teleconsulta</span>
                                 </div>
                             </div>
                             <div class="sidebar-card__item">
@@ -594,11 +598,11 @@
     <section class="project-navigation">
         <div class="container">
             <div class="project-nav__grid">
-                <a href="lumi.html" class="project-nav__item project-nav__item--prev">
+                <a href="clinica-teleconsulta.html" class="project-nav__item project-nav__item--prev">
                     <i class="fas fa-arrow-left"></i>
                     <div>
                         <span class="project-nav__label">Anterior</span>
-                        <span class="project-nav__title">Lumi - Plataforma de Aprendizaje</span>
+                        <span class="project-nav__title">Clínica Alemana - Teleconsulta</span>
                     </div>
                 </a>
                 
@@ -607,15 +611,24 @@
                     <span>Ver todos</span>
                 </a>
                 
-                <a href="clinica-teleconsulta.html" class="project-nav__item project-nav__item--next">
+                <a href="spotify.html" class="project-nav__item project-nav__item--next">
                     <div>
                         <span class="project-nav__label">Siguiente</span>
-                        <span class="project-nav__title">Clínica Alemana - Teleconsulta</span>
+                        <span class="project-nav__title">Spotify - Experiencia Premium</span>
                     </div>
                     <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
         </div>
+    </section>
+
+    <section class="back-to-top-section">
+            <div class="container">
+                <a href="#hero" class="btn btn--primary btn--lg back-to-top-btn">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>Volver al inicio</span>
+                </a>
+            </div>
     </section>
 
     <!-- Footer -->
