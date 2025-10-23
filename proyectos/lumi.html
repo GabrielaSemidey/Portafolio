@@ -12,18 +12,17 @@
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/components.css">
     <link rel="stylesheet" href="../styles/sections.css">
-    <link rel="stylesheet" href="../styles/lumi-custom.css">
-    <link rel="stylesheet" href="styles/visual-resources.css">
+    <link rel="stylesheet" href="../styles/project-detail.css">
 
     <link rel="icon" type="image/png" href="../assets/images/favicon.png">
 </head>
-<body data-category="ux-ui">
+<body data-category="lumi">
     
     <!-- Header -->
     <header id="header">
         <nav class="container">
             <a href="../index.html" class="logo">
-                <span>Gabriela OS</span>
+                <span>&lt;&gt;Gabriela OS</span>
             </a>
             <ul class="nav-links">
                 <li><a href="../index.html#inicio" class="nav-link">Inicio</a></li>
@@ -39,8 +38,9 @@
     </header>
 
     <!-- Hero Visual -->
-    <section class="project-hero--visual lumi-hero">
-        <div class="container">
+    <section class="project-hero project-hero--visual" data-category="lumi" id="hero">
+    <div class="project-hero__banner" style="background-image: url('../assets/images/proyectos/lumi/banner.png');"></div>
+    <div class="container">
             <a href="../todos-proyectos.html" class="back-link back-link--light">
                 <i class="fas fa-arrow-left"></i>
                 <span>Volver a proyectos</span>
@@ -71,11 +71,11 @@
                     <i class="fas fa-book-open"></i>
                     <span>Ver caso completo</span>
                 </a>
-                <a href="https://github.com/GabrielaSemidey/Lumi--proyecto-educativo" target="_blank" class="btn" style="color: var(--lumi-amarillo);">
+                <a href="https://github.com/GabrielaSemidey/Lumi--proyecto-educativo" target="_blank" class="btn btn--hero">
                     <i class="fab fa-github"></i>
                     <span>GitHub</span>
                 </a>
-                <a href="https://gabrielasemidey.github.io/Lumi--proyecto-educativo/" target="_blank" class="btn" style="color: var(--lumi-amarillo);">
+                <a href="https://gabrielasemidey.github.io/Lumi--proyecto-educativo/" target="_blank" class="btn btn--hero">
                     <i class="fas fa-external-link-alt"></i>
                     <span>Demo</span>
                 </a>
@@ -572,11 +572,11 @@
     <section class="project-navigation">
         <div class="container">
             <div class="project-nav__grid">
-                <a href="clinica-teleconsulta.html" class="project-nav__item project-nav__item--prev">
+                <a href="tali.html" class="project-nav__item project-nav__item--prev">
                     <i class="fas fa-arrow-left"></i>
                     <div>
                         <span class="project-nav__label">Anterior</span>
-                        <span class="project-nav__title">Clínica Alemana - Teleconsulta</span>
+                        <span class="project-nav__title">TALI - Agencia de Viajes</span>
                     </div>
                 </a>
                 
@@ -585,14 +585,23 @@
                     <span>Ver todos</span>
                 </a>
                 
-                <a href="fruta.html" class="project-nav__item project-nav__item--next">
+                <a href="clinica-teleconsulta.html" class="project-nav__item project-nav__item--next">
                     <div>
                         <span class="project-nav__label">Siguiente</span>
-                        <span class="project-nav__title">Cubico - Improve Your Energy</span>
+                        <span class="project-nav__title">Clínica Alemana - Teleconsulta</span>
                     </div>
                     <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
+        </div>
+    </section>
+
+    <section class="back-to-top-section">
+        <div class="container">
+            <a href="#hero" class="btn btn--primary btn--lg back-to-top-btn">
+                <i class="fas fa-arrow-up"></i>
+                <span>Volver al inicio</span>
+            </a>
         </div>
     </section>
 

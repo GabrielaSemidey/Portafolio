@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/components.css">
     <link rel="stylesheet" href="../styles/sections.css">
-    <link rel="stylesheet" href="../styles/visual-resources.css">
+    <link rel="stylesheet" href="../styles/project-detail.css">
 
     <link rel="icon" type="image/png" href="../assets/images/favicon.png">
 </head>
@@ -22,7 +22,7 @@
     <header id="header">
         <nav class="container">
             <a href="../index.html" class="logo">
-                <span>Gabriela OS</span>
+                <span>&lt;&gt;Gabriela OS</span>
             </a>
             <ul class="nav-links">
                 <li><a href="../index.html#inicio" class="nav-link">Inicio</a></li>
@@ -38,8 +38,9 @@
     </header>
 
     <!-- Hero Visual -->
-    <section class="project-hero--visual">
-        <div class="container">
+    <section class="project-hero project-hero--visual" data-category="service-design" id="hero">
+    <div class="project-hero__banner" style="background-image: url('../assets/images/proyectos/cubico/hero.jpg');"></div>
+    <div class="container">
             <a href="../todos-proyectos.html" class="back-link back-link--light">
                 <i class="fas fa-arrow-left"></i>
                 <span>Volver a proyectos</span>
@@ -256,7 +257,7 @@
 
                                 <div class="timeline__item">
                                     <div class="timeline__marker">
-                                        <i class="fas fa-users-class"></i>
+                                        <i class="fas fa-users"></i>
                                     </div>
                                     <div class="timeline__content">
                                         <h4>4. Implementación en el Aula</h4>
@@ -481,7 +482,7 @@
                             <div>
                                 <h4>Más información sobre el reto</h4>
                             <p>Si quieres aprender más sobre lo que hicimos con la comunidad de Morón de la Frontera puedes leer nuestro libreto</p>
-                                <a href="./assets/images/proyectos/cubico/libreto-cubico.pdf" download class="btn btn--secondary btn--download">
+                                <a href="../assets/images/proyectos/cubico/libreto-cubico.pdf" download class="btn btn--secondary btn--download">
                                     <i class="fas fa-download"></i>
                                     <span>Descargar libreto</span>
                                 </a>
@@ -636,14 +637,23 @@
                     <span>Ver todos</span>
                 </a>
                 
-                <a href="spotify.html" class="project-nav__item project-nav__item--next">
+                <a href="upc.html" class="project-nav__item project-nav__item--next">
                     <div>
                         <span class="project-nav__label">Siguiente</span>
-                        <span class="project-nav__title">Spotify - Experiencia Premium</span>
+                        <span class="project-nav__title">UPC - Rediseño de Admisión</span>
                     </div>
                     <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
+        </div>
+    </section>
+
+    <section class="back-to-top-section">
+        <div class="container">
+            <a href="#hero" class="btn btn--primary btn--lg back-to-top-btn">
+                <i class="fas fa-arrow-up"></i>
+                <span>Volver al inicio</span>
+            </a>
         </div>
     </section>
 

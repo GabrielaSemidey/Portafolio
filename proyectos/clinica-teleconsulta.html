@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/components.css">
     <link rel="stylesheet" href="../styles/sections.css">
-    <link rel="stylesheet" href="../styles/visual-resources.css">
+    <link rel="stylesheet" href="../styles/project-detail.css">
 
     <link rel="icon" type="image/png" href="../assets/images/favicon.png">
 </head>
@@ -22,7 +22,7 @@
     <header id="header">
         <nav class="container">
             <a href="../index.html" class="logo">
-                <span>Gabriela OS</span>
+                <span>&lt;&gt;Gabriela OS</span>
             </a>
             <ul class="nav-links">
                 <li><a href="../index.html#inicio" class="nav-link">Inicio</a></li>
@@ -38,8 +38,9 @@
     </header>
 
     <!-- Hero Visual -->
-    <section class="project-hero--visual">
-        <div class="container">
+    <section class="project-hero project-hero--visual" data-category="ux-ui" id="hero">
+    <div class="project-hero__banner" style="background-image: url('../assets/images/proyectos/teleconsulta/banner.jpg');"></div>
+    <div class="container">
             <a href="../todos-proyectos.html" class="back-link back-link--light">
                 <i class="fas fa-arrow-left"></i>
                 <span>Volver a proyectos</span>
@@ -451,12 +452,26 @@
 
                 </div>
 
-                <!-- Sidebar -->
+                 <!-- Sidebar -->
                 <aside class="sidebar-sticky">
                     
                     <div class="sidebar-card">
                         <h3><i class="fas fa-info-circle"></i> Info del Proyecto</h3>
                         <div class="sidebar-card__list">
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-calendar"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label">Año</span>
+                                    <span class="sidebar-card__value">2020-2021</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-clock"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label">Duración</span>
+                                    <span class="sidebar-card__value">14 meses</span>
+                                </div>
+                            </div>
                             <div class="sidebar-card__item">
                                 <span class="sidebar-card__icon"><i class="fas fa-map-marker-alt"></i></span>
                                 <div>
@@ -468,7 +483,7 @@
                                 <span class="sidebar-card__icon"><i class="fas fa-user"></i></span>
                                 <div>
                                     <span class="sidebar-card__label">Rol</span>
-                                    <span class="sidebar-card__value">Research/Service Design/UX</span>
+                                    <span class="sidebar-card__value">UX/Service Designer</span>
                                 </div>
                             </div>
                             <div class="sidebar-card__item">
@@ -491,13 +506,6 @@
                     <div class="sidebar-card">
                         <h3><i class="fas fa-users"></i> Equipos Colaboradores</h3>
                         <div class="sidebar-card__list">
-                            <div class="sidebar-card__item">
-                                <span class="sidebar-card__icon"><i class="fas fa-video"></i></span>
-                                <div>
-                                    <span class="sidebar-card__label">Continuum</span>
-                                    <span class="sidebar-card__value">Teleconsulta</span>
-                                </div>
-                            </div>
                             <div class="sidebar-card__item">
                                 <span class="sidebar-card__icon"><i class="fas fa-calendar-check"></i></span>
                                 <div>
@@ -573,11 +581,11 @@
     <section class="project-navigation">
         <div class="container">
             <div class="project-nav__grid">
-                <a href="clinica-agenda-web.html" class="project-nav__item project-nav__item--prev">
+                <a href="lumi.html" class="project-nav__item project-nav__item--prev">
                     <i class="fas fa-arrow-left"></i>
                     <div>
                         <span class="project-nav__label">Anterior</span>
-                        <span class="project-nav__title">Clínica Alemana - Agenda Web</span>
+                        <span class="project-nav__title">Lumi-proyecto-educativo</span>
                     </div>
                 </a>
                 
@@ -586,15 +594,24 @@
                     <span>Ver todos</span>
                 </a>
                 
-                <a href="fruta.html" class="project-nav__item project-nav__item--next">
+                <a href="clinica-agenda-web.html" class="project-nav__item project-nav__item--next">
                     <div>
                         <span class="project-nav__label">Siguiente</span>
-                        <span class="project-nav__title">Cubico - Improve Your Energy</span>
+                        <span class="project-nav__title">Clínica Alemana - Agenda Web</span>
                     </div>
                     <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
 
+        </div>
+    </section>
+
+    <section class="back-to-top-section">
+        <div class="container">
+            <a href="#hero" class="btn btn--primary btn--lg back-to-top-btn">
+                <i class="fas fa-arrow-up"></i>
+                <span>Volver al inicio</span>
+            </a>
         </div>
     </section>
 

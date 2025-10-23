@@ -1,5 +1,6 @@
 /* ================================
-   COMPONENTS.CSS - Componentes UI
+   COMPONENTS.CSS - OPTIMIZADO
+   Header, Buttons, Badges, Cards
    ================================ */
 
 /* ================================
@@ -35,7 +36,7 @@ nav {
 }
 
 .logo:hover {
-  color: var(--primary);
+  color: var(--primary-hover);
 }
 
 .nav-links {
@@ -93,6 +94,7 @@ nav {
   display: none;
   font-size: 1.5rem;
   color: var(--slate-900);
+  transition: transform var(--transition-base);
 }
 
 /* ================================
@@ -111,6 +113,7 @@ nav {
   cursor: pointer;
   transition: all var(--transition-fast);
   line-height: 1;
+  white-space: nowrap;
 }
 
 .btn:disabled {
@@ -118,6 +121,7 @@ nav {
   cursor: not-allowed;
 }
 
+/* Primary Button */
 .btn--primary {
   background: var(--primary);
   color: white;
@@ -130,6 +134,7 @@ nav {
   box-shadow: var(--shadow-md);
 }
 
+/* Secondary Button */
 .btn--secondary {
   background: transparent;
   color: var(--primary);
@@ -141,6 +146,7 @@ nav {
   color: white;
 }
 
+/* Hero Button */
 .btn--hero {
   background: white;
   color: var(--slate-900);
@@ -153,6 +159,20 @@ nav {
   border-color: var(--secondary);
 }
 
+/* Light Button */
+.btn--light {
+  background: white;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.btn--light:hover:not(:disabled) {
+  background: #f8f9fa;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Sizes */
 .btn--lg {
   padding: 1rem 2.25rem;
   font-size: 1rem;
@@ -163,6 +183,7 @@ nav {
   width: 100%;
 }
 
+/* Download Button Badge */
 .btn--download {
   position: relative;
 }
@@ -233,10 +254,16 @@ nav {
   font-weight: 600;
   border: 1px solid var(--border);
   display: inline-block;
+  transition: all var(--transition-fast);
+}
+
+.tag:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary);
 }
 
 /* ================================
-   CARDS
+   CARDS BASE
    ================================ */
 .card {
   background: white;
@@ -253,51 +280,72 @@ nav {
 }
 
 /* ================================
-   PROJECT CARDS
+   PROJECT CARDS (CONSOLIDADO)
    ================================ */
 .project-card {
-  cursor: pointer;
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   height: 100%;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  height: 100%;
+  transition: all var(--transition-base);
+  padding: 0;
 }
 
-.project-card__header {
-  height: 180px;
-  background: var(--bg-secondary);
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Banner del proyecto */
+.project-card__banner {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--bg-secondary);
   position: relative;
   overflow: hidden;
+  transition: transform var(--transition-slow);
   flex-shrink: 0;
 }
 
-.project-card__header-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform var(--transition-base);
+.project-card__banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 100%);
+  pointer-events: none;
 }
 
-.project-card:hover .project-card__header-image {
-  transform: scale(1.05);
+/* Badge sobre el banner */
+.project-card__banner .badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: var(--z-base);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 0;
+}
+
+/* Placeholder cuando no hay imagen */
+.project-card__banner--placeholder {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-card__icon {
   font-size: 3rem;
-  color: var(--primary);
-  z-index: 1;
+  color: rgba(255, 255, 255, 0.3);
+  z-index: var(--z-base);
 }
 
-.project-card__header:has(.project-card__header-image) .project-card__icon {
-  display: none;
-}
-
+/* Contenido de la card */
 .project-card__content {
   padding: 1.5rem;
   display: flex;
@@ -349,10 +397,7 @@ nav {
   margin-bottom: 1rem;
 }
 
-.project-card.hidden {
-    display: none !important;
-}
-
+/* Métricas */
 .project-card__metrics {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -384,6 +429,7 @@ nav {
   line-height: 1.3;
 }
 
+/* Acciones de la card */
 .project-card__actions {
   display: flex;
   gap: 0.75rem;
@@ -391,7 +437,7 @@ nav {
   margin-top: auto;
   padding-top: 1rem;
   position: relative;
-    z-index: 10;
+  z-index: 10;
 }
 
 .project-link {
@@ -402,6 +448,8 @@ nav {
   font-weight: 600;
   font-size: 0.875rem;
   transition: all var(--transition-fast);
+  position: relative;
+  z-index: 10;
 }
 
 .project-link:hover {
@@ -409,12 +457,25 @@ nav {
   transform: translateX(2px);
 }
 
-
-/* Variantes por categoría */
-.project-card[data-category="frontend"] .project-card__header {
-  background: linear-gradient(135deg, rgba(91, 44, 111, 0.08), rgba(20, 184, 166, 0.08));
+/* Cards clickeables */
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
 }
 
+.project-card-link:hover .project-card {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary);
+}
+
+.project-card-link:hover .project-card__banner {
+  transform: scale(1.05);
+}
+
+/* Variantes por categoría */
 .project-card[data-category="frontend"] .project-card__icon,
 .project-card[data-category="frontend"] .metric__value {
   color: var(--frontend);
@@ -422,10 +483,6 @@ nav {
 
 .project-card[data-category="frontend"]:hover {
   border-color: var(--frontend-accent);
-}
-
-.project-card[data-category="ux-ui"] .project-card__header {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(6, 182, 212, 0.08));
 }
 
 .project-card[data-category="ux-ui"] .project-card__icon,
@@ -442,10 +499,6 @@ nav {
   color: var(--uxui-accent);
 }
 
-.project-card[data-category="service-design"] .project-card__header {
-  background: linear-gradient(135deg, rgba(71, 85, 105, 0.08), rgba(99, 102, 241, 0.08));
-}
-
 .project-card[data-category="service-design"] .project-card__icon,
 .project-card[data-category="service-design"] .metric__value {
   color: var(--service);
@@ -460,42 +513,37 @@ nav {
   color: var(--service-accent);
 }
 
+/* ================================
+   NOTIFICATIONS
+   ================================ */
+.copy-notification {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--success);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: var(--shadow-xl);
+  z-index: var(--z-tooltip);
+  animation: slideInUp var(--transition-base) ease;
+}
+
+.copy-notification.hidden {
+  display: none;
+}
 
 /* ================================
-   RESPONSIVE COMPONENTS
+   RESPONSIVE
    ================================ */
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-  
-  .mobile-menu-btn {
-    display: block;
-  }
-  
-  .project-card__header {
-    height: 160px;
-  }
-  
-  .project-card__icon {
-    font-size: 2.5rem;
-  }
-  
-  .project-card__metrics {
-    gap: 0.5rem;
-  }
-  
-  .metric__value {
-    font-size: 1rem;
-  }
-  
-  .btn {
-    width: 100%;
-  }
-  /* Mobile menu */
+  /* Navigation */
   .nav-links {
     position: fixed;
-    top: 73px;
+    top: var(--header-height);
     left: 0;
     right: 0;
     background: white;
@@ -507,8 +555,8 @@ nav {
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 999;
+    transition: all var(--transition-base);
+    z-index: calc(var(--z-sticky) - 1);
   }
   
   .nav-links.active {
@@ -530,8 +578,33 @@ nav {
   .mobile-menu-btn.active i {
     transform: rotate(90deg);
   }
+
+  /* Project Cards */
+  .project-card__banner {
+    height: 160px;
+  }
   
-  .mobile-menu-btn i {
-    transition: transform 0.3s ease;
+  .project-card__icon {
+    font-size: 2.5rem;
+  }
+  
+  .project-card__metrics {
+    gap: 0.5rem;
+  }
+  
+  .metric__value {
+    font-size: 1rem;
+  }
+
+  /* Buttons */
+  .btn {
+    width: 100%;
+  }
+
+  /* Notification */
+  .copy-notification {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
   }
 }

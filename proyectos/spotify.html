@@ -12,17 +12,17 @@
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/components.css">
     <link rel="stylesheet" href="../styles/sections.css">
-    <link rel="stylesheet" href="../styles/visual-resources.css">
+    <link rel="stylesheet" href="../styles/project-detail.css">
 
     <link rel="icon" type="image/png" href="../assets/images/favicon.png">
 </head>
-<body data-category="service-design">
+<body data-category="ux/ui">
     
     <!-- Header -->
     <header id="header">
         <nav class="container">
             <a href="../index.html" class="logo">
-                <span>Gabriela OS</span>
+                <span>&lt;&gt;Gabriela OS</span>
             </a>
             <ul class="nav-links">
                 <li><a href="../index.html#inicio" class="nav-link">Inicio</a></li>
@@ -38,8 +38,9 @@
     </header>
 
     <!-- Hero Visual -->
-    <section class="project-hero--visual">
-        <div class="container">
+    <section class="project-hero project-hero--visual" data-category="ux-ui" id="hero">
+    <div class="project-hero__banner" style="background-image: url('../assets/images/proyectos/spotify/banner.jpg');"></div>
+    <div class="container">
             <a href="../todos-proyectos.html" class="back-link back-link--light">
                 <i class="fas fa-arrow-left"></i>
                 <span>Volver a proyectos</span>
@@ -578,11 +579,11 @@
     <section class="project-navigation">
         <div class="container">
             <div class="project-nav__grid">
-                <a href="fruta.html" class="project-nav__item project-nav__item--prev">
+                <a href="clinica-agenda-web.html" class="project-nav__item project-nav__item--prev">
                     <i class="fas fa-arrow-left"></i>
                     <div>
                         <span class="project-nav__label">Anterior</span>
-                        <span class="project-nav__title">Cubico - Improve Your Energy</span>
+                        <span class="project-nav__title">Clínica Alemana - Agenda Web</span>
                     </div>
                 </a>
                 
@@ -594,11 +595,20 @@
                 <a href="upc.html" class="project-nav__item project-nav__item--next">
                     <div>
                         <span class="project-nav__label">Siguiente</span>
-                        <span class="project-nav__title">UPC - Rediseño de Admisión</span>
+                        <span class="project-nav__title">BID - Servicios de Secretaría</span>
                     </div>
                     <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
+        </div>
+    </section>
+
+    <section class="back-to-top-section">
+        <div class="container">
+            <a href="#hero" class="btn btn--primary btn--lg back-to-top-btn">
+                <i class="fas fa-arrow-up"></i>
+                <span>Volver al inicio</span>
+            </a>
         </div>
     </section>
 

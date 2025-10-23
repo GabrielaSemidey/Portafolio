@@ -6,32 +6,82 @@
 'use strict';
 
 // ================================
-// 1. HEADER SCROLL EFFECT
+// 1. ELEMENTOS GLOBALES
 // ================================
 const header = document.getElementById('header');
-let lastScroll = 0;
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
+const projectHero = document.querySelector('.project-hero');
+const projectBanner = projectHero ? projectHero.querySelector('.project-hero__banner') : null;
 
-window.addEventListener('scroll', () => {
+let lastScroll = 0;
+let ticking = false;
+
+// ================================
+// 2. SCROLL HANDLER CONSOLIDADO
+// ================================
+function handleScroll() {
     const currentScroll = window.pageYOffset;
     
-    // Añadir clase cuando hay scroll
+    // Header scroll effect
     if (currentScroll > 100) {
         header.classList.add('scrolled');
     } else {
         header.classList.remove('scrolled');
     }
     
+    // Active nav link
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        if (currentScroll >= sectionTop - 200) {
+            current = section.getAttribute('id');
+        }
+    });
+    
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+        }
+    });
+    
+    // Parallax effect (solo si existe hero con banner)
+    if (projectHero && projectBanner) {
+        const heroHeight = projectHero.offsetHeight;
+        
+        if (currentScroll < heroHeight) {
+            projectBanner.style.transform = `scale(1.1) translateY(${currentScroll * 0.3}px)`;
+            
+            if (currentScroll > 50) {
+                projectHero.classList.add('scrolled');
+            } else {
+                projectHero.classList.remove('scrolled');
+            }
+        }
+    }
+    
     lastScroll = currentScroll;
+    ticking = false;
+}
+
+// Listener de scroll optimizado
+window.addEventListener('scroll', () => {
+    if (!ticking) {
+        window.requestAnimationFrame(handleScroll);
+        ticking = true;
+    }
 });
 
 // ================================
-// 2. SMOOTH SCROLL PARA NAVEGACIÓN
+// 3. SMOOTH SCROLL PARA NAVEGACIÓN
 // ================================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
         
-        // Ignorar # solo
         if (href === '#') return;
         
         const target = document.querySelector(href);
@@ -52,7 +102,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ================================
-// 3. SCROLL REVEAL ANIMATIONS
+// 4. SCROLL REVEAL ANIMATIONS
 // ================================
 const observerOptions = {
     threshold: 0.1,
@@ -63,95 +113,47 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('revealed');
-            // Dejar de observar una vez revelado (mejor performance)
             observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
 
-// Observar todos los elementos con clase scroll-reveal
 document.addEventListener('DOMContentLoaded', () => {
     const revealElements = document.querySelectorAll('.scroll-reveal');
     revealElements.forEach(el => observer.observe(el));
-});
 
-// ================================
-// 4. ACTIVE NAV LINK ON SCROLL
-// ================================
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav-link');
-
-window.addEventListener('scroll', () => {
-    let current = '';
-    
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        
-        if (window.pageYOffset >= sectionTop - 200) {
-            current = section.getAttribute('id');
-        }
-    });
-    
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
-            link.classList.add('active');
-        }
+    const heroAnimations = document.querySelectorAll('.hero .animate-fadeInUp');
+    heroAnimations.forEach(el => {
+        el.style.opacity = '0';
+        el.style.animation = `fadeInUp 0.6s ease forwards`;
     });
 });
 
-// ========================================
-// FILTROS DE PROYECTOS
-// ========================================
+// ================================
+// 5. FILTROS DE PROYECTOS
+// ================================
 document.addEventListener('DOMContentLoaded', function() {
-    
-    // 1. Seleccionar todos los botones de filtro
     const filterButtons = document.querySelectorAll('.filter-btn');
-    
-    // 2. Seleccionar todas las cards de proyecto
     const projectCards = document.querySelectorAll('[data-category]');
     
-    // 3. Verificar que existan elementos
-    if (filterButtons.length === 0) {
-        console.log('⚠️ No se encontraron botones de filtro');
+    if (filterButtons.length === 0 || projectCards.length === 0) {
         return;
     }
     
-    if (projectCards.length === 0) {
-        console.log('⚠️ No se encontraron cards de proyecto');
-        return;
-    }
-    
-    console.log(`✅ Filtros cargados: ${filterButtons.length} botones, ${projectCards.length} proyectos`);
-    
-    // 4. Agregar evento click a cada botón
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
-            
-            // 5. Obtener el filtro seleccionado
             const filterValue = this.getAttribute('data-filter');
-            console.log(`🔍 Filtro seleccionado: ${filterValue}`);
             
-            // 6. Remover "active" de todos los botones
-            filterButtons.forEach(btn => {
-                btn.classList.remove('active');
-            });
-            
-            // 7. Agregar "active" al botón clickeado
+            filterButtons.forEach(btn => btn.classList.remove('active'));
             this.classList.add('active');
             
-            // 8. Filtrar las cards
             projectCards.forEach(card => {
                 const cardCategory = card.getAttribute('data-category');
                 
-                // Si el filtro es "all" O la categoría coincide
                 if (filterValue === 'all' || cardCategory === filterValue) {
-                    // Mostrar la card
                     card.classList.remove('hidden');
                     card.style.animation = 'fadeInUp 0.5s ease';
                 } else {
-                    // Ocultar la card
                     card.classList.add('hidden');
                 }
             });
@@ -159,28 +161,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Helpers para fade in/out
-function fadeIn(element) {
-    element.style.opacity = '0';
-    element.style.display = 'block';
-    
-    setTimeout(() => {
-        element.style.transition = 'opacity 0.4s ease';
-        element.style.opacity = '1';
-    }, 10);
-}
-
-function fadeOut(element) {
-    element.style.transition = 'opacity 0.3s ease';
-    element.style.opacity = '0';
-    
-    setTimeout(() => {
-        element.style.display = 'none';
-    }, 300);
-}
-
 // ================================
-// 6. MOBILE MENU (OPCIONAL)
+// 6. MOBILE MENU
 // ================================
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const navLinksContainer = document.querySelector('.nav-links');
@@ -190,7 +172,6 @@ if (mobileMenuBtn && navLinksContainer) {
         navLinksContainer.classList.toggle('active');
         mobileMenuBtn.classList.toggle('active');
         
-        // Cambiar icono
         const icon = mobileMenuBtn.querySelector('i');
         if (icon) {
             icon.classList.toggle('fa-bars');
@@ -198,7 +179,6 @@ if (mobileMenuBtn && navLinksContainer) {
         }
     });
     
-    // Cerrar menú al hacer click en un link
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             navLinksContainer.classList.remove('active');
@@ -214,10 +194,9 @@ if (mobileMenuBtn && navLinksContainer) {
 }
 
 // ================================
-// 7. EXTERNAL LINKS (abrir en nueva pestaña)
+// 7. EXTERNAL LINKS
 // ================================
 document.querySelectorAll('a[href^="http"]').forEach(link => {
-    // Solo si no es del mismo dominio
     if (!link.href.includes(window.location.hostname)) {
         link.setAttribute('target', '_blank');
         link.setAttribute('rel', 'noopener noreferrer');
@@ -225,7 +204,7 @@ document.querySelectorAll('a[href^="http"]').forEach(link => {
 });
 
 // ================================
-// 8. FORM VALIDATION (si tienes forms)
+// 8. FORM VALIDATION
 // ================================
 const forms = document.querySelectorAll('form');
 
@@ -233,7 +212,6 @@ forms.forEach(form => {
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // Validación básica
         const inputs = form.querySelectorAll('input[required], textarea[required]');
         let isValid = true;
         
@@ -247,24 +225,20 @@ forms.forEach(form => {
         });
         
         if (isValid) {
-            // Aquí iría el envío del formulario
             console.log('Form is valid');
-            // form.submit();
         }
     });
 });
 
 // ================================
-// 9. LAZY LOADING IMAGES (opcional pero profesional)
+// 9. LAZY LOADING IMAGES
 // ================================
 if ('loading' in HTMLImageElement.prototype) {
-    // Browser soporta lazy loading nativo
     const images = document.querySelectorAll('img[loading="lazy"]');
     images.forEach(img => {
         img.src = img.dataset.src || img.src;
     });
 } else {
-    // Fallback con Intersection Observer
     const imageObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -282,7 +256,7 @@ if ('loading' in HTMLImageElement.prototype) {
 }
 
 // ================================
-// 10. PERFORMANCE: Debounce helper
+// 10. DEBOUNCE HELPER
 // ================================
 function debounce(func, wait) {
     let timeout;
@@ -296,16 +270,14 @@ function debounce(func, wait) {
     };
 }
 
-// Aplicar debounce al resize (si necesitas)
 const debouncedResize = debounce(() => {
     // Código que se ejecuta en resize
-    // Por ejemplo, recalcular alturas
 }, 250);
 
 window.addEventListener('resize', debouncedResize);
 
 // ================================
-// 11. CONSOLE MESSAGE (opcional, profesional)
+// 11. CONSOLE MESSAGE
 // ================================
 console.log(
     '%c👋 ¡Hola! ',
@@ -325,6 +297,4 @@ console.log(
 // ================================
 window.addEventListener('error', (e) => {
     console.error('Error detectado:', e.message);
-    // Aquí podrías enviar el error a un servicio de tracking
 });
-
