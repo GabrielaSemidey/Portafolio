@@ -1,4 +1,9 @@
 /* ================================
+   PROJECT-DETAIL.CSS
+   Project Hero, Content, Sidebar, Visual Resources
+   ================================ */
+
+/* ================================
    PROJECT HERO CON BANNER
    ================================ */
 .project-hero {
@@ -9,7 +14,6 @@
   padding: 4rem 0 3rem;
   overflow: hidden;
 }
-
 
 .project-hero__banner {
   position: absolute;
@@ -23,8 +27,25 @@
   z-index: 0;
   transform: scale(1.1);
   transition: transform 0.1s linear;
+  animation: bannerZoomIn 1.2s ease-out forwards;
 }
 
+@keyframes bannerZoomIn {
+  from {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+.project-hero.scrolled .project-hero__banner {
+  transform: scale(1) translateY(20px);
+}
+
+/* Overlays por categoría */
 .project-hero::before {
   content: '';
   position: absolute;
@@ -37,34 +58,19 @@
 }
 
 body[data-category="frontend"] .project-hero::before {
-  background: linear-gradient(
-    135deg, 
-    rgba(139, 92, 246, 0.85) 0%,    /* Era 0.80, ahora 0.85 */
-    rgba(0, 119, 255, 0.82) 50%,     /* Era 0.75, ahora 0.82 */
-    rgba(0, 200, 150, 0.82) 100%     /* Era 0.75, ahora 0.82 */
-  );
+  background: linear-gradient(135deg, rgba(91, 44, 111, 0.92) 0%, rgba(20, 184, 166, 0.85) 100%);
 }
 
-/* Overlay para UX/UI */
+body[data-category="lumi"] .project-hero::before {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.90) 0%, rgba(0, 119, 255, 0.88) 50%, rgba(0, 200, 150, 0.85) 100%);
+}
+
 body[data-category="ux-ui"] .project-hero::before {
-  background: linear-gradient(
-    135deg,
-    rgba(59, 130, 246, 0.85) 0%,     /* Era 0.80, ahora 0.85 */
-    rgba(6, 182, 212, 0.82) 100%     /* Era 0.75, ahora 0.82 */
-  );
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.92) 0%, rgba(6, 182, 212, 0.85) 100%);
 }
 
-/* Overlay para Service Design */
 body[data-category="service-design"] .project-hero::before {
-  background: linear-gradient(
-    135deg,
-    rgba(99, 102, 241, 0.85) 0%,     /* Era 0.80, ahora 0.85 */
-    rgba(71, 85, 105, 0.82) 100%     /* Era 0.75, ahora 0.82 */
-  );
-}
-
-.project-hero.scrolled .project-hero__banner {
-  transform: scale(1) translateY(20px);
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.92) 0%, rgba(71, 85, 105, 0.88) 100%);
 }
 
 .project-hero .container {
@@ -110,10 +116,10 @@ body[data-category="service-design"] .project-hero::before {
 }
 
 .project-hero__badges .badge {
-  background: rgba(255, 255, 255, 0.95);  
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   border: 2px solid white;
-  color: var(--slate-900);  
+  color: var(--slate-900);
   font-weight: 600;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
@@ -138,24 +144,13 @@ body[data-category="service-design"] .project-hero::before {
   border-color: var(--warning);
 }
 
-.project-hero__badges .badge--warning i {
-  color: var(--slate-900);
-}
-
 .project-hero__badges .badge--info {
   background: var(--info);
   color: white;
   border-color: var(--info);
 }
 
-.project-hero__badges .badge--info i {
-  color: white;
-}
-
-/* ================================
-   BOTÓN VOLVER ATRÁS
-   ================================ */
-
+/* Back Link */
 .back-link {
   display: inline-flex;
   align-items: center;
@@ -170,9 +165,7 @@ body[data-category="service-design"] .project-hero::before {
   border-radius: var(--radius-full);
   border: 2px solid rgba(255, 255, 255, 0.3);
   transition: all var(--transition-fast);
-  text-shadow: 
-    0 2px 4px rgba(0, 0, 0, 0.5),
-    0 4px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .back-link:hover {
@@ -193,23 +186,13 @@ body[data-category="service-design"] .project-hero::before {
   transform: translateX(-4px);
 }
 
-.back-link--dark {
-  color: var(--slate-900);
-  text-shadow: none;
-}
-
-.back-link--dark:hover {
-  color: var(--primary);
-}
-
 /* ================================
-   HERO SIMPLE 
+   HERO SIMPLE (sin banner)
    ================================ */
-
 .project-hero--simple {
-  background: transparent; 
+  background: transparent;
   position: relative;
-  overflow: visible;  
+  overflow: visible;
   min-height: 40vh;
   display: flex;
   align-items: center;
@@ -234,7 +217,6 @@ body[data-category="service-design"] .project-hero::before {
   margin: 0 auto;
   text-align: center;
   width: 100%;
-  font-size: 2rem;
 }
 
 .project-hero--simple .section-description {
@@ -251,25 +233,17 @@ body[data-category="service-design"] .project-hero::before {
   font-size: 0.875rem;
   padding: 0.5rem 1rem;
   align-self: flex-start;
-  transition: all var(--transition-fast);
   background: rgba(0, 0, 0, 0.05);
-  border-radius: var(--radius-full);
 }
 
 .project-hero--simple .back-link:hover {
   color: var(--primary) !important;
   background: rgba(91, 44, 111, 0.1);
-  transform: translateX(-4px);
-}
-
-.project-hero--simple .back-link i {
-  font-size: 0.875rem;
 }
 
 /* ================================
    QUICK INFO BAR
    ================================ */
-
 .project-quick-info {
   background: white;
   border-bottom: 1px solid var(--border);
@@ -357,12 +331,12 @@ body[data-category="service-design"] .project-hero::before {
   flex-shrink: 0;
 }
 
-.block-header__icon--primary { 
-  background: var(--primary); 
+.block-header__icon--primary {
+  background: var(--primary);
 }
 
-.block-header__icon--secondary { 
-  background: var(--secondary); 
+.block-header__icon--secondary {
+  background: var(--secondary);
 }
 
 .block-header h2 {
@@ -545,20 +519,6 @@ body[data-category="service-design"] .project-hero::before {
   flex-shrink: 0;
 }
 
-/* Sidebar en colores Lumi para frontend */
-body[data-category="lumi"] .sidebar-card__icon {
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(0, 119, 255, 0.1));
-  color: var(--lumi-morado);
-}
-
-body[data-category="lumi"] .sidebar-card h3 i {
-  color: var(--lumi-azul);
-}
-
-body[data-category="lumi"] .sidebar-card--cta {
-  background: linear-gradient(135deg, var(--lumi-morado) 0%, var(--lumi-azul) 100%);
-}
-
 .sidebar-card__label {
   display: block;
   font-size: 0.75rem;
@@ -656,7 +616,7 @@ body[data-category="lumi"] .sidebar-card--cta {
 }
 
 /* ================================
-   BOTÓN VOLVER AL INICIO
+   BACK TO TOP
    ================================ */
 .back-to-top-section {
   background: var(--bg-secondary);
@@ -687,6 +647,7 @@ body[data-category="lumi"] .sidebar-card--cta {
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   transition: all var(--transition-base);
+  cursor: zoom-in;
 }
 
 .visual-resource:hover {
@@ -698,6 +659,11 @@ body[data-category="lumi"] .sidebar-card--cta {
   width: 100%;
   height: auto;
   display: block;
+  transition: all var(--transition-base);
+}
+
+.visual-resource img:hover {
+  transform: scale(1.02);
 }
 
 .image-caption {
@@ -710,7 +676,6 @@ body[data-category="lumi"] .sidebar-card--cta {
   text-align: center;
 }
 
-/* Visual Gallery */
 .visual-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -724,6 +689,7 @@ body[data-category="lumi"] .sidebar-card--cta {
   box-shadow: var(--shadow-md);
   transition: all var(--transition-base);
   background: white;
+  cursor: zoom-in;
 }
 
 .gallery-item:hover {
@@ -737,7 +703,6 @@ body[data-category="lumi"] .sidebar-card--cta {
   display: block;
 }
 
-/* Video Container */
 .video-container {
   position: relative;
   width: 100%;
@@ -758,65 +723,141 @@ body[data-category="lumi"] .sidebar-card--cta {
   border: none;
 }
 
-/* Overlay específico para Frontend */
-body[data-category="frontend"] .project-hero::before {
-  background: linear-gradient(
-    135deg, 
-    rgba(91, 44, 111, 0.92) 0%, 
-    rgba(20, 184, 166, 0.85) 100%
-  );
+/* ================================
+   LIGHTBOX
+   ================================ */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-/* Overlay específico para (Lumi) */
-body[data-category="lumi"] .project-hero::before {
-  background: linear-gradient(
-    135deg, 
-    rgba(139, 92, 246, 0.90) 0%, 
-    rgba(0, 119, 255, 0.88) 50%,
-    rgba(0, 200, 150, 0.85) 100%
-  );
+.lightbox.active {
+  display: flex;
+  opacity: 1;
 }
 
-/* Overlay específico para Service Design */
-body[data-category="service-design"] .project-hero::before {
-  background: linear-gradient(
-    135deg, 
-    rgba(99, 102, 241, 0.92) 0%, 
-    rgba(71, 85, 105, 0.88) 100%
-  );
+.lightbox__content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90vh;
+  animation: lightboxZoomIn 0.3s ease;
 }
 
-/* Overlay específico para UX/UI */
-body[data-category="ux/ui"] .project-hero::before {
-  background: linear-gradient(
-    135deg,
-    rgba(59, 130, 246, 0.92) 0%,
-    rgba(6, 182, 212, 0.85) 100%
-  );
-}
-
-/* Animación de entrada del banner */
-@keyframes bannerZoomIn {
+@keyframes lightboxZoomIn {
   from {
-    transform: scale(1.2);
+    transform: scale(0.8);
     opacity: 0;
   }
   to {
-    transform: scale(1.1);
+    transform: scale(1);
     opacity: 1;
   }
 }
 
-.project-hero__banner {
-  animation: bannerZoomIn 1.2s ease-out forwards;
+.lightbox__image {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox__close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  background: white;
+  color: var(--slate-900);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.lightbox__close:hover {
+  background: var(--primary);
+  color: white;
+  transform: rotate(90deg) scale(1.1);
+}
+
+.lightbox__caption {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+  font-size: 0.9375rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-md);
+}
+
+.lightbox__close:focus-visible {
+  outline: 3px solid var(--secondary);
+  outline-offset: 4px;
 }
 
 /* ================================
-   ESTILOS ESPECÍFICOS PARA LUMI
-   (y otros proyectos personalizados)
+   READING PROGRESS BAR
    ================================ */
+.reading-progress {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.05);
+  z-index: calc(var(--z-sticky) - 1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 
-/* Variables de colores Lumi */
+.reading-progress.visible {
+  opacity: 1;
+  animation: fadeInProgress 0.3s ease;
+}
+
+@keyframes fadeInProgress {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reading-progress__bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+  transition: width 0.1s ease-out;
+  box-shadow: 0 0 10px rgba(91, 44, 111, 0.5);
+}
+
+/* ================================
+   ESTILOS ESPECÍFICOS LUMI
+   ================================ */
 body[data-category="lumi"] {
   --lumi-amarillo: #FFD600;
   --lumi-naranja: #FF8C42;
@@ -824,15 +865,6 @@ body[data-category="lumi"] {
   --lumi-morado: #8B5CF6;
   --lumi-azul: #0077FF;
   --lumi-cyan: #00C896;
-}
-
-body[data-category="lumi"] .project-hero {
-  background: linear-gradient(135deg, var(--lumi-morado) 0%, var(--lumi-azul) 50%, var(--lumi-cyan) 100%);
-}
-
-body[data-category="lumi"] {
-  background: radial-gradient(circle at 20% 50%, rgba(255, 214, 0, 0.1) 0%, transparent 50%),
-              radial-gradient(circle at 80% 50%, rgba(255, 107, 157, 0.1) 0%, transparent 50%);
 }
 
 .lumi-features {
@@ -910,310 +942,8 @@ body[data-category="lumi"] {
   line-height: 1.5;
 }
 
-body[data-category="lumi"] .project-hero .badge--warning {
-  background: var(--lumi-amarillo);
-  color: #2d3748;
-  font-weight: 600;
-  border: none;
-}
-
-body[data-category="lumi"] .block-header__icon--primary {
-  background: linear-gradient(135deg, var(--lumi-morado) 0%, var(--lumi-azul) 100%);
-}
-
-body[data-category="lumi"] .block-header__icon--secondary {
-  background: linear-gradient(135deg, var(--lumi-naranja) 0%, var(--lumi-rosa) 100%);
-}
-
-body[data-category="lumi"] .metric-card {
-  background: linear-gradient(135deg, var(--bg-secondary) 0%, white 100%);
-  border: 2px solid var(--lumi-morado);
-}
-
-body[data-category="lumi"] .metric-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
-}
-
-body[data-category="lumi"] .metric-card__value {
-  background: linear-gradient(135deg, var(--lumi-morado) 0%, var(--lumi-azul) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-body[data-category="lumi"] .timeline__marker {
-  background: linear-gradient(135deg, var(--lumi-morado) 0%, var(--lumi-azul) 100%);
-}
-
-body[data-category="lumi"] .btn--hero {
-  background: linear-gradient(135deg, var(--lumi-amarillo) 0%, var(--lumi-naranja) 100%);
-  color: #2d3748;
-  font-weight: 600;
-  border: none;
-}
-
-body[data-category="lumi"] .btn--hero:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(255, 214, 0, 0.4);
-}
-
-body[data-category="ux-ui"] {
-  background: radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
-              radial-gradient(circle at 80% 50%, rgba(6, 182, 212, 0.08) 0%, transparent 50%);
-}
-
-body[data-category="service-design"] {
-  background: radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.08) 0%, transparent 50%),
-              radial-gradient(circle at 80% 50%, rgba(71, 85, 105, 0.08) 0%, transparent 50%);
-}
-
 /* ================================
-   LIGHTBOX PARA IMÁGENES
-   ================================ */
-
-/* Overlay oscuro de fondo */
-.lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.95);
-  z-index: 9999;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.lightbox.active {
-  display: flex;
-  opacity: 1;
-}
-
-/* Contenedor de la imagen */
-.lightbox__content {
-  position: relative;
-  max-width: 90%;
-  max-height: 90vh;
-  animation: lightboxZoomIn 0.3s ease;
-}
-
-@keyframes lightboxZoomIn {
-  from {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.lightbox__image {
-  max-width: 100%;
-  max-height: 90vh;
-  object-fit: contain;
-  border-radius: var(--radius-lg);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-}
-
-
-.lightbox__close {
-  position: absolute;
-  top: -50px;
-  right: 0;
-  background: white;
-  color: var(--slate-900);
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all var(--transition-fast);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.lightbox__close:hover {
-  background: var(--primary);
-  color: white;
-  transform: rotate(90deg) scale(1.1);
-}
-
-.lightbox__caption {
-  position: absolute;
-  bottom: -60px;
-  left: 0;
-  right: 0;
-  color: white;
-  text-align: center;
-  font-size: 0.9375rem;
-  padding: 1rem;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(10px);
-  border-radius: var(--radius-md);
-}
-
-.lightbox__nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.9);
-  color: var(--slate-900);
-  border: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all var(--transition-fast);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.lightbox__nav:hover {
-  background: var(--primary);
-  color: white;
-  transform: translateY(-50%) scale(1.1);
-}
-
-.lightbox__nav--prev {
-  left: 20px;
-}
-
-.lightbox__nav--next {
-  right: 20px;
-}
-
-.visual-resource img,
-.gallery-item img {
-  cursor: zoom-in;
-  transition: all var(--transition-base);
-}
-
-.visual-resource img:hover,
-.gallery-item img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-}
-
-.lightbox__loading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
-  border: 4px solid rgba(255, 255, 255, 0.3);
-  border-top-color: white;
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
-}
-
-@keyframes spin {
-  to { transform: translate(-50%, -50%) rotate(360deg); }
-}
-
-/* Focus visible para accesibilidad */
-.lightbox__close:focus-visible,
-.lightbox__nav:focus-visible {
-  outline: 3px solid var(--secondary);
-  outline-offset: 4px;
-}
-
-/* ================================
-   PROGRESS BAR DE LECTURA
-   ================================ */
-
-
-.reading-progress {
-  position: fixed;
-  top: var(--header-height); 
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: rgba(0, 0, 0, 0.05);
-  z-index: calc(var(--z-sticky) - 1);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.reading-progress.visible {
-  opacity: 1;
-}
-
-.reading-progress__bar {
-  height: 100%;
-  width: 0%;
-  background: linear-gradient(
-    90deg,
-    var(--primary) 0%,
-    var(--secondary) 100%
-  );
-  transition: width 0.1s ease-out;
-  box-shadow: 0 0 10px rgba(91, 44, 111, 0.5);
-}
-
-body[data-category="frontend"] .reading-progress__bar {
-  background: linear-gradient(
-    90deg,
-    var(--lumi-morado) 0%,
-    var(--lumi-azul) 50%,
-    var(--lumi-cyan) 100%
-  );
-  box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
-}
-
-body[data-category="ux-ui"] .reading-progress__bar {
-  background: linear-gradient(
-    90deg,
-    #3B82F6 0%,
-    #06B6D4 100%
-  );
-  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
-}
-
-body[data-category="service-design"] .reading-progress__bar {
-  background: linear-gradient(
-    90deg,
-    #6366F1 0%,
-    #475569 100%
-  );
-  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
-}
-
-.reading-progress {
-  top: auto;
-  bottom: 0; 
-}
-
-/* Animación suave al aparecer */
-@keyframes fadeInProgress {
-  from {
-    opacity: 0;
-    transform: translateY(-4px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.reading-progress.visible {
-  animation: fadeInProgress 0.3s ease;
-}
-
-
-/* ================================
-   RESPONSIVE
+   RESPONSIVE - TABLET
    ================================ */
 @media (max-width: 1024px) {
   .content-layout {
@@ -1245,33 +975,15 @@ body[data-category="service-design"] .reading-progress__bar {
     padding: 6rem 0 3rem;
   }
 
-  .project-hero--simple .section-header .section-title,
-.project-hero--simple h1 {
-  font-size: 2.75rem !important;
-  margin-bottom: 1rem;
-}
-
   .project-hero--simple {
     min-height: 33vh;
     padding: 1.5rem 0 2.5rem;
   }
-
- .project-hero--simple::before {
-    width: 350px;
-    height: 350px;
-  }
-  
-  .project-hero--simple::after {
-    width: 250px;
-    height: 250px;
-  }
-  
-  .project-hero--simple .section-title {
-    font-size: 0.9375rem !important;
-    margin-bottom: 0.875rem;
-  }
 }
 
+/* ================================
+   RESPONSIVE - MOBILE
+   ================================ */
 @media (max-width: 768px) {
   .lightbox__content {
     max-width: 95%;
@@ -1284,39 +996,26 @@ body[data-category="service-design"] .reading-progress__bar {
     font-size: 1.25rem;
   }
   
-  .lightbox__nav {
-    width: 40px;
-    height: 40px;
-    font-size: 1.25rem;
-  }
-  
-  .lightbox__nav--prev {
-    left: 10px;
-  }
-  
-  .lightbox__nav--next {
-    right: 10px;
-  }
-  
   .lightbox__caption {
     font-size: 0.8125rem;
     bottom: -50px;
   }
 
   .project-hero {
-    min-height: 60vh;  
+    min-height: 60vh;
     padding: 6rem 0 2.5rem;
   }
   
   .project-hero__title {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
   }
   
   .project-hero__description {
     font-size: 1rem;
   }
+  
   .reading-progress {
-    height: 3px;  
+    height: 3px;
   }
 
   .project-hero--simple {
@@ -1325,9 +1024,7 @@ body[data-category="service-design"] .reading-progress__bar {
   }
   
   .project-hero--simple .back-link {
-    margin-bottom: 1.25rem;
-    font-size: 0.8125rem;
-    padding: 0.5rem 0.875rem;
+    display: none !important;
   }
   
   .project-hero--simple .section-title {
@@ -1374,6 +1071,9 @@ body[data-category="service-design"] .reading-progress__bar {
   }
 }
 
+/* ================================
+   RESPONSIVE - SMALL MOBILE
+   ================================ */
 @media (max-width: 480px) {
   .project-hero {
     min-height: 65vh;
@@ -1391,10 +1091,5 @@ body[data-category="service-design"] .reading-progress__bar {
   
   .project-hero--simple .section-description {
     font-size: 0.8125rem !important;
-  }
-  
-  .project-hero--simple .back-link {
-    font-size: 0.75rem;
-    padding: 1rem 0 1.5rem;
   }
 }

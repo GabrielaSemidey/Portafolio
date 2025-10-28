@@ -1,6 +1,5 @@
 /* ================================
-   MAIN.JS - JavaScript profesional y limpio
-   Portfolio Gabriela Ojeda Semidey
+   MAIN.JS - 
    ================================ */
 
 'use strict';
@@ -48,7 +47,6 @@ function handleScroll() {
         }
     });
     
-    // Parallax effect (solo si existe hero con banner)
     if (projectHero && projectBanner) {
         const heroHeight = projectHero.offsetHeight;
         
@@ -67,7 +65,6 @@ function handleScroll() {
     ticking = false;
 }
 
-// Listener de scroll optimizado
 window.addEventListener('scroll', () => {
     if (!ticking) {
         window.requestAnimationFrame(handleScroll);
@@ -310,17 +307,13 @@ window.addEventListener('error', (e) => {
     const lightboxCaption = document.getElementById('lightbox-caption');
     const closeBtn = lightbox ? lightbox.querySelector('.lightbox__close') : null;
     
-    // Si no existe el lightbox, salir
     if (!lightbox) return;
     
-    // Seleccionar todas las imágenes que deben abrir lightbox
     const lightboxImages = document.querySelectorAll('.visual-resource img, .gallery-item img');
     
-    // Variable para tracking de imágenes
     let currentImages = [];
     let currentIndex = 0;
     
-    // Abrir lightbox
     function openLightbox(imgElement, index) {
         lightboxImg.src = imgElement.src;
         lightboxImg.alt = imgElement.alt;
@@ -332,26 +325,22 @@ window.addEventListener('error', (e) => {
         
         currentIndex = index;
         lightbox.classList.add('active');
-        document.body.style.overflow = 'hidden'; // Prevenir scroll
+        document.body.style.overflow = 'hidden'; 
         
-        // Focus en el botón de cerrar
         closeBtn.focus();
     }
     
-    // Cerrar lightbox
     function closeLightbox() {
         lightbox.classList.remove('active');
-        document.body.style.overflow = ''; // Restaurar scroll
+        document.body.style.overflow = ''; 
     }
     
-    // Event listeners para abrir lightbox
     lightboxImages.forEach((img, index) => {
         img.addEventListener('click', () => {
             currentImages = Array.from(lightboxImages);
             openLightbox(img, index);
         });
         
-        // Accesibilidad: Enter para abrir
         img.addEventListener('keydown', (e) => {
             if (e.key === 'Enter') {
                 currentImages = Array.from(lightboxImages);
@@ -359,32 +348,27 @@ window.addEventListener('error', (e) => {
             }
         });
         
-        // Hacer las imágenes focusables
         img.setAttribute('tabindex', '0');
         img.setAttribute('role', 'button');
         img.setAttribute('aria-label', `Ver imagen: ${img.alt || 'Sin descripción'}`);
     });
     
-    // Cerrar con botón
     if (closeBtn) {
         closeBtn.addEventListener('click', closeLightbox);
     }
     
-    // Cerrar con click fuera de la imagen
     lightbox.addEventListener('click', (e) => {
         if (e.target === lightbox) {
             closeLightbox();
         }
     });
     
-    // Cerrar con ESC
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && lightbox.classList.contains('active')) {
             closeLightbox();
         }
     });
     
-    // Navegación con flechas (opcional, para múltiples imágenes)
     document.addEventListener('keydown', (e) => {
         if (!lightbox.classList.contains('active')) return;
         
@@ -418,19 +402,14 @@ window.addEventListener('error', (e) => {
         const documentHeight = document.documentElement.scrollHeight;
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
-        // Altura total que se puede scrollear
         const scrollableHeight = documentHeight - windowHeight;
         
-        // Porcentaje de scroll
         const scrollPercentage = (scrollTop / scrollableHeight) * 100;
         
-        // Actualizar el ancho de la barra
         progressBarFill.style.width = `${Math.min(scrollPercentage, 100)}%`;
         
-        // Actualizar ARIA para accesibilidad
         progressBar.setAttribute('aria-valuenow', Math.round(scrollPercentage));
         
-        // Mostrar la barra cuando hay scroll
         if (scrollTop > 100) {
             progressBar.classList.add('visible');
         } else {
@@ -440,7 +419,6 @@ window.addEventListener('error', (e) => {
         ticking = false;
     }
     
-    // Listener de scroll optimizado
     window.addEventListener('scroll', () => {
         if (!ticking) {
             window.requestAnimationFrame(updateProgressBar);
