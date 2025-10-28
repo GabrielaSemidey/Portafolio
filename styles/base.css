@@ -203,7 +203,7 @@ strong {
 
 .section-title {
   font-size: clamp(2rem, 4vw, 3rem);
-  margin-bottom: 1.25rem;
+  margin: 4rem 0 1.25rem 0;
 }
 
 .section-description {

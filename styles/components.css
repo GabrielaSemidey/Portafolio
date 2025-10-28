@@ -151,12 +151,20 @@ nav {
   background: white;
   color: var(--slate-900);
   border-color: white;
+  font-weight: 700;
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.3),
+    0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .btn--hero:hover:not(:disabled) {
   background: var(--secondary);
   color: white;
   border-color: var(--secondary);
+  transform: translateY(-3px);
+  box-shadow: 
+    0 8px 20px rgba(0, 0, 0, 0.4),
+    0 12px 32px rgba(0, 0, 0, 0.3);
 }
 
 /* Light Button */
@@ -397,7 +405,6 @@ nav {
   margin-bottom: 1rem;
 }
 
-/* Métricas */
 .project-card__metrics {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -408,6 +415,7 @@ nav {
   margin-bottom: 1rem;
 }
 
+/* Métricas */
 .metric {
   text-align: center;
   padding: 0.5rem;
@@ -461,8 +469,13 @@ nav {
 .project-card-link {
   text-decoration: none;
   color: inherit;
-  display: block;
+  display: contents;
   height: 100%;
+}
+
+.project-card-link .project-card {
+  height: 100%;
+  transition: all var(--transition-base);
 }
 
 .project-card-link:hover .project-card {
@@ -473,6 +486,20 @@ nav {
 
 .project-card-link:hover .project-card__banner {
   transform: scale(1.05);
+}
+
+.project-card__actions {
+  position: relative;
+  z-index: 10; 
+}
+
+.project-card__actions .project-link {
+  position: relative;
+  z-index: 11;
+}
+
+.project-card__actions a {
+  pointer-events: auto;
 }
 
 /* Variantes por categoría */

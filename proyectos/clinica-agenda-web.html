@@ -35,10 +35,15 @@
                 <i class="fas fa-bars"></i>
             </button>
         </nav>
+
+        <div class="reading-progress" role="progressbar" aria-label="Progreso de lectura" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div class="reading-progress__bar"></div>
+        </div>  
+
     </header>
 
     <!-- Hero Visual -->
-    <section class="project-hero project-hero--visual" id="hero">
+    <section class="project-hero" id="hero">
     <div class="project-hero__banner" style="background-image: url('../assets/images/proyectos/agenda-web/banner.jpg');"></div>
         <div class="container">
             <a href="../todos-proyectos.html" class="back-link back-link--light">
@@ -640,6 +645,16 @@
             </p>
         </div>
     </footer>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imagen">
+        <div class="lightbox__content">
+            <button class="lightbox__close" aria-label="Cerrar visor">
+                <i class="fas fa-times"></i>
+            </button>
+            <img class="lightbox__image" src="" alt="" id="lightbox-img">
+            <div class="lightbox__caption" id="lightbox-caption"></div>
+        </div>
+    </div>
 
     <script src="../main.js"></script>
 </body>

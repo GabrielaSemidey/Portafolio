@@ -298,3 +298,159 @@ console.log(
 window.addEventListener('error', (e) => {
     console.error('Error detectado:', e.message);
 });
+
+// ================================
+// LIGHTBOX PARA IMÁGENES
+// ================================
+(function() {
+    'use strict';
+    
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const closeBtn = lightbox ? lightbox.querySelector('.lightbox__close') : null;
+    
+    // Si no existe el lightbox, salir
+    if (!lightbox) return;
+    
+    // Seleccionar todas las imágenes que deben abrir lightbox
+    const lightboxImages = document.querySelectorAll('.visual-resource img, .gallery-item img');
+    
+    // Variable para tracking de imágenes
+    let currentImages = [];
+    let currentIndex = 0;
+    
+    // Abrir lightbox
+    function openLightbox(imgElement, index) {
+        lightboxImg.src = imgElement.src;
+        lightboxImg.alt = imgElement.alt;
+        
+        // Mostrar caption si existe
+        const caption = imgElement.getAttribute('alt') || 
+                       imgElement.closest('.visual-resource, .gallery-item')?.querySelector('.image-caption')?.textContent || '';
+        lightboxCaption.textContent = caption;
+        
+        currentIndex = index;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevenir scroll
+        
+        // Focus en el botón de cerrar
+        closeBtn.focus();
+    }
+    
+    // Cerrar lightbox
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = ''; // Restaurar scroll
+    }
+    
+    // Event listeners para abrir lightbox
+    lightboxImages.forEach((img, index) => {
+        img.addEventListener('click', () => {
+            currentImages = Array.from(lightboxImages);
+            openLightbox(img, index);
+        });
+        
+        // Accesibilidad: Enter para abrir
+        img.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                currentImages = Array.from(lightboxImages);
+                openLightbox(img, index);
+            }
+        });
+        
+        // Hacer las imágenes focusables
+        img.setAttribute('tabindex', '0');
+        img.setAttribute('role', 'button');
+        img.setAttribute('aria-label', `Ver imagen: ${img.alt || 'Sin descripción'}`);
+    });
+    
+    // Cerrar con botón
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeLightbox);
+    }
+    
+    // Cerrar con click fuera de la imagen
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+    
+    // Cerrar con ESC
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
+    
+    // Navegación con flechas (opcional, para múltiples imágenes)
+    document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('active')) return;
+        
+        if (e.key === 'ArrowRight' && currentIndex < currentImages.length - 1) {
+            openLightbox(currentImages[currentIndex + 1], currentIndex + 1);
+        }
+        
+        if (e.key === 'ArrowLeft' && currentIndex > 0) {
+            openLightbox(currentImages[currentIndex - 1], currentIndex - 1);
+        }
+    });
+})();
+
+// ================================
+// READING PROGRESS BAR
+// ================================
+(function() {
+    'use strict';
+    
+    const progressBar = document.querySelector('.reading-progress');
+    const progressBarFill = document.querySelector('.reading-progress__bar');
+    
+    // Solo ejecutar si existe la barra
+    if (!progressBar || !progressBarFill) return;
+    
+    let ticking = false;
+    
+    function updateProgressBar() {
+        // Calcular el progreso de lectura
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Altura total que se puede scrollear
+        const scrollableHeight = documentHeight - windowHeight;
+        
+        // Porcentaje de scroll
+        const scrollPercentage = (scrollTop / scrollableHeight) * 100;
+        
+        // Actualizar el ancho de la barra
+        progressBarFill.style.width = `${Math.min(scrollPercentage, 100)}%`;
+        
+        // Actualizar ARIA para accesibilidad
+        progressBar.setAttribute('aria-valuenow', Math.round(scrollPercentage));
+        
+        // Mostrar la barra cuando hay scroll
+        if (scrollTop > 100) {
+            progressBar.classList.add('visible');
+        } else {
+            progressBar.classList.remove('visible');
+        }
+        
+        ticking = false;
+    }
+    
+    // Listener de scroll optimizado
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(updateProgressBar);
+            ticking = true;
+        }
+    });
+    
+    // Actualizar también al redimensionar (por si cambia la altura)
+    window.addEventListener('resize', debounce(updateProgressBar, 250));
+    
+    // Inicializar al cargar la página
+    updateProgressBar();
+})();

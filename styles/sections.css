@@ -1,6 +1,6 @@
 
 /* ================================
-   HERO SECTION (FORZADO)
+   HERO SECTION
    ================================ */
 section.hero {
   min-height: 100vh;
@@ -374,15 +374,15 @@ section.hero .container {
 }
 
 .filter-btn:hover {
-  border-color: var(--info);
-  color: var(--info);
+  border-color: var(--primary);
+  color: var(--primary);
   transform: translateY(-2px);
 }
 
 .filter-btn.active {
-  background: var(--info);
+  background: var(--primary);
   color: white;
-  border-color: var(--info);
+  border-color: var(--primary);
   box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 }
 
@@ -747,6 +747,98 @@ section.hero .container {
 }
 
 /* ================================
+   BACKGROUND GEOMÉTRICO ANIMADO
+   ================================ */
+
+/* Contenedor del patrón */
+.geometric-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: white
+}
+
+/* Canvas para las formas */
+.geometric-background__canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+/* Formas geométricas con CSS puro */
+.geo-shape {
+  position: absolute;
+  border: 2px solid var(--secondary);
+  opacity: 0.4;
+  animation: float-random 20s ease-in-out infinite;
+}
+
+/* Círculos */
+.geo-shape--circle {
+  border-radius: 50%;
+}
+
+/* Cuadrados */
+.geo-shape--square {
+  border-radius: 4px;
+}
+
+/* Rectángulos (líneas) */
+.geo-shape--line {
+  height: 2px;
+  background: var(--secondary);
+  border: none;
+}
+
+/* Puntos */
+.geo-shape--dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--secondary);
+  border: none;
+  box-shadow: 0 0 20px var(--secondary);
+}
+
+/* Animaciones aleatorias */
+@keyframes float-random {
+  0%, 100% { 
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0.4;
+  }
+  25% { 
+    transform: translate(30px, -30px) rotate(5deg);
+    opacity: 0.6;
+  }
+  50% { 
+    transform: translate(-20px, 20px) rotate(-5deg);
+    opacity: 0.3;
+  }
+  75% { 
+    transform: translate(25px, 15px) rotate(3deg);
+    opacity: 0.5;
+  }
+}
+
+.geo-shape:nth-child(2) { animation-delay: 2s; animation-duration: 25s; }
+.geo-shape:nth-child(3) { animation-delay: 4s; animation-duration: 18s; }
+.geo-shape:nth-child(4) { animation-delay: 1s; animation-duration: 22s; }
+.geo-shape:nth-child(5) { animation-delay: 3s; animation-duration: 28s; }
+.geo-shape:nth-child(6) { animation-delay: 5s; animation-duration: 20s; }
+.geo-shape:nth-child(7) { animation-delay: 6s; animation-duration: 24s; }
+.geo-shape:nth-child(8) { animation-delay: 7s; animation-duration: 26s; }
+
+
+
+
+/* ================================
    RESPONSIVE
    ================================ */
 @media (max-width: 1024px) {
@@ -850,6 +942,10 @@ section.hero .container {
     width: 36px;
     height: 36px;
     font-size: 0.875rem;
+  }
+
+  .geo-shape:nth-child(n+6) {
+    display: none;  
   }
 }
 

@@ -41,11 +41,61 @@
             </button>
         </nav>
     </header>
+    
+    <!-- Background Geométrico -->
+<div class="geometric-background">
+    <div class="geometric-background__canvas">
+        
+        <div class="geo-shape geo-shape--dot" style="top: 8%; left: 8%;"></div>
+        <div class="geo-shape geo-shape--line" style="width: 120px; top: 12%; left: 5%;"></div>
+        <div class="geo-shape geo-shape--line-v" style="height: 120px; top: 12%; left: 5%;"></div>
+        <div class="geo-shape geo-shape--square" style="width: 50px; height: 50px; top: 22%; left: 18%;"></div>
+        
+        <div class="geo-shape geo-shape--dot" style="top: 15%; left: 25%;"></div>
+        <div class="geo-shape geo-shape--circle" style="width: 60px; height: 60px; top: 25%; left: 32%;"></div>
+        
+        <div class="geo-shape geo-shape--line" style="width: 180px; top: 10%; left: 45%;"></div>
+        <div class="geo-shape geo-shape--line-v" style="height: 140px; top: 10%; left: 45%;"></div>
+        <div class="geo-shape geo-shape--dot" style="top: 10%; left: 45%;"></div>
+        <div class="geo-shape geo-shape--square" style="width: 45px; height: 45px; top: 28%; left: 52%;"></div>
+        
+        <div class="geo-shape geo-shape--dot" style="top: 18%; left: 68%;"></div>
+        <div class="geo-shape geo-shape--line" style="width: 100px; top: 24%; left: 62%;"></div>
+        
+        <div class="geo-shape geo-shape--circle" style="width: 90px; height: 90px; top: 12%; right: 8%;"></div>
+        <div class="geo-shape geo-shape--dot" style="top: 12%; right: 8%;"></div>
+        <div class="geo-shape geo-shape--line-v" style="height: 100px; top: 8%; right: 15%;"></div>
+        <div class="geo-shape geo-shape--square" style="width: 55px; height: 55px; top: 26%; right: 18%;"></div>
+        
+        <div class="geo-shape geo-shape--dot" style="top: 42%; left: 6%;"></div>
+        <div class="geo-shape geo-shape--square" style="width: 70px; height: 70px; top: 48%; left: 10%;"></div>
+        <div class="geo-shape geo-shape--line" style="width: 90px; top: 55%; left: 15%;"></div>
+        
+        <div class="geo-shape geo-shape--circle" style="width: 65px; height: 65px; top: 50%; left: 45%;"></div>
+        <div class="geo-shape geo-shape--dot" style="top: 58%; left: 52%;"></div>
+        
+        <div class="geo-shape geo-shape--dot" style="top: 45%; right: 20%;"></div>
+        <div class="geo-shape geo-shape--line" style="width: 130px; top: 52%; right: 8%;"></div>
+        <div class="geo-shape geo-shape--line-v" style="height: 90px; top: 52%; right: 8%;"></div>
 
-    <!-- Page Hero -->
-    <section class="project-hero project-hero--simple">
-        <div class="container">
-            <a href="index.html#proyectos" class="back-link">
+        <div class="geo-shape geo-shape--dot" style="bottom: 22%; left: 8%;"></div>
+        <div class="geo-shape geo-shape--line-v" style="height: 160px; bottom: 12%; left: 6%;"></div>
+        <div class="geo-shape geo-shape--circle" style="width: 75px; height: 75px; bottom: 18%; left: 15%;"></div>
+        
+        <div class="geo-shape geo-shape--square" style="width: 60px; height: 60px; bottom: 25%; left: 48%;"></div>
+        <div class="geo-shape geo-shape--dot" style="bottom: 15%; left: 42%;"></div>
+        
+        <div class="geo-shape geo-shape--dot" style="bottom: 18%; right: 10%;"></div>
+        <div class="geo-shape geo-shape--line" style="width: 220px; bottom: 15%; right: 6%;"></div>
+        <div class="geo-shape geo-shape--square" style="width: 80px; height: 80px; bottom: 25%; right: 12%;"></div>
+        <div class="geo-shape geo-shape--line-v" style="height: 120px; bottom: 28%; right: 18%;"></div>
+        
+    </div>
+</div>
+
+    <section class="project-hero project-hero--simple" id="hero">
+    <div class="container">
+            <a href="./index.html#proyectos" class="back-link">
                 <i class="fas fa-arrow-left"></i>
                 <span>Volver al inicio</span>
             </a>
@@ -125,7 +175,7 @@
                             <h3 class="project-card__title">Lumi - AI Integration Project</h3>
                             
                             <p class="project-card__description">
-                                Aplicación web desarrollada durante curso especializado de IA. Integra inteligencia artificial con una interfaz intuitiva y completamente responsive.
+                                Plataforma web conceptualizada durante curso especializado de IA, contiene landing, dashboard y login. (WIP)
                             </p>
 
                             <div class="project-card__metrics">
@@ -290,7 +340,7 @@
                 <div class="projects__grid">
                     
                     <!-- Proyecto 4: Clínica Teleconsulta -->
-                    
+                    <a href="./proyectos/clinica-teleconsulta.html" class="project-card-link">
                     <article class="project-card card scroll-reveal" data-category="ux-ui">
                      <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/teleconsulta/banner.jpg')">
                         
@@ -343,8 +393,9 @@
                             </div>
                         </div>
                     </article>
-                
+                    </a>
                     <!-- Proyecto 5: Clínica Agenda -->
+                     <a href="./proyectos/clinica-agenda-web.html" class="project-card-link">
                     <article class="project-card card scroll-reveal" data-category="ux-ui">
                      <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/agenda-web/banner.jpg')">
                         
@@ -396,8 +447,10 @@
                             </div>
                         </div>
                     </article>
+                    </a>
 
                     <!-- Proyecto 6: Spotify -->
+                     <a href="./proyectos/spotify.html" class="project-card-link">
                     <article class="project-card card scroll-reveal" data-category="ux-ui">
                      <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/spotify/banner.jpg')">
                         </div>
@@ -448,6 +501,7 @@
                             </div>
                         </div>
                     </article>
+                    </a>
                     
                 </div>
             </div>
@@ -464,6 +518,7 @@
                 <div class="projects__grid">
                     
                     <!-- Proyecto 7: BID -->
+                     <a href="./proyectos/bid-secretaria.html" class="project-card-link">
                                     <article class="project-card card scroll-reveal" data-category="service-design">
                     <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/bid/banner.png')">
                         
@@ -516,8 +571,10 @@
                             </div>
                         </div>
                     </article>
+                    </a>
 
                     <!-- Proyecto 8: CUBICO -->
+                     <a href="./proyectos/fruta.html" class="project-card-link">
                     <article class="project-card card scroll-reveal" data-category="service-design">
                     <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/cubico/banner.png')">
 
@@ -569,8 +626,10 @@
                             </div>
                         </div>
                     </article>
+                    </a>
 
                     <!-- Proyecto 9: UPC -->
+                     <a href="./proyectos/upc.html" class="project-card-link">
                     <article class="project-card card scroll-reveal" data-category="service-design">
                      <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/upc/banner.jpeg')">
 
@@ -622,8 +681,10 @@
                             </div>
                         </div>
                     </article>
+                    </a>
 
                     <!-- Proyecto 10: MINCETUR -->
+                    <a href="./proyectos/mincetur.html" class="project-card-link">
                     <article class="project-card card scroll-reveal" data-category="service-design">
                      <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/mincetur/banner.png')">
 
@@ -675,8 +736,10 @@
                             </div>
                         </div>
                     </article>
+                    </a>
 
                     <!-- Proyecto 11: TALI -->
+                     <a href="./proyectos/tali.html" class="project-card-link">
                     <article class="project-card card scroll-reveal" data-category="service-design">
                      <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/tali/banner.jpg')">
 
@@ -728,13 +791,15 @@
                             </div>
                         </div>
                     </article>
+                    </a>
                     
                 </div>
             </div>
             
         </div>
     </section>
-
+    </body>
+>
     <!-- Buscando Oportunidades -->
 <section class="job-search-section">
     <div class="container">
