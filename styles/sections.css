@@ -973,3 +973,40 @@
     padding: 0.5rem 1rem;
   }
 }
+
+/* ================================
+   PARALLAX HERO
+   ================================ */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__photo {
+  will-change: transform;
+  transition: transform 0.1s ease-out;
+}
+
+.hero__left {
+  will-change: transform;
+  transition: transform 0.1s ease-out;
+}
+
+.hero__stack {
+  will-change: transform;
+  transition: transform 0.1s ease-out;
+}
+
+.hero.parallax-active .hero__photo {
+  transform: translateY(var(--parallax-photo, 0));
+}
+
+.hero.parallax-active .hero__left {
+  transform: translateY(var(--parallax-text, 0));
+}
+
+.hero.parallax-active .hero__stack {
+  transform: translateY(var(--parallax-stack, 0));
+}
+

@@ -10,10 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/components.css">
@@ -30,11 +26,25 @@
                 <span>&lt;&gt;Gabriela OS</span>
             </a>
             <ul class="nav-links">
-                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-                <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
-                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-                <li><a href="#frontend" class="nav-link">Frontend</a></li>
-                <li><a href="#contacto" class="nav-link nav-cta">Contacto</a></li>
+                <li><a href="#inicio" class="nav-link active" data-i18n="nav.inicio">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link" data-i18n="nav.sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos" class="nav-link" data-i18n="nav.proyectos">Proyectos</a></li>
+                <li><a href="#frontend" class="nav-link" data-i18n="nav.frontend">Frontend</a></li>
+                <li><a href="#contacto" class="nav-link nav-cta" data-i18n="nav.contacto">Contacto</a></li>
+                
+                <!-- 🔥 LANGUAGE TOGGLE -->
+                <li>
+                    <div class="language-toggle">
+                        <button class="language-toggle__btn" 
+                                type="button" 
+                                aria-label="Cambiar idioma"
+                                title="Switch language"
+                                data-lang="es">
+                            <span class="language-toggle__flag">🇪🇸</span>
+                            <span class="language-toggle__text">ES</span>
+                        </button>
+                    </div>
+                </li>
             </ul>
             <button class="mobile-menu-btn" aria-label="Menú">
                 <i class="fas fa-bars"></i>
@@ -52,15 +62,15 @@
                 <div class="hero__left">
                     <div class="hero__badge animate-fadeInUp">
                         <i class="fas fa-circle" style="color: #10b981; font-size: 8px;"></i>
-                        <span>Disponible para proyectos Frontend • Remote/Presencial</span>
+                        <span data-i18n="hero.badge">Disponible para proyectos Frontend • Remote/Presencial</span>
                     </div>
                     
                     <h1 class="hero__title animate-fadeInUp delay-1">
-                        <span class="hero__title--gradient">Frontend Developer</span><br>
-                        con visión de diseño
+                        <span class="hero__title--gradient" data-i18n="hero.title">Frontend Developer</span><br>
+                        <span data-i18n="hero.title-2">con visión de diseño</span>
                     </h1>
                     
-                    <p class="hero__subtitle animate-fadeInUp delay-2">
+                    <p class="hero__subtitle animate-fadeInUp delay-2" data-i18n="hero.subtitle">
                         Creo interfaces funcionales y experiencias digitales centradas en el usuario. Combino código limpio con un profundo entendimiento de UX para construir productos que realmente funcionan.
                     </p>
                 </div>
@@ -80,18 +90,18 @@
                 <!-- Información de experiencia -->
                 <div class="hero__experience animate-fadeInUp delay-3">
                     <div class="experience__item">
-                        <strong class="experience__value">4+ años</strong>
-                        <span class="experience__label">UX/Service Design</span>
+                        <strong class="experience__value" data-i18n="hero.exp-1-value">4+ años</strong>
+                        <span class="experience__label" data-i18n="hero.exp-1-label">UX/Service Design</span>
                     </div>
                     <div class="experience__divider"></div>
                     <div class="experience__item">
-                        <strong class="experience__value">1 año</strong>
-                        <span class="experience__label">Frontend Development</span>
+                        <strong class="experience__value" data-i18n="hero.exp-2-value">1 año</strong>
+                        <span class="experience__label" data-i18n="hero.exp-2-label">Frontend Development</span>
                     </div>
                     <div class="experience__divider"></div>
                     <div class="experience__item">
-                        <strong class="experience__value">Junior-Mid</strong>
-                        <span class="experience__label">Developer Level</span>
+                        <strong class="experience__value" data-i18n="hero.exp-3-value">Junior-Mid</strong>
+                        <span class="experience__label" data-i18n="hero.exp-3-label">Developer Level</span>
                     </div>
                 </div>
                 
@@ -99,11 +109,11 @@
                 <div class="hero__actions animate-fadeInUp delay-4">
                     <a href="#proyectos" class="btn btn--primary">
                         <i class="fas fa-rocket"></i>
-                        <span>Ver proyectos</span>
+                        <span data-i18n="hero.btn-projects">Ver proyectos</span>
                     </a>
                     <a href="./assets/Gabriela Ojeda Semidey - Es.pdf" download class="btn btn--secondary btn--download">
                         <i class="fas fa-download"></i>
-                        <span>Descargar CV</span>
+                        <span data-i18n="hero.btn-cv">Descargar CV</span>
                     </a>
                     <a href="https://github.com/GabrielaSemidey" target="_blank" class="btn btn--secondary">
                         <i class="fab fa-github"></i>
@@ -138,10 +148,10 @@
             <div class="section-header scroll-reveal">
                 <div class="badge badge--primary">
                     <i class="fas fa-heart"></i>
-                    <span>Sobre mí</span>
+                    <span data-i18n="about.badge">Sobre mí</span>
                 </div>
-                <h2 class="section-title">Una perspectiva única</h2>
-                <p class="section-description">
+                <h2 class="section-title" data-i18n="about.title">Una perspectiva única</h2>
+                <p class="section-description" data-i18n="about.description">
                     Mi transición desde el diseño estratégico hacia el desarrollo frontend me ha dado una ventaja única: entiendo tanto a los usuarios como la tecnología que da vida a sus experiencias.
                 </p>
             </div>
@@ -150,12 +160,12 @@
                 <div class="about__content scroll-reveal">
                     <h3>
                         <i class="fas fa-compass" style="color: var(--primary);"></i>
-                        Mi enfoque
+                        <span data-i18n="about.subtitle">Mi enfoque</span>
                     </h3>
-                    <p>
+                    <p data-i18n="about.text-1">
                         Antes de escribir una línea de código, me pregunto: ¿esto realmente resuelve el problema del usuario? Mi background en UX Research y Service Design me permite ver más allá de la interfaz y crear soluciones que tienen sentido tanto técnica como humanamente.
                     </p>
-                    <p>
+                    <p data-i18n="about.text-2">
                         Actualmente me enfoco en proyectos frontend donde puedo aplicar esta visión completa: desde entender qué necesita el usuario hasta implementarlo con código limpio, mantenible y escalable.
                     </p>
 
@@ -166,9 +176,9 @@
                                 <i class="fas fa-code"></i>
                             </div>
                             <div class="timeline__content">
-                                <h4>Frontend Developer</h4>
-                                <p><strong>2025 - Presente</strong><br>
-                                Enfoque en JavaScript, React y desarrollo de interfaces. Proyectos con integración de IA y APIs.</p>
+                                <h4 data-i18n="timeline.1.title">Frontend Developer</h4>
+                                <p><strong data-i18n="timeline.1.period">2025 - Presente</strong><br>
+                                <span data-i18n="timeline.1.text">Enfoque en JavaScript, React y desarrollo de interfaces. Proyectos con integración de IA y APIs.</span></p>
                             </div>
                         </div>
                         <div class="timeline__item">
@@ -176,9 +186,9 @@
                                 <i class="fas fa-palette"></i>
                             </div>
                             <div class="timeline__content">
-                                <h4>UX/UI Designer & Service Designer</h4>
-                                <p><strong>2020 - 2025</strong><br>
-                                Clínica Alemana, BID, Spotify. Research, prototipado y diseño de experiencias para productos digitales y servicios.</p>
+                                <h4 data-i18n="timeline.2.title">UX/UI Designer & Service Designer</h4>
+                                <p><strong data-i18n="timeline.2.period">2020 - 2025</strong><br>
+                                <span data-i18n="timeline.2.text">Clínica Alemana, BID, Spotify. Research, prototipado y diseño de experiencias para productos digitales y servicios.</span></p>
                             </div>
                         </div>
                         <div class="timeline__item">
@@ -186,9 +196,9 @@
                                 <i class="fas fa-lightbulb"></i>
                             </div>
                             <div class="timeline__content">
-                                <h4>Service Design</h4>
-                                <p><strong>2019 - 2020</strong><br>
-                                Proyectos de diseño estratégico y consultoría para instituciones públicas y privadas en Perú.</p>
+                                <h4 data-i18n="timeline.3.title">Service Design</h4>
+                                <p><strong data-i18n="timeline.3.period">2019 - 2020</strong><br>
+                                <span data-i18n="timeline.3.text">Proyectos de diseño estratégico y consultoría para instituciones públicas y privadas en Perú.</span></p>
                             </div>
                         </div>
                     </div>
@@ -200,8 +210,8 @@
                             <i class="fas fa-code"></i>
                         </div>
                         <div class="highlight-card__content">
-                            <h4>Clean Code</h4>
-                            <p>Código semántico, bien documentado y pensado para escalar. Cada función tiene un propósito claro.</p>
+                            <h4 data-i18n="highlight.1.title">Clean Code</h4>
+                            <p data-i18n="highlight.1.text">Código semántico, bien documentado y pensado para escalar. Cada función tiene un propósito claro.</p>
                         </div>
                     </div>
                     
@@ -210,8 +220,8 @@
                             <i class="fas fa-users"></i>
                         </div>
                         <div class="highlight-card__content">
-                            <h4>User-Centered</h4>
-                            <p>Cada decisión técnica está guiada por la experiencia del usuario. Accesibilidad y usabilidad no son opcionales.</p>
+                            <h4 data-i18n="highlight.2.title">User-Centered</h4>
+                            <p data-i18n="highlight.2.text">Cada decisión técnica está guiada por la experiencia del usuario. Accesibilidad y usabilidad no son opcionales.</p>
                         </div>
                     </div>
                     
@@ -220,8 +230,8 @@
                             <i class="fas fa-rocket"></i>
                         </div>
                         <div class="highlight-card__content">
-                            <h4>Continuous Learning</h4>
-                            <p>El desarrollo web evoluciona rápido. Me mantengo actualizada con nuevas tecnologías y mejores prácticas.</p>
+                            <h4 data-i18n="highlight.3.title">Continuous Learning</h4>
+                            <p data-i18n="highlight.3.text">El desarrollo web evoluciona rápido. Me mantengo actualizada con nuevas tecnologías y mejores prácticas.</p>
                         </div>
                     </div>
 
@@ -230,8 +240,8 @@
                             <i class="fas fa-comments"></i>
                         </div>
                         <div class="highlight-card__content">
-                            <h4>Team Player</h4>
-                            <p>Experiencia colaborando con equipos multidisciplinarios: developers, designers, product managers.</p>
+                            <h4 data-i18n="highlight.4.title">Team Player</h4>
+                            <p data-i18n="highlight.4.text">Experiencia colaborando con equipos multidisciplinarios: developers, designers, product managers.</p>
                         </div>
                     </div>
                 </div>
@@ -245,10 +255,10 @@
             <div class="section-header scroll-reveal">
                 <div class="badge badge--primary">
                     <i class="fas fa-rocket"></i>
-                    <span>Portafolio</span>
+                    <span data-i18n="projects.badge">Portafolio</span>
                 </div>
-                <h2 class="section-title">Proyectos destacados</h2>
-                <p class="section-description">
+                <h2 class="section-title" data-i18n="projects.title">Proyectos destacados</h2>
+                <p class="section-description" data-i18n="projects.description">
                     Una selección de proyectos que demuestran mis habilidades técnicas, de diseño y mi capacidad para resolver problemas reales.
                 </p>
             </div>
@@ -309,7 +319,7 @@
                                 <i class="fas fa-external-link-alt"></i> Demo
                             </a>
                             <a href="./proyectos/lumi.html" class="project-link">
-                                Ver caso completo <i class="fas fa-arrow-right"></i>
+                                <span data-i18n="projects.btn-case">Ver caso completo</span> <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>
@@ -362,7 +372,7 @@
                         
                         <div class="project-card__actions">
                             <a href="./proyectos/clinica-teleconsulta.html" class="project-link">
-                                Ver proyecto completo <i class="fas fa-arrow-right"></i>
+                                <span data-i18n="projects.btn-full">Ver proyecto completo</span> <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>
@@ -416,7 +426,7 @@
                         
                         <div class="project-card__actions">
                             <a href="./proyectos/bid-secretaria.html" class="project-link">
-                                Ver proyecto completo <i class="fas fa-arrow-right"></i>
+                                <span data-i18n="projects.btn-full">Ver proyecto completo</span> <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>
@@ -428,10 +438,10 @@
             <div class="projects__cta scroll-reveal">
                 <a href="todos-proyectos.html" class="btn btn--primary btn--lg">
                     <i class="fas fa-th"></i>
-                    <span>Ver todos los proyectos</span>
+                    <span data-i18n="projects.btn-all">Ver todos los proyectos</span>
                     <i class="fas fa-arrow-right"></i>
                 </a>
-                <p class="projects__cta-text">
+                <p class="projects__cta-text" data-i18n="projects.btn-all-text">
                     Explora mi portafolio completo
                 </p>
             </div>
@@ -444,10 +454,10 @@
             <div class="section-header scroll-reveal">
                 <div class="badge badge--primary">
                     <i class="fas fa-laptop-code"></i>
-                    <span>Stack Técnico</span>
+                    <span data-i18n="skills.badge">Stack Técnico</span>
                 </div>
-                <h2 class="section-title">Habilidades & Tecnologías</h2>
-                <p class="section-description">
+                <h2 class="section-title" data-i18n="skills.title">Habilidades & Tecnologías</h2>
+                <p class="section-description" data-i18n="skills.description">
                     Mi stack técnico y herramientas actuales. En continuo aprendizaje y actualización.
                 </p>
             </div>
@@ -457,7 +467,7 @@
                 <div class="skill-category card">
                     <div class="skill-category__header">
                         <i class="fas fa-code"></i>
-                        <h3>Frontend Development</h3>
+                        <h3 data-i18n="skills.frontend">Frontend Development</h3>
                     </div>
                     <div class="skill-category__pills">
                         <div class="skill-pill skill-pill--intermediate">
@@ -502,7 +512,7 @@
                 <div class="skill-category card">
                     <div class="skill-category__header">
                         <i class="fas fa-tools"></i>
-                        <h3>Tools & Workflow</h3>
+                        <h3 data-i18n="skills.tools">Tools & Workflow</h3>
                     </div>
                     <div class="skill-category__pills">
                         <div class="skill-pill skill-pill--intermediate">
@@ -547,7 +557,7 @@
                 <div class="skill-category card">
                     <div class="skill-category__header">
                         <i class="fas fa-palette"></i>
-                        <h3>Design & UX</h3>
+                        <h3 data-i18n="skills.design">Design & UX</h3>
                     </div>
                     <div class="skill-category__pills">
                     <div class="skill-pill skill-pill--advanced">
@@ -594,15 +604,15 @@
             <div class="skills__legend scroll-reveal">
                 <span class="legend__item">
                     <span class="legend__dot legend__dot--advanced"></span>
-                    <span>Advanced</span>
+                    <span data-i18n="skills.legend-advanced">Advanced</span>
                 </span>
                 <span class="legend__item">
                     <span class="legend__dot legend__dot--intermediate"></span>
-                    <span>Intermediate</span>
+                    <span data-i18n="skills.legend-intermediate">Intermediate</span>
                 </span>
                 <span class="legend__item">
                     <span class="legend__dot legend__dot--learning"></span>
-                    <span>Learning</span>
+                    <span data-i18n="skills.legend-learning">Learning</span>
                 </span>
             </div>
         </div>
@@ -614,10 +624,10 @@
             <div class="section-header scroll-reveal">
                 <div class="badge badge--secondary">
                     <i class="fas fa-envelope"></i>
-                    <span>Contacto</span>
+                    <span data-i18n="contact.badge">Contacto</span>
                 </div>
-                <h2 class="section-title">¿Trabajamos juntos?</h2>
-                <p class="section-description">
+                <h2 class="section-title" data-i18n="contact.title">¿Trabajamos juntos?</h2>
+                <p class="section-description" data-i18n="contact.description">
                     Disponible para posiciones en diseño, frontend (junior-mid level), proyectos freelance o colaboraciones.
                 </p>
             </div>
@@ -627,9 +637,9 @@
                 <div class="contact__info scroll-reveal">
                     <h3>
                         <i class="fas fa-sparkles"></i>
-                        <span>¿Por qué trabajar conmigo?</span>
+                        <span data-i18n="contact.why-title">¿Por qué trabajar conmigo?</span>
                     </h3>
-                    <p>
+                    <p data-i18n="contact.why-text">
                         No solo escribo código, entiendo a los usuarios. Mi background en UX me permite crear soluciones técnicas que realmente resuelven problemas.
                     </p>
                     
@@ -650,7 +660,7 @@
                             </div>
                             <div class="contact-method__text">
                                 <strong>LinkedIn</strong>
-                                <span>Conectemos profesionalmente</span>
+                                <span data-i18n="contact.linkedin-text">Conectemos profesionalmente</span>
                             </div>
                         </a>
                         
@@ -660,7 +670,7 @@
                             </div>
                             <div class="contact-method__text">
                                 <strong>GitHub</strong>
-                                <span>Revisa mi código</span>
+                                <span data-i18n="contact.github-text">Revisa mi código</span>
                             </div>
                         </a>
                     </div>
@@ -670,9 +680,9 @@
                 <div class="contact__cta scroll-reveal">
                     <h3>
                         <i class="fas fa-briefcase"></i> 
-                        Buscando oportunidades
+                        <span data-i18n="contact.cta-title">Buscando oportunidades</span>
                     </h3>
-                    <p>
+                    <p data-i18n="contact.cta-text">
                         Actualmente busco posiciones frontend (junior-mid), diseño freelance o full-time. Abierta a remoto o presencial en Madrid.
                     </p>
 
@@ -687,12 +697,12 @@
                         class="btn btn--secondary btn--block" 
                         style="margin-top: 12px;">
                             <i class="fas fa-envelope"></i>
-                        <span>Enviar mensaje</span>
+                        <span data-i18n="contact.btn-email">Enviar mensaje</span>
                     </a>
 
                     <a href="./assets/Gabriela Ojeda Semidey - Es.pdf" download class="btn btn--secondary btn--block btn--download" style="margin-top: 12px;">
                         <i class="fas fa-download"></i>
-                        <span>Descargar CV</span>
+                        <span data-i18n="contact.btn-cv">Descargar CV</span>
                     </a>
                 </div>
             </div>
@@ -704,11 +714,13 @@
         <div class="container">
             <p>
                 <i class="fas fa-heart"></i> 
-                © 2025 Gabriela Ojeda Semidey. Hecho con código y mucho café ☕
+                © 2025 Gabriela Ojeda Semidey. <span data-i18n="footer.text">Hecho con código y mucho café ☕</span>
             </p>
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="translations.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

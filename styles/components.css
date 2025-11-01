@@ -604,3 +604,315 @@ nav {
     bottom: 1rem;
   }
 }
+
+/* ================================
+   MICRO-INTERACCIONES
+   ================================ */
+
+/* ================================
+   SKILL PILLS - Hover con tooltip de nivel
+   ================================ */
+.skill-pill {
+  position: relative;
+  overflow: visible;
+}
+
+.skill-pill::before {
+  content: attr(data-level);
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-5px);
+  background: var(--slate-900);
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-md);
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-fast);
+  pointer-events: none;
+  z-index: 1000;
+  box-shadow: var(--shadow-lg);
+}
+
+.skill-pill::after {
+  content: '';
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid var(--slate-900);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-fast);
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.skill-pill:hover::before,
+.skill-pill:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Colores del tooltip según nivel */
+.skill-pill--advanced:hover::before {
+  background: var(--success);
+}
+
+.skill-pill--advanced:hover::after {
+  border-top-color: var(--success);
+}
+
+.skill-pill--intermediate:hover::before {
+  background: var(--warning);
+  color: var(--slate-900);
+}
+
+.skill-pill--intermediate:hover::after {
+  border-top-color: var(--warning);
+}
+
+.skill-pill--learning:hover::before {
+  background: var(--info);
+}
+
+.skill-pill--learning:hover::after {
+  border-top-color: var(--info);
+}
+
+/* ================================
+   FOTO DE PERFIL - Animación hover
+   ================================ */
+.hero__photo-wrapper {
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__photo-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  padding: 6px;
+  background: linear-gradient(
+    45deg,
+    var(--primary),
+    var(--secondary),
+    var(--primary)
+  );
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  animation: rotate 3s linear infinite;
+  animation-play-state: paused;
+}
+
+.hero__photo-wrapper:hover::before {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero__photo-wrapper:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 
+    0 20px 40px rgba(91, 44, 111, 0.3),
+    0 0 0 8px rgba(91, 44, 111, 0.1);
+}
+
+.hero__photo-wrapper img {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__photo-wrapper:hover img {
+  transform: scale(1.02);
+}
+
+/* ================================
+   PROJECT CARDS - Swipe horizontal mobile
+   ================================ */
+@media (max-width: 768px) {
+  .projects__grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem 0;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+  
+  .projects__grid::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+  
+  .projects__grid .project-card {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+  }
+  
+  /* Indicador visual de scroll */
+  .projects__grid::after {
+    content: '';
+    flex: 0 0 1rem;
+  }
+}
+
+/* Indicador de swipe */
+.swipe-indicator {
+  display: none;
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--slate-400);
+  font-size: 0.875rem;
+  animation: swipeHint 2s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .swipe-indicator {
+    display: block;
+  }
+}
+
+@keyframes swipeHint {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+/* ================================
+   IMAGEN ZOOM - Indicador visual
+   ================================ */
+.visual-resource,
+.gallery-item {
+  position: relative;
+}
+
+.visual-resource::after,
+.gallery-item::after {
+  content: '🔍';
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+  pointer-events: none;
+}
+
+.visual-resource:hover::after,
+.gallery-item:hover::after {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .visual-resource::after,
+  .gallery-item::after {
+    opacity: 0.7;
+  }
+}
+
+//* ================================
+   LANGUAGE TOGGLE
+   ================================ */
+.language-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 24px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.language-toggle:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.language-toggle__btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.language-toggle__flag {
+    font-size: 18px;
+    line-height: 1;
+    transition: transform 0.3s ease;
+}
+
+.language-toggle__btn:hover .language-toggle__flag {
+    transform: scale(1.15);
+}
+
+.language-toggle__text {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+/* Animación al cambiar */
+.language-toggle__btn.changing {
+    animation: languageChange 0.3s ease;
+}
+
+@keyframes languageChange {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(0.95); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .language-toggle {
+        margin-left: 0;
+        margin-right: 16px;
+    }
+    
+    .language-toggle__text {
+        display: none;
+    }
+}
