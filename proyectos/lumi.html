@@ -7,12 +7,14 @@
     <title>Lumi - Plataforma de Aprendizaje Gamificado | Gabriela Ojeda Semidey</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/components.css">
     <link rel="stylesheet" href="../styles/sections.css">
     <link rel="stylesheet" href="../styles/project-detail.css">
+    <link rel="stylesheet" href="../styles/lumi.css">
 
     <link rel="icon" type="image/png" href="../assets/images/favicon.png">
 </head>
@@ -39,13 +41,12 @@
         <div class="reading-progress" role="progressbar" aria-label="Progreso de lectura" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
             <div class="reading-progress__bar"></div>
         </div>
-
     </header>
 
     <!-- Hero Visual -->
     <section class="project-hero" data-category="lumi" id="hero">
-    <div class="project-hero__banner" style="background-image: url('../assets/images/proyectos/lumi/banner.png');"></div>
-    <div class="container">
+        <div class="project-hero__banner" style="background-image: url('../assets/images/proyectos/lumi/banner.png');"></div>
+        <div class="container">
             <a href="../todos-proyectos.html" class="back-link back-link--light">
                 <i class="fas fa-arrow-left"></i>
                 <span>Volver a proyectos</span>
@@ -65,11 +66,11 @@
                 </div>
                 
                 <h1 class="project-hero__title">
-                    Lumi - Plataforma de Aprendizaje Gamificado
+                    Lumi - Aprender nunca fue tan emocionante
                 </h1>
                 
                 <p class="project-hero__description">
-                    Transformando el aprendizaje en una experiencia personalizada, emocionante y llena de propósito a través de IA, gamificación y diseño centrado en el usuario.
+                    Plataforma de aprendizaje personalizado que transforma la educación en una experiencia emocionante y llena de propósito, donde cada estudiante descubre su propio camino.
                 </p>
                 
                 <a href="#contenido" class="btn btn--hero">
@@ -82,7 +83,7 @@
                 </a>
                 <a href="https://gabrielasemidey.github.io/Lumi--proyecto-educativo/" target="_blank" class="btn btn--hero">
                     <i class="fas fa-external-link-alt"></i>
-                    <span>Demo</span>
+                    <span>Demo en Vivo</span>
                 </a>
             </div>
         </div>
@@ -160,7 +161,7 @@
                         </div>
                     </div>
 
-                    <!-- Desafío -->
+                    <!--  Desafío -->
                     <div class="content-block">
                         <div class="block-header">
                             <div class="block-header__icon block-header__icon--primary">
@@ -193,9 +194,8 @@
                             </p>
                             <ul class="content-list">
                                 <li>Liderar las sesiones de Design Thinking (identificación de problemas, ideación, prototipado)</li>
-                                <li>Conceptualizar el sistema de recompensas con tokens educativos</li>
                                 <li>Coordinar la integración de herramientas de IA en el proceso (ChatGPT, Gemini, Claude, Storm, Manus, Lovable, Zapier)</li>
-                                <li>Desarrollar la identidad visual y propuesta de valor</li>
+                                <li>Desarrollar la identidad visual y propuesta de valor basada en los 5 estilos de aprendizaje</li>
                                 <li>Actualmente: Desarrollo frontend del home, login y dashboard de estudiantes</li>
                             </ul>
                         </div>
@@ -240,9 +240,9 @@
                                         <h4>2. Definir e Idear</h4>
                                         <p>Definimos el problema central y generamos múltiples conceptos de solución:</p>
                                         <ul class="content-list">
-                                            <li>Sistema de personalización basado en perfiles DISC + situacionales</li>
-                                            <li>Gamificación con propósito: tokens canjeables por valor real</li>
-                                            <li>Visualización del progreso como "constelación personal"</li>
+                                            <li>Sistema de personalización basado en 5 estilos de aprendizaje</li>
+                                            <li>Gamificación con propósito: LumiCoins canjeables por valor real</li>
+                                            <li>Visualización del progreso personal y celebración de logros</li>
                                             <li>Integración de IA para adaptación en tiempo real</li>
                                         </ul>
                                         <p><strong>Herramientas usadas:</strong> Gemini (generación de ideas), Claude (refinamiento conceptual), Storm (investigación de mercado)</p>
@@ -258,9 +258,9 @@
                                         <p>Creamos la propuesta completa de Lumi, incluyendo:</p>
                                         <ul class="content-list">
                                             <li>Identidad de marca (logo, paleta de colores, tono de voz)</li>
+                                            <li>Los 5 estilos de aprendizaje: Visionauta, Audioexplorador, Manos a la Obra, LogiMaster, Colab Hero</li>
+                                            <li>Sistema de recompensas LumiCoins con valor tangible</li>
                                             <li>Arquitectura de información y flujos de usuario</li>
-                                            <li>Sistema de recompensas con smart contracts</li>
-                                            <li>Perfiles de usuario detallados (6 arquetipos)</li>
                                             <li>Propuesta de valor y modelo de negocio</li>
                                         </ul>
                                         <p><strong>Herramientas usadas:</strong> Manus (documentación), Lovable (prototipado), Excalidraw (diagramas)</p>
@@ -275,9 +275,9 @@
                                         <h4>4. Desarrollar e Implementar</h4>
                                         <p>Actualmente estoy llevando Lumi a código, desarrollando:</p>
                                         <ul class="content-list">
-                                            <li>Homepage con identidad visual completa</li>
-                                            <li>Sistema de login y onboarding</li>
-                                            <li>Dashboard de estudiantes (versión light)</li>
+                                            <li>Homepage con identidad visual completa y los 5 estilos</li>
+                                            <li>Sistema de login y onboarding personalizado</li>
+                                            <li>Dashboard de estudiantes con progreso y LumiCoins</li>
                                             <li>Integración con Zapier para automatizaciones</li>
                                         </ul>
                                         <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript, React (planned)</p>
@@ -287,46 +287,268 @@
                         </div>
                     </div>
 
-                    <!-- Propuesta de Valor -->
                     <div class="content-block">
-                        <div class="block-header">
-                            <div class="block-header__icon block-header__icon--secondary">
-                                <i class="fas fa-gem"></i>
-                            </div>
-                            <h2>Propuesta de Valor</h2>
-                        </div>
-                        <div class="block-content">
-                            <h4>Lumi transforma el aprendizaje en una experiencia emocionante, personalizada y con propósito.</h4>
-                            
-                            <div class="lumi-features">
-                                <div class="lumi-feature">
-                                    <div class="lumi-feature__icon">🎯</div>
-                                    <h5>Aprendizaje Personalizado</h5>
-                                    <p>La "Brújula de Aprendizaje" identifica el perfil de personalidad (DISC) y el contexto vital de cada usuario, generando rutas educativas verdaderamente adaptadas.</p>
-                                </div>
+    <div class="block-header">
+        <div class="block-header__icon block-header__icon--secondary">
+            <i class="fas fa-gem"></i>
+        </div>
+        <h2>Propuesta de Valor</h2>
+    </div>
+    <div class="block-content">
+        <h4>Lumi transforma el aprendizaje en una experiencia emocionante, personal y accesible.</h4>
+        
+        <div class="value-grid">
+            
+            <!-- 1. Rutas Adaptadas -->
+            <div class="value-card">
+                <div class="value-card__icon">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="35" stroke="#EC407A" stroke-width="4" fill="none"/>
+                        <circle cx="50" cy="50" r="8" fill="#26C6DA"/>
+                        <circle cx="50" cy="25" r="6" fill="#EC407A"/>
+                        <circle cx="73" cy="50" r="6" fill="#EC407A"/>
+                        <line x1="50" y1="31" x2="50" y2="42" stroke="#26C6DA" stroke-width="3"/>
+                        <line x1="67" y1="50" x2="58" y2="50" stroke="#26C6DA" stroke-width="3"/>
+                    </svg>
+                </div>
+                <h3 class="value-card__title">Rutas Adaptadas a Ti</h3>
+                <p class="value-card__description">
+                    No más contenido genérico. Lumi identifica cómo aprendes mejor y crea rutas personalizadas según tu estilo cognitivo, intereses y ritmo. Tu camino es único.
+                </p>
+            </div>
 
-                                <div class="lumi-feature">
-                                    <div class="lumi-feature__icon">🕹️</div>
-                                    <h5>Gamificación con Propósito</h5>
-                                    <p>Sistema de tokens educativos que permite acceder a mentorías, recursos exclusivos y becas. El progreso se convierte en una experiencia tangible.</p>
-                                </div>
+            <!-- 2. Recompensas Reales -->
+            <div class="value-card">
+                <div class="value-card__icon">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 10 L60 35 L87 35 L66 52 L75 78 L50 62 L25 78 L34 52 L13 35 L40 35 Z" 
+                              fill="#26C6DA" stroke="#EC407A" stroke-width="3"/>
+                        <circle cx="50" cy="50" r="12" fill="#EC407A"/>
+                        <text x="50" y="56" font-size="14" fill="white" text-anchor="middle" font-weight="bold">LC</text>
+                    </svg>
+                </div>
+                <h3 class="value-card__title">Recompensas Reales</h3>
+                <p class="value-card__description">
+                    Los LumiCoins no son medallas virtuales: se canjean por mentorías con expertos, recursos premium, certificados verificados y becas. Tu esfuerzo tiene valor tangible.
+                </p>
+            </div>
 
-                                <div class="lumi-feature">
-                                    <div class="lumi-feature__icon">🤖</div>
-                                    <h5>IA al Servicio del Aprendiz</h5>
-                                    <p>Desde personalización hasta analítica predictiva para anticipar abandonos, cada innovación potencia la experiencia humana.</p>
-                                </div>
+            <!-- 3. Para Todos los Estilos -->
+            <div class="value-card">
+                <div class="value-card__icon">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="40" stroke="#26C6DA" stroke-width="4" fill="none"/>
+                        <path d="M30 50 Q50 30 70 50" stroke="#EC407A" stroke-width="3" fill="none"/>
+                        <path d="M30 50 Q50 70 70 50" stroke="#EC407A" stroke-width="3" fill="none"/>
+                        <circle cx="30" cy="50" r="5" fill="#26C6DA"/>
+                        <circle cx="50" cy="30" r="5" fill="#26C6DA"/>
+                        <circle cx="70" cy="50" r="5" fill="#26C6DA"/>
+                        <circle cx="50" cy="70" r="5" fill="#26C6DA"/>
+                    </svg>
+                </div>
+                <h3 class="value-card__title">Para Todos los Estilos</h3>
+                <p class="value-card__description">
+                    Desde estudiantes de 12 años hasta jóvenes adultos de 25+. Materias escolares, habilidades para la vida (adulting) y refuerzo académico en una sola plataforma.
+                </p>
+            </div>
 
-                                <div class="lumi-feature">
-                                    <div class="lumi-feature__icon">🌍</div>
-                                    <h5>Accesibilidad Total</h5>
-                                    <p>Diseñada para múltiples dispositivos y perfiles, desde nativos digitales hasta personas con baja afinidad tecnológica.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <!-- 4. IA al Servicio del Aprendiz -->
+            <div class="value-card">
+                <div class="value-card__icon">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="30" y="25" width="40" height="50" rx="5" stroke="#26C6DA" stroke-width="4" fill="none"/>
+                        <circle cx="40" cy="40" r="4" fill="#EC407A"/>
+                        <circle cx="60" cy="40" r="4" fill="#EC407A"/>
+                        <path d="M40 55 Q50 60 60 55" stroke="#EC407A" stroke-width="3" fill="none"/>
+                        <circle cx="50" cy="15" r="8" stroke="#26C6DA" stroke-width="3" fill="none"/>
+                        <line x1="50" y1="23" x2="50" y2="25" stroke="#26C6DA" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3 class="value-card__title">IA al Servicio del Aprendiz</h3>
+                <p class="value-card__description">
+                    Desde personalización hasta analítica predictiva para anticipar abandonos, cada innovación potencia la experiencia humana sin perder la calidez del acompañamiento.
+                </p>
+            </div>
 
-                    <!-- Diferenciadores -->
+        </div>
+    </div>
+</div>
+                    <div class="content-block">
+    <div class="block-header">
+        <div class="block-header__icon block-header__icon--secondary">
+            <i class="fas fa-users"></i>
+        </div>
+        <h2>Los 5 Estilos de Aprendizaje</h2>
+    </div>
+    <div class="block-content">
+        <p>
+            Lumi reconoce que no todos aprendemos igual. Por eso creamos 5 perfiles únicos que adaptan la experiencia educativa a tu forma natural de procesar información:
+        </p>
+        
+        <div class="learning-styles-grid">
+            
+            <!-- 1. Visionauta -->
+            <div class="learning-card" data-style="visionauta">
+                <div class="learning-card__icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h3 class="learning-card__title">Visionauta</h3>
+                <span class="learning-card__badge">Visual</span>
+                <p class="learning-card__description">Aprende mejor viendo la información</p>
+                <ul class="learning-card__features">
+                    <li>Infografías interactivas</li>
+                    <li>Mapas mentales</li>
+                    <li>Videos animados</li>
+                    <li>Códigos de colores</li>
+                </ul>
+            </div>
+
+            <!-- 2. Audioexplorador -->
+            <div class="learning-card" data-style="audioexplorador">
+                <div class="learning-card__icon">
+                    <i class="fas fa-headphones"></i>
+                </div>
+                <h3 class="learning-card__title">Audioexplorador</h3>
+                <span class="learning-card__badge">Auditivo</span>
+                <p class="learning-card__description">Aprende mejor escuchando</p>
+                <ul class="learning-card__features">
+                    <li>Podcasts educativos</li>
+                    <li>Explicaciones narradas</li>
+                    <li>Debates y discusiones</li>
+                    <li>Audiolibros</li>
+                </ul>
+            </div>
+
+            <!-- 3. Manos a la Obra -->
+            <div class="learning-card" data-style="manos-obra">
+                <div class="learning-card__icon">
+                    <i class="fas fa-hand-paper"></i>
+                </div>
+                <h3 class="learning-card__title">Manos a la Obra</h3>
+                <span class="learning-card__badge">Kinestésico</span>
+                <p class="learning-card__description">Aprende mejor haciendo</p>
+                <ul class="learning-card__features">
+                    <li>Experimentos prácticos</li>
+                    <li>Proyectos reales</li>
+                    <li>Simulaciones</li>
+                    <li>Talleres interactivos</li>
+                </ul>
+            </div>
+
+            <!-- 4. LogiMaster -->
+            <div class="learning-card" data-style="logimaster">
+                <div class="learning-card__icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3 class="learning-card__title">LogiMaster</h3>
+                <span class="learning-card__badge">Lógico</span>
+                <p class="learning-card__description">Aprende mejor razonando</p>
+                <ul class="learning-card__features">
+                    <li>Problemas lógicos</li>
+                    <li>Análisis estructurado</li>
+                    <li>Pensamiento crítico</li>
+                    <li>Causa y efecto</li>
+                </ul>
+            </div>
+
+            <!-- 5. Colab Hero -->
+            <div class="learning-card" data-style="colab-hero">
+                <div class="learning-card__icon">
+                    <i class="fas fa-users-cog"></i>
+                </div>
+                <h3 class="learning-card__title">Colab Hero</h3>
+                <span class="learning-card__badge">Colaborativo</span>
+                <p class="learning-card__description">Aprende mejor en equipo</p>
+                <ul class="learning-card__features">
+                    <li>Trabajo en equipo</li>
+                    <li>Discusiones grupales</li>
+                    <li>Proyectos sociales</li>
+                    <li>Construcción colectiva</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+                    <div class="content-block">
+    <div class="block-header">
+        <div class="block-header__icon block-header__icon--secondary">
+            <i class="fas fa-coins"></i>
+        </div>
+        <h2>Sistema de LumiCoins</h2>
+    </div>
+    <div class="block-content">
+        <h4>Cada logro en Lumi te acerca a recompensas reales.</h4>
+        
+        <p>
+            Los LumiCoins son la moneda educativa de la plataforma, pero a diferencia de otros sistemas de gamificación, <strong>tienen valor tangible</strong>. No son puntos vacíos ni medallas decorativas: son un reconocimiento real de tu esfuerzo y progreso.
+        </p>
+
+        <!-- Timeline horizontal -->
+        <div class="lumicoins-timeline">
+            
+            <!-- Paso 1: Gana -->
+            <div class="timeline-step">
+                <div class="timeline-step__number">1</div>
+                <h5 class="timeline-step__title">Gana</h5>
+                <p class="timeline-step__description">
+                    Completa módulos, alcanza metas, mantén tu racha de aprendizaje y participa activamente.
+                </p>
+            </div>
+
+            <!-- Paso 2: Acumula -->
+            <div class="timeline-step">
+                <div class="timeline-step__number">2</div>
+                <h5 class="timeline-step__title">Acumula</h5>
+                <p class="timeline-step__description">
+                    Cada objetivo cumplido suma LumiCoins a tu balance. Visualiza tu progreso y celebra cada logro.
+                </p>
+            </div>
+
+            <!-- Paso 3: Canjea -->
+            <div class="timeline-step">
+                <div class="timeline-step__number">3</div>
+                <h5 class="timeline-step__title">Canjea</h5>
+                <p class="timeline-step__description">
+                    Usa tus monedas para acceder a recompensas reales con valor tangible.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Acordeón de recompensas -->
+        <div class="lumicoins-rewards">
+            <div class="rewards-accordion" id="rewardsAccordion">
+                <div class="rewards-accordion__header" onclick="toggleRewards()">
+                    <h5 class="rewards-accordion__title">
+                        <i class="fas fa-gift"></i>
+                        ¿Qué puedes canjear con tus LumiCoins?
+                    </h5>
+                    <span class="rewards-accordion__icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                </div>
+                <div class="rewards-accordion__content">
+                    <ul class="rewards-list">
+                        <li><strong>Mentorías con expertos</strong> en tu área de interés</li>
+                        <li><strong>Recursos educativos premium</strong> (libros, cursos, herramientas)</li>
+                        <li><strong>Certificados verificados</strong> que validan tu aprendizaje</li>
+                        <li><strong>Descuentos en programas especializados</strong></li>
+                        <li><strong>Becas parciales</strong> para formación externa</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <p class="highlight-text" style="margin-top: 32px; background: linear-gradient(135deg, rgba(38, 198, 218, 0.1) 0%, rgba(236, 64, 122, 0.1) 100%); border-left: 4px solid #26C6DA; padding: 20px 24px; border-radius: 8px; display: flex; align-items: center; gap: 16px;">
+            <i class="fas fa-star" style="font-size: 24px; color: #26C6DA;"></i>
+            <strong style="color: #1A2744;">Tu esfuerzo importa. Y Lumi lo recompensa con oportunidades reales de crecimiento.</strong>
+        </p>
+    </div>
+</div>
+
+                    <!-- Diferenciadores Clave -->
                     <div class="content-block">
                         <div class="block-header">
                             <div class="block-header__icon block-header__icon--secondary">
@@ -338,15 +560,11 @@
                             <ul class="checklist">
                                 <li>
                                     <i class="fas fa-check-circle"></i>
-                                    <span><strong>Brújula de Aprendizaje:</strong> Sistema único de doble personalización (DISC + situacional) con 24 combinaciones posibles</span>
+                                    <span><strong>5 Estilos de Aprendizaje:</strong> Sistema único de personalización que adapta contenido según cómo procesas información (visual, auditivo, kinestésico, lógico, colaborativo)</span>
                                 </li>
                                 <li>
                                     <i class="fas fa-check-circle"></i>
-                                    <span><strong>Constelación Personal:</strong> Visualización del progreso como una constelación única que evoluciona con cada logro</span>
-                                </li>
-                                <li>
-                                    <i class="fas fa-check-circle"></i>
-                                    <span><strong>Tokens con valor real:</strong> Sistema blockchain que permite canjear logros por mentorías, recursos premium y becas</span>
+                                    <span><strong>LumiCoins con valor real:</strong> Sistema de recompensas que se canjea por mentorías, recursos premium, certificados y becas</span>
                                 </li>
                                 <li>
                                     <i class="fas fa-check-circle"></i>
@@ -354,13 +572,21 @@
                                 </li>
                                 <li>
                                     <i class="fas fa-check-circle"></i>
+                                    <span><strong>Adulting + Academia:</strong> Combina materias tradicionales con habilidades para la vida real (impuestos, finanzas personales, vida profesional)</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
                                     <span><strong>Tecnología + Humanidad:</strong> Combina IA avanzada con acompañamiento humano cercano y empático</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span><strong>Accesibilidad total:</strong> Diseñada para múltiples dispositivos y perfiles, desde nativos digitales hasta personas con baja afinidad tecnológica</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <!-- Resultados -->
+                    <!--  Resultados -->
                     <div class="content-block">
                         <div class="block-header">
                             <div class="block-header__icon block-header__icon--secondary">
@@ -372,18 +598,18 @@
                             
                             <div class="metrics-grid">
                                 <div class="metric-card">
-                                    <div class="metric-card__value">24</div>
-                                    <div class="metric-card__label">Combinaciones de personalización</div>
+                                    <div class="metric-card__value">5</div>
+                                    <div class="metric-card__label">Estilos de aprendizaje personalizados</div>
                                 </div>
 
                                 <div class="metric-card">
-                                    <div class="metric-card__value">6</div>
-                                    <div class="metric-card__label">Arquetipos de usuario desarrollados</div>
+                                    <div class="metric-card__value">∞</div>
+                                    <div class="metric-card__label">Rutas adaptativas personalizadas</div>
                                 </div>
 
                                 <div class="metric-card">
-                                    <div class="metric-card__value">10+</div>
-                                    <div class="metric-card__label">Herramientas de IA integradas</div>
+                                    <div class="metric-card__value">1</div>
+                                    <div class="metric-card__label">Sistema de recompensas real (LumiCoins)</div>
                                 </div>
                             </div>
 
@@ -395,15 +621,19 @@
                                 </li>
                                 <li>
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Sistema de personalización "Brújula de Aprendizaje" con framework DISC + situacional</span>
+                                    <span>Sistema de personalización basado en 5 estilos de aprendizaje</span>
                                 </li>
                                 <li>
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Identidad visual completa (logo, paleta de colores, tipografía, ilustraciones)</span>
+                                    <span>Identidad visual completa (logo, paleta de colores, tipografía, iconografía)</span>
                                 </li>
                                 <li>
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Arquitectura de funcionalidades y sistema de recompensas con tokens</span>
+                                    <span>Sistema de recompensas LumiCoins con catálogo de canjes</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Arquitectura de funcionalidades y flujos de usuario</span>
                                 </li>
                                 <li>
                                     <i class="fas fa-check-circle"></i>
@@ -411,58 +641,74 @@
                                 </li>
                                 <li>
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Validación conceptual con profesores y estudiantes</span>
+                                    <span>Validación conceptual con profesores, estudiantes y jóvenes adultos</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <!-- Herramientas IA -->
                     <div class="content-block">
-                        <div class="block-header">
-                            <div class="block-header__icon block-header__icon--primary">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <h2>Herramientas de IA Utilizadas</h2>
-                        </div>
-                        <div class="block-content">
-                            <p>
-                                Uno de los aspectos más innovadores de este proyecto fue la integración estratégica de múltiples herramientas de inteligencia artificial en cada fase del proceso:
-                            </p>
-                            
-                            <div class="ai-tools-grid">
-                                <div class="metric-card">
-                                    <strong>ChatGPT & Gemini</strong>
-                                    <p>Análisis de insights, generación de ideas, refinamiento de conceptos</p>
-                                </div>
-                                <div class="metric-card">
-                                    <strong>Claude</strong>
-                                    <p>Desarrollo de contenido estratégico y documentación técnica</p>
-                                </div>
-                                <div class="metric-card">
-                                    <strong>Storm</strong>
-                                    <p>Investigación de mercado y análisis de tendencias educativas</p>
-                                </div>
-                                <div class="metric-card">
-                                    <strong>Manus</strong>
-                                    <p>Documentación colaborativa y gestión del conocimiento</p>
-                                </div>
-                                <div class="metric-card">
-                                    <strong>Lovable</strong>
-                                    <p>Prototipado rápido y visualización de interfaces</p>
-                                </div>
-                                <div class="metric-card">
-                                    <strong>Zapier</strong>
-                                    <p>Automatizaciones y flujos de trabajo inteligentes</p>
-                                </div>
-                                <div class="metric-card">
-                                    <strong>Excalidraw</strong>
-                                    <p>Diagramas colaborativos y mapeo de sistemas</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="block-header">
+        <div class="block-header__icon block-header__icon--primary">
+            <i class="fas fa-robot"></i>
+        </div>
+        <h2>Herramientas de IA Utilizadas</h2>
+    </div>
+    <div class="block-content">
+        <p>
+            Uno de los aspectos más innovadores de este proyecto fue la integración estratégica de múltiples herramientas de inteligencia artificial en cada fase del proceso:
+        </p>
+        
+        <div class="ai-tools-grid">
+            
+            <!-- Fila 1 -->
+            <div class="ai-tool-card">
+                <div class="ai-tool-card__icon">💬</div>
+                <h5 class="ai-tool-card__title">ChatGPT & Gemini</h5>
+                <p class="ai-tool-card__description">Análisis de insights, generación de ideas y refinamiento de conceptos</p>
+            </div>
 
+            <div class="ai-tool-card">
+                <div class="ai-tool-card__icon">🤖</div>
+                <h5 class="ai-tool-card__title">Claude</h5>
+                <p class="ai-tool-card__description">Desarrollo de contenido estratégico y documentación técnica</p>
+            </div>
+
+            <div class="ai-tool-card">
+                <div class="ai-tool-card__icon">⚡</div>
+                <h5 class="ai-tool-card__title">Storm</h5>
+                <p class="ai-tool-card__description">Investigación de mercado y análisis de tendencias educativas</p>
+            </div>
+
+            <!-- Fila 2 -->
+            <div class="ai-tool-card">
+                <div class="ai-tool-card__icon">📝</div>
+                <h5 class="ai-tool-card__title">Manus</h5>
+                <p class="ai-tool-card__description">Documentación colaborativa y gestión del conocimiento</p>
+            </div>
+
+            <div class="ai-tool-card">
+                <div class="ai-tool-card__icon">💖</div>
+                <h5 class="ai-tool-card__title">Lovable</h5>
+                <p class="ai-tool-card__description">Prototipado rápido y visualización de interfaces</p>
+            </div>
+
+            <div class="ai-tool-card">
+                <div class="ai-tool-card__icon">⚙️</div>
+                <h5 class="ai-tool-card__title">Zapier</h5>
+                <p class="ai-tool-card__description">Automatizaciones y flujos de trabajo inteligentes</p>
+            </div>
+
+            <!-- Fila 3 - Excalidraw ocupa toda la fila -->
+            <div class="ai-tool-card ai-tool-card--full">
+                <div class="ai-tool-card__icon">✏️</div>
+                <h5 class="ai-tool-card__title">Excalidraw</h5>
+                <p class="ai-tool-card__description">Diagramas colaborativos y mapeo de sistemas</p>
+            </div>
+
+        </div>
+    </div>
+</div>
                     <!-- Reflexiones -->
                     <div class="content-block">
                         <div class="block-header">
@@ -481,6 +727,9 @@
                             </p>
                             <p>
                                 Lumi comenzó como un ejercicio académico, pero se transformó en una reflexión sobre cómo diseñamos experiencias educativas en el siglo XXI. Aprendí que la verdadera innovación no está en usar la tecnología más avanzada, sino en ponerla al servicio de las necesidades reales de las personas.
+                            </p>
+                            <p>
+                                Crear los 5 estilos de aprendizaje y el sistema de LumiCoins me enseñó que la gamificación tiene sentido solo cuando genera valor tangible. No se trata de agregar puntos y medallas, sino de reconocer el esfuerzo real con oportunidades reales.
                             </p>
                             <p>
                                 Liderar este proyecto también fortaleció mi capacidad para coordinar equipos multidisciplinarios, integrar herramientas disruptivas en procesos de diseño tradicionales, y mantener el foco en el valor humano sin perder de vista la viabilidad técnica.
@@ -555,6 +804,7 @@
                             <span class="tag">Gamificación</span>
                             <span class="tag">Frontend Development</span>
                             <span class="tag">Facilitación</span>
+                            <span class="tag">Identidad de Marca</span>
                         </div>
                     </div>
 
@@ -631,5 +881,6 @@
     </div>
 
     <script src="../main.js"></script>
+    <script src="../translations.js"></script>
 </body>
-</html
+</html>

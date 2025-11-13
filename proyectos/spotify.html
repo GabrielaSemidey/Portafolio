@@ -25,11 +25,26 @@
                 <span>&lt;&gt;Gabriela OS</span>
             </a>
             <ul class="nav-links">
-                <li><a href="../index.html#inicio" class="nav-link">Inicio</a></li>
-                <li><a href="../index.html#sobre-mi" class="nav-link">Sobre mí</a></li>
-                <li><a href="../todos-proyectos.html" class="nav-link active">Proyectos</a></li>
-                <li><a href="../index.html#frontend" class="nav-link">Frontend</a></li>
-                <li><a href="../index.html#contacto" class="nav-link nav-cta">Contacto</a></li>
+                <li><a href="../index.html#inicio" class="nav-link" data-i18n="nav.inicio">Inicio</a></li>
+                <li><a href="../index.html#sobre-mi" class="nav-link" data-i18n="nav.sobre-mi">Sobre mí</a></li>
+                <li><a href="../todos-proyectos.html" class="nav-link active" data-i18n="nav.proyectos">Proyectos</a></li>
+                <li><a href="../index.html#frontend" class="nav-link" data-i18n="nav.frontend">Frontend</a></li>
+                <li><a href="../journey.html" class="nav-link" data-i18n="nav.journey">Journey</a></li>
+                <li><a href="../index.html#contacto" class="nav-link nav-cta" data-i18n="nav.contacto">Contacto</a></li>
+                
+                <!-- 🔥 LANGUAGE TOGGLE -->
+                <li>
+                    <div class="language-toggle">
+                        <button class="language-toggle__btn" 
+                                type="button" 
+                                aria-label="Cambiar idioma"
+                                title="Switch language"
+                                data-lang="es">
+                            <span class="language-toggle__flag">🇪🇸</span>
+                            <span class="language-toggle__text">ES</span>
+                        </button>
+                    </div>
+                </li>
             </ul>
             <button class="mobile-menu-btn" aria-label="Menú">
                 <i class="fas fa-bars"></i>
@@ -48,7 +63,7 @@
     <div class="container">
             <a href="../todos-proyectos.html" class="back-link back-link--light">
                 <i class="fas fa-arrow-left"></i>
-                <span>Volver a proyectos</span>
+                <span data-i18n="project.back-projects">Volver a proyectos</span>
             </a>
             
             <div class="project-hero__content-wrapper">
@@ -60,21 +75,21 @@
                         <i class="fas fa-calendar"></i> 2020
                     </span>
                     <span class="badge badge--info">
-                        <i class="fas fa-shield-alt"></i> Bajo NDA
+                        <i class="fas fa-shield-alt"></i> <span data-i18n="project.spotify.badge-nda">Bajo NDA</span>
                     </span>
                 </div>
                 
-                <h1 class="project-hero__title">
+                <h1 class="project-hero__title" data-i18n="project.spotify.hero-title">
                     Spotify / Ayer Viernes – Experiencia Premium
                 </h1>
                 
-                <p class="project-hero__description">
+                <p class="project-hero__description" data-i18n="project.spotify.hero-subtitle">
                     Investigación cualitativa sobre patrones de suscripción a Spotify Premium en Perú. Estudio comparativo bilingüe que refutó la hipótesis inicial del cliente, revelando insights sobre comportamiento de usuarios en mercados emergentes.
                 </p>
                 
                 <a href="#contenido" class="btn btn--hero">
                     <i class="fas fa-book-open"></i>
-                    <span>Ver caso completo</span>
+                    <span data-i18n="project-detail.view-case">Ver caso completo</span>
                 </a>
             </div>
         </div>
@@ -87,15 +102,15 @@
                 <div class="info-item">
                     <i class="fas fa-calendar-alt"></i>
                     <div>
-                        <span class="info-item__label">Año</span>
+                        <span class="info-item__label" data-i18n="project-detail.year">Año</span>
                         <span class="info-item__value">2020</span>
                     </div>
                 </div>
                 <div class="info-item">
                     <i class="fas fa-clock"></i>
                     <div>
-                        <span class="info-item__label">Duración</span>
-                        <span class="info-item__value">2-3 meses</span>
+                        <span class="info-item__label" data-i18n="project-detail.duration">Duración</span>
+                        <span class="info-item__value">2-3 <span data-i18n="time.months">meses</span></span>
                     </div>
                 </div>
                 <div class="info-item">
@@ -108,15 +123,15 @@
                 <div class="info-item">
                     <i class="fas fa-briefcase"></i>
                     <div>
-                        <span class="info-item__label">Rol</span>
+                        <span class="info-item__label" data-i18n="project-detail.role">Rol</span>
                         <span class="info-item__value">UX Researcher</span>
                     </div>
                 </div>
                 <div class="info-item">
                     <i class="fas fa-users"></i>
                     <div>
-                        <span class="info-item__label">Usuarios</span>
-                        <span class="info-item__value">10 entrevistas</span>
+                        <span class="info-item__label" data-i18n="metrics.users">Usuarios</span>
+                        <span class="info-item__value">10 <span data-i18n="metrics.interviews">entrevistas</span></span>
                     </div>
                 </div>
             </div>
@@ -137,16 +152,16 @@
                             <div class="block-header__icon block-header__icon--primary">
                                 <i class="fas fa-info-circle"></i>
                             </div>
-                            <h2>Contexto</h2>
+                            <h2 data-i18n="project.bid.context-title">Contexto</h2>
                         </div>
                         <div class="block-content">
-                            <p>
+                            <p data-i18n="project.spotify.context-text-1">
                                 Este proyecto surgió de un partnership entre Spotify, una consultora alemana, y <strong>Ayer Viernes</strong> (Chile), quienes nos invitaron a participar como equipo de investigación para el mercado peruano. Spotify había detectado un patrón inusual: en países como Perú, muchos usuarios se suscribían directamente a Premium sin usar primero el plan gratuito, contrario a lo que ocurría en otros mercados.
                             </p>
-                            <p>
+                            <p data-i18n="project.spotify.context-text-2">
                                 El equipo global asumía que esto se debía a una percepción de mayor valor en el plan pago, pero no había data cualitativa que lo respaldara. Era necesario investigar si esta hipótesis se sostenía en el contexto local y, de no ser así, entender qué estaba realmente sucediendo.
                             </p>
-                            <p>
+                            <p data-i18n="project.spotify.context-nda">
                                 <strong>Nota:</strong> Este proyecto estuvo bajo NDA (Non-Disclosure Agreement), por lo que la información compartida aquí se limita a aspectos metodológicos, aprendizajes generales y mi rol en el proceso, sin revelar datos sensibles o propietarios del cliente.
                             </p>
                         </div>
@@ -158,10 +173,10 @@
                             <div class="block-header__icon block-header__icon--primary">
                                 <i class="fas fa-bullseye"></i>
                             </div>
-                            <h2>El Desafío</h2>
+                            <h2 data-i18n="project-detail.challenge">El Desafío</h2>
                         </div>
                         <div class="block-content block-content--quote">
-                            <p>
+                            <p data-i18n="project.spotify.challenge-text">
                                 <i class="fas fa-quote-left"></i>
                                 ¿Por qué los usuarios en Perú se suscriben directamente a Spotify Premium sin hacer uso del espacio freemium que ofrece la plataforma? ¿Realmente valoran más el plan pago, o hay otros factores en juego?
                             </p>
@@ -174,33 +189,33 @@
                             <div class="block-header__icon block-header__icon--primary">
                                 <i class="fas fa-user-tie"></i>
                             </div>
-                            <h2>Mi Rol en el Proyecto</h2>
+                            <h2 data-i18n="project-detail.my-role">Mi Rol en el Proyecto</h2>
                         </div>
                         <div class="block-content">
-                            <p>
+                            <p data-i18n="project.spotify.role-text">
                                 Participé como <strong>UX Researcher</strong> en un equipo core de 3 personas, siendo la segunda en el equipo de investigación.
                             </p>
                             <p>
-                                <strong>Composición del equipo:</strong>
+                                <strong data-i18n="project-detail.team-composition">Composición del equipo:</strong>
                             </p>
                             <ul class="content-list">
-                                <li>Lead Researcher (líder del proyecto)</li>
-                                <li>Yo (UX Researcher)</li>
-                                <li>1 Researcher adicional</li>
-                                <li>Jorge Barahona (Director de Ayer Viernes - acompañamiento en reuniones)</li>
+                                <li data-i18n="project.spotify.team-1">Lead Researcher (líder del proyecto)</li>
+                                <li data-i18n="project.spotify.team-2">Yo (UX Researcher)</li>
+                                <li data-i18n="project.spotify.team-3">1 Researcher adicional</li>
+                                <li data-i18n="project.spotify.team-4">Jorge Barahona (Director de Ayer Viernes - acompañamiento en reuniones)</li>
                             </ul>
                             <p>
-                                <strong>Mis responsabilidades incluyeron:</strong>
+                                <strong data-i18n="project-detail.responsibilities">Mis responsabilidades incluyeron:</strong>
                             </p>
                             <ul class="content-list">
-                                <li>Participar en el diseño del enfoque de investigación y definición de hipótesis</li>
-                                <li>Co-crear el screener para reclutamiento de participantes</li>
-                                <li>Realizar entrevistas semiestructuradas en español con usuarios peruanos</li>
-                                <li>Mapear insights en herramientas colaborativas (Miro)</li>
-                                <li>Sintetizar hallazgos y patrones de comportamiento</li>
-                                <li>Traducir y adaptar informes del español al inglés para el equipo global</li>
-                                <li>Crear Customer Journey Maps y frameworks de Jobs To Be Done</li>
-                                <li>Identificar barreras, percepciones erróneas y puntos de fricción</li>
+                                <li data-i18n="project.spotify.resp-1">Participar en el diseño del enfoque de investigación y definición de hipótesis</li>
+                                <li data-i18n="project.spotify.resp-2">Co-crear el screener para reclutamiento de participantes</li>
+                                <li data-i18n="project.spotify.resp-3">Realizar entrevistas semiestructuradas en español con usuarios peruanos</li>
+                                <li data-i18n="project.spotify.resp-4">Mapear insights en herramientas colaborativas (Miro)</li>
+                                <li data-i18n="project.spotify.resp-5">Sintetizar hallazgos y patrones de comportamiento</li>
+                                <li data-i18n="project.spotify.resp-6">Traducir y adaptar informes del español al inglés para el equipo global</li>
+                                <li data-i18n="project.spotify.resp-7">Crear Customer Journey Maps y frameworks de Jobs To Be Done</li>
+                                <li data-i18n="project.spotify.resp-8">Identificar barreras, percepciones erróneas y puntos de fricción</li>
                             </ul>
                         </div>
                     </div>
@@ -211,10 +226,10 @@
                             <div class="block-header__icon block-header__icon--primary">
                                 <i class="fas fa-project-diagram"></i>
                             </div>
-                            <h2>Enfoque y Proceso</h2>
+                            <h2 data-i18n="project-detail.process">Enfoque y Proceso</h2>
                         </div>
                         <div class="block-content">
-                            <p>
+                            <p data-i18n="project.spotify.process-intro">
                                 Diseñamos un proceso de investigación cualitativa riguroso, bilingüe y culturalmente sensible, que nos permitiera validar o refutar la hipótesis inicial del cliente.
                             </p>
 
@@ -224,13 +239,13 @@
                                         <i class="fas fa-lightbulb"></i>
                                     </div>
                                     <div class="timeline__content">
-                                        <h4>1. Kick-off y Definición de Hipótesis</h4>
-                                        <p>Alineación con el equipo global y formulación del problema:</p>
+                                        <h4 data-i18n="project.spotify.process-1-title">1. Kick-off y Definición de Hipótesis</h4>
+                                        <p data-i18n="project.spotify.process-1-text">Alineación con el equipo global y formulación del problema:</p>
                                         <ul class="content-list">
-                                            <li><strong>Hipótesis inicial:</strong> "En Perú, los usuarios se suscriben directamente a Spotify Premium porque perciben más valor en el plan pago que en el gratuito"</li>
-                                            <li>Definición de objetivos de investigación</li>
-                                            <li>Criterios de reclutamiento para dos perfiles: usuarios Premium y no usuarios</li>
-                                            <li>Métodos de validación cualitativa</li>
+                                            <li data-i18n="project.spotify.process-1-item-1"><strong>Hipótesis inicial:</strong> "En Perú, los usuarios se suscriben directamente a Spotify Premium porque perciben más valor en el plan pago que en el gratuito"</li>
+                                            <li data-i18n="project.spotify.process-1-item-2">Definición de objetivos de investigación</li>
+                                            <li data-i18n="project.spotify.process-1-item-3">Criterios de reclutamiento para dos perfiles: usuarios Premium y no usuarios</li>
+                                            <li data-i18n="project.spotify.process-1-item-4">Métodos de validación cualitativa</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -240,14 +255,14 @@
                                         <i class="fas fa-users"></i>
                                     </div>
                                     <div class="timeline__content">
-                                        <h4>2. Reclutamiento Bilingüe</h4>
-                                        <p>Selección cuidadosa de participantes:</p>
+                                        <h4 data-i18n="project.spotify.process-2-title">2. Reclutamiento Bilingüe</h4>
+                                        <p data-i18n="project.spotify.process-2-text">Selección cuidadosa de participantes:</p>
                                         <ul class="content-list">
-                                            <li><strong>Screener:</strong> Aplicado a ~100 personas</li>
-                                            <li><strong>10 participantes finales:</strong> 5 usuarios Premium + 5 no usuarios</li>
-                                            <li>Usuarios Premium: reclutados desde la base de Spotify en Perú</li>
-                                            <li>No usuarios: captados mediante screener en redes sociales</li>
-                                            <li>Entrevistas en español, informes en inglés para el equipo global</li>
+                                            <li data-i18n="project.spotify.process-2-item-1"><strong>Screener:</strong> Aplicado a ~100 personas</li>
+                                            <li data-i18n="project.spotify.process-2-item-2"><strong>10 participantes finales:</strong> 5 usuarios Premium + 5 no usuarios</li>
+                                            <li data-i18n="project.spotify.process-2-item-3">Usuarios Premium: reclutados desde la base de Spotify en Perú</li>
+                                            <li data-i18n="project.spotify.process-2-item-4">No usuarios: captados mediante screener en redes sociales</li>
+                                            <li data-i18n="project.spotify.process-2-item-5">Entrevistas en español, informes en inglés para el equipo global</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -257,15 +272,15 @@
                                         <i class="fas fa-search"></i>
                                     </div>
                                     <div class="timeline__content">
-                                        <h4>3. Investigación Exploratoria</h4>
-                                        <p>Inmersión profunda en comportamientos y motivaciones:</p>
+                                        <h4 data-i18n="project.spotify.process-3-title">3. Investigación Exploratoria</h4>
+                                        <p data-i18n="project.spotify.process-3-text">Inmersión profunda en comportamientos y motivaciones:</p>
                                         <ul class="content-list">
-                                            <li>Entrevistas semiestructuradas (1-1.5 horas cada una)</li>
-                                            <li>Mapeo de insights en Miro</li>
-                                            <li>Comparación entre usuarios de Spotify y no usuarios</li>
-                                            <li>Identificación de barreras culturales, económicas y tecnológicas</li>
-                                            <li>Exploración de percepciones sobre planes freemium vs premium</li>
-                                            <li>Análisis de patrones de uso de plataformas competidoras</li>
+                                            <li data-i18n="project.spotify.process-3-item-1">Entrevistas semiestructuradas (1-1.5 horas cada una)</li>
+                                            <li data-i18n="project.spotify.process-3-item-2">Mapeo de insights en Miro</li>
+                                            <li data-i18n="project.spotify.process-3-item-3">Comparación entre usuarios de Spotify y no usuarios</li>
+                                            <li data-i18n="project.spotify.process-3-item-4">Identificación de barreras culturales, económicas y tecnológicas</li>
+                                            <li data-i18n="project.spotify.process-3-item-5">Exploración de percepciones sobre planes freemium vs premium</li>
+                                            <li data-i18n="project.spotify.process-3-item-6">Análisis de patrones de uso de plataformas competidoras</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -275,15 +290,15 @@
                                         <i class="fas fa-chart-bar"></i>
                                     </div>
                                     <div class="timeline__content">
-                                        <h4>4. Síntesis y Análisis</h4>
-                                        <p>Transformación de data cualitativa en insights estratégicos:</p>
+                                        <h4 data-i18n="project.spotify.process-4-title">4. Síntesis y Análisis</h4>
+                                        <p data-i18n="project.spotify.process-4-text">Transformación de data cualitativa en insights estratégicos:</p>
                                         <ul class="content-list">
-                                            <li>Customer Journey Maps</li>
-                                            <li>Jobs To Be Done frameworks</li>
-                                            <li>Clustering de insights y patrones de comportamiento</li>
-                                            <li>Evaluación de fricciones en el onboarding y experiencia de uso</li>
-                                            <li>Análisis de lenguaje, expectativas y accesibilidad</li>
-                                            <li>Traducción y adaptación cultural de hallazgos para el equipo global</li>
+                                            <li data-i18n="project.spotify.process-4-item-1">Customer Journey Maps</li>
+                                            <li data-i18n="project.spotify.process-4-item-2">Jobs To Be Done frameworks</li>
+                                            <li data-i18n="project.spotify.process-4-item-3">Clustering de insights y patrones de comportamiento</li>
+                                            <li data-i18n="project.spotify.process-4-item-4">Evaluación de fricciones en el onboarding y experiencia de uso</li>
+                                            <li data-i18n="project.spotify.process-4-item-5">Análisis de lenguaje, expectativas y accesibilidad</li>
+                                            <li data-i18n="project.spotify.process-4-item-6">Traducción y adaptación cultural de hallazgos para el equipo global</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -293,13 +308,13 @@
                                         <i class="fas fa-file-alt"></i>
                                     </div>
                                     <div class="timeline__content">
-                                        <h4>5. Entrega de Resultados</h4>
-                                        <p>Comunicación clara de hallazgos y recomendaciones:</p>
+                                        <h4 data-i18n="project.spotify.process-5-title">5. Entrega de Resultados</h4>
+                                        <p data-i18n="project.spotify.process-5-text">Comunicación clara de hallazgos y recomendaciones:</p>
                                         <ul class="content-list">
-                                            <li>Informe completo en inglés para Spotify y consultora alemana</li>
-                                            <li>Presentación de hallazgos con evidencia cualitativa</li>
-                                            <li>Refutación de la hipótesis inicial con argumentos sólidos</li>
-                                            <li>Recomendaciones estratégicas para mejorar conversión en mercado peruano</li>
+                                            <li data-i18n="project.spotify.process-5-item-1">Informe completo en inglés para Spotify y consultora alemana</li>
+                                            <li data-i18n="project.spotify.process-5-item-2">Presentación de hallazgos con evidencia cualitativa</li>
+                                            <li data-i18n="project.spotify.process-5-item-3">Refutación de la hipótesis inicial con argumentos sólidos</li>
+                                            <li data-i18n="project.spotify.process-5-item-4">Recomendaciones estratégicas para mejorar conversión en mercado peruano</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -313,30 +328,30 @@
                             <div class="block-header__icon block-header__icon--secondary">
                                 <i class="fas fa-lightbulb"></i>
                             </div>
-                            <h2>Hallazgos Generales (sin violar NDA)</h2>
+                            <h2 data-i18n="project.spotify.findings-title">Hallazgos Generales (sin violar NDA)</h2>
                         </div>
                         <div class="block-content">
-                            <p>
+                            <p data-i18n="project.spotify.findings-intro">
                                 La investigación reveló hallazgos importantes que cambiaron la comprensión del cliente sobre el mercado peruano:
                             </p>
 
-                            <h4>🔍 La hipótesis fue refutada</h4>
-                            <p>
+                            <h4 data-i18n="project.spotify.finding-1-title">🔍 La hipótesis fue refutada</h4>
+                            <p data-i18n="project.spotify.finding-1-text">
                                 Los usuarios NO valoraban más el plan Premium per se. La realidad era más compleja: muchos ya habían tenido contacto previo con Spotify (a través de cuentas familiares, correos antiguos, o períodos de prueba anteriores), lo que los llevaba a suscribirse directamente sin explorar el freemium nuevamente.
                             </p>
 
-                            <h4>📱 Contexto cultural y tecnológico</h4>
-                            <p>
+                            <h4 data-i18n="project.spotify.finding-2-title">📱 Contexto cultural y tecnológico</h4>
+                            <p data-i18n="project.spotify.finding-2-text">
                                 Identificamos barreras específicas del mercado peruano relacionadas con confianza digital, métodos de pago, terminología traducida y patrones de uso de tecnología que diferían significativamente de mercados desarrollados.
                             </p>
 
-                            <h4>🎵 Competencia y alternativas</h4>
-                            <p>
+                            <h4 data-i18n="project.spotify.finding-3-title">🎵 Competencia y alternativas</h4>
+                            <p data-i18n="project.spotify.finding-3-text">
                                 Los usuarios peruanos utilizaban múltiples plataformas simultáneamente (YouTube, servicios preinstalados en móviles, etc.), cada una para diferentes necesidades, lo que complejizaba el journey de adopción.
                             </p>
 
-                            <h4>💡 Oportunidades identificadas</h4>
-                            <p>
+                            <h4 data-i18n="project.spotify.finding-4-title">💡 Oportunidades identificadas</h4>
+                            <p data-i18n="project.spotify.finding-4-text">
                                 Propusimos mejoras específicas en comunicación, onboarding, localización de contenido y estrategias de conversión adaptadas a las realidades del mercado local.
                             </p>
                         </div>
@@ -348,57 +363,57 @@
                             <div class="block-header__icon block-header__icon--secondary">
                                 <i class="fas fa-chart-line"></i>
                             </div>
-                            <h2>Resultados</h2>
+                            <h2 data-i18n="project-detail.results">Resultados</h2>
                         </div>
                         <div class="block-content">
                             
                             <div class="metrics-grid">
                                 <div class="metric-card">
                                     <div class="metric-card__value">~100</div>
-                                    <div class="metric-card__label">Personas screened</div>
+                                    <div class="metric-card__label" data-i18n="project.spotify.result-1-value">Personas screened</div>
                                 </div>
 
                                 <div class="metric-card">
                                     <div class="metric-card__value">10</div>
-                                    <div class="metric-card__label">Entrevistas en profundidad</div>
+                                    <div class="metric-card__label" data-i18n="project.spotify.result-2-value">Entrevistas en profundidad</div>
                                 </div>
 
                                 <div class="metric-card">
                                     <div class="metric-card__value">2</div>
-                                    <div class="metric-card__label">Países comparados</div>
+                                    <div class="metric-card__label" data-i18n="project.spotify.result-3-value">Países comparados</div>
                                 </div>
 
                                 <div class="metric-card">
                                     <div class="metric-card__value">2</div>
-                                    <div class="metric-card__label">Idiomas (ES/EN)</div>
+                                    <div class="metric-card__label" data-i18n="project.spotify.result-4-value">Idiomas (ES/EN)</div>
                                 </div>
                             </div>
 
-                            <h4>Impactos del proyecto:</h4>
+                            <h4 data-i18n="project-detail.specific-impacts">Impactos del proyecto:</h4>
                             <ul class="checklist">
                                 <li>
                                     <i class="fas fa-check-circle"></i>
-                                    <span><strong>Hipótesis refutada con evidencia cualitativa sólida</strong></span>
+                                    <span data-i18n="project.spotify.impact-1"><strong>Hipótesis refutada con evidencia cualitativa sólida</strong></span>
                                 </li>
                                 <li>
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Comprensión profunda de barreras culturales y tecnológicas en mercado peruano</span>
+                                    <span data-i18n="project.spotify.impact-2">Comprensión profunda de barreras culturales y tecnológicas en mercado peruano</span>
                                 </li>
                                 <li>
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Identificación de patrones de comportamiento únicos del mercado local</span>
+                                    <span data-i18n="project.spotify.impact-3">Identificación de patrones de comportamiento únicos del mercado local</span>
                                 </li>
                                 <li>
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Recomendaciones estratégicas para mejorar onboarding y conversión</span>
+                                    <span data-i18n="project.spotify.impact-4">Recomendaciones estratégicas para mejorar onboarding y conversión</span>
                                 </li>
                                 <li>
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Insights sobre competencia y uso de plataformas alternativas</span>
+                                    <span data-i18n="project.spotify.impact-5">Insights sobre competencia y uso de plataformas alternativas</span>
                                 </li>
                                 <li>
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Informe bilingüe entregado al equipo global de Spotify</span>
+                                    <span data-i18n="project.spotify.impact-6">Informe bilingüe entregado al equipo global de Spotify</span>
                                 </li>
                             </ul>
                         </div>
@@ -410,21 +425,21 @@
                             <div class="block-header__icon block-header__icon--secondary">
                                 <i class="fas fa-graduation-cap"></i>
                             </div>
-                            <h2>Aprendizajes Clave</h2>
+                            <h2 data-i18n="project-detail.learnings">Aprendizajes Clave</h2>
                         </div>
                         <div class="block-content">
-                            <h4>La importancia de cuestionar las hipótesis</h4>
-                            <p>
+                            <h4 data-i18n="project.spotify.learning-1-title">La importancia de cuestionar las hipótesis</h4>
+                            <p data-i18n="project.spotify.learning-1-text">
                                 Este proyecto me enseñó que las hipótesis iniciales del cliente, aunque lógicas, no siempre reflejan la realidad. La investigación cualitativa rigurosa es fundamental para revelar las verdaderas motivaciones y comportamientos de los usuarios, especialmente en mercados con contextos culturales y económicos diferentes.
                             </p>
 
-                            <h4>Investigación bilingüe y sensibilidad cultural</h4>
-                            <p>
+                            <h4 data-i18n="project.spotify.learning-2-title">Investigación bilingüe y sensibilidad cultural</h4>
+                            <p data-i18n="project.spotify.learning-2-text">
                                 Trabajar en español con usuarios peruanos y luego traducir hallazgos al inglés para un equipo global requiere no solo dominio del idioma, sino comprensión profunda de matices culturales que no siempre son evidentes en una traducción literal.
                             </p>
 
-                            <h4>Escuchar sin asumir</h4>
-                            <p>
+                            <h4 data-i18n="project.spotify.learning-3-title">Escuchar sin asumir</h4>
+                            <p data-i18n="project.spotify.learning-3-text">
                                 Los datos cuantitativos mostraban un patrón (suscripción directa a Premium), pero solo la investigación cualitativa reveló el "por qué" real: experiencias previas con la plataforma, no percepción de mayor valor. Este proyecto reforzó mi convicción sobre el poder de las entrevistas en profundidad.
                             </p>
                         </div>
@@ -436,20 +451,20 @@
                             <div class="block-header__icon block-header__icon--secondary">
                                 <i class="fas fa-heart"></i>
                             </div>
-                            <h2>Reflexiones</h2>
+                            <h2 data-i18n="project-detail.reflections">Reflexiones</h2>
                         </div>
                         <div class="block-content block-content--quote">
-                            <p>
+                            <p data-i18n="project.spotify.reflection-quote">
                                 <i class="fas fa-quote-left"></i>
                                 La data sin contexto puede reforzar ideas equivocadas.
                             </p>
-                            <p>
+                            <p data-i18n="project.spotify.reflection-1">
                                 Este estudio confirmó que escuchar a los usuarios cambia el rumbo de decisiones de negocio. En este caso, permitió evitar invertir recursos en estrategias mal enfocadas y alinearse mejor con las realidades del mercado local.
                             </p>
-                            <p>
+                            <p data-i18n="project.spotify.reflection-2">
                                 Trabajar con un cliente global como Spotify, bajo NDA, y con la responsabilidad de traducir no solo idiomas sino contextos culturales, fue un reto formativo que fortaleció mis habilidades como researcher. Aprendí que la buena investigación no se trata solo de recolectar datos, sino de interpretarlos con empatía y rigor, comunicarlos con claridad y, sobre todo, tener la valentía de refutar hipótesis cuando la evidencia lo demanda.
                             </p>
-                            <p>
+                            <p data-i18n="project.spotify.reflection-3">
                                 Este proyecto también me mostró la importancia de trabajar en equipos multiculturales y multilingües, donde cada miembro aporta perspectivas únicas que enriquecen el análisis final.
                             </p>
                         </div>
@@ -461,20 +476,20 @@
                 <aside class="sidebar-sticky">
                     
                     <div class="sidebar-card">
-                        <h3><i class="fas fa-info-circle"></i> Info del Proyecto</h3>
+                        <h3><i class="fas fa-info-circle"></i> <span data-i18n="sidebar.project-info">Info del Proyecto</span></h3>
                         <div class="sidebar-card__list">
                             <div class="sidebar-card__item">
                                 <span class="sidebar-card__icon"><i class="fas fa-calendar"></i></span>
                                 <div>
-                                    <span class="sidebar-card__label">Año</span>
+                                    <span class="sidebar-card__label" data-i18n="project-detail.year">Año</span>
                                     <span class="sidebar-card__value">2020</span>
                                 </div>
                             </div>
                             <div class="sidebar-card__item">
                                 <span class="sidebar-card__icon"><i class="fas fa-clock"></i></span>
                                 <div>
-                                    <span class="sidebar-card__label">Duración</span>
-                                    <span class="sidebar-card__value">2-3 meses</span>
+                                    <span class="sidebar-card__label" data-i18n="project-detail.duration">Duración</span>
+                                    <span class="sidebar-card__value">2-3 <span data-i18n="time.months">meses</span></span>
                                 </div>
                             </div>
                             <div class="sidebar-card__item">
@@ -487,21 +502,21 @@
                             <div class="sidebar-card__item">
                                 <span class="sidebar-card__icon"><i class="fas fa-user"></i></span>
                                 <div>
-                                    <span class="sidebar-card__label">Rol</span>
+                                    <span class="sidebar-card__label" data-i18n="project-detail.role">Rol</span>
                                     <span class="sidebar-card__value">UX Researcher</span>
                                 </div>
                             </div>
                             <div class="sidebar-card__item">
                                 <span class="sidebar-card__icon"><i class="fas fa-handshake"></i></span>
                                 <div>
-                                    <span class="sidebar-card__label">Partnership</span>
+                                    <span class="sidebar-card__label" data-i18n="sidebar.partnership">Partnership</span>
                                     <span class="sidebar-card__value">Ayer Viernes (Chile)</span>
                                 </div>
                             </div>
                             <div class="sidebar-card__item">
                                 <span class="sidebar-card__icon"><i class="fas fa-music"></i></span>
                                 <div>
-                                    <span class="sidebar-card__label">Cliente</span>
+                                    <span class="sidebar-card__label" data-i18n="sidebar.client">Cliente</span>
                                     <span class="sidebar-card__value">Spotify</span>
                                 </div>
                             </div>
@@ -509,40 +524,40 @@
                     </div>
 
                     <div class="sidebar-card">
-                        <h3><i class="fas fa-chart-bar"></i> Alcance del Proyecto</h3>
+                        <h3><i class="fas fa-chart-bar"></i> <span data-i18n="sidebar.project-scope">Alcance del Proyecto</span></h3>
                         <div class="sidebar-card__list">
                             <div class="sidebar-card__item">
                                 <span class="sidebar-card__icon"><i class="fas fa-clipboard-check"></i></span>
                                 <div>
-                                    <span class="sidebar-card__label">Screener</span>
+                                    <span class="sidebar-card__label" data-i18n="sidebar.screener">Screener</span>
                                     <span class="sidebar-card__value">~100 personas</span>
                                 </div>
                             </div>
                             <div class="sidebar-card__item">
                                 <span class="sidebar-card__icon"><i class="fas fa-comments"></i></span>
                                 <div>
-                                    <span class="sidebar-card__label">Entrevistas</span>
+                                    <span class="sidebar-card__label" data-i18n="sidebar.interviews">Entrevistas</span>
                                     <span class="sidebar-card__value">10 (5+5)</span>
                                 </div>
                             </div>
                             <div class="sidebar-card__item">
                                 <span class="sidebar-card__icon"><i class="fas fa-user-friends"></i></span>
                                 <div>
-                                    <span class="sidebar-card__label">Usuarios Premium</span>
+                                    <span class="sidebar-card__label" data-i18n="sidebar.premium-users">Usuarios Premium</span>
                                     <span class="sidebar-card__value">5</span>
                                 </div>
                             </div>
                             <div class="sidebar-card__item">
                                 <span class="sidebar-card__icon"><i class="fas fa-user-slash"></i></span>
                                 <div>
-                                    <span class="sidebar-card__label">No usuarios</span>
+                                    <span class="sidebar-card__label" data-i18n="sidebar.non-users">No usuarios</span>
                                     <span class="sidebar-card__value">5</span>
                                 </div>
                             </div>
                             <div class="sidebar-card__item">
                                 <span class="sidebar-card__icon"><i class="fas fa-language"></i></span>
                                 <div>
-                                    <span class="sidebar-card__label">Idiomas</span>
+                                    <span class="sidebar-card__label" data-i18n="sidebar.languages">Idiomas</span>
                                     <span class="sidebar-card__value">Español / Inglés</span>
                                 </div>
                             </div>
@@ -550,7 +565,7 @@
                     </div>
 
                     <div class="sidebar-card">
-                        <h3><i class="fas fa-tools"></i> Habilidades Aplicadas</h3>
+                        <h3><i class="fas fa-tools"></i> <span data-i18n="sidebar.skills-applied">Habilidades Aplicadas</span></h3>
                         <div class="sidebar-card__tags">
                             <span class="tag">UX Research</span>
                             <span class="tag">Entrevistas Cualitativas</span>
@@ -566,11 +581,11 @@
                     </div>
 
                     <div class="sidebar-card sidebar-card--cta">
-                        <h3><i class="fas fa-rocket"></i> ¿Te interesó este proyecto?</h3>
-                        <p>Si quieres conocer más sobre mi trabajo en investigación cualitativa y análisis de usuarios, hablemos.</p>
+                        <h3><i class="fas fa-rocket"></i> <span data-i18n="sidebar.interested-title">¿Te interesó este proyecto?</span></h3>
+                        <p data-i18n="sidebar.interested-text-spotify">Si quieres conocer más sobre mi trabajo en investigación cualitativa y análisis de usuarios, hablemos.</p>
                         <a href="../index.html#contacto" class="btn btn--hero btn--block">
                             <i class="fas fa-paper-plane"></i>
-                            <span>Contactar</span>
+                            <span data-i18n="contact.btn-email">Contactar</span>
                         </a>
                     </div>
 
@@ -587,19 +602,19 @@
                 <a href="clinica-agenda-web.html" class="project-nav__item project-nav__item--prev">
                     <i class="fas fa-arrow-left"></i>
                     <div>
-                        <span class="project-nav__label">Anterior</span>
+                        <span class="project-nav__label" data-i18n="nav.previous">Anterior</span>
                         <span class="project-nav__title">Clínica Alemana - Agenda Web</span>
                     </div>
                 </a>
                 
                 <a href="../todos-proyectos.html" class="btn btn--primary">
                     <i class="fas fa-th"></i>
-                    <span>Ver todos</span>
+                    <span data-i18n="nav.view-all">Ver todos</span>
                 </a>
                 
-                <a href="upc.html" class="project-nav__item project-nav__item--next">
+                <a href="bid-secretaria.html" class="project-nav__item project-nav__item--next">
                     <div>
-                        <span class="project-nav__label">Siguiente</span>
+                        <span class="project-nav__label" data-i18n="nav.next">Siguiente</span>
                         <span class="project-nav__title">BID - Servicios de Secretaría</span>
                     </div>
                     <i class="fas fa-arrow-right"></i>
@@ -612,7 +627,7 @@
         <div class="container">
             <a href="#hero" class="btn btn--primary btn--lg back-to-top-btn">
                 <i class="fas fa-arrow-up"></i>
-                <span>Volver al inicio</span>
+                <span data-i18n="nav.back-to-top">Volver al inicio</span>
             </a>
         </div>
     </section>
@@ -622,7 +637,7 @@
         <div class="container">
             <p>
                 <i class="fas fa-heart"></i> 
-                © 2025 Gabriela Ojeda Semidey. Hecho con código y mucho café ☕
+                © 2025 Gabriela Ojeda Semidey. <span data-i18n="footer.text">Hecho con código y mucho café ☕</span>
             </p>
         </div>
     </footer>
@@ -637,6 +652,8 @@
         </div>
     </div>
 
+    <!-- Scripts -->
+    <script src="../translations.js"></script>
     <script src="../main.js"></script>
 </body>
 </html>

@@ -1296,3 +1296,115 @@ function loadFromStorage(key) {
 }
 
 console.log('🎁 mis-recompensas.js cargado completamente');
+
+/* ==========================================
+   🎯 LUMI CUSTOM JAVASCRIPT
+   Funcionalidad del acordeón de LumiCoins
+   ========================================== */
+
+// Función para toggle del acordeón de recompensas
+function toggleRewards() {
+    const accordion = document.getElementById('rewardsAccordion');
+    
+    if (accordion) {
+        accordion.classList.toggle('active');
+        
+        // Agregar animación smooth al contenido
+        const content = accordion.querySelector('.rewards-accordion__content');
+        
+        if (accordion.classList.contains('active')) {
+            // Expandir
+            content.style.maxHeight = content.scrollHeight + 'px';
+            
+            // Opcional: scroll suave hacia el contenido
+            setTimeout(() => {
+                content.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'nearest' 
+                });
+            }, 300);
+        } else {
+            // Contraer
+            content.style.maxHeight = '0';
+        }
+    }
+}
+
+// Event listener adicional por si quieres usar data-attributes en lugar de onclick
+document.addEventListener('DOMContentLoaded', function() {
+    const accordionHeader = document.querySelector('.rewards-accordion__header');
+    
+    if (accordionHeader && !accordionHeader.hasAttribute('onclick')) {
+        accordionHeader.addEventListener('click', toggleRewards);
+    }
+    
+    // Añadir accesibilidad con teclado
+    if (accordionHeader) {
+        accordionHeader.setAttribute('tabindex', '0');
+        accordionHeader.setAttribute('role', 'button');
+        accordionHeader.setAttribute('aria-expanded', 'false');
+        
+        accordionHeader.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleRewards();
+                
+                // Actualizar aria-expanded
+                const isExpanded = document.getElementById('rewardsAccordion').classList.contains('active');
+                accordionHeader.setAttribute('aria-expanded', isExpanded);
+            }
+        });
+    }
+    
+    // Animación de entrada para las learning cards (opcional)
+    observeElements('.learning-card', 'animate-fadeIn');
+    observeElements('.value-card', 'animate-fadeIn');
+    observeElements('.timeline-step', 'animate-fadeIn');
+    observeElements('.ai-tool-card', 'animate-fadeIn');
+});
+
+// Intersection Observer para animaciones de entrada
+function observeElements(selector, animationClass) {
+    const elements = document.querySelectorAll(selector);
+    
+    if (elements.length === 0) return;
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add(animationClass);
+                }, index * 100); // Delay progresivo
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+    
+    elements.forEach(element => {
+        element.style.opacity = '0';
+        observer.observe(element);
+    });
+}
+
+// Añadir clase de animación al CSS (si no la tienes ya)
+const style = document.createElement('style');
+style.textContent = `
+    .animate-fadeIn {
+        animation: fadeInUp 0.6s ease forwards;
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+`;
+document.head.appendChild(style);

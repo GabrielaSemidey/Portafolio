@@ -32,7 +32,8 @@
                 <li><a href="#frontend" class="nav-link" data-i18n="nav.frontend">Frontend</a></li>
                 <li><a href="#contacto" class="nav-link nav-cta" data-i18n="nav.contacto">Contacto</a></li>
                 
-                <!-- 🔥 LANGUAGE TOGGLE -->
+
+                <!-- LANGUAGE TOGGLE -->
                 <li>
                     <div class="language-toggle">
                         <button class="language-toggle__btn" 
@@ -267,28 +268,24 @@
                 
                 <!-- Proyecto 1: Lumi -->
                 <article class="project-card card scroll-reveal" data-category="frontend">
-                    <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/lumi/banner.png')">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <div class="project-card__content">
-                        <div style="margin-bottom: 12px;">
-                            <span class="badge badge--info">
-                                <i class="fas fa-book-open"></i>
-                                Case Study
-                            </span>
+                        <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/lumi/banner.png')">
+                            <i class="fas fa-brain"></i>
                         </div>
-
-                        <div class="project-card__meta">
-                            <span><i class="fas fa-code"></i> JavaScript + AI</span>
-                            <span><i class="fas fa-calendar"></i> 2025</span>
-                        </div>
-                        
-                        <h3 class="project-card__title">Lumi - Project using AI</h3>
-                        
-                        <p class="project-card__description">
-                            Plataforma web conceptualizada durante curso especializado de IA. Integra inteligencia artificial con una interfaz intuitiva y completamente responsive.
-                        </p>
-
+                        <div class="project-card__content">
+                            <div style="margin-bottom: 12px;">
+                                <span class="badge badge--info">
+                                    <i class="fas fa-book-open"></i>
+                                    Case Study
+                                </span>
+                            </div>
+                            <div class="project-card__meta">
+                                <span><i class="fas fa-code"></i> JavaScript + AI</span>
+                                <span><i class="fas fa-calendar"></i> 2025</span>
+                            </div>
+                            <h3 class="project-card__title">Lumi - AI Integration Project</h3>
+                            <p class="project-card__description" data-i18n="project.lumi.desc">
+                                Plataforma web conceptualizada durante curso especializado de IA, contiene landing, dashboard y login. (WIP)
+                            </p>
                             <div class="project-card__metrics">
                                 <div class="metric">
                                     <strong class="metric__value">AI</strong>
@@ -303,80 +300,73 @@
                                     <span class="metric__label">Responsive</span>
                                 </div>
                             </div>
-
-                        <div class="project-card__tags">
-                            <span class="tag">AI</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Responsive</span>
-                            <span class="tag">Strategic Design</span>
+                            <div class="project-card__tags">
+                                <span class="tag">AI</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive</span>
+                                <span class="tag">Strategic Design</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a href="https://github.com/GabrielaSemidey/Lumi--proyecto-educativo" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> <span data-i18n="project.link-code">Código</span>
+                                </a>
+                                <a href="https://gabrielasemidey.github.io/Lumi--proyecto-educativo/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                                <a href="./proyectos/lumi.html" class="project-link">
+                                    <span data-i18n="projects.btn-case">Ver caso completo</span> <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
                         </div>
-                        
-                        <div class="project-card__actions">
-                            <a href="https://github.com/GabrielaSemidey/Lumi--proyecto-educativo" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> Código
-                            </a>
-                            <a href="https://gabrielasemidey.github.io/Lumi--proyecto-educativo/" target="_blank" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Demo
-                            </a>
-                            <a href="./proyectos/lumi.html" class="project-link">
-                                <span data-i18n="projects.btn-case">Ver caso completo</span> <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
+                    </article>
 
                 <!-- Proyecto 2: Clínica Alemana -->
-                <article class="project-card card scroll-reveal" data-category="ux-ui">
-                     <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/teleconsulta/banner.jpg')">
-                        
-                    </div>
-                    <div class="project-card__content">
-                        <div style="margin-bottom: 12px;">
-                            <span class="badge badge--success">
-                                <i class="fas fa-check-circle"></i>
-                                Live
-                            </span>
-                        </div>
-
-                        <div class="project-card__meta">
-                            <span><i class="fas fa-map-marker-alt"></i> Chile</span>
-                            <span><i class="fas fa-calendar"></i> 2020</span>
-                        </div>
-                        
-                        <h3 class="project-card__title">Clínica Alemana - Teleconsulta</h3>
-                        
-                        <p class="project-card__description">
-                            Diseño de una plataforma de videollamadas médicas desde cero, integrada con el sistema de agenda web. Automatización de cobros, entrega de recetas y gestión de documentos clínicos.
-                        </p>
-
-                        <div class="project-card__metrics">
-                            <div class="metric">
-                                <strong class="metric__value">20%</strong>
-                                <span class="metric__label">Teleconsultas</span>
+                <a href="./proyectos/clinica-teleconsulta.html" class="project-card-link">
+                        <article class="project-card card scroll-reveal" data-category="ux-ui">
+                            <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/teleconsulta/banner.jpg')">
                             </div>
-                            <div class="metric">
-                                <strong class="metric__value">-40%</strong>
-                                <span class="metric__label">Reclamos</span>
+                            <div class="project-card__content">
+                                <div style="margin-bottom: 12px;">
+                                    <span class="badge badge--success">
+                                        <i class="fas fa-check-circle"></i>
+                                        Live
+                                    </span>
+                                </div>
+                                <div class="project-card__meta">
+                                    <span><i class="fas fa-map-marker-alt"></i> Chile</span>
+                                    <span><i class="fas fa-calendar"></i> 2020</span>
+                                </div>
+                                <h3 class="project-card__title" data-i18n="project.teleconsulta.hero-title">Clínica Alemana - Teleconsulta</h3>
+                                <p class="project-card__description" data-i18n="project.teleconsulta.desc">
+                                    Diseño de una plataforma de videollamadas médicas desde cero, integrada con el sistema de agenda web. Automatización de cobros, entrega de recetas y gestión de documentos clínicos.
+                                </p>
+                                <div class="project-card__metrics">
+                                    <div class="metric">
+                                        <strong class="metric__value">20%</strong>
+                                        <span class="metric__label">Teleconsultas</span>
+                                    </div>
+                                    <div class="metric">
+                                        <strong class="metric__value">-40%</strong>
+                                        <span class="metric__label" data-i18n="project.teleconsulta.metric2">Reclamos</span>
+                                    </div>
+                                    <div class="metric">
+                                        <strong class="metric__value">+1.500</strong>
+                                        <span class="metric__label" data-i18n="project.teleconsulta.metric3">Telerehabilitación</span>
+                                    </div>
+                                </div>
+                                <div class="project-card__tags">
+                                    <span class="tag">UX Design</span>
+                                    <span class="tag">Healthcare</span>
+                                    <span class="tag">Service Design</span>
+                                </div>
+                                <div class="project-card__actions">
+                                    <a href="./proyectos/clinica-teleconsulta.html" class="project-link">
+                                        <span data-i18n="projects.btn-full">Ver proyecto completo</span> <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="metric">
-                                <strong class="metric__value">+1.500</strong>
-                                <span class="metric__label">Telerehabilitación</span>
-                            </div>
-                        </div>
-
-                        <div class="project-card__tags">
-                            <span class="tag">UX/UI Design</span>
-                            <span class="tag">Healthcare</span>
-                            <span class="tag">Service Design</span>
-                        </div>
-                        
-                        <div class="project-card__actions">
-                            <a href="./proyectos/clinica-teleconsulta.html" class="project-link">
-                                <span data-i18n="projects.btn-full">Ver proyecto completo</span> <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
+                        </article>
+                    </a>
 
                 <!-- Proyecto 3: BID -->
                 <article class="project-card card scroll-reveal" data-category="service-design">
@@ -397,24 +387,24 @@
                             <span><i class="fas fa-calendar"></i> 2021</span>
                         </div>
                         
-                        <h3 class="project-card__title">BID - Rediseño de Servicios</h3>
+                        <h3 class="project-card__title" data-i18n="project.bid.title">BID - Rediseño de Servicios</h3>
                         
-                        <p class="project-card__description">
+                        <p class="project-card__description" data-i18n="project.bid.desc">
                             Rediseño de servicios internos en la Secretaría del BID. +80 entrevistas, diagnóstico de +50 sistemas y rediseño de procesos invisibles para mejorar la coordinación y reducir la sobrecarga.
                         </p>
 
                         <div class="project-card__metrics">
                             <div class="metric">
                                 <strong class="metric__value">80+</strong>
-                                <span class="metric__label">Interviews</span>
+                                <span class="metric__label" data-i18n="project.bid.metric1">Entrevistas</span>
                             </div>
                             <div class="metric">
                                 <strong class="metric__value">50</strong>
-                                <span class="metric__label">Systems Analyzed</span>
+                                <span class="metric__label" data-i18n="project.bid.metric2">Sistemas Analizados</span>
                             </div>
                             <div class="metric">
-                                <strong class="metric__value">6 mo</strong>
-                                <span class="metric__label">Project Duration</span>
+                                <strong class="metric__value">6m</strong>
+                                <span class="metric__label" data-i18n="project.bid.metric3">Duración del Proyecto</span>
                             </div>
                         </div>
 

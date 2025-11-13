@@ -103,6 +103,11 @@ body[data-category="service-design"] {
   --secondary: #475569;
 }
 
+body[data-category="lumi"] {
+    --primary: #26C6DA;
+    --secondary: #EC407A;
+}
+
 /* ================================
    RESET MODERNO
    ================================ */
