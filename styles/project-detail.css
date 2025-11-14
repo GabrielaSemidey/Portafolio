@@ -62,7 +62,7 @@ body[data-category="frontend"] .project-hero::before {
 }
 
 body[data-category="lumi"] .project-hero::before {
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.90) 0%, rgba(0, 119, 255, 0.88) 50%, rgba(0, 200, 150, 0.85) 100%);
+  background: linear-gradient(135deg, rgba(38, 198, 218, 0.92) 0%, rgba(236, 64, 122, 0.88) 100%);
 }
 
 body[data-category="ux-ui"] .project-hero::before {
