@@ -4,10 +4,14 @@
 
 :root {
     /* Colores principales de Lumi */
+    --primary: #7E57C2;
+    --secondary: #7E57C2;
     --lumi-primary: #26C6DA;
     --lumi-secondary: #EC407A;
     --lumi-navy: #1A2744;
     --lumi-cream: #FFF9F0;
+    --success:#26C6DA;
+
     
     /* Colores de los 5 estilos */
     --visionauta: #00CED1;
@@ -29,7 +33,7 @@
 }
 
 /* ==========================================
-   ESTILOS DE APRENDIZAJE - GRID 5 CARDS
+   📚 ESTILOS DE APRENDIZAJE - GRID 5 CARDS CON HOVER FLIP
    ========================================== */
 
 .learning-styles-grid {
@@ -50,6 +54,11 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .learning-card::before {
@@ -119,47 +128,33 @@
     border-color: var(--colab-hero);
 }
 
-/* Ícono circular con color */
-.learning-card__icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 16px;
-    border-radius: 50%;
+/* Contenido frontal (ilustración) */
+.learning-card__front {
+    transition: all 0.4s ease;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 36px;
-    position: relative;
+}
+
+.learning-card:hover .learning-card__front {
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+}
+
+/* Ilustración */
+.learning-card__illustration {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 16px;
     transition: transform 0.3s ease;
+    border-radius: 15px;
 }
 
-.learning-card:hover .learning-card__icon {
-    transform: scale(1.1) rotate(5deg);
-}
-
-.learning-card[data-style="visionauta"] .learning-card__icon {
-    background: linear-gradient(135deg, rgba(0, 206, 209, 0.2) 0%, rgba(0, 206, 209, 0.05) 100%);
-    color: var(--visionauta);
-}
-
-.learning-card[data-style="audioexplorador"] .learning-card__icon {
-    background: linear-gradient(135deg, rgba(233, 30, 99, 0.2) 0%, rgba(233, 30, 99, 0.05) 100%);
-    color: var(--audioexplorador);
-}
-
-.learning-card[data-style="manos-obra"] .learning-card__icon {
-    background: linear-gradient(135deg, rgba(255, 112, 67, 0.2) 0%, rgba(255, 112, 67, 0.05) 100%);
-    color: var(--manos-obra);
-}
-
-.learning-card[data-style="logimaster"] .learning-card__icon {
-    background: linear-gradient(135deg, rgba(126, 87, 194, 0.2) 0%, rgba(126, 87, 194, 0.05) 100%);
-    color: var(--logimaster);
-}
-
-.learning-card[data-style="colab-hero"] .learning-card__icon {
-    background: linear-gradient(135deg, rgba(92, 107, 192, 0.2) 0%, rgba(92, 107, 192, 0.05) 100%);
-    color: var(--colab-hero);
+.learning-card:hover .learning-card__illustration {
+    transform: scale(0.9);
 }
 
 .learning-card__title {
@@ -177,7 +172,6 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    margin-bottom: 12px;
 }
 
 .learning-card[data-style="visionauta"] .learning-card__badge {
@@ -205,11 +199,43 @@
     color: var(--colab-hero);
 }
 
+/* Contenido trasero (información) */
+.learning-card__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+
+.learning-card:hover .learning-card__back {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+.learning-card__back-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--lumi-navy);
+    margin-bottom: 12px;
+}
+
 .learning-card__description {
     font-size: 14px;
     color: var(--gray-text);
     line-height: 1.5;
     margin-bottom: 16px;
+    font-weight: 600;
 }
 
 .learning-card__features {
@@ -217,6 +243,7 @@
     padding: 0;
     margin: 0;
     text-align: left;
+    width: 100%;
 }
 
 .learning-card__features li {
@@ -256,38 +283,24 @@
 }
 
 /* ==========================================
-   PROPUESTA DE VALOR - GRID 2x2
+   💎 PROPUESTA DE VALOR - GRID 2x2
    ========================================== */
 
 .value-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 24px;
-    margin-top: 32px;
+    margin-top: 24px;
 }
 
 .value-card {
     background: var(--white);
     border: 2px solid var(--gray-light);
     border-radius: 16px;
-    padding: 32px 24px;
+    padding: 24px 16px;
     text-align: center;
     transition: all 0.3s ease;
     position: relative;
-    overflow: hidden;
-}
-
-.value-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    background: linear-gradient(135deg, var(--lumi-primary) 0%, var(--lumi-secondary) 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 0;
 }
 
 .value-card:hover {
@@ -296,21 +309,31 @@
     border-color: var(--lumi-primary);
 }
 
-.value-card:hover::before {
-    opacity: 0.05;
-}
-
 .value-card__icon {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     margin: 0 auto 20px;
-    position: relative;
-    z-index: 1;
+    background: rgba(38, 198, 218, 0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
 }
 
-.value-card__icon svg {
-    width: 100%;
-    height: 100%;
+.value-card:hover .value-card__icon {
+    background: var(--lumi-primary);
+    transform: scale(1.1);
+}
+
+.value-card__icon i {
+    font-size: 36px;
+    color: var(--lumi-primary);
+    transition: color 0.3s ease;
+}
+
+.value-card:hover .value-card__icon i {
+    color: white;
 }
 
 .value-card__title {
@@ -318,21 +341,17 @@
     font-weight: 700;
     color: var(--lumi-navy);
     margin-bottom: 12px;
-    position: relative;
-    z-index: 1;
 }
 
 .value-card__description {
-    font-size: 15px;
+    font-size: 12px;
     color: var(--gray-text);
-    line-height: 1.6;
+    line-height: 1.2;
     margin: 0;
-    position: relative;
-    z-index: 1;
 }
 
 /* ==========================================
-   SISTEMA LUMICOINS - TIMELINE HORIZONTAL
+   💰 SISTEMA LUMICOINS - TIMELINE HORIZONTAL
    ========================================== */
 
 .lumicoins-timeline {
@@ -352,7 +371,7 @@
     left: 15%;
     right: 15%;
     height: 3px;
-    background: linear-gradient(90deg, var(--lumi-primary) 0%, var(--lumi-secondary) 100%);
+    background: var(--lumi-primary);
     z-index: 0;
 }
 
@@ -367,7 +386,7 @@
     width: 64px;
     height: 64px;
     margin: 0 auto 16px;
-    background: linear-gradient(135deg, var(--lumi-primary) 0%, var(--lumi-secondary) 100%);
+    background: var(--lumi-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -424,7 +443,7 @@
 }
 
 .rewards-accordion {
-    background: var(--lumi-cream);
+    background: white;
     border: 2px solid var(--gray-light);
     border-radius: 16px;
     overflow: hidden;
@@ -446,7 +465,7 @@
 }
 
 .rewards-accordion__header:hover {
-    background: var(--lumi-cream);
+    background: rgba(38, 198, 218, 0.03);
 }
 
 .rewards-accordion__title {
@@ -459,8 +478,13 @@
     margin: 0;
 }
 
+.rewards-accordion__title i {
+    color: var(--lumi-primary);
+}
+
 .rewards-accordion__icon {
-    font-size: 24px;
+    font-size: 20px;
+    color: var(--lumi-primary);
     transition: transform 0.3s ease;
 }
 
@@ -482,6 +506,7 @@
     padding: 24px;
     list-style: none;
     margin: 0;
+    background: white;
 }
 
 .rewards-list li {
@@ -511,8 +536,31 @@
     font-weight: 700;
 }
 
+/* Highlight text limpio */
+.highlight-box {
+    background: white;
+    border: 2px solid var(--lumi-primary);
+    border-left: 6px solid var(--lumi-primary);
+    padding: 20px 24px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.highlight-box i {
+    font-size: 24px;
+    color: var(--lumi-primary);
+    flex-shrink: 0;
+}
+
+.highlight-box strong {
+    color: var(--lumi-navy);
+}
+
 /* ==========================================
-   HERRAMIENTAS IA - GRID 3x2
+   🤖 HERRAMIENTAS IA - GRID 3x2
    ========================================== */
 
 .ai-tools-grid {
@@ -559,17 +607,20 @@
     width: 48px;
     height: 48px;
     margin: 0 auto 12px;
-    background: linear-gradient(135deg, rgba(38, 198, 218, 0.15) 0%, rgba(236, 64, 122, 0.15) 100%);
+    background: rgba(38, 198, 218, 0.1);
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 24px;
-    transition: transform 0.3s ease;
+    color: var(--lumi-primary);
+    transition: all 0.3s ease;
 }
 
 .ai-tool-card:hover .ai-tool-card__icon {
     transform: scale(1.1) rotate(-5deg);
+    background: var(--lumi-primary);
+    color: white;
 }
 
 .ai-tool-card__title {
@@ -591,8 +642,14 @@
     grid-column: 1 / -1;
 }
 
+.btn-actions {
+    display: flex;
+    flex-direction: row; 
+    gap: 14px;
+    }
+
 /* ==========================================
-   RESPONSIVE - TABLET
+   📱 RESPONSIVE - TABLET
    ========================================== */
 
 @media (max-width: 1024px) {
@@ -615,7 +672,7 @@
 }
 
 /* ==========================================
-   RESPONSIVE - MOBILE
+   📱 RESPONSIVE - MOBILE
    ========================================== */
 
 @media (max-width: 768px) {
@@ -671,10 +728,15 @@
     .ai-tool-card--full {
         grid-column: 1;
     }
+
+    .btn-actions {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 /* ==========================================
-     ACCESIBILIDAD
+   ♿ ACCESIBILIDAD
    ========================================== */
 
 .learning-card:focus-visible,
@@ -689,6 +751,7 @@
     outline-offset: -3px;
 }
 
+/* Reducir animaciones para usuarios con preferencias de movimiento reducido */
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,

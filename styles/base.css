@@ -27,6 +27,12 @@
   --warning: #f59e0b;
   --error: #ef4444;
   --info: #6366f1;
+
+  /* 🌸 Color Journey */
+  --journey: #FF6B9D;
+  --journey-light: rgba(255, 107, 157, 0.08);
+  --journey-medium: rgba(255, 107, 157, 0.15);
+  --journey-dark: #E5568A;
   
   /* Escala de grises */
   --slate-50: #f8fafc;
@@ -101,11 +107,6 @@ body[data-category="service-design"] {
   --primary-hover: #4F46E5;
   --primary-dark: #4338CA;
   --secondary: #475569;
-}
-
-body[data-category="lumi"] {
-    --primary: #26C6DA;
-    --secondary: #EC407A;
 }
 
 /* ================================
