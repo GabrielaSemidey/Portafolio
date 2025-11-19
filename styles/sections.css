@@ -707,6 +707,49 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+/* Job Search Section journey */
+.job-search-section-journey {
+  background-color: white;
+  color: var(--slate-900);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.job-search-section-journey h2 {
+  font-size: 2rem;
+  color: var(--slate-900);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.job-search-section-journey h2 i {
+  margin-right: 0.5rem;
+}
+
+.job-search-section-journey p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.job-tags-journey {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.job-tag-journey {
+  color: var(--primary-dark);
+  padding: 0.5rem 1.25rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--primary-dark);
+}
+
 /* ================================
    FOOTER
    ================================ */
@@ -1131,9 +1174,16 @@
 }
 
 .skill-evolution-card:hover {
-  border-color: var(--journey);
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
+  border-color: var(--journey);
+}
+
+.skill-evolution-card:hover .skill-evolution-card__icon {
+  color: var(--journey);
+  transition: all var(--transition-base);
+  background-color: var(--journey-light);
+  box-shadow: 0 0 10px rgba(255, 107, 157, 0.2);
 }
 
 .skill-evolution-card__header {
@@ -1146,13 +1196,13 @@
 .skill-evolution-card__icon {
   width: 48px;
   height: 48px;
-  background: var(--journey-light);
+  background: rgba(91, 44, 111, 0.08);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
-  color: var(--journey);
+  color: var(--primary);
   flex-shrink: 0;
 }
 
@@ -1186,6 +1236,13 @@
   transform: translateY(-2px);
 }
 
+.learning-card--certification:hover .learning-card__icon i{
+  color: var(--journey);
+  transition: all var(--transition-base);
+  background-color: var(--journey-light);
+  box-shadow: 0 0 10px rgba(255, 107, 157, 0.2);
+}
+
 .learning-card__header {
   display: flex;
   align-items: start;
@@ -1203,6 +1260,13 @@
   justify-content: center;
   flex-shrink: 0;
   overflow: hidden;
+}
+
+.learning-card--compact:hover .learning-card__icon i {
+  color: var(--journey);
+  transition: all var(--transition-base);
+  background-color: var(--journey-light);
+  box-shadow: 0 0 10px rgba(255, 107, 157, 0.2);
 }
 
 .learning-card__logo img {
@@ -1264,6 +1328,10 @@
   transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.learning-card--compact:hover .learning-card__progress-fill {
+  background: var(--journey-dark);
+}
+
 .learning-card__skills {
   margin-top: 1.25rem;
 }
@@ -1301,16 +1369,23 @@
   transform: translateY(-2px);
 }
 
+.filosofia-item:hover .filosofia-item__icon {
+  background: var(--journey-light);
+  color: var(--journey);
+  box-shadow: 0 0 10px rgba(255, 107, 157, 0.2);
+  transition: all var(--transition-base);
+}
+
 .filosofia-item__icon {
   width: 56px;
   height: 56px;
-  background: var(--journey-light);
+  background: rgba(91, 44, 111, 0.08);
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  color: var(--journey);
+  color: var(--primary);
   margin-bottom: 1.25rem;
 }
 
@@ -1479,17 +1554,20 @@
 .learning-card__icon {
   width: 48px;
   height: 48px;
-  background: var(--journey-light);
-  border-radius: var(--radius-md);
+  background: rgba(91, 44, 111, 0.08);
+  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--primary);
+  font-size: 1rem;
+  flex-shrink: 0;
   margin-bottom: 1rem;
 }
 
 .learning-card__icon i {
   font-size: 1.5rem;
-  color: var(--journey);
+  color: var(--primary);
 }
 
 .learning-card__title {
@@ -1522,20 +1600,20 @@
 }
 
 .learning-card__progress-label-right {
-  color: var(--journey);
+  color: var(--slate-700);
   font-weight: 700;
 }
 
 .learning-card__progress-bar {
   height: 6px;
-  background: var(--journey-light);
+  background: var(--slate-200);
   border-radius: var(--radius-full);
   overflow: hidden;
 }
 
 .learning-card__progress-fill {
   height: 100%;
-  background: var(--journey);
+  background: var(--primary);
   border-radius: var(--radius-full);
   transition: width 1s ease;
 }
@@ -1656,20 +1734,20 @@
    ================================ */
 
 body.journey-page .geometric-background__canvas .geo-shape {
-  border-color: var(--journey);
+  border-color: var(--primary);
 }
 
 body.journey-page .geometric-background__canvas .geo-shape--line {
-  background: var(--journey);
+  background: var(--primary);
 }
 
 body.journey-page .geometric-background__canvas .geo-shape--dot {
-  background: var(--journey);
-  box-shadow: 0 0 20px var(--journey);
+  background: var(--primary);
+  box-shadow: 0 0 20px var(--primary);
 }
 
 body.journey-page .geometric-background__canvas .geo-shape--line-v {
-  background: var(--journey);
+  background: var(--primary);
 }
 
 /* ================================

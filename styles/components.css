@@ -144,6 +144,17 @@ nav {
   color: white;
 }
 
+.btn--journey {
+  background: transparent;
+  color: var(--journey);
+  border-color: var(--journey);
+}
+
+.btn--journey:hover:not(:disabled) {
+  background: var(--journey);
+  color: white;
+}
+
 .btn--hero {
   background: white;
   color: var(--slate-900);
@@ -312,11 +323,7 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.15) 100%
-  );
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%);
   pointer-events: none;
 }
 
@@ -703,12 +710,7 @@ nav {
   inset: -6px;
   border-radius: 50%;
   padding: 6px;
-  background: linear-gradient(
-    45deg,
-    var(--primary),
-    var(--secondary),
-    var(--primary)
-  );
+  background: linear-gradient(45deg, var(--primary), var(--secondary), var(--primary));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -734,8 +736,7 @@ nav {
 
 .hero__photo-wrapper:hover {
   transform: scale(1.05) rotate(2deg);
-  box-shadow: 0 20px 40px rgba(91, 44, 111, 0.3),
-    0 0 0 8px rgba(91, 44, 111, 0.1);
+  box-shadow: 0 20px 40px rgba(91, 44, 111, 0.3), 0 0 0 8px rgba(91, 44, 111, 0.1);
 }
 
 .hero__photo-wrapper img {

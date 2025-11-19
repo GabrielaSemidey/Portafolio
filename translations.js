@@ -143,30 +143,31 @@ const translations = {
     // Timeline
     "timeline.1.title": "Frontend Developer",
     "timeline.1.period": "2025 - Presente",
-    "timeline.1.text":
-      "Enfoque en JavaScript, React y desarrollo de interfaces. Proyectos con integración de IA y APIs.",
+    "timeline.1.text": "Enfoque en JavaScript, React y desarrollo de interfaces. Proyectos con integración de IA y APIs.",
     "timeline.2.title": "UX/UI Designer & Service Designer",
     "timeline.2.period": "2020 - 2025",
     "timeline.2.text":
       "Clínica Alemana, BID, Spotify. Research, prototipado y diseño de experiencias para productos digitales y servicios.",
     "timeline.3.title": "Service Design",
     "timeline.3.period": "2019 - 2020",
-    "timeline.3.text":
-      "Proyectos de diseño estratégico y consultoría para instituciones públicas y privadas en Perú.",
+    "timeline.3.text": "Proyectos de diseño estratégico y consultoría para instituciones públicas y privadas en Perú.",
+
+    // Journey
+    "journey.btn": "Conoce mi recorrido profesional",
+    "journey.text-1": "Explora mi evolución profesional, certificaciones y transición de diseño a código.",
+    "experience.badge": "Experiencia",
+    "moment.badge": "Momento Clave",
+    "camino.badge": "Mi Camino",
 
     // Highlight Cards
     "highlight.1.title": "Clean Code",
-    "highlight.1.text":
-      "Código semántico, bien documentado y pensado para escalar. Cada función tiene un propósito claro.",
+    "highlight.1.text": "Código semántico, bien documentado y pensado para escalar. Cada función tiene un propósito claro.",
     "highlight.2.title": "User-Centered",
-    "highlight.2.text":
-      "Cada decisión técnica está guiada por la experiencia del usuario. Accesibilidad y usabilidad no son opcionales.",
+    "highlight.2.text": "Cada decisión técnica está guiada por la experiencia del usuario. Accesibilidad y usabilidad no son opcionales.",
     "highlight.3.title": "Continuous Learning",
-    "highlight.3.text":
-      "El desarrollo web evoluciona rápido. Me mantengo actualizada con nuevas tecnologías y mejores prácticas.",
+    "highlight.3.text": "El desarrollo web evoluciona rápido. Me mantengo actualizada con nuevas tecnologías y mejores prácticas.",
     "highlight.4.title": "Team Player",
-    "highlight.4.text":
-      "Experiencia colaborando con equipos multidisciplinarios: developers, designers, product managers.",
+    "highlight.4.text": "Experiencia colaborando con equipos multidisciplinarios: developers, designers, product managers.",
 
     // ============================================
     // INDEX.HTML - PROJECTS
@@ -185,8 +186,7 @@ const translations = {
     // ============================================
     "skills.badge": "Stack Técnico",
     "skills.title": "Habilidades & Tecnologías",
-    "skills.description":
-      "Mi stack técnico y herramientas actuales. En continuo aprendizaje y actualización.",
+    "skills.description": "Mi stack técnico y herramientas actuales. En continuo aprendizaje y actualización.",
     "skills.frontend": "Frontend Development",
     "skills.tools": "Tools & Workflow",
     "skills.design": "Design & UX",
@@ -199,8 +199,7 @@ const translations = {
     // ============================================
     "contact.badge": "Contacto",
     "contact.title": "¿Trabajamos juntos?",
-    "contact.description":
-      "Disponible para posiciones en diseño, frontend (junior-mid level), proyectos freelance o colaboraciones.",
+    "contact.description": "Disponible para posiciones en diseño, frontend (junior-mid level), proyectos freelance o colaboraciones.",
     "contact.why-title": "¿Por qué trabajar conmigo?",
     "contact.why-text":
       "No solo escribo código, entiendo a los usuarios. Mi background en UX me permite crear soluciones técnicas que realmente resuelven problemas.",
@@ -235,13 +234,10 @@ const translations = {
     // ============================================
     // DESCRIPCIONES CORTAS DE OTROS PROYECTOS
     // ============================================
-    "project.lumi.desc":
-      "Plataforma web conceptualizada durante curso especializado de IA, contiene landing, dashboard y login. (WIP)",
-    "project.weather.desc":
-      "App del clima con comentarios de personalidades. Integración con API y diseño creativo.",
+    "project.lumi.desc": "Plataforma web conceptualizada durante curso especializado de IA, contiene landing, dashboard y login. (WIP)",
+    "project.weather.desc": "App del clima con comentarios de personalidades. Integración con API y diseño creativo.",
     "project.weather.metric1": "Personalidades",
-    "project.pomodoro.desc":
-      "Timer de productividad con gestión de estados, notificaciones y persistencia de datos.",
+    "project.pomodoro.desc": "Timer de productividad con gestión de estados, notificaciones y persistencia de datos.",
     "project.teleconsulta.desc":
       "Diseño de una plataforma de videollamadas médicas desde cero, integrada con el sistema de agenda web. Automatización de cobros, entrega de recetas y gestión de documentos clínicos.",
     "project.teleconsulta.metric2": "Reclamos",
@@ -263,13 +259,11 @@ const translations = {
     "project.cubico.metric2": "Estudiantes",
     "project.cubico.metric3": "Proyectos",
     "project.upc.title": "Rediseño de Admisión",
-    "project.upc.desc":
-      "Rediseño de la experiencia en counters de admisión para mejorar la conversión de visitas de postulantes y padres.",
+    "project.upc.desc": "Rediseño de la experiencia en counters de admisión para mejorar la conversión de visitas de postulantes y padres.",
     "project.upc.metric1": "Sedes",
     "project.upc.metric3": "Estado",
     "project.mincetur.title": "Construcción Futura",
-    "project.mincetur.desc":
-      "Acompañamiento en el desarrollo de un prototipo de Modelo de Gestión para los CITEs de Artesanía y Turismo.",
+    "project.mincetur.desc": "Acompañamiento en el desarrollo de un prototipo de Modelo de Gestión para los CITEs de Artesanía y Turismo.",
     "project.mincetur.metric1": "Días",
     "project.tali.title": "Agencia de Viajes Corporativa",
     "project.tali.desc":
@@ -298,20 +292,13 @@ const translations = {
     // Challenge
     "project.bid.challenge-text":
       '¿Cómo rediseñar los servicios de una unidad con más de 50 sistemas en uso (entre herramientas legacy, soluciones parche y herramientas informales), donde los procesos están atomizados y cada equipo ha tenido que "inventar" su propia manera de operar?',
-    "project.bid.challenge-intro":
-      "La Secretaría enfrentaba múltiples barreras críticas:",
-    "project.bid.challenge-1":
-      "Fragmentación total de la gestión del trabajo: Cada departamento operaba como isla independiente",
-    "project.bid.challenge-2":
-      "Procesos informales: Nacidos por necesidad, sin documentación ni trazabilidad",
-    "project.bid.challenge-3":
-      "Herramientas desconectadas: 50+ sistemas sin integración entre sí",
-    "project.bid.challenge-4":
-      "Saturación operativa y emocional: Personal desgastado por retrabajo constante",
-    "project.bid.challenge-5":
-      "Falta de visibilidad organizacional: Nadie tenía una visión completa del flujo de trabajo",
-    "project.bid.challenge-conclusion":
-      "Nuestro reto era construir una visión común que permitiera evolucionar sin generar más caos.",
+    "project.bid.challenge-intro": "La Secretaría enfrentaba múltiples barreras críticas:",
+    "project.bid.challenge-1": "Fragmentación total de la gestión del trabajo: Cada departamento operaba como isla independiente",
+    "project.bid.challenge-2": "Procesos informales: Nacidos por necesidad, sin documentación ni trazabilidad",
+    "project.bid.challenge-3": "Herramientas desconectadas: 50+ sistemas sin integración entre sí",
+    "project.bid.challenge-4": "Saturación operativa y emocional: Personal desgastado por retrabajo constante",
+    "project.bid.challenge-5": "Falta de visibilidad organizacional: Nadie tenía una visión completa del flujo de trabajo",
+    "project.bid.challenge-conclusion": "Nuestro reto era construir una visión común que permitiera evolucionar sin generar más caos.",
 
     // Role
     "project.bid.role-text":
@@ -320,97 +307,65 @@ const translations = {
     "project.bid.team-2": "2 Service Designers bajo mi liderazgo",
 
     // Responsibilities
-    "project.bid.resp-1":
-      "Diseñar el enfoque completo de investigación cualitativa",
-    "project.bid.resp-2":
-      "Realizar más de 40 entrevistas en profundidad (en inglés y español)",
-    "project.bid.resp-3":
-      "Liderar la sistematización y análisis de las 80 entrevistas totales",
-    "project.bid.resp-4":
-      "Coordinar y guiar el trabajo de los 2 Service Designers del equipo",
-    "project.bid.resp-5":
-      "Definir oportunidades estratégicas y liderar el rediseño de procesos clave",
-    "project.bid.resp-6":
-      "Diseñar sistema de cuestionarios y plantillas para ordenar solicitudes",
-    "project.bid.resp-7":
-      "Planificar y supervisar todos los entregables del proyecto",
-    "project.bid.resp-8":
-      "Generar ambientes de confianza en contextos sensibles y formales",
+    "project.bid.resp-1": "Diseñar el enfoque completo de investigación cualitativa",
+    "project.bid.resp-2": "Realizar más de 40 entrevistas en profundidad (en inglés y español)",
+    "project.bid.resp-3": "Liderar la sistematización y análisis de las 80 entrevistas totales",
+    "project.bid.resp-4": "Coordinar y guiar el trabajo de los 2 Service Designers del equipo",
+    "project.bid.resp-5": "Definir oportunidades estratégicas y liderar el rediseño de procesos clave",
+    "project.bid.resp-6": "Diseñar sistema de cuestionarios y plantillas para ordenar solicitudes",
+    "project.bid.resp-7": "Planificar y supervisar todos los entregables del proyecto",
+    "project.bid.resp-8": "Generar ambientes de confianza en contextos sensibles y formales",
 
     // Process
     "project.bid.process-intro":
       "Implementamos un proceso de investigación y diseño profundo, enfocado en entender la complejidad sistémica antes de proponer soluciones.",
     "project.bid.process-1-title": "1. Investigación Cualitativa Profunda",
-    "project.bid.process-1-intro":
-      "Inmersión total en el ecosistema de la Secretaría:",
-    "project.bid.process-1-item-1":
-      "80 entrevistas con personas de distintas regiones, niveles jerárquicos y unidades",
-    "project.bid.process-1-item-2":
-      "Yo personalmente realicé más de 40 entrevistas en inglés y español",
+    "project.bid.process-1-intro": "Inmersión total en el ecosistema de la Secretaría:",
+    "project.bid.process-1-item-1": "80 entrevistas con personas de distintas regiones, niveles jerárquicos y unidades",
+    "project.bid.process-1-item-2": "Yo personalmente realicé más de 40 entrevistas en inglés y español",
     "project.bid.process-1-item-3":
       "Entrevistamos a empleados del banco, representantes de las Sillas (Board) de 7-10 países, y el equipo de Secretaría",
-    "project.bid.process-1-item-4":
-      "Generación de ambientes de confianza en contextos sensibles y formales",
-    "project.bid.process-1-item-5":
-      "Análisis de tensiones estructurales, emocionales y relacionales",
-    "project.bid.process-1-item-6":
-      "Exploración de más de 50 sistemas y herramientas utilizadas activamente",
+    "project.bid.process-1-item-4": "Generación de ambientes de confianza en contextos sensibles y formales",
+    "project.bid.process-1-item-5": "Análisis de tensiones estructurales, emocionales y relacionales",
+    "project.bid.process-1-item-6": "Exploración de más de 50 sistemas y herramientas utilizadas activamente",
 
-    "project.bid.process-2-title":
-      "2. Diagnóstico de Desconexión y Puntos de Dolor",
+    "project.bid.process-2-title": "2. Diagnóstico de Desconexión y Puntos de Dolor",
     "project.bid.process-2-intro": "Sistematización profunda de hallazgos:",
-    "project.bid.process-2-item-1":
-      "Mapeo de flujos rotos, duplicidades, bloqueos y sistemas informales",
-    "project.bid.process-2-item-2":
-      "Identificación de tareas críticas sin trazabilidad ni claridad de responsables",
+    "project.bid.process-2-item-1": "Mapeo de flujos rotos, duplicidades, bloqueos y sistemas informales",
+    "project.bid.process-2-item-2": "Identificación de tareas críticas sin trazabilidad ni claridad de responsables",
     "project.bid.process-2-item-3":
       "Documentación de casos extremos como: una trabajadora que mantenía tres tablas de Excel con la misma información debido a la desconfianza generada por ediciones no controladas",
-    "project.bid.process-2-item-4":
-      "Análisis del ecosistema de 50+ herramientas sin integración",
+    "project.bid.process-2-item-4": "Análisis del ecosistema de 50+ herramientas sin integración",
 
-    "project.bid.process-3-title":
-      "3. Diseño de Soluciones de Organización Interna",
-    "project.bid.process-3-intro":
-      "Co-creación de sistemas que reducen el caos sin añadir carga:",
-    "project.bid.process-3-item-1":
-      "Creación de arquetipos de usuarios internos",
-    "project.bid.process-3-item-2":
-      "Rediseño de cómo se reciben, organizan y ejecutan las tareas en Secretaría",
-    "project.bid.process-3-item-3":
-      "Diseño de un sistema de entrada con cuestionarios automáticos para clarificar requerimientos",
-    "project.bid.process-3-item-4":
-      "Propuestas de herramientas compartidas que reducen el retrabajo y aumentan la visibilidad",
-    "project.bid.process-3-item-5":
-      "Plantillas estandarizadas para solicitudes de servicio",
-    "project.bid.process-3-item-6":
-      "Flujos rediseñados con trazabilidad clara de responsables y estados",
+    "project.bid.process-3-title": "3. Diseño de Soluciones de Organización Interna",
+    "project.bid.process-3-intro": "Co-creación de sistemas que reducen el caos sin añadir carga:",
+    "project.bid.process-3-item-1": "Creación de arquetipos de usuarios internos",
+    "project.bid.process-3-item-2": "Rediseño de cómo se reciben, organizan y ejecutan las tareas en Secretaría",
+    "project.bid.process-3-item-3": "Diseño de un sistema de entrada con cuestionarios automáticos para clarificar requerimientos",
+    "project.bid.process-3-item-4": "Propuestas de herramientas compartidas que reducen el retrabajo y aumentan la visibilidad",
+    "project.bid.process-3-item-5": "Plantillas estandarizadas para solicitudes de servicio",
+    "project.bid.process-3-item-6": "Flujos rediseñados con trazabilidad clara de responsables y estados",
 
     "project.bid.process-4-title": "4. Entrega e Implementación",
     "project.bid.process-4-intro": "Documentación estratégica para la acción:",
-    "project.bid.process-4-item-1":
-      "Documento estratégico completo con hallazgos y recomendaciones",
-    "project.bid.process-4-item-2":
-      "Cuestionarios implementables listos para uso inmediato",
+    "project.bid.process-4-item-1": "Documento estratégico completo con hallazgos y recomendaciones",
+    "project.bid.process-4-item-2": "Cuestionarios implementables listos para uso inmediato",
     "project.bid.process-4-item-3": "Plantillas de solicitud rediseñadas",
     "project.bid.process-4-item-4": "Roadmap de implementación escalable",
-    "project.bid.process-4-item-5":
-      "El informe fue presentado en asamblea y usado para reestructurar toda la Secretaría en 2021",
+    "project.bid.process-4-item-5": "El informe fue presentado en asamblea y usado para reestructurar toda la Secretaría en 2021",
 
     // Findings
     "project.bid.findings-title": "Hallazgos Clave",
-    "project.bid.finding-1-title":
-      'La complejidad invisible del trabajo "invisible"',
+    "project.bid.finding-1-title": 'La complejidad invisible del trabajo "invisible"',
     "project.bid.finding-1-text":
       "Descubrimos que gran parte del trabajo de la Secretaría era invisible incluso para la propia organización. Procesos críticos dependían de la memoria institucional de personas específicas, sin documentación ni respaldo.",
-    "project.bid.finding-2-title":
-      "El costo humano de los sistemas fragmentados",
+    "project.bid.finding-2-title": "El costo humano de los sistemas fragmentados",
     "project.bid.finding-2-text":
       "Las 50+ herramientas no solo generaban ineficiencia técnica: generaban agotamiento emocional. Las personas invertían más tiempo gestionando sistemas que haciendo su trabajo real.",
     "project.bid.finding-3-title": "Desconfianza sistémica",
     "project.bid.finding-3-text":
       'La falta de trazabilidad y visibilidad había generado culturas de desconfianza. Ejemplo: mantener tres versiones de la misma tabla porque "alguien siempre borra algo sin avisar".',
-    "project.bid.finding-4-title":
-      "Cada área había inventado su propio sistema",
+    "project.bid.finding-4-title": "Cada área había inventado su propio sistema",
     "project.bid.finding-4-text":
       "Ante la falta de procesos claros, cada equipo había desarrollado soluciones propias (Excel, emails, grupos de WhatsApp, carpetas compartidas sin estructura). Esto multiplicaba la complejidad.",
     "project.bid.finding-5-title": "Alta sensibilidad cultural y política",
@@ -423,37 +378,27 @@ const translations = {
     "project.bid.result-3-value": "Países representados",
     "project.bid.result-4-value": "Remoto e internacional",
 
-    "project.bid.impact-1":
-      "80 entrevistas procesadas y sintetizadas en hallazgos accionables",
-    "project.bid.impact-2":
-      "Análisis completo de 50+ sistemas utilizados activamente por la Secretaría",
-    "project.bid.impact-3":
-      "Rediseño de flujos para solicitud y seguimiento de tareas con trazabilidad clara",
-    "project.bid.impact-4":
-      "Plantillas y cuestionarios implementables para clasificar y gestionar requerimientos",
-    "project.bid.impact-5":
-      "Propuestas escalables para mejorar coordinación sin sobrecargar al equipo",
-    "project.bid.impact-6":
-      "Documento estratégico entregado y usado para la siguiente fase de implementación",
-    "project.bid.impact-7":
-      "El informe fue presentado en asamblea y utilizado para reestructurar toda la Secretaría del BID en 2021",
+    "project.bid.impact-1": "80 entrevistas procesadas y sintetizadas en hallazgos accionables",
+    "project.bid.impact-2": "Análisis completo de 50+ sistemas utilizados activamente por la Secretaría",
+    "project.bid.impact-3": "Rediseño de flujos para solicitud y seguimiento de tareas con trazabilidad clara",
+    "project.bid.impact-4": "Plantillas y cuestionarios implementables para clasificar y gestionar requerimientos",
+    "project.bid.impact-5": "Propuestas escalables para mejorar coordinación sin sobrecargar al equipo",
+    "project.bid.impact-6": "Documento estratégico entregado y usado para la siguiente fase de implementación",
+    "project.bid.impact-7": "El informe fue presentado en asamblea y utilizado para reestructurar toda la Secretaría del BID en 2021",
 
     // Learnings
-    "project.bid.learning-1-title":
-      "Liderar en contextos complejos requiere empatía estructural",
+    "project.bid.learning-1-title": "Liderar en contextos complejos requiere empatía estructural",
     "project.bid.learning-1-text":
       "Como Lead Service Designer, aprendí que liderar un equipo de 6 personas en un proyecto de esta complejidad no se trata solo de distribuir tareas, sino de sostener la visión estratégica mientras cuidas el bienestar emocional del equipo.",
     "project.bid.learning-2-title": "La investigación es un acto político",
     "project.bid.learning-2-text":
       "Entrevistar a personas en posiciones de poder requiere un balance delicado entre respeto protocolar y profundidad investigativa. Aprendí a navegar estas dinámicas sin comprometer la calidad de los hallazgos.",
-    "project.bid.learning-3-title":
-      "La sistematización es tan importante como la investigación",
+    "project.bid.learning-3-title": "La sistematización es tan importante como la investigación",
     "project.bid.learning-3-text":
       "Con 80 entrevistas, el reto no era solo recoger información, sino transformarla en insights accionables. Lideré el proceso de análisis asegurando que cada hallazgo estuviera respaldado.",
 
     // Reflections
-    "project.bid.reflection-quote":
-      "La dignidad del trabajo merece un sistema que no desgaste.",
+    "project.bid.reflection-quote": "La dignidad del trabajo merece un sistema que no desgaste.",
     "project.bid.reflection-1":
       "Este fue uno de los proyectos más desafiantes y sensibles en los que he participado. Trabajamos en un equipo multidisciplinario de 7 personas, enfrentando un entorno marcado por el agotamiento y el deseo genuino de hacer las cosas mejor.",
     "project.bid.reflection-2":
@@ -464,16 +409,12 @@ const translations = {
       "Ver cómo nuestro trabajo fue utilizado en asamblea para reestructurar toda la Secretaría en 2021 fue la confirmación de que cuando diseñamos con rigor, empatía y visión sistémica, podemos generar cambios reales.",
 
     // Visual Resources
-    "project.bid.visual-journey-desc":
-      "Mapeo de la experiencia actual de los diferentes usuarios del servicio de Secretaría.",
-    "project.bid.visual-journey-1":
-      "Journey Maps de usuarios internos y externos Reunión Anual",
-    "project.bid.visual-journey-2":
-      "Journey Maps de usuarios internos y externos Documentación y traducción",
+    "project.bid.visual-journey-desc": "Mapeo de la experiencia actual de los diferentes usuarios del servicio de Secretaría.",
+    "project.bid.visual-journey-1": "Journey Maps de usuarios internos y externos Reunión Anual",
+    "project.bid.visual-journey-2": "Journey Maps de usuarios internos y externos Documentación y traducción",
     "project.bid.visual-ecosystem-desc":
       "Visualización del ecosistema complejo de relaciones, procesos y herramientas de la Secretaría del BID.",
-    "project.bid.visual-ecosystem-caption":
-      "Ecosystem Map mostrando la complejidad sistémica",
+    "project.bid.visual-ecosystem-caption": "Ecosystem Map mostrando la complejidad sistémica",
 
     // Sidebar
     "sidebar.interested-text-bid":
@@ -490,14 +431,11 @@ const translations = {
     "project.agenda.context-text-2":
       "El reto no era solo tecnológico: muchas personas aún no estaban familiarizadas con entornos digitales, y el sistema heredado dificultaba tanto la navegación del paciente como la gestión del personal clínico. Además, trabajamos en un ecosistema complejo con múltiples equipos y consultoras desarrollando soluciones complementarias.",
     "project.agenda.context-subtitle": "Equipos colaboradores:",
-    "project.agenda.context-team-1":
-      "Continuum (mi equipo): Diseño de la agenda web",
-    "project.agenda.context-team-2":
-      "Equipo paralelo de Continuum: Diseño de teleconsulta",
+    "project.agenda.context-team-1": "Continuum (mi equipo): Diseño de la agenda web",
+    "project.agenda.context-team-2": "Equipo paralelo de Continuum: Diseño de teleconsulta",
     "project.agenda.context-team-3": "Globant: Desarrollo de la app Alemana Go",
     "project.agenda.context-team-4": "2Brains: Otra plataforma complementaria",
-    "project.agenda.context-team-5":
-      "Clínica Alemana: Equipo de diseño interno",
+    "project.agenda.context-team-5": "Clínica Alemana: Equipo de diseño interno",
 
     "project.agenda.challenge-text":
       "¿Cómo diseñar un nuevo canal digital de agendamiento médico que conectara de forma coherente con el servicio de teleconsulta, mejorando la experiencia del paciente en un contexto de alta urgencia sanitaria, coordinando múltiples equipos y plataformas en paralelo?",
@@ -509,72 +447,46 @@ const translations = {
     "project.agenda.team-3": "7 Developers",
     "project.agenda.team-4": "1 Project Manager",
 
-    "project.agenda.resp-1":
-      "Mapear el journey de agendamiento y sus puntos críticos",
-    "project.agenda.resp-2":
-      "Diseñar la experiencia end-to-end, considerando casos presenciales y remotos",
-    "project.agenda.resp-3":
-      "Coordinar el diseño en paralelo con el equipo de teleconsulta y otros stakeholders",
-    "project.agenda.resp-4":
-      "Acompañar el despliegue incremental del servicio, desde pruebas internas hasta puesta en marcha total",
-    "project.agenda.resp-5":
-      "Asegurar la coherencia entre front y back, con foco en pacientes, médicos y administrativos",
-    "project.agenda.resp-6":
-      "Facilitar la colaboración entre Continuum, Globant, 2Brains y el equipo interno de Clínica Alemana",
+    "project.agenda.resp-1": "Mapear el journey de agendamiento y sus puntos críticos",
+    "project.agenda.resp-2": "Diseñar la experiencia end-to-end, considerando casos presenciales y remotos",
+    "project.agenda.resp-3": "Coordinar el diseño en paralelo con el equipo de teleconsulta y otros stakeholders",
+    "project.agenda.resp-4": "Acompañar el despliegue incremental del servicio, desde pruebas internas hasta puesta en marcha total",
+    "project.agenda.resp-5": "Asegurar la coherencia entre front y back, con foco en pacientes, médicos y administrativos",
+    "project.agenda.resp-6": "Facilitar la colaboración entre Continuum, Globant, 2Brains y el equipo interno de Clínica Alemana",
 
     "project.agenda.process-intro":
       "Implementamos un proceso iterativo de diseño centrado en el usuario, adaptándonos constantemente a las necesidades emergentes durante la pandemia y coordinando múltiples frentes de trabajo simultáneos.",
 
     "project.agenda.process-1-title": "1. Investigación y Exploración",
-    "project.agenda.process-1-text":
-      "Realizamos investigación profunda para entender comportamientos, barreras y expectativas:",
-    "project.agenda.process-1-item-1":
-      "Entrevistas a pacientes y personal administrativo",
-    "project.agenda.process-1-item-2":
-      "Análisis del sistema heredado y sus fricciones",
+    "project.agenda.process-1-text": "Realizamos investigación profunda para entender comportamientos, barreras y expectativas:",
+    "project.agenda.process-1-item-1": "Entrevistas a pacientes y personal administrativo",
+    "project.agenda.process-1-item-2": "Análisis del sistema heredado y sus fricciones",
     "project.agenda.process-1-item-3":
       "Identificación de puntos críticos: lentitud, duplicidad de pasos, lenguaje poco claro, dificultad para autogestionar cambios",
-    "project.agenda.process-1-item-4":
-      "Mapeo de necesidades de médicos y equipos administrativos",
+    "project.agenda.process-1-item-4": "Mapeo de necesidades de médicos y equipos administrativos",
 
     "project.agenda.process-2-title": "2. Diseño Colaborativo",
-    "project.agenda.process-2-text":
-      "Facilitamos talleres con múltiples stakeholders para co-crear la solución:",
-    "project.agenda.process-2-item-1":
-      "Workshops internos para mapear necesidades del sistema y del negocio",
-    "project.agenda.process-2-item-2":
-      "Diseño de experiencia digital para agendamiento presencial y remoto",
-    "project.agenda.process-2-item-3":
-      "Integración de flujos administrativos (validación de datos, medios de pago, recordatorios)",
-    "project.agenda.process-2-item-4":
-      "Creación de Service Blueprints para visualizar el ecosistema completo",
-    "project.agenda.process-2-item-5":
-      "Coordinación constante con equipos de Globant y 2Brains",
+    "project.agenda.process-2-text": "Facilitamos talleres con múltiples stakeholders para co-crear la solución:",
+    "project.agenda.process-2-item-1": "Workshops internos para mapear necesidades del sistema y del negocio",
+    "project.agenda.process-2-item-2": "Diseño de experiencia digital para agendamiento presencial y remoto",
+    "project.agenda.process-2-item-3": "Integración de flujos administrativos (validación de datos, medios de pago, recordatorios)",
+    "project.agenda.process-2-item-4": "Creación de Service Blueprints para visualizar el ecosistema completo",
+    "project.agenda.process-2-item-5": "Coordinación constante con equipos de Globant y 2Brains",
 
     "project.agenda.process-3-title": "3. Coordinación con Teleconsulta",
-    "project.agenda.process-3-text":
-      "Trabajamos estrechamente con múltiples equipos para asegurar coherencia:",
-    "project.agenda.process-3-item-1":
-      "Sincronización con el equipo que desarrollaba la plataforma de telemedicina",
-    "project.agenda.process-3-item-2":
-      "Definición de puntos de cruce estratégicos entre agendar y consultar",
-    "project.agenda.process-3-item-3":
-      "Alineación con la app Alemana Go desarrollada por Globant",
-    "project.agenda.process-3-item-4":
-      "Asegurar que los usuarios no percibieran saltos entre plataformas",
+    "project.agenda.process-3-text": "Trabajamos estrechamente con múltiples equipos para asegurar coherencia:",
+    "project.agenda.process-3-item-1": "Sincronización con el equipo que desarrollaba la plataforma de telemedicina",
+    "project.agenda.process-3-item-2": "Definición de puntos de cruce estratégicos entre agendar y consultar",
+    "project.agenda.process-3-item-3": "Alineación con la app Alemana Go desarrollada por Globant",
+    "project.agenda.process-3-item-4": "Asegurar que los usuarios no percibieran saltos entre plataformas",
 
     "project.agenda.process-4-title": "4. Implementación Incremental",
-    "project.agenda.process-4-text":
-      "Lanzamiento progresivo con mejora continua:",
-    "project.agenda.process-4-item-1":
-      "4 meses: Desarrollo intensivo bajo presión de la emergencia sanitaria",
-    "project.agenda.process-4-item-2":
-      "Friends & Family: Validación de flujos en entorno controlado",
+    "project.agenda.process-4-text": "Lanzamiento progresivo con mejora continua:",
+    "project.agenda.process-4-item-1": "4 meses: Desarrollo intensivo bajo presión de la emergencia sanitaria",
+    "project.agenda.process-4-item-2": "Friends & Family: Validación de flujos en entorno controlado",
     "project.agenda.process-4-item-3": "6 meses: Lanzamiento público general",
-    "project.agenda.process-4-item-4":
-      "+6 meses: Mejoras evolutivas basadas en feedback y nuevas prioridades institucionales",
-    "project.agenda.process-4-item-5":
-      "Acompañamiento continuo durante 14 meses totales",
+    "project.agenda.process-4-item-4": "+6 meses: Mejoras evolutivas basadas en feedback y nuevas prioridades institucionales",
+    "project.agenda.process-4-item-5": "Acompañamiento continuo durante 14 meses totales",
 
     "project.agenda.result-1-value": "Teleconsultas realizadas",
     "project.agenda.result-2-value": "Satisfacción de usuarios",
@@ -583,37 +495,26 @@ const translations = {
     "project.agenda.result-5-value": "Áreas médicas disponibles",
     "project.agenda.result-6-value": "Tiempo de lanzamiento",
 
-    "project.agenda.impact-1":
-      "Nuevo canal de agenda web publicado en 6 meses, en plena emergencia sanitaria",
-    "project.agenda.impact-2":
-      "Adopción progresiva por parte de pacientes, incluso aquellos con poca experiencia digital",
-    "project.agenda.impact-3":
-      "Coordinación fluida con la plataforma de teleconsulta y app Alemana Go",
-    "project.agenda.impact-4":
-      "Mejora significativa en tiempos de agendamiento y reducción de errores administrativos",
-    "project.agenda.impact-5":
-      "Mayor autonomía del paciente y menor carga para personal de atención",
-    "project.agenda.impact-6":
-      "El volumen de teleconsultas equivale a la actividad de una sucursal física completa",
-    "project.agenda.impact-7":
-      "Experiencia sin saltos ni fricciones entre múltiples plataformas y equipos",
-    "project.agenda.impact-8":
-      "Evolución constante del canal con estrategia de diseño incremental basada en evidencia",
+    "project.agenda.impact-1": "Nuevo canal de agenda web publicado en 6 meses, en plena emergencia sanitaria",
+    "project.agenda.impact-2": "Adopción progresiva por parte de pacientes, incluso aquellos con poca experiencia digital",
+    "project.agenda.impact-3": "Coordinación fluida con la plataforma de teleconsulta y app Alemana Go",
+    "project.agenda.impact-4": "Mejora significativa en tiempos de agendamiento y reducción de errores administrativos",
+    "project.agenda.impact-5": "Mayor autonomía del paciente y menor carga para personal de atención",
+    "project.agenda.impact-6": "El volumen de teleconsultas equivale a la actividad de una sucursal física completa",
+    "project.agenda.impact-7": "Experiencia sin saltos ni fricciones entre múltiples plataformas y equipos",
+    "project.agenda.impact-8": "Evolución constante del canal con estrategia de diseño incremental basada en evidencia",
 
-    "project.agenda.learning-1-title":
-      "Coordinación multi-equipo en contextos de alta presión",
+    "project.agenda.learning-1-title": "Coordinación multi-equipo en contextos de alta presión",
     "project.agenda.learning-1-text":
       "Trabajar simultáneamente con Continuum, Globant, 2Brains y el equipo interno de Clínica Alemana me enseñó la importancia de mantener canales de comunicación claros, documentación compartida y una visión de experiencia unificada incluso cuando los equipos trabajan en componentes distintos.",
-    "project.agenda.learning-2-title":
-      "Diseño resiliente en tiempos de incertidumbre",
+    "project.agenda.learning-2-title": "Diseño resiliente en tiempos de incertidumbre",
     "project.agenda.learning-2-text":
       "La pandemia nos obligó a diseñar con flexibilidad extrema: los requisitos cambiaban semanalmente, las prioridades se ajustaban según la emergencia sanitaria, y debíamos equilibrar velocidad con calidad. Aprendí a crear sistemas de diseño adaptables que pudieran evolucionar sin colapsar.",
     "project.agenda.learning-3-title": "La importancia del diseño incremental",
     "project.agenda.learning-3-text":
       "El enfoque de lanzamiento progresivo (friends & family → público general → mejora continua) permitió validar hipótesis en entornos reales antes de escalar, reduciendo riesgos y mejorando la calidad final del servicio.",
 
-    "project.agenda.reflection-quote":
-      "Diseñar en sincronía con múltiples equipos, sin perder de vista al usuario.",
+    "project.agenda.reflection-quote": "Diseñar en sincronía con múltiples equipos, sin perder de vista al usuario.",
     "project.agenda.reflection-1":
       "Este proyecto me mostró que diseñar una agenda web puede parecer un reto técnico, pero en este caso, fue también un ejercicio profundo de empatía, claridad de procesos y resiliencia en medio del caos. Coordinar con múltiples consultoras y equipos internos, cada uno con sus propias metodologías y prioridades, requirió no solo habilidades de diseño sino también diplomacia, comunicación estratégica y una visión clara del norte común.",
     "project.agenda.reflection-2":
@@ -623,34 +524,28 @@ const translations = {
 
     "project.agenda.visual-findings-desc":
       "Presentación de hallazgos en modo storytelling para comunicar insights al equipo y stakeholders.",
-    "project.agenda.visual-findings-caption":
-      "Comunicación de insights mediante narrativa visual",
+    "project.agenda.visual-findings-caption": "Comunicación de insights mediante narrativa visual",
     "project.agenda.visual-findings-1": "Carla, madre de los pacientes",
     "project.agenda.visual-findings-2": "Lore, empleada del Contact Center",
     "project.agenda.visual-findings-3": "Oscar, el pediatra",
     "project.agenda.visual-findings-4": '"¡Pero, ya somos pacientes!"',
     "project.agenda.visual-blueprint-desc":
       "Entender las áreas, el servicio y cómo este debía integrarse a los sistemas existentes de la clínica.",
-    "project.agenda.visual-blueprint-caption":
-      "Service Blueprint completo del sistema de agendamiento",
+    "project.agenda.visual-blueprint-caption": "Service Blueprint completo del sistema de agendamiento",
     "project.agenda.visual-demo-title": "Demo del Buscador",
-    "project.agenda.visual-demo-desc":
-      "Funcionalidad del buscador de agenda médica en acción.",
-    "project.agenda.visual-demo-caption":
-      "Demo: Buscador de especialidades y médicos disponibles",
+    "project.agenda.visual-demo-desc": "Funcionalidad del buscador de agenda médica en acción.",
+    "project.agenda.visual-demo-caption": "Demo: Buscador de especialidades y médicos disponibles",
 
     "sidebar.collaborating-teams": "Equipos Colaboradores",
     "sidebar.team-continuum-tele": "Teleconsulta",
     "sidebar.team-globant": "App Alemana Go",
     "sidebar.team-2brains": "Plataforma paralela",
     "sidebar.team-clinic-internal": "Equipo interno",
-    "sidebar.interested-text-agenda":
-      "Si quieres conocer más sobre mi trabajo en salud digital, hablemos.",
+    "sidebar.interested-text-agenda": "Si quieres conocer más sobre mi trabajo en salud digital, hablemos.",
 
     // PROYECTO: CLÍNICA ALEMANA - TELECONSULTA
 
-    "project.teleconsulta.hero-title":
-      "Clínica Alemana de Santiago – Plataforma de Teleconsulta",
+    "project.teleconsulta.hero-title": "Clínica Alemana de Santiago – Plataforma de Teleconsulta",
     "project.teleconsulta.hero-subtitle":
       "Diseño desde cero de una plataforma de videollamadas médicas integrada con el sistema de agenda web. Automatización de cobros, entrega de recetas y gestión de documentos clínicos con 40% de reducción en quejas.",
 
@@ -667,108 +562,64 @@ const translations = {
     "project.teleconsulta.role-text":
       "Participé como diseñadora de servicios, velando por que la experiencia de atención fuera consistente y clara a lo largo de todos los puntos de contacto. Acompañé el proceso durante 14 meses (el equipo continuó después de mi salida), aplicando un enfoque de diseño incremental que nos permitió lanzar una versión inicial en 6 meses y seguir iterando con mejoras de valor para usuarios y equipos.",
 
-    "project.teleconsulta.resp-1":
-      "Liderar la investigación con usuarios (médicos y pacientes)",
-    "project.teleconsulta.resp-2":
-      "Mapear sistemas y procesos internos complejos",
-    "project.teleconsulta.resp-3":
-      "Identificar pain points críticos en la experiencia de teleconsulta",
-    "project.teleconsulta.resp-4":
-      "Diseñar flujos de videollamadas, automatización de documentos y pagos",
-    "project.teleconsulta.resp-5":
-      "Facilitar la conexión entre ambos proyectos (Agenda Web y Teleconsulta)",
-    "project.teleconsulta.resp-6":
-      "Trabajar en la integración entre plataformas desde la perspectiva de servicio",
-    "project.teleconsulta.resp-7":
-      "Comunicar hallazgos mediante storytelling visual (presentaciones narrativas)",
+    "project.teleconsulta.resp-1": "Liderar la investigación con usuarios (médicos y pacientes)",
+    "project.teleconsulta.resp-2": "Mapear sistemas y procesos internos complejos",
+    "project.teleconsulta.resp-3": "Identificar pain points críticos en la experiencia de teleconsulta",
+    "project.teleconsulta.resp-4": "Diseñar flujos de videollamadas, automatización de documentos y pagos",
+    "project.teleconsulta.resp-5": "Facilitar la conexión entre ambos proyectos (Agenda Web y Teleconsulta)",
+    "project.teleconsulta.resp-6": "Trabajar en la integración entre plataformas desde la perspectiva de servicio",
+    "project.teleconsulta.resp-7": "Comunicar hallazgos mediante storytelling visual (presentaciones narrativas)",
 
     "project.teleconsulta.process-intro":
       "El proyecto se llevó a cabo en un contexto de alta incertidumbre, con un deadline muy ajustado y grandes desafíos para hacer investigación o testeo en terreno. Aun así, diseñamos un proceso enfocado en comprender profundamente los problemas de pacientes, médicos y equipos administrativos.",
 
     "project.teleconsulta.process-1-title": "1. Levantamiento de Hallazgos",
-    "project.teleconsulta.process-1-text":
-      "Investigación profunda en contexto de emergencia:",
-    "project.teleconsulta.process-1-item-1":
-      "Entrevistas remotas a usuarios (médicos y pacientes)",
-    "project.teleconsulta.process-1-item-2":
-      "Creación de personas: Mariana y Fernando como arquetipos",
-    "project.teleconsulta.process-1-item-3":
-      "Mapeo de sistemas y procesos internos complejos",
-    "project.teleconsulta.process-1-item-4":
-      "Identificación de tareas duplicadas, fricciones y puntos de ruptura",
-    "project.teleconsulta.process-1-item-5":
-      "Análisis de la plataforma existente (Teladoc) y sus limitaciones",
-    "project.teleconsulta.process-1-item-6":
-      "Service Blueprint completo del journey de teleconsulta",
+    "project.teleconsulta.process-1-text": "Investigación profunda en contexto de emergencia:",
+    "project.teleconsulta.process-1-item-1": "Entrevistas remotas a usuarios (médicos y pacientes)",
+    "project.teleconsulta.process-1-item-2": "Creación de personas: Mariana y Fernando como arquetipos",
+    "project.teleconsulta.process-1-item-3": "Mapeo de sistemas y procesos internos complejos",
+    "project.teleconsulta.process-1-item-4": "Identificación de tareas duplicadas, fricciones y puntos de ruptura",
+    "project.teleconsulta.process-1-item-5": "Análisis de la plataforma existente (Teladoc) y sus limitaciones",
+    "project.teleconsulta.process-1-item-6": "Service Blueprint completo del journey de teleconsulta",
 
-    "project.teleconsulta.process-2-title":
-      "2. Diseño de Flujos y Mejoras Clave",
-    "project.teleconsulta.process-2-text":
-      "Co-creación de soluciones con equipos multidisciplinarios:",
-    "project.teleconsulta.process-2-item-1":
-      "Plataforma de videollamadas propia con métricas clínicas",
-    "project.teleconsulta.process-2-item-2":
-      "Automatización de la entrega de documentos (recetas, boletas, certificados)",
-    "project.teleconsulta.process-2-item-3":
-      "Pago automático al finalizar la consulta, validado por el médico",
-    "project.teleconsulta.process-2-item-4":
-      "Rediseño de flujos internos para eliminar duplicidad de registros",
-    "project.teleconsulta.process-2-item-5":
-      "Creación de sala de espera virtual para disminuir incertidumbre",
-    "project.teleconsulta.process-2-item-6":
-      "Integración fluida con el sistema de Agenda Web",
+    "project.teleconsulta.process-2-title": "2. Diseño de Flujos y Mejoras Clave",
+    "project.teleconsulta.process-2-text": "Co-creación de soluciones con equipos multidisciplinarios:",
+    "project.teleconsulta.process-2-item-1": "Plataforma de videollamadas propia con métricas clínicas",
+    "project.teleconsulta.process-2-item-2": "Automatización de la entrega de documentos (recetas, boletas, certificados)",
+    "project.teleconsulta.process-2-item-3": "Pago automático al finalizar la consulta, validado por el médico",
+    "project.teleconsulta.process-2-item-4": "Rediseño de flujos internos para eliminar duplicidad de registros",
+    "project.teleconsulta.process-2-item-5": "Creación de sala de espera virtual para disminuir incertidumbre",
+    "project.teleconsulta.process-2-item-6": "Integración fluida con el sistema de Agenda Web",
 
     "project.teleconsulta.process-3-title": "3. Comunicación de Hallazgos",
-    "project.teleconsulta.process-3-text":
-      "Storytelling como herramienta estratégica:",
-    "project.teleconsulta.process-3-item-1":
-      'Presentación narrativa estructurada como "película" con actos',
-    "project.teleconsulta.process-3-item-2":
-      "Uso de personas para generar empatía con stakeholders",
-    "project.teleconsulta.process-3-item-3":
-      "Service Blueprint para visualizar el ecosistema completo",
-    "project.teleconsulta.process-3-item-4":
-      "Workshops colaborativos para priorizar mejoras",
+    "project.teleconsulta.process-3-text": "Storytelling como herramienta estratégica:",
+    "project.teleconsulta.process-3-item-1": 'Presentación narrativa estructurada como "película" con actos',
+    "project.teleconsulta.process-3-item-2": "Uso de personas para generar empatía con stakeholders",
+    "project.teleconsulta.process-3-item-3": "Service Blueprint para visualizar el ecosistema completo",
+    "project.teleconsulta.process-3-item-4": "Workshops colaborativos para priorizar mejoras",
 
     "project.teleconsulta.process-4-title": "4. Lanzamiento e Iteración",
-    "project.teleconsulta.process-4-text":
-      "Implementación progresiva con aprendizaje continuo:",
-    "project.teleconsulta.process-4-item-1":
-      "4 meses: Desarrollo inicial y pruebas internas (friends & family)",
-    "project.teleconsulta.process-4-item-2":
-      "6 meses: Despliegue completo al público",
-    "project.teleconsulta.process-4-item-3":
-      "+8 meses: Mejoras progresivas basadas en feedback",
-    "project.teleconsulta.process-4-item-4":
-      "Coordinación constante entre equipos de Agenda Web y Teleconsulta",
+    "project.teleconsulta.process-4-text": "Implementación progresiva con aprendizaje continuo:",
+    "project.teleconsulta.process-4-item-1": "4 meses: Desarrollo inicial y pruebas internas (friends & family)",
+    "project.teleconsulta.process-4-item-2": "6 meses: Despliegue completo al público",
+    "project.teleconsulta.process-4-item-3": "+8 meses: Mejoras progresivas basadas en feedback",
+    "project.teleconsulta.process-4-item-4": "Coordinación constante entre equipos de Agenda Web y Teleconsulta",
 
-    "project.teleconsulta.result-1-value":
-      "Reducción en quejas de facturación y documentos",
+    "project.teleconsulta.result-1-value": "Reducción en quejas de facturación y documentos",
     "project.teleconsulta.result-2-value": "Sesiones de telerehabilitación",
-    "project.teleconsulta.result-3-value":
-      "Teleconsultas totales (ecosistema completo)",
-    "project.teleconsulta.result-4-value":
-      "Alineación con necesidades clínicas",
+    "project.teleconsulta.result-3-value": "Teleconsultas totales (ecosistema completo)",
+    "project.teleconsulta.result-4-value": "Alineación con necesidades clínicas",
 
-    "project.teleconsulta.impact-1":
-      "Reducción del 40% en quejas relacionadas con facturación y entrega de documentos",
-    "project.teleconsulta.impact-2":
-      "Se liberó tiempo operativo médico al reducir tareas repetitivas y duplicadas",
-    "project.teleconsulta.impact-3":
-      "Pacientes ganaron claridad sobre su atención y accedieron más fácilmente a sus documentos",
-    "project.teleconsulta.impact-4":
-      "Plataforma 100% alineada con las necesidades clínicas y de gestión interna",
-    "project.teleconsulta.impact-5":
-      "Integración fluida con Agenda Web, sin saltos ni fricciones en la experiencia",
-    "project.teleconsulta.impact-6":
-      "Automatización de procesos administrativos que antes se hacían manualmente",
-    "project.teleconsulta.impact-7":
-      "Sala de espera virtual que redujo la ansiedad de pacientes y médicos",
-    "project.teleconsulta.impact-8":
-      "Sistema de entrega automática de recetas, boletas y certificados médicos",
+    "project.teleconsulta.impact-1": "Reducción del 40% en quejas relacionadas con facturación y entrega de documentos",
+    "project.teleconsulta.impact-2": "Se liberó tiempo operativo médico al reducir tareas repetitivas y duplicadas",
+    "project.teleconsulta.impact-3": "Pacientes ganaron claridad sobre su atención y accedieron más fácilmente a sus documentos",
+    "project.teleconsulta.impact-4": "Plataforma 100% alineada con las necesidades clínicas y de gestión interna",
+    "project.teleconsulta.impact-5": "Integración fluida con Agenda Web, sin saltos ni fricciones en la experiencia",
+    "project.teleconsulta.impact-6": "Automatización de procesos administrativos que antes se hacían manualmente",
+    "project.teleconsulta.impact-7": "Sala de espera virtual que redujo la ansiedad de pacientes y médicos",
+    "project.teleconsulta.impact-8": "Sistema de entrega automática de recetas, boletas y certificados médicos",
 
-    "project.teleconsulta.reflection-quote":
-      "El storytelling como puente entre la investigación y la acción.",
+    "project.teleconsulta.reflection-quote": "El storytelling como puente entre la investigación y la acción.",
     "project.teleconsulta.reflection-1":
       'Este proyecto fue un desafío tanto técnico como emocional. Trabajamos con urgencia, pero sin perder el foco humano. La decisión de comunicar los hallazgos mediante una narrativa cinematográfica (los "actos" de Mariana y Fernando) no fue solo una elección creativa, sino estratégica: necesitábamos que stakeholders, desarrolladores y equipos médicos entendieran visceralmente los pain points de los usuarios.',
     "project.teleconsulta.reflection-2":
@@ -780,34 +631,25 @@ const translations = {
 
     "project.teleconsulta.visual-blueprint-desc":
       "Mapa completo del servicio mostrando todos los touchpoints, actores y sistemas involucrados en la experiencia de teleconsulta.",
-    "project.teleconsulta.visual-blueprint-caption":
-      "Service Blueprint completo del journey de teleconsulta",
-    "project.teleconsulta.visual-storytelling-title":
-      "Presentación de Hallazgos e Insights",
+    "project.teleconsulta.visual-blueprint-caption": "Service Blueprint completo del journey de teleconsulta",
+    "project.teleconsulta.visual-storytelling-title": "Presentación de Hallazgos e Insights",
     "project.teleconsulta.visual-storytelling-desc":
       "Storytelling visual con la narrativa de Mariana y Fernando, estructurada como una película con actos que representan los pain points del servicio.",
-    "project.teleconsulta.visual-storytelling-caption":
-      "Hallazgos comunicados mediante storytelling cinematográfico",
+    "project.teleconsulta.visual-storytelling-caption": "Hallazgos comunicados mediante storytelling cinematográfico",
     "project.teleconsulta.visual-personas-title": "Construction of Personas",
     "project.teleconsulta.visual-personas-desc":
       "Perfiles de usuario creados a partir de la investigación, con sus pain points principales y contexto de uso.",
-    "project.teleconsulta.visual-persona-1":
-      "Fernando - Usuario de teleconsulta",
-    "project.teleconsulta.visual-persona-2":
-      "Camila - Doctora que atiende a pacientes en teleconsulta",
+    "project.teleconsulta.visual-persona-1": "Fernando - Usuario de teleconsulta",
+    "project.teleconsulta.visual-persona-2": "Camila - Doctora que atiende a pacientes en teleconsulta",
     "project.teleconsulta.visual-persona-3": "Sergio, Asistente de backoffice",
-    "project.teleconsulta.visual-prototypes-title":
-      "Prototipos - Primera Iteración",
+    "project.teleconsulta.visual-prototypes-title": "Prototipos - Primera Iteración",
     "project.teleconsulta.visual-prototypes-desc":
       "Wireframes y prototipos de las vistas principales tanto para médicos como para pacientes.",
-    "project.teleconsulta.visual-prototype-1":
-      "Vista médico - Panel de consulta",
-    "project.teleconsulta.visual-prototype-2":
-      "Interface de videollamada paciente",
+    "project.teleconsulta.visual-prototype-1": "Vista médico - Panel de consulta",
+    "project.teleconsulta.visual-prototype-2": "Interface de videollamada paciente",
 
     "sidebar.visual-resources": "Recursos Visuales",
-    "sidebar.interested-text-teleconsulta":
-      "Si quieres conocer más sobre mi trabajo en telemedicina y storytelling, hablemos.",
+    "sidebar.interested-text-teleconsulta": "Si quieres conocer más sobre mi trabajo en telemedicina y storytelling, hablemos.",
 
     // PROYECTO: CUBICO - IMPROVE YOUR ENERGY
 
@@ -828,92 +670,58 @@ const translations = {
     "project.cubico.role-text":
       "Como Service Designer en Fruta, trabajé durante 5 meses en este proyecto, siendo parte de un equipo multidisciplinario de 4 personas.",
 
-    "project.cubico.resp-1":
-      "Liderar la conceptualización del programa educativo basado en Design Thinking",
+    "project.cubico.resp-1": "Liderar la conceptualización del programa educativo basado en Design Thinking",
     "project.cubico.resp-2":
       "Co-diseñar y facilitar 4 workshops presenciales iniciales con jóvenes de la comunidad para entender problemáticas locales",
-    "project.cubico.resp-3":
-      "Diseñar y facilitar 2 talleres presenciales por colegio para formar a los docentes",
-    "project.cubico.resp-4":
-      "Coordinar 4 sesiones digitales con estudiantes de los colegios",
-    "project.cubico.resp-5":
-      "Adaptar metodologías de diseño centrado en las personas al contexto educativo",
-    "project.cubico.resp-6":
-      "Diseñar herramientas pedagógicas (tablero de juego interactivo, materiales visuales)",
-    "project.cubico.resp-7":
-      "Coordinar con docentes, estudiantes y representantes institucionales",
-    "project.cubico.resp-8":
-      "Facilitar la implementación del programa en el currículo escolar",
+    "project.cubico.resp-3": "Diseñar y facilitar 2 talleres presenciales por colegio para formar a los docentes",
+    "project.cubico.resp-4": "Coordinar 4 sesiones digitales con estudiantes de los colegios",
+    "project.cubico.resp-5": "Adaptar metodologías de diseño centrado en las personas al contexto educativo",
+    "project.cubico.resp-6": "Diseñar herramientas pedagógicas (tablero de juego interactivo, materiales visuales)",
+    "project.cubico.resp-7": "Coordinar con docentes, estudiantes y representantes institucionales",
+    "project.cubico.resp-8": "Facilitar la implementación del programa en el currículo escolar",
 
     "project.cubico.process-intro":
       "Diseñamos un proceso participativo basado en Design Thinking, adaptado específicamente para el contexto educativo y las necesidades de jóvenes en formación. El programa se estructuró en fases progresivas que permitieron a los estudiantes pasar de la observación a la acción.",
 
     "project.cubico.process-1-title": "1. Discovery con la Comunidad",
-    "project.cubico.process-1-text":
-      "Entender el contexto y las problemáticas reales:",
-    "project.cubico.process-1-item-1":
-      "4 workshops presenciales con jóvenes de Morón de la Frontera",
-    "project.cubico.process-1-item-2":
-      "Exploración de desafíos locales relacionados con sostenibilidad y energía",
-    "project.cubico.process-1-item-3":
-      "Identificación de necesidades y oportunidades en la comunidad",
-    "project.cubico.process-1-item-4":
-      "Construcción de empatía con los problemas ambientales del entorno",
-    "project.cubico.process-1-item-5":
-      "Definición de los retos que los estudiantes abordarían posteriormente",
+    "project.cubico.process-1-text": "Entender el contexto y las problemáticas reales:",
+    "project.cubico.process-1-item-1": "4 workshops presenciales con jóvenes de Morón de la Frontera",
+    "project.cubico.process-1-item-2": "Exploración de desafíos locales relacionados con sostenibilidad y energía",
+    "project.cubico.process-1-item-3": "Identificación de necesidades y oportunidades en la comunidad",
+    "project.cubico.process-1-item-4": "Construcción de empatía con los problemas ambientales del entorno",
+    "project.cubico.process-1-item-5": "Definición de los retos que los estudiantes abordarían posteriormente",
 
-    "project.cubico.process-2-title":
-      "2. Formación de Docentes (Co-diseño con Actores Locales)",
-    "project.cubico.process-2-text":
-      "Capacitar a los profesores en metodologías de diseño:",
-    "project.cubico.process-2-item-1":
-      "2 talleres presenciales por colegio (4 talleres totales)",
-    "project.cubico.process-2-item-2":
-      "Formación en Design Thinking y diseño centrado en las personas",
-    "project.cubico.process-2-item-3":
-      "Co-creación de contenidos adaptados al currículo",
-    "project.cubico.process-2-item-4":
-      "Sesiones de formación práctica con las herramientas pedagógicas",
+    "project.cubico.process-2-title": "2. Formación de Docentes (Co-diseño con Actores Locales)",
+    "project.cubico.process-2-text": "Capacitar a los profesores en metodologías de diseño:",
+    "project.cubico.process-2-item-1": "2 talleres presenciales por colegio (4 talleres totales)",
+    "project.cubico.process-2-item-2": "Formación en Design Thinking y diseño centrado en las personas",
+    "project.cubico.process-2-item-3": "Co-creación de contenidos adaptados al currículo",
+    "project.cubico.process-2-item-4": "Sesiones de formación práctica con las herramientas pedagógicas",
     "project.cubico.process-2-item-5": "12 docentes formados en total",
 
-    "project.cubico.process-3-title":
-      "3. Desarrollo de Herramientas Pedagógicas",
-    "project.cubico.process-3-text":
-      "Creación de recursos interactivos para el aula:",
+    "project.cubico.process-3-title": "3. Desarrollo de Herramientas Pedagógicas",
+    "project.cubico.process-3-text": "Creación de recursos interactivos para el aula:",
     "project.cubico.process-3-item-1":
       "Diseño de un tablero de juego interactivo que guiaba a los estudiantes a través de las fases del proceso de diseño",
-    "project.cubico.process-3-item-2":
-      "Materiales visuales que fomentaban la creatividad y el pensamiento crítico",
-    "project.cubico.process-3-item-3":
-      "Herramientas adaptadas para ESO y Formación Profesional",
-    "project.cubico.process-3-item-4":
-      "Recursos descargables para los docentes",
+    "project.cubico.process-3-item-2": "Materiales visuales que fomentaban la creatividad y el pensamiento crítico",
+    "project.cubico.process-3-item-3": "Herramientas adaptadas para ESO y Formación Profesional",
+    "project.cubico.process-3-item-4": "Recursos descargables para los docentes",
 
     "project.cubico.process-4-title": "4. Implementación en el Aula",
-    "project.cubico.process-4-text":
-      "Puesta en marcha del programa con estudiantes:",
-    "project.cubico.process-4-item-1":
-      "4 sesiones digitales con estudiantes de ambos colegios",
-    "project.cubico.process-4-item-2":
-      "85 estudiantes participantes (ESO y Formación Profesional)",
-    "project.cubico.process-4-item-3":
-      "Trabajo en equipos para identificar desafíos locales",
-    "project.cubico.process-4-item-4":
-      "Desarrollo de soluciones sostenibles concretas",
-    "project.cubico.process-4-item-5":
-      "Integración del programa en el currículo escolar",
+    "project.cubico.process-4-text": "Puesta en marcha del programa con estudiantes:",
+    "project.cubico.process-4-item-1": "4 sesiones digitales con estudiantes de ambos colegios",
+    "project.cubico.process-4-item-2": "85 estudiantes participantes (ESO y Formación Profesional)",
+    "project.cubico.process-4-item-3": "Trabajo en equipos para identificar desafíos locales",
+    "project.cubico.process-4-item-4": "Desarrollo de soluciones sostenibles concretas",
+    "project.cubico.process-4-item-5": "Integración del programa en el currículo escolar",
 
     "project.cubico.process-5-title": "5. Presentación y Evaluación",
     "project.cubico.process-5-text": "Cierre y seguimiento del programa:",
-    "project.cubico.process-5-item-1":
-      "12 proyectos desarrollados y presentados",
-    "project.cubico.process-5-item-2":
-      "Evaluación de soluciones propuestas por los estudiantes",
+    "project.cubico.process-5-item-1": "12 proyectos desarrollados y presentados",
+    "project.cubico.process-5-item-2": "Evaluación de soluciones propuestas por los estudiantes",
     "project.cubico.process-5-item-3": "Selección del proyecto ganador",
-    "project.cubico.process-5-item-4":
-      "Implementación del proyecto ganador con beneficios tangibles para la comunidad",
-    "project.cubico.process-5-item-5":
-      "Mecanismos de seguimiento para evaluar el impacto",
+    "project.cubico.process-5-item-4": "Implementación del proyecto ganador con beneficios tangibles para la comunidad",
+    "project.cubico.process-5-item-5": "Mecanismos de seguimiento para evaluar el impacto",
 
     "project.cubico.methodology-title": "Adaptación de Design Thinking",
     "project.cubico.methodology-intro":
@@ -939,23 +747,15 @@ const translations = {
     "project.cubico.result-3-value": "Proyectos sostenibles desarrollados",
     "project.cubico.result-4-value": "Proyecto ganador implementado",
 
-    "project.cubico.impact-1":
-      "Formación de 12 docentes en metodologías de diseño centrado en las personas",
-    "project.cubico.impact-2":
-      "Participación activa de 85 estudiantes de ESO y Formación Profesional",
-    "project.cubico.impact-3":
-      "Desarrollo y presentación de 12 proyectos enfocados en soluciones sostenibles",
-    "project.cubico.impact-4":
-      "Implementación del proyecto ganador, con beneficios tangibles para la comunidad local",
-    "project.cubico.impact-5":
-      "Integración del programa en el currículo escolar de ambos colegios",
-    "project.cubico.impact-6":
-      "Fortalecimiento del compromiso de jóvenes con el desarrollo sostenible de su comunidad",
-    "project.cubico.impact-7":
-      "Herramientas pedagógicas reutilizables para futuras ediciones del programa",
+    "project.cubico.impact-1": "Formación de 12 docentes en metodologías de diseño centrado en las personas",
+    "project.cubico.impact-2": "Participación activa de 85 estudiantes de ESO y Formación Profesional",
+    "project.cubico.impact-3": "Desarrollo y presentación de 12 proyectos enfocados en soluciones sostenibles",
+    "project.cubico.impact-4": "Implementación del proyecto ganador, con beneficios tangibles para la comunidad local",
+    "project.cubico.impact-5": "Integración del programa en el currículo escolar de ambos colegios",
+    "project.cubico.impact-6": "Fortalecimiento del compromiso de jóvenes con el desarrollo sostenible de su comunidad",
+    "project.cubico.impact-7": "Herramientas pedagógicas reutilizables para futuras ediciones del programa",
 
-    "project.cubico.reflection-quote":
-      "El poder del diseño estratégico y participativo para generar impacto social.",
+    "project.cubico.reflection-quote": "El poder del diseño estratégico y participativo para generar impacto social.",
     "project.cubico.reflection-1":
       "Este proyecto reafirmó mi convicción sobre el poder del diseño estratégico y participativo para generar impacto social. Fue inspirador ver cómo, a través de herramientas adecuadas y un enfoque colaborativo, los jóvenes pueden convertirse en protagonistas del cambio en sus comunidades.",
     "project.cubico.reflection-2":
@@ -968,25 +768,20 @@ const translations = {
     "project.cubico.visual-toolkit-title": "Toolkit para el reto",
     "project.cubico.visual-toolkit-desc":
       "Herramientas pedagógicas diseñadas para guiar a los estudiantes a través de las fases del Design Thinking.",
-    "project.cubico.visual-toolkit-caption":
-      "Tablero y tarjetas para el proceso de diseño",
+    "project.cubico.visual-toolkit-caption": "Tablero y tarjetas para el proceso de diseño",
     "project.cubico.visual-workshops-title": "Workshops con la Comunidad",
-    "project.cubico.visual-workshops-desc":
-      "Sesiones iniciales de discovery con jóvenes de Morón de la Frontera.",
+    "project.cubico.visual-workshops-desc": "Sesiones iniciales de discovery con jóvenes de Morón de la Frontera.",
     "project.cubico.visual-workshop-1": "Primer workshop con jóvenes",
     "project.cubico.visual-workshop-2": "Sesión de ideación colaborativa",
     "project.cubico.visual-training-title": "Formación de Docentes",
-    "project.cubico.visual-training-desc":
-      "Talleres presenciales con profesores para capacitarlos en Design Thinking.",
+    "project.cubico.visual-training-desc": "Talleres presenciales con profesores para capacitarlos en Design Thinking.",
     "project.cubico.visual-training-1": "Taller con profesores - Colegio 1",
     "project.cubico.visual-training-2": "Taller con profesores - Colegio 2",
     "project.cubico.visual-students-title": "Estudiantes en Acción",
-    "project.cubico.visual-students-desc":
-      "Jóvenes desarrollando sus proyectos de sostenibilidad.",
+    "project.cubico.visual-students-desc": "Jóvenes desarrollando sus proyectos de sostenibilidad.",
     "project.cubico.visual-student-1": "Equipos trabajando en prototipos",
     "project.cubico.visual-student-2": "Presentación de proyectos finales",
-    "project.cubico.visual-student-3":
-      "Grupos ganadores en el Reto Improve Your Energy",
+    "project.cubico.visual-student-3": "Grupos ganadores en el Reto Improve Your Energy",
     "project.cubico.visual-booklet-title": "Más información sobre el reto",
     "project.cubico.visual-booklet-text":
       "Si quieres aprender más sobre lo que hicimos con la comunidad de Morón de la Frontera puedes leer nuestro libreto",
@@ -1005,13 +800,11 @@ const translations = {
     "sidebar.participants": "participantes",
     "sidebar.projects-label": "Proyectos",
     "sidebar.developed": "desarrollados",
-    "sidebar.interested-text-cubico":
-      "Si quieres conocer más sobre mi trabajo en educación y sostenibilidad, hablemos.",
+    "sidebar.interested-text-cubico": "Si quieres conocer más sobre mi trabajo en educación y sostenibilidad, hablemos.",
 
     // SPOTIFY PROJECT
     "project.spotify.badge-nda": "Bajo NDA",
-    "project.spotify.hero-title":
-      "Spotify / Ayer Viernes – Experiencia Premium",
+    "project.spotify.hero-title": "Spotify / Ayer Viernes – Experiencia Premium",
     "project.spotify.hero-subtitle":
       "Investigación cualitativa sobre patrones de suscripción a Spotify Premium en Perú. Estudio comparativo bilingüe que refutó la hipótesis inicial del cliente, revelando insights sobre comportamiento de usuarios en mercados emergentes.",
 
@@ -1033,94 +826,62 @@ const translations = {
     "project.spotify.team-1": "Lead Researcher (líder del proyecto)",
     "project.spotify.team-2": "Yo (UX Researcher)",
     "project.spotify.team-3": "1 Researcher adicional",
-    "project.spotify.team-4":
-      "Jorge Barahona (Director de Ayer Viernes - acompañamiento en reuniones)",
+    "project.spotify.team-4": "Jorge Barahona (Director de Ayer Viernes - acompañamiento en reuniones)",
 
     // Responsibilities
-    "project.spotify.resp-1":
-      "Participar en el diseño del enfoque de investigación y definición de hipótesis",
-    "project.spotify.resp-2":
-      "Co-crear el screener para reclutamiento de participantes",
-    "project.spotify.resp-3":
-      "Realizar entrevistas semiestructuradas en español con usuarios peruanos",
-    "project.spotify.resp-4":
-      "Mapear insights en herramientas colaborativas (Miro)",
-    "project.spotify.resp-5":
-      "Sintetizar hallazgos y patrones de comportamiento",
-    "project.spotify.resp-6":
-      "Traducir y adaptar informes del español al inglés para el equipo global",
-    "project.spotify.resp-7":
-      "Crear Customer Journey Maps y frameworks de Jobs To Be Done",
-    "project.spotify.resp-8":
-      "Identificar barreras, percepciones erróneas y puntos de fricción",
+    "project.spotify.resp-1": "Participar en el diseño del enfoque de investigación y definición de hipótesis",
+    "project.spotify.resp-2": "Co-crear el screener para reclutamiento de participantes",
+    "project.spotify.resp-3": "Realizar entrevistas semiestructuradas en español con usuarios peruanos",
+    "project.spotify.resp-4": "Mapear insights en herramientas colaborativas (Miro)",
+    "project.spotify.resp-5": "Sintetizar hallazgos y patrones de comportamiento",
+    "project.spotify.resp-6": "Traducir y adaptar informes del español al inglés para el equipo global",
+    "project.spotify.resp-7": "Crear Customer Journey Maps y frameworks de Jobs To Be Done",
+    "project.spotify.resp-8": "Identificar barreras, percepciones erróneas y puntos de fricción",
 
     // Process
     "project.spotify.process-intro":
       "Diseñamos un proceso de investigación cualitativa riguroso, bilingüe y culturalmente sensible, que nos permitiera validar o refutar la hipótesis inicial del cliente.",
 
     "project.spotify.process-1-title": "1. Kick-off y Definición de Hipótesis",
-    "project.spotify.process-1-text":
-      "Alineación con el equipo global y formulación del problema:",
+    "project.spotify.process-1-text": "Alineación con el equipo global y formulación del problema:",
     "project.spotify.process-1-item-1":
       'Hipótesis inicial: "En Perú, los usuarios se suscriben directamente a Spotify Premium porque perciben más valor en el plan pago que en el gratuito"',
-    "project.spotify.process-1-item-2":
-      "Definición de objetivos de investigación",
-    "project.spotify.process-1-item-3":
-      "Criterios de reclutamiento para dos perfiles: usuarios Premium y no usuarios",
+    "project.spotify.process-1-item-2": "Definición de objetivos de investigación",
+    "project.spotify.process-1-item-3": "Criterios de reclutamiento para dos perfiles: usuarios Premium y no usuarios",
     "project.spotify.process-1-item-4": "Métodos de validación cualitativa",
 
     "project.spotify.process-2-title": "2. Reclutamiento Bilingüe",
     "project.spotify.process-2-text": "Selección cuidadosa de participantes:",
     "project.spotify.process-2-item-1": "Screener: Aplicado a ~100 personas",
-    "project.spotify.process-2-item-2":
-      "10 participantes finales: 5 usuarios Premium + 5 no usuarios",
-    "project.spotify.process-2-item-3":
-      "Usuarios Premium: reclutados desde la base de Spotify en Perú",
-    "project.spotify.process-2-item-4":
-      "No usuarios: captados mediante screener en redes sociales",
-    "project.spotify.process-2-item-5":
-      "Entrevistas en español, informes en inglés para el equipo global",
+    "project.spotify.process-2-item-2": "10 participantes finales: 5 usuarios Premium + 5 no usuarios",
+    "project.spotify.process-2-item-3": "Usuarios Premium: reclutados desde la base de Spotify en Perú",
+    "project.spotify.process-2-item-4": "No usuarios: captados mediante screener en redes sociales",
+    "project.spotify.process-2-item-5": "Entrevistas en español, informes en inglés para el equipo global",
 
     "project.spotify.process-3-title": "3. Investigación Exploratoria",
-    "project.spotify.process-3-text":
-      "Inmersión profunda en comportamientos y motivaciones:",
-    "project.spotify.process-3-item-1":
-      "Entrevistas semiestructuradas (1-1.5 horas cada una)",
+    "project.spotify.process-3-text": "Inmersión profunda en comportamientos y motivaciones:",
+    "project.spotify.process-3-item-1": "Entrevistas semiestructuradas (1-1.5 horas cada una)",
     "project.spotify.process-3-item-2": "Mapeo de insights en Miro",
-    "project.spotify.process-3-item-3":
-      "Comparación entre usuarios de Spotify y no usuarios",
-    "project.spotify.process-3-item-4":
-      "Identificación de barreras culturales, económicas y tecnológicas",
-    "project.spotify.process-3-item-5":
-      "Exploración de percepciones sobre planes freemium vs premium",
-    "project.spotify.process-3-item-6":
-      "Análisis de patrones de uso de plataformas competidoras",
+    "project.spotify.process-3-item-3": "Comparación entre usuarios de Spotify y no usuarios",
+    "project.spotify.process-3-item-4": "Identificación de barreras culturales, económicas y tecnológicas",
+    "project.spotify.process-3-item-5": "Exploración de percepciones sobre planes freemium vs premium",
+    "project.spotify.process-3-item-6": "Análisis de patrones de uso de plataformas competidoras",
 
     "project.spotify.process-4-title": "4. Síntesis y Análisis",
-    "project.spotify.process-4-text":
-      "Transformación de data cualitativa en insights estratégicos:",
+    "project.spotify.process-4-text": "Transformación de data cualitativa en insights estratégicos:",
     "project.spotify.process-4-item-1": "Customer Journey Maps",
     "project.spotify.process-4-item-2": "Jobs To Be Done frameworks",
-    "project.spotify.process-4-item-3":
-      "Clustering de insights y patrones de comportamiento",
-    "project.spotify.process-4-item-4":
-      "Evaluación de fricciones en el onboarding y experiencia de uso",
-    "project.spotify.process-4-item-5":
-      "Análisis de lenguaje, expectativas y accesibilidad",
-    "project.spotify.process-4-item-6":
-      "Traducción y adaptación cultural de hallazgos para el equipo global",
+    "project.spotify.process-4-item-3": "Clustering de insights y patrones de comportamiento",
+    "project.spotify.process-4-item-4": "Evaluación de fricciones en el onboarding y experiencia de uso",
+    "project.spotify.process-4-item-5": "Análisis de lenguaje, expectativas y accesibilidad",
+    "project.spotify.process-4-item-6": "Traducción y adaptación cultural de hallazgos para el equipo global",
 
     "project.spotify.process-5-title": "5. Entrega de Resultados",
-    "project.spotify.process-5-text":
-      "Comunicación clara de hallazgos y recomendaciones:",
-    "project.spotify.process-5-item-1":
-      "Informe completo en inglés para Spotify y consultora alemana",
-    "project.spotify.process-5-item-2":
-      "Presentación de hallazgos con evidencia cualitativa",
-    "project.spotify.process-5-item-3":
-      "Refutación de la hipótesis inicial con argumentos sólidos",
-    "project.spotify.process-5-item-4":
-      "Recomendaciones estratégicas para mejorar conversión en mercado peruano",
+    "project.spotify.process-5-text": "Comunicación clara de hallazgos y recomendaciones:",
+    "project.spotify.process-5-item-1": "Informe completo en inglés para Spotify y consultora alemana",
+    "project.spotify.process-5-item-2": "Presentación de hallazgos con evidencia cualitativa",
+    "project.spotify.process-5-item-3": "Refutación de la hipótesis inicial con argumentos sólidos",
+    "project.spotify.process-5-item-4": "Recomendaciones estratégicas para mejorar conversión en mercado peruano",
 
     // Findings
     "project.spotify.findings-title": "Hallazgos Generales (sin violar NDA)",
@@ -1149,27 +910,19 @@ const translations = {
     "project.spotify.result-3-value": "Países comparados",
     "project.spotify.result-4-value": "Idiomas (ES/EN)",
 
-    "project.spotify.impact-1":
-      "Hipótesis refutada con evidencia cualitativa sólida",
-    "project.spotify.impact-2":
-      "Comprensión profunda de barreras culturales y tecnológicas en mercado peruano",
-    "project.spotify.impact-3":
-      "Identificación de patrones de comportamiento únicos del mercado local",
-    "project.spotify.impact-4":
-      "Recomendaciones estratégicas para mejorar onboarding y conversión",
-    "project.spotify.impact-5":
-      "Insights sobre competencia y uso de plataformas alternativas",
-    "project.spotify.impact-6":
-      "Informe bilingüe entregado al equipo global de Spotify",
+    "project.spotify.impact-1": "Hipótesis refutada con evidencia cualitativa sólida",
+    "project.spotify.impact-2": "Comprensión profunda de barreras culturales y tecnológicas en mercado peruano",
+    "project.spotify.impact-3": "Identificación de patrones de comportamiento únicos del mercado local",
+    "project.spotify.impact-4": "Recomendaciones estratégicas para mejorar onboarding y conversión",
+    "project.spotify.impact-5": "Insights sobre competencia y uso de plataformas alternativas",
+    "project.spotify.impact-6": "Informe bilingüe entregado al equipo global de Spotify",
 
     // Learnings
-    "project.spotify.learning-1-title":
-      "La importancia de cuestionar las hipótesis",
+    "project.spotify.learning-1-title": "La importancia de cuestionar las hipótesis",
     "project.spotify.learning-1-text":
       "Este proyecto me enseñó que las hipótesis iniciales del cliente, aunque lógicas, no siempre reflejan la realidad. La investigación cualitativa rigurosa es fundamental para revelar las verdaderas motivaciones y comportamientos de los usuarios, especialmente en mercados con contextos culturales y económicos diferentes.",
 
-    "project.spotify.learning-2-title":
-      "Investigación bilingüe y sensibilidad cultural",
+    "project.spotify.learning-2-title": "Investigación bilingüe y sensibilidad cultural",
     "project.spotify.learning-2-text":
       "Trabajar en español con usuarios peruanos y luego traducir hallazgos al inglés para un equipo global requiere no solo dominio del idioma, sino comprensión profunda de matices culturales que no siempre son evidentes en una traducción literal.",
 
@@ -1178,8 +931,7 @@ const translations = {
       'Los datos cuantitativos mostraban un patrón (suscripción directa a Premium), pero solo la investigación cualitativa reveló el "por qué" real: experiencias previas con la plataforma, no percepción de mayor valor. Este proyecto reforzó mi convicción sobre el poder de las entrevistas en profundidad.',
 
     // Reflections
-    "project.spotify.reflection-quote":
-      "La data sin contexto puede reforzar ideas equivocadas.",
+    "project.spotify.reflection-quote": "La data sin contexto puede reforzar ideas equivocadas.",
     "project.spotify.reflection-1":
       "Este estudio confirmó que escuchar a los usuarios cambia el rumbo de decisiones de negocio. En este caso, permitió evitar invertir recursos en estrategias mal enfocadas y alinearse mejor con las realidades del mercado local.",
     "project.spotify.reflection-2":
@@ -1217,98 +969,64 @@ const translations = {
     "project.mincetur.role-text":
       "Participé como Service Designer en Creative Lab, siendo la más junior del equipo de 4 personas. Este fue uno de mis primeros proyectos profesionales, y me permitió aprender sobre facilitación de talleres intensivos y diseño estratégico en contextos gubernamentales.",
 
-    "project.mincetur.resp-1":
-      "Co-diseñar la estructura completa del taller durante las 2 semanas de preparación",
-    "project.mincetur.resp-2":
-      "Participar en la creación y adaptación de herramientas metodológicas",
-    "project.mincetur.resp-3":
-      "Facilitar dinámicas colaborativas durante los 3 días del taller",
-    "project.mincetur.resp-4":
-      "Ayudar a los líderes de CITE a interpretar datos y requerimientos estatales",
-    "project.mincetur.resp-5":
-      "Apoyar en la construcción de hojas de ruta y planes de gestión",
-    "project.mincetur.resp-6":
-      "Traducir conjuntamente la información técnica en un lenguaje visual y práctico",
-    "project.mincetur.resp-7":
-      "Sistematizar resultados y aprendizajes del taller",
+    "project.mincetur.resp-1": "Co-diseñar la estructura completa del taller durante las 2 semanas de preparación",
+    "project.mincetur.resp-2": "Participar en la creación y adaptación de herramientas metodológicas",
+    "project.mincetur.resp-3": "Facilitar dinámicas colaborativas durante los 3 días del taller",
+    "project.mincetur.resp-4": "Ayudar a los líderes de CITE a interpretar datos y requerimientos estatales",
+    "project.mincetur.resp-5": "Apoyar en la construcción de hojas de ruta y planes de gestión",
+    "project.mincetur.resp-6": "Traducir conjuntamente la información técnica en un lenguaje visual y práctico",
+    "project.mincetur.resp-7": "Sistematizar resultados y aprendizajes del taller",
 
     "project.mincetur.process-intro":
       "El proyecto se estructuró en dos fases: una preparación intensiva de 2 semanas y un taller presencial de 3 días con todos los líderes de CITE.",
 
     "project.mincetur.process-0-title": "Fase 0: Preparación (2 semanas)",
-    "project.mincetur.process-0-text":
-      "Levantamiento de necesidades y diseño del taller:",
-    "project.mincetur.process-0-item-1":
-      "Levantamiento de objetivos con MINCETUR",
-    "project.mincetur.process-0-item-2":
-      "Análisis de requerimientos de presupuesto y KPIs estatales",
-    "project.mincetur.process-0-item-3":
-      "Definición del reto: construir un modelo de gestión aplicable en diferentes realidades",
-    "project.mincetur.process-0-item-4":
-      "Adaptación metodológica del doble diamante para sesiones intensivas",
-    "project.mincetur.process-0-item-5":
-      "Creación de herramientas propias: templates, canvas, frameworks",
-    "project.mincetur.process-0-item-6":
-      "Diseño de dinámicas colaborativas y materiales de trabajo",
+    "project.mincetur.process-0-text": "Levantamiento de necesidades y diseño del taller:",
+    "project.mincetur.process-0-item-1": "Levantamiento de objetivos con MINCETUR",
+    "project.mincetur.process-0-item-2": "Análisis de requerimientos de presupuesto y KPIs estatales",
+    "project.mincetur.process-0-item-3": "Definición del reto: construir un modelo de gestión aplicable en diferentes realidades",
+    "project.mincetur.process-0-item-4": "Adaptación metodológica del doble diamante para sesiones intensivas",
+    "project.mincetur.process-0-item-5": "Creación de herramientas propias: templates, canvas, frameworks",
+    "project.mincetur.process-0-item-6": "Diseño de dinámicas colaborativas y materiales de trabajo",
 
     "project.mincetur.process-1-title": "Día 1: Entendimiento Compartido",
-    "project.mincetur.process-1-text":
-      "Alineación y sistematización de contextos:",
-    "project.mincetur.process-1-item-1":
-      "Presentación de cada CITE y sus realidades específicas",
-    "project.mincetur.process-1-item-2":
-      "Entendimiento compartido del problema",
-    "project.mincetur.process-1-item-3":
-      "Sistematización de data institucional de cada centro",
-    "project.mincetur.process-1-item-4":
-      "Mapeo de desafíos comunes y particulares",
-    "project.mincetur.process-1-item-5":
-      "Introducción a las herramientas de trabajo",
+    "project.mincetur.process-1-text": "Alineación y sistematización de contextos:",
+    "project.mincetur.process-1-item-1": "Presentación de cada CITE y sus realidades específicas",
+    "project.mincetur.process-1-item-2": "Entendimiento compartido del problema",
+    "project.mincetur.process-1-item-3": "Sistematización de data institucional de cada centro",
+    "project.mincetur.process-1-item-4": "Mapeo de desafíos comunes y particulares",
+    "project.mincetur.process-1-item-5": "Introducción a las herramientas de trabajo",
 
-    "project.mincetur.process-2-title":
-      "Día 2: Co-creación de Herramientas Clave",
+    "project.mincetur.process-2-title": "Día 2: Co-creación de Herramientas Clave",
     "project.mincetur.process-2-text": "Construcción colaborativa del modelo:",
-    "project.mincetur.process-2-item-1":
-      "Co-creación de herramientas clave con los equipos de los CITE",
-    "project.mincetur.process-2-item-2":
-      "Definición de promesas institucionales",
-    "project.mincetur.process-2-item-3":
-      "Establecimiento de metas concretas y alcanzables",
+    "project.mincetur.process-2-item-1": "Co-creación de herramientas clave con los equipos de los CITE",
+    "project.mincetur.process-2-item-2": "Definición de promesas institucionales",
+    "project.mincetur.process-2-item-3": "Establecimiento de metas concretas y alcanzables",
     "project.mincetur.process-2-item-4": "Identificación y asignación de KPIs",
-    "project.mincetur.process-2-item-5":
-      "Clarificación de responsabilidades por área",
-    "project.mincetur.process-2-item-6":
-      "Traducción de lenguaje técnico del Estado a formato accesible",
+    "project.mincetur.process-2-item-5": "Clarificación de responsabilidades por área",
+    "project.mincetur.process-2-item-6": "Traducción de lenguaje técnico del Estado a formato accesible",
 
     "project.mincetur.process-3-title": "Día 3: Iteración y Validación",
     "project.mincetur.process-3-text": "Refinamiento contextualizado por CITE:",
     "project.mincetur.process-3-item-1": "Iteración individual por cada CITE",
-    "project.mincetur.process-3-item-2":
-      "Validación del modelo propuesto por cada equipo",
-    "project.mincetur.process-3-item-3":
-      "Ajustes según realidades y capacidades específicas",
-    "project.mincetur.process-3-item-4":
-      "Presentación de hojas de ruta finales",
-    "project.mincetur.process-3-item-5":
-      "Definición de próximos pasos y compromisos",
+    "project.mincetur.process-3-item-2": "Validación del modelo propuesto por cada equipo",
+    "project.mincetur.process-3-item-3": "Ajustes según realidades y capacidades específicas",
+    "project.mincetur.process-3-item-4": "Presentación de hojas de ruta finales",
+    "project.mincetur.process-3-item-5": "Definición de próximos pasos y compromisos",
 
-    "project.mincetur.finding-1-title":
-      "Cada CITE opera bajo realidades muy distintas",
+    "project.mincetur.finding-1-title": "Cada CITE opera bajo realidades muy distintas",
     "project.mincetur.finding-1-text":
       "Aunque todos son parte del mismo sistema MINCETUR, cada CITE enfrentaba desafíos únicos según su región, recursos y contexto local. La flexibilidad metodológica fue crucial para que las herramientas fueran útiles para todos.",
 
-    "project.mincetur.finding-2-title":
-      "Traducir el lenguaje del Estado es fundamental",
+    "project.mincetur.finding-2-title": "Traducir el lenguaje del Estado es fundamental",
     "project.mincetur.finding-2-text":
       "Los requerimientos técnicos del gobierno estaban expresados en un lenguaje burocrático complejo. Traducir esto a formatos entendibles y visuales mejoró dramáticamente la apropiación de los líderes locales.",
 
-    "project.mincetur.finding-3-title":
-      "La co-creación desde el día 1 genera compromiso real",
+    "project.mincetur.finding-3-title": "La co-creación desde el día 1 genera compromiso real",
     "project.mincetur.finding-3-text":
       "No impusimos un modelo pre-diseñado: facilitamos que ellos mismos lo construyeran. Esta participación activa (no solo consultiva) generó apropiación genuina del proceso y las herramientas.",
 
-    "project.mincetur.finding-4-title":
-      "La visualización de objetivos fortalece el propósito",
+    "project.mincetur.finding-4-title": "La visualización de objetivos fortalece el propósito",
     "project.mincetur.finding-4-text":
       "Ver sus metas, KPIs y responsabilidades plasmadas visualmente ayudó a los equipos a entender el panorama completo y sentirse empoderados para ejecutar.",
 
@@ -1317,19 +1035,13 @@ const translations = {
     "project.mincetur.result-3-value": "CITE con modelo implementado",
     "project.mincetur.result-4-value": "Herramientas en uso posterior",
 
-    "project.mincetur.impact-1":
-      "Se construyó un modelo de gestión adaptable para cada CITE",
-    "project.mincetur.impact-2":
-      "Los equipos generaron un plan de acción validado por ellos mismos para los próximos dos años",
-    "project.mincetur.impact-3":
-      "Las herramientas diseñadas facilitaron la elaboración de informes exigidos por el Estado",
-    "project.mincetur.impact-4":
-      "Se logró una apropiación real del proceso gracias a la participación activa, no solo consultiva",
-    "project.mincetur.impact-5":
-      "2 años después, los CITE seguían usando las herramientas creadas en el taller",
+    "project.mincetur.impact-1": "Se construyó un modelo de gestión adaptable para cada CITE",
+    "project.mincetur.impact-2": "Los equipos generaron un plan de acción validado por ellos mismos para los próximos dos años",
+    "project.mincetur.impact-3": "Las herramientas diseñadas facilitaron la elaboración de informes exigidos por el Estado",
+    "project.mincetur.impact-4": "Se logró una apropiación real del proceso gracias a la participación activa, no solo consultiva",
+    "project.mincetur.impact-5": "2 años después, los CITE seguían usando las herramientas creadas en el taller",
 
-    "project.mincetur.learning-1-title":
-      "La facilitación es un arte que se aprende haciendo",
+    "project.mincetur.learning-1-title": "La facilitación es un arte que se aprende haciendo",
     "project.mincetur.learning-1-text":
       "Como la más junior del equipo, este taller me enseñó que facilitar no es solo guiar dinámicas, sino sostener espacios seguros donde las personas se sientan capaces de crear. Ver cómo los líderes de CITE se apropiaban de las herramientas fue mi primera gran lección sobre el poder del diseño participativo.",
 
@@ -1337,18 +1049,15 @@ const translations = {
     "project.mincetur.learning-2-text":
       'No existe un "modelo único" que funcione para todos. Aprendí que las mejores herramientas son aquellas que los usuarios entienden, adaptan y hacen suyas. En procesos de facilitación intensiva, adaptar el método al ritmo y lenguaje del usuario es más importante que seguir la estructura perfecta.',
 
-    "project.mincetur.learning-3-title":
-      "El impacto del diseño no se mide solo al final",
+    "project.mincetur.learning-3-title": "El impacto del diseño no se mide solo al final",
     "project.mincetur.learning-3-text":
       "Enterarnos 2 años después de que los CITE seguían usando las herramientas que creamos fue la confirmación de que diseñamos algo realmente útil. El verdadero éxito no es solo entregar un workshop, sino crear valor sostenible.",
 
-    "project.mincetur.learning-4-title":
-      "Diseñar para el sector público requiere sensibilidad especial",
+    "project.mincetur.learning-4-title": "Diseñar para el sector público requiere sensibilidad especial",
     "project.mincetur.learning-4-text":
       "Trabajar con entidades gubernamentales implica navegar burocracia, lenguaje técnico y múltiples stakeholders. Este proyecto me enseñó a traducir complejidad en claridad sin perder rigor.",
 
-    "project.mincetur.reflection-quote":
-      "La herramienta más potente es aquella que los usuarios hacen suya.",
+    "project.mincetur.reflection-quote": "La herramienta más potente es aquella que los usuarios hacen suya.",
     "project.mincetur.reflection-1":
       "Este proyecto me enseñó que en procesos de facilitación intensiva, la clave está en acompañar con empatía y claridad. No se trata de llegar con soluciones pre-armadas, sino de crear el espacio y las herramientas para que las personas construyan sus propias respuestas.",
     "project.mincetur.reflection-2":
@@ -1356,8 +1065,7 @@ const translations = {
     "project.mincetur.reflection-3":
       "Ver que 2 años después los CITE seguían usando lo que co-creamos juntos fue la mayor validación: diseñamos algo que realmente les sirvió. Y eso, para mí, es el verdadero éxito del diseño estratégico.",
 
-    "sidebar.interested-text-mincetur":
-      "Si quieres conocer más sobre mi trabajo en facilitación y diseño estratégico, hablemos.",
+    "sidebar.interested-text-mincetur": "Si quieres conocer más sobre mi trabajo en facilitación y diseño estratégico, hablemos.",
 
     // PROYECTO: TALI - AGENCIA DE VIAJES CORPORATIVA
 
@@ -1382,83 +1090,57 @@ const translations = {
     "project.tali.team-2": "1 Service Designer",
     "project.tali.team-3": "1 Diseñadora de Marca",
 
-    "project.tali.resp-1":
-      "Investigación contextual sobre hábitos de viaje y gestión corporativa",
-    "project.tali.resp-2":
-      "Realización de entrevistas cualitativas con potenciales usuarios",
+    "project.tali.resp-1": "Investigación contextual sobre hábitos de viaje y gestión corporativa",
+    "project.tali.resp-2": "Realización de entrevistas cualitativas con potenciales usuarios",
     "project.tali.resp-3": "Clusterización de insights y síntesis de hallazgos",
-    "project.tali.resp-4":
-      "Definición de 4 perfiles de usuario (personas): viajero, responsable de RRHH, supervisor, soporte",
-    "project.tali.resp-5":
-      "Mapeo de flujos de interacción diferenciados según tipo de usuario",
-    "project.tali.resp-6":
-      "Co-diseño de marca, estrategia y pilares de servicio",
-    "project.tali.resp-7":
-      "Participación en el proceso de naming (resultado: TALI)",
-    "project.tali.resp-8":
-      "Diseño de pantallas referenciales para visualizar el flujo general",
+    "project.tali.resp-4": "Definición de 4 perfiles de usuario (personas): viajero, responsable de RRHH, supervisor, soporte",
+    "project.tali.resp-5": "Mapeo de flujos de interacción diferenciados según tipo de usuario",
+    "project.tali.resp-6": "Co-diseño de marca, estrategia y pilares de servicio",
+    "project.tali.resp-7": "Participación en el proceso de naming (resultado: TALI)",
+    "project.tali.resp-8": "Diseño de pantallas referenciales para visualizar el flujo general",
 
     "project.tali.process-intro":
       "Trabajamos con un enfoque de diseño centrado en el usuario, combinando investigación cualitativa con diseño estratégico y construcción de marca.",
 
     "project.tali.process-1-title": "1. Entendimiento del Reto y Oportunidad",
     "project.tali.process-1-text": "Exploración del mercado y contexto:",
-    "project.tali.process-1-item-1":
-      "Reuniones con stakeholders y futuros clientes potenciales",
-    "project.tali.process-1-item-2":
-      "Análisis de plataformas similares y sus limitaciones",
+    "project.tali.process-1-item-1": "Reuniones con stakeholders y futuros clientes potenciales",
+    "project.tali.process-1-item-2": "Análisis de plataformas similares y sus limitaciones",
     "project.tali.process-1-item-3":
       "Detección de fricciones comunes en la gestión de viajes corporativos: visibilidad, trazabilidad, autorizaciones, rendiciones, soporte",
-    "project.tali.process-1-item-4":
-      "Identificación de oportunidades en el mercado peruano",
+    "project.tali.process-1-item-4": "Identificación de oportunidades en el mercado peruano",
 
     "project.tali.process-2-title": "2. Investigación Cualitativa",
     "project.tali.process-2-text": "Entrevistas y síntesis de insights:",
-    "project.tali.process-2-item-1":
-      "Entrevistas cualitativas con empleados corporativos, responsables de RRHH y personal de soporte",
-    "project.tali.process-2-item-2":
-      "Clusterización de hallazgos en herramientas colaborativas",
-    "project.tali.process-2-item-3":
-      "Identificación de pain points por cada rol",
-    "project.tali.process-2-item-4":
-      "Mapeo de necesidades diferenciadas antes, durante y después del viaje",
+    "project.tali.process-2-item-1": "Entrevistas cualitativas con empleados corporativos, responsables de RRHH y personal de soporte",
+    "project.tali.process-2-item-2": "Clusterización de hallazgos en herramientas colaborativas",
+    "project.tali.process-2-item-3": "Identificación de pain points por cada rol",
+    "project.tali.process-2-item-4": "Mapeo de necesidades diferenciadas antes, durante y después del viaje",
 
     "project.tali.process-3-title": "3. Definición de Usuarios y Experiencia",
     "project.tali.process-3-text": "Construcción de perfiles y flujos:",
-    "project.tali.process-3-item-1":
-      "Creación de 4 personas clave: viajero, responsable de RRHH, supervisor, soporte",
-    "project.tali.process-3-item-2":
-      "Mapeo de flujos específicos para cada perfil, adaptados a múltiples dispositivos",
-    "project.tali.process-3-item-3":
-      "Identificación de puntos de cruce, validaciones y pain points específicos por rol",
-    "project.tali.process-3-item-4":
-      "Diseño de journey considerando antes, durante y después del viaje",
+    "project.tali.process-3-item-1": "Creación de 4 personas clave: viajero, responsable de RRHH, supervisor, soporte",
+    "project.tali.process-3-item-2": "Mapeo de flujos específicos para cada perfil, adaptados a múltiples dispositivos",
+    "project.tali.process-3-item-3": "Identificación de puntos de cruce, validaciones y pain points específicos por rol",
+    "project.tali.process-3-item-4": "Diseño de journey considerando antes, durante y después del viaje",
 
     "project.tali.process-4-title": "4. Construcción de Marca",
     "project.tali.process-4-text": "Identidad, naming y propuesta de valor:",
-    "project.tali.process-4-item-1":
-      "Co-diseño de la propuesta de valor y mantras de servicio",
-    "project.tali.process-4-item-2":
-      "Dinámicas de co-creación para definir el nombre: TALI",
-    "project.tali.process-4-item-3":
-      "Diseño de identidad visual y primer set de lineamientos",
-    "project.tali.process-4-item-4":
-      "Ajustes visuales y técnicos para asegurar legibilidad en formatos físicos y digitales",
+    "project.tali.process-4-item-1": "Co-diseño de la propuesta de valor y mantras de servicio",
+    "project.tali.process-4-item-2": "Dinámicas de co-creación para definir el nombre: TALI",
+    "project.tali.process-4-item-3": "Diseño de identidad visual y primer set de lineamientos",
+    "project.tali.process-4-item-4": "Ajustes visuales y técnicos para asegurar legibilidad en formatos físicos y digitales",
 
     "project.tali.process-5-title": "5. Entrega Final",
     "project.tali.process-5-text": "Documentación y entregables:",
-    "project.tali.process-5-item-1":
-      "Documento de síntesis estratégica y propuesta de servicio",
-    "project.tali.process-5-item-2":
-      "4 perfiles de usuario documentados con pain points y necesidades",
+    "project.tali.process-5-item-1": "Documento de síntesis estratégica y propuesta de servicio",
+    "project.tali.process-5-item-2": "4 perfiles de usuario documentados con pain points y necesidades",
     "project.tali.process-5-item-3": "Flujos diferenciados por usuario",
-    "project.tali.process-5-item-4":
-      "Pantallas clave para visualizar la navegación y lógica del portal",
+    "project.tali.process-5-item-4": "Pantallas clave para visualizar la navegación y lógica del portal",
     "project.tali.process-5-item-5": "Guía base de identidad de marca",
     "project.tali.process-5-item-6": "Landing page funcional",
 
-    "project.tali.finding-1-title":
-      "El mismo viaje tiene múltiples puntos de vista",
+    "project.tali.finding-1-title": "El mismo viaje tiene múltiples puntos de vista",
     "project.tali.finding-1-text":
       "Un solo viaje corporativo es percibido y gestionado de forma completamente diferente por el viajero, el planificador, el aprobador y el equipo de seguimiento. Cada rol tiene necesidades, fricciones y expectativas distintas que deben ser atendidas sin crear complejidad innecesaria.",
 
@@ -1466,13 +1148,11 @@ const translations = {
     "project.tali.finding-2-text":
       "Si no se definen límites claros por usuario y contexto, los flujos pueden volverse infinitamente complejos. Fue crucial establecer qué acciones correspondían a cada rol y en qué momento del journey.",
 
-    "project.tali.finding-3-title":
-      "Las necesidades cambian en cada momento del viaje",
+    "project.tali.finding-3-title": "Las necesidades cambian en cada momento del viaje",
     "project.tali.finding-3-text":
       "Antes del viaje: planificación y aprobaciones. Durante el viaje: soporte y modificaciones. Después del viaje: rendiciones y cierres. La plataforma debe anticiparse a estos momentos cambiantes.",
 
-    "project.tali.finding-4-title":
-      "La coherencia digital-física es fundamental",
+    "project.tali.finding-4-title": "La coherencia digital-física es fundamental",
     "project.tali.finding-4-text":
       "En entornos corporativos, la coherencia entre lo digital (plataforma) y lo impreso (vouchers, reportes) es crucial para la percepción de profesionalismo y confiabilidad del servicio.",
 
@@ -1485,19 +1165,14 @@ const translations = {
     "project.tali.result-3-value": "Marca creada desde cero",
     "project.tali.result-4-value": "Meses de trabajo",
 
-    "project.tali.impact-1":
-      "Entrega completa de investigación y diseño de la experiencia de servicio",
-    "project.tali.impact-2":
-      "Propuesta de marca validada con el cliente (nombre TALI + identidad visual)",
-    "project.tali.impact-3":
-      "4 perfiles de usuario documentados con pain points y necesidades específicas",
-    "project.tali.impact-4":
-      "Mapeo detallado de flujos, usuarios y puntos de fricción clave",
+    "project.tali.impact-1": "Entrega completa de investigación y diseño de la experiencia de servicio",
+    "project.tali.impact-2": "Propuesta de marca validada con el cliente (nombre TALI + identidad visual)",
+    "project.tali.impact-3": "4 perfiles de usuario documentados con pain points y necesidades específicas",
+    "project.tali.impact-4": "Mapeo detallado de flujos, usuarios y puntos de fricción clave",
     "project.tali.impact-5": "Landing page funcional",
     "project.tali.impact-6": "Clusterización de insights de investigación",
 
-    "project.tali.reflection-quote":
-      "Diseñar para muchos perfiles a la vez exige límites claros, visión estratégica y mucho detalle.",
+    "project.tali.reflection-quote": "Diseñar para muchos perfiles a la vez exige límites claros, visión estratégica y mucho detalle.",
     "project.tali.reflection-1":
       "Este proyecto me ayudó a comprender mejor los retos de servicios complejos con múltiples usuarios simultáneos, y la importancia de hacer visual incluso lo que todavía no existe. Trabajar en un equipo pequeño y multidisciplinario fue enriquecedor: cada una aportaba su expertise y juntas construimos algo coherente.",
     "project.tali.reflection-2":
@@ -1528,16 +1203,12 @@ const translations = {
     // Role
     "project.lumi.role-text":
       "Como Service Designer y Project Manager del equipo de 4 personas, lideré la conceptualización estratégica de Lumi, coordinando el uso de herramientas de IA y facilitando el proceso de diseño colaborativo.",
-    "project.lumi.resp-1":
-      "Liderar las sesiones de Design Thinking (identificación de problemas, ideación, prototipado)",
-    "project.lumi.resp-2":
-      "Conceptualizar el sistema de recompensas con tokens educativos (LumiCoins)",
+    "project.lumi.resp-1": "Liderar las sesiones de Design Thinking (identificación de problemas, ideación, prototipado)",
+    "project.lumi.resp-2": "Conceptualizar el sistema de recompensas con tokens educativos (LumiCoins)",
     "project.lumi.resp-3":
       "Coordinar la integración de herramientas de IA en el proceso (ChatGPT, Gemini, Claude, Storm, Manus, Lovable, Zapier)",
-    "project.lumi.resp-4":
-      "Desarrollar la identidad visual y propuesta de valor basada en los 5 estilos de aprendizaje",
-    "project.lumi.resp-5":
-      "Actualmente: Desarrollo frontend del home, login y dashboard de estudiantes",
+    "project.lumi.resp-4": "Desarrollar la identidad visual y propuesta de valor basada en los 5 estilos de aprendizaje",
+    "project.lumi.resp-5": "Actualmente: Desarrollo frontend del home, login y dashboard de estudiantes",
 
     // Process
     "project.lumi.process-intro":
@@ -1547,61 +1218,40 @@ const translations = {
     "project.lumi.process-1-text":
       "Trabajamos directamente con dos expertas en innovación educativa de colegios en Perú para identificar problemas reales:",
     "project.lumi.process-1-item-1": "Deserción y desmotivación estudiantil",
-    "project.lumi.process-1-item-2":
-      "Falta de personalización en plataformas LMS",
-    "project.lumi.process-1-item-3":
-      "Necesidad de reconocimiento tangible del esfuerzo",
-    "project.lumi.process-1-item-4":
-      "Brecha entre aprender y sentirse acompañado",
+    "project.lumi.process-1-item-2": "Falta de personalización en plataformas LMS",
+    "project.lumi.process-1-item-3": "Necesidad de reconocimiento tangible del esfuerzo",
+    "project.lumi.process-1-item-4": "Brecha entre aprender y sentirse acompañado",
     "project.lumi.process-1-tools":
       "Herramientas usadas: ChatGPT (análisis de insights), Excalidraw (mapeo colaborativo), Miro (brainstorming visual)",
 
     "project.lumi.process-2-title": "2. Definir e Idear",
-    "project.lumi.process-2-text":
-      "Definimos el problema central y generamos múltiples conceptos de solución:",
-    "project.lumi.process-2-item-1":
-      "Sistema de personalización basado en 5 estilos de aprendizaje",
-    "project.lumi.process-2-item-2":
-      "Gamificación con propósito: LumiCoins canjeables por valor real",
-    "project.lumi.process-2-item-3":
-      "Visualización del progreso personal y celebración de logros",
-    "project.lumi.process-2-item-4":
-      "Integración de IA para adaptación en tiempo real",
+    "project.lumi.process-2-text": "Definimos el problema central y generamos múltiples conceptos de solución:",
+    "project.lumi.process-2-item-1": "Sistema de personalización basado en 5 estilos de aprendizaje",
+    "project.lumi.process-2-item-2": "Gamificación con propósito: LumiCoins canjeables por valor real",
+    "project.lumi.process-2-item-3": "Visualización del progreso personal y celebración de logros",
+    "project.lumi.process-2-item-4": "Integración de IA para adaptación en tiempo real",
     "project.lumi.process-2-tools":
       "Herramientas usadas: Gemini (generación de ideas), Claude (refinamiento conceptual), Storm (investigación de mercado)",
 
     "project.lumi.process-3-title": "3. Prototipar y Diseñar",
-    "project.lumi.process-3-text":
-      "Creamos la propuesta completa de Lumi, incluyendo:",
-    "project.lumi.process-3-item-1":
-      "Identidad de marca (logo, paleta de colores, tono de voz)",
-    "project.lumi.process-3-item-2":
-      "Los 5 estilos de aprendizaje: Visionauta, Audioexplorador, Manos a la Obra, LogiMaster, Colab Hero",
-    "project.lumi.process-3-item-3":
-      "Sistema de recompensas LumiCoins con valor tangible",
-    "project.lumi.process-3-item-4":
-      "Arquitectura de información y flujos de usuario",
+    "project.lumi.process-3-text": "Creamos la propuesta completa de Lumi, incluyendo:",
+    "project.lumi.process-3-item-1": "Identidad de marca (logo, paleta de colores, tono de voz)",
+    "project.lumi.process-3-item-2": "Los 5 estilos de aprendizaje: Visionauta, Audioexplorador, Manos a la Obra, LogiMaster, Colab Hero",
+    "project.lumi.process-3-item-3": "Sistema de recompensas LumiCoins con valor tangible",
+    "project.lumi.process-3-item-4": "Arquitectura de información y flujos de usuario",
     "project.lumi.process-3-item-5": "Propuesta de valor y modelo de negocio",
-    "project.lumi.process-3-tools":
-      "Herramientas usadas: Manus (documentación), Lovable (prototipado), Excalidraw (diagramas)",
+    "project.lumi.process-3-tools": "Herramientas usadas: Manus (documentación), Lovable (prototipado), Excalidraw (diagramas)",
 
     "project.lumi.process-4-title": "4. Desarrollar e Implementar",
-    "project.lumi.process-4-text":
-      "Actualmente estoy llevando Lumi a código, desarrollando:",
-    "project.lumi.process-4-item-1":
-      "Homepage con identidad visual completa y los 5 estilos",
-    "project.lumi.process-4-item-2":
-      "Sistema de login y onboarding personalizado",
-    "project.lumi.process-4-item-3":
-      "Dashboard de estudiantes con progreso y LumiCoins",
-    "project.lumi.process-4-item-4":
-      "Integración con Zapier para automatizaciones",
-    "project.lumi.process-4-tech":
-      "Tecnologías: HTML, CSS, JavaScript, React (planned)",
+    "project.lumi.process-4-text": "Actualmente estoy llevando Lumi a código, desarrollando:",
+    "project.lumi.process-4-item-1": "Homepage con identidad visual completa y los 5 estilos",
+    "project.lumi.process-4-item-2": "Sistema de login y onboarding personalizado",
+    "project.lumi.process-4-item-3": "Dashboard de estudiantes con progreso y LumiCoins",
+    "project.lumi.process-4-item-4": "Integración con Zapier para automatizaciones",
+    "project.lumi.process-4-tech": "Tecnologías: HTML, CSS, JavaScript, React (planned)",
 
     // Propuesta de Valor
-    "project.lumi.value-title":
-      "Lumi transforma el aprendizaje en una experiencia emocionante, personal y accesible.",
+    "project.lumi.value-title": "Lumi transforma el aprendizaje en una experiencia emocionante, personal y accesible.",
     "project.lumi.value-1-title": "Rutas Adaptadas a Ti",
     "project.lumi.value-1-text":
       "No más contenido genérico. Lumi identifica cómo aprendes mejor y crea rutas personalizadas según tu estilo cognitivo, intereses y ritmo. Tu camino es único.",
@@ -1637,40 +1287,32 @@ const translations = {
 
     // LumiCoins
     "project.lumi.coins-title": "Sistema de LumiCoins",
-    "project.lumi.coins-subtitle":
-      "Cada logro en Lumi te acerca a recompensas reales.",
+    "project.lumi.coins-subtitle": "Cada logro en Lumi te acerca a recompensas reales.",
     "project.lumi.coins-intro":
       "Los LumiCoins son la moneda educativa de la plataforma, pero a diferencia de otros sistemas de gamificación, tienen valor tangible. No son puntos vacíos ni medallas decorativas: son un reconocimiento real de tu esfuerzo y progreso.",
     "project.lumi.coins-step-1-title": "Gana",
     "project.lumi.coins-step-1-text":
       "Completa módulos, alcanza metas, mantén tu racha de aprendizaje y participa activamente en la plataforma.",
     "project.lumi.coins-step-2-title": "Acumula",
-    "project.lumi.coins-step-2-text":
-      "Cada objetivo cumplido suma LumiCoins a tu balance. Visualiza tu progreso y celebra cada logro.",
+    "project.lumi.coins-step-2-text": "Cada objetivo cumplido suma LumiCoins a tu balance. Visualiza tu progreso y celebra cada logro.",
     "project.lumi.coins-step-3-title": "Canjea",
-    "project.lumi.coins-step-3-text":
-      "Usa tus monedas para acceder a valor real:",
+    "project.lumi.coins-step-3-text": "Usa tus monedas para acceder a valor real:",
     "project.lumi.coins-item-1": "Mentorías con expertos en tu área de interés",
-    "project.lumi.coins-item-2":
-      "Recursos educativos premium (libros, cursos, herramientas)",
-    "project.lumi.coins-item-3":
-      "Certificados verificados que validan tu aprendizaje",
+    "project.lumi.coins-item-2": "Recursos educativos premium (libros, cursos, herramientas)",
+    "project.lumi.coins-item-3": "Certificados verificados que validan tu aprendizaje",
     "project.lumi.coins-item-4": "Descuentos en programas especializados",
     "project.lumi.coins-item-5": "Becas parciales para formación externa",
-    "project.lumi.coins-highlight":
-      "Tu esfuerzo importa. Y Lumi lo recompensa con oportunidades reales de crecimiento.",
+    "project.lumi.coins-highlight": "Tu esfuerzo importa. Y Lumi lo recompensa con oportunidades reales de crecimiento.",
 
     // Diferenciadores
     "project.lumi.diff-1":
       "5 Estilos de Aprendizaje: Sistema único de personalización que adapta contenido según cómo procesas información (visual, auditivo, kinestésico, lógico, colaborativo)",
     "project.lumi.diff-2":
       "LumiCoins con valor real: Sistema de recompensas que se canjea por mentorías, recursos premium, certificados y becas",
-    "project.lumi.diff-3":
-      "Rutas dinámicas: Experiencias que se adaptan continuamente según avance, perfil y feedback del usuario",
+    "project.lumi.diff-3": "Rutas dinámicas: Experiencias que se adaptan continuamente según avance, perfil y feedback del usuario",
     "project.lumi.diff-4":
       "Adulting + Academia: Combina materias tradicionales con habilidades para la vida real (impuestos, finanzas personales, vida profesional)",
-    "project.lumi.diff-5":
-      "Tecnología + Humanidad: Combina IA avanzada con acompañamiento humano cercano y empático",
+    "project.lumi.diff-5": "Tecnología + Humanidad: Combina IA avanzada con acompañamiento humano cercano y empático",
     "project.lumi.diff-6":
       "Accesibilidad total: Diseñada para múltiples dispositivos y perfiles, desde nativos digitales hasta personas con baja afinidad tecnológica",
 
@@ -1679,49 +1321,34 @@ const translations = {
     "project.lumi.result-2-value": "Rutas adaptativas personalizadas",
     "project.lumi.result-3-value": "Sistema de recompensas real (LumiCoins)",
 
-    "project.lumi.impact-1":
-      "Documento estratégico completo (propuesta de valor, público objetivo, modelo de negocio)",
-    "project.lumi.impact-2":
-      "Sistema de personalización basado en 5 estilos de aprendizaje",
-    "project.lumi.impact-3":
-      "Identidad visual completa (logo, paleta de colores, tipografía, iconografía)",
-    "project.lumi.impact-4":
-      "Sistema de recompensas LumiCoins con catálogo de canjes",
-    "project.lumi.impact-5":
-      "Arquitectura de funcionalidades y flujos de usuario",
-    "project.lumi.impact-6":
-      "Desarrollo frontend en progreso (home, login, dashboard)",
-    "project.lumi.impact-7":
-      "Validación conceptual con profesores, estudiantes y jóvenes adultos",
+    "project.lumi.impact-1": "Documento estratégico completo (propuesta de valor, público objetivo, modelo de negocio)",
+    "project.lumi.impact-2": "Sistema de personalización basado en 5 estilos de aprendizaje",
+    "project.lumi.impact-3": "Identidad visual completa (logo, paleta de colores, tipografía, iconografía)",
+    "project.lumi.impact-4": "Sistema de recompensas LumiCoins con catálogo de canjes",
+    "project.lumi.impact-5": "Arquitectura de funcionalidades y flujos de usuario",
+    "project.lumi.impact-6": "Desarrollo frontend en progreso (home, login, dashboard)",
+    "project.lumi.impact-7": "Validación conceptual con profesores, estudiantes y jóvenes adultos",
 
     // AI Tools
     "project.lumi.ai-intro":
       "Uno de los aspectos más innovadores de este proyecto fue la integración estratégica de múltiples herramientas de inteligencia artificial en cada fase del proceso:",
     "project.lumi.ai-tool-1": "ChatGPT & Gemini",
-    "project.lumi.ai-tool-1-desc":
-      "Análisis de insights, generación de ideas, refinamiento de conceptos",
+    "project.lumi.ai-tool-1-desc": "Análisis de insights, generación de ideas, refinamiento de conceptos",
     "project.lumi.ai-tool-2": "Claude",
-    "project.lumi.ai-tool-2-desc":
-      "Desarrollo de contenido estratégico y documentación técnica",
+    "project.lumi.ai-tool-2-desc": "Desarrollo de contenido estratégico y documentación técnica",
     "project.lumi.ai-tool-3": "Storm",
-    "project.lumi.ai-tool-3-desc":
-      "Investigación de mercado y análisis de tendencias educativas",
+    "project.lumi.ai-tool-3-desc": "Investigación de mercado y análisis de tendencias educativas",
     "project.lumi.ai-tool-4": "Manus",
-    "project.lumi.ai-tool-4-desc":
-      "Documentación colaborativa y gestión del conocimiento",
+    "project.lumi.ai-tool-4-desc": "Documentación colaborativa y gestión del conocimiento",
     "project.lumi.ai-tool-5": "Lovable",
-    "project.lumi.ai-tool-5-desc":
-      "Prototipado rápido y visualización de interfaces",
+    "project.lumi.ai-tool-5-desc": "Prototipado rápido y visualización de interfaces",
     "project.lumi.ai-tool-6": "Zapier",
-    "project.lumi.ai-tool-6-desc":
-      "Automatizaciones y flujos de trabajo inteligentes",
+    "project.lumi.ai-tool-6-desc": "Automatizaciones y flujos de trabajo inteligentes",
     "project.lumi.ai-tool-7": "Excalidraw",
-    "project.lumi.ai-tool-7-desc":
-      "Diagramas colaborativos y mapeo de sistemas",
+    "project.lumi.ai-tool-7-desc": "Diagramas colaborativos y mapeo de sistemas",
 
     // Reflections
-    "project.lumi.reflection-quote":
-      "La IA no reemplaza el diseño centrado en el humano, lo potencia.",
+    "project.lumi.reflection-quote": "La IA no reemplaza el diseño centrado en el humano, lo potencia.",
     "project.lumi.reflection-1":
       "Este proyecto me enseñó que las herramientas de inteligencia artificial son amplificadores extraordinarios del proceso creativo, pero solo cuando se guían con intención estratégica y empatía profunda hacia los usuarios finales.",
     "project.lumi.reflection-2":
@@ -1734,8 +1361,7 @@ const translations = {
       "Actualmente, llevando Lumi al código, reafirmo mi convicción: el diseño estratégico y el desarrollo no son etapas separadas, son conversaciones continuas que deben mantenerse conectadas desde el primer día.",
 
     // Sidebar
-    "sidebar.interested-text-lumi":
-      "Si quieres conocer más sobre mi trabajo con IA y diseño estratégico, hablemos.",
+    "sidebar.interested-text-lumi": "Si quieres conocer más sobre mi trabajo con IA y diseño estratégico, hablemos.",
   },
 
   en: {
@@ -1775,7 +1401,6 @@ const translations = {
 
     // ============================================
     // COMMON PROJECT COMPONENTS
-    // (Elements repeated in ALL detail pages)
     // ============================================
     "project-detail.view-case": "View full case",
     "project-detail.overview": "Overview",
@@ -1878,30 +1503,27 @@ const translations = {
     // Timeline
     "timeline.1.title": "Frontend Developer",
     "timeline.1.period": "2025 - Present",
-    "timeline.1.text":
-      "Focus on JavaScript, React, and interface development. Projects with AI and API integration.",
+    "timeline.1.text": "Focus on JavaScript, React, and interface development. Projects with AI and API integration.",
     "timeline.2.title": "UX/UI Designer & Service Designer",
     "timeline.2.period": "2020 - 2025",
-    "timeline.2.text":
-      "Clínica Alemana, IDB, Spotify. Research, prototyping, and experience design for digital products and services.",
+    "timeline.2.text": "Clínica Alemana, IDB, Spotify. Research, prototyping, and experience design for digital products and services.",
     "timeline.3.title": "Service Design",
     "timeline.3.period": "2019 - 2020",
-    "timeline.3.text":
-      "Strategic design and consulting projects for public and private institutions in Peru.",
+    "timeline.3.text": "Strategic design and consulting projects for public and private institutions in Peru.",
 
     // Highlight Cards
     "highlight.1.title": "Clean Code",
-    "highlight.1.text":
-      "Semantic, well-documented code designed to scale. Every function has a clear purpose.",
+    "highlight.1.text": "Semantic, well-documented code designed to scale. Every function has a clear purpose.",
     "highlight.2.title": "User-Centered",
-    "highlight.2.text":
-      "Every technical decision is guided by user experience. Accessibility and usability are not optional.",
+    "highlight.2.text": "Every technical decision is guided by user experience. Accessibility and usability are not optional.",
     "highlight.3.title": "Continuous Learning",
-    "highlight.3.text":
-      "Web development evolves fast. I stay updated with new technologies and best practices.",
+    "highlight.3.text": "Web development evolves fast. I stay updated with new technologies and best practices.",
     "highlight.4.title": "Team Player",
-    "highlight.4.text":
-      "Experience collaborating with multidisciplinary teams: developers, designers, product managers.",
+    "highlight.4.text": "Experience collaborating with multidisciplinary teams: developers, designers, product managers.",
+
+    // Journey
+    "journey.btn": "Explore my career path",
+    "journey.text-1": "Dive into my professional evolution, certifications, and my transition from design to code",
 
     // ============================================
     // INDEX.HTML - PROJECTS
@@ -1920,8 +1542,7 @@ const translations = {
     // ============================================
     "skills.badge": "Tech Stack",
     "skills.title": "Skills & Technologies",
-    "skills.description":
-      "My current tech stack and tools. Continuously learning and updating.",
+    "skills.description": "My current tech stack and tools. Continuously learning and updating.",
     "skills.frontend": "Frontend Development",
     "skills.tools": "Tools & Workflow",
     "skills.design": "Design & UX",
@@ -1934,8 +1555,7 @@ const translations = {
     // ============================================
     "contact.badge": "Contact",
     "contact.title": "Let's work together?",
-    "contact.description":
-      "Available for design positions, frontend (junior-mid level), freelance projects or collaborations.",
+    "contact.description": "Available for design positions, frontend (junior-mid level), freelance projects or collaborations.",
     "contact.why-title": "Why work with me?",
     "contact.why-text":
       "I don't just write code, I understand users. My UX background allows me to create technical solutions that truly solve problems.",
@@ -1970,13 +1590,10 @@ const translations = {
     // ============================================
     // SHORT DESCRIPTIONS OF OTHER PROJECTS
     // ============================================
-    "project.lumi.desc":
-      "Web platform conceptualized during specialized AI course, contains landing, dashboard and login. (WIP)",
-    "project.weather.desc":
-      "Weather app with personality comments. API integration and creative design.",
+    "project.lumi.desc": "Web platform conceptualized during specialized AI course, contains landing, dashboard and login. (WIP)",
+    "project.weather.desc": "Weather app with personality comments. API integration and creative design.",
     "project.weather.metric1": "Personalities",
-    "project.pomodoro.desc":
-      "Productivity timer with state management, notifications and data persistence.",
+    "project.pomodoro.desc": "Productivity timer with state management, notifications and data persistence.",
     "project.teleconsulta.desc":
       "Design of a medical video call platform from scratch, integrated with the web appointment system. Automation of payments, prescription delivery and clinical document management.",
     "project.teleconsulta.metric2": "Complaints",
@@ -1998,17 +1615,14 @@ const translations = {
     "project.cubico.metric2": "Students",
     "project.cubico.metric3": "Projects",
     "project.upc.title": "Admissions Redesign",
-    "project.upc.desc":
-      "Redesign of the admissions counter experience to improve conversion of prospective student and parent visits.",
+    "project.upc.desc": "Redesign of the admissions counter experience to improve conversion of prospective student and parent visits.",
     "project.upc.metric1": "Campuses",
     "project.upc.metric3": "Status",
     "project.mincetur.title": "Future Construction",
-    "project.mincetur.desc":
-      "Support in developing a Management Model prototype for Crafts and Tourism CITEs.",
+    "project.mincetur.desc": "Support in developing a Management Model prototype for Crafts and Tourism CITEs.",
     "project.mincetur.metric1": "Days",
     "project.tali.title": "Corporate Travel Agency",
-    "project.tali.desc":
-      "Portal for managing corporate travel from any device. Complete research, design and branding project.",
+    "project.tali.desc": "Portal for managing corporate travel from any device. Complete research, design and branding project.",
     "project.tali.metric1": "Roles",
     "project.tali.metric3": "Status",
     "project.bid.title": "IDB – Secretariat Services Redesign",
@@ -2018,7 +1632,10 @@ const translations = {
     "project.bid.metric2": "Systems Analyzed",
     "project.bid.metric3": "Duration",
 
+    // ============================================
     // PROJECT: IDB - SECRETARIAT
+    // ============================================
+
     // Hero
     "project.bid.hero-title": "IDB – Secretariat Services Redesign",
     "project.bid.hero-subtitle":
@@ -2032,18 +1649,12 @@ const translations = {
     // Challenge
     "project.bid.challenge-text":
       'How to redesign services for a unit using over 50 systems (including legacy tools, patch solutions, and informal tools), where processes are atomized and each team has had to "invent" their own way of operating?',
-    "project.bid.challenge-intro":
-      "The Secretariat faced multiple critical barriers:",
-    "project.bid.challenge-1":
-      "Total work management fragmentation: Each department operated as an independent island",
-    "project.bid.challenge-2":
-      "Informal processes: Born out of necessity, without documentation or traceability",
-    "project.bid.challenge-3":
-      "Disconnected tools: 50+ systems with no integration",
-    "project.bid.challenge-4":
-      "Operational and emotional saturation: Staff exhausted by constant rework",
-    "project.bid.challenge-5":
-      "Lack of organizational visibility: No one had a complete view of the workflow",
+    "project.bid.challenge-intro": "The Secretariat faced multiple critical barriers:",
+    "project.bid.challenge-1": "Total work management fragmentation: Each department operated as an independent island",
+    "project.bid.challenge-2": "Informal processes: Born out of necessity, without documentation or traceability",
+    "project.bid.challenge-3": "Disconnected tools: 50+ systems with no integration",
+    "project.bid.challenge-4": "Operational and emotional saturation: Staff exhausted by constant rework",
+    "project.bid.challenge-5": "Lack of organizational visibility: No one had a complete view of the workflow",
     "project.bid.challenge-conclusion":
       "Our challenge was to build a common vision that would allow evolution without generating more chaos.",
 
@@ -2055,82 +1666,55 @@ const translations = {
 
     // Responsibilities
     "project.bid.resp-1": "Design the complete qualitative research approach",
-    "project.bid.resp-2":
-      "Conduct over 40 in-depth interviews (in English and Spanish)",
-    "project.bid.resp-3":
-      "Lead the systematization and analysis of all 80 interviews",
-    "project.bid.resp-4":
-      "Coordinate and guide the work of the 2 Service Designers on the team",
-    "project.bid.resp-5":
-      "Define strategic opportunities and lead the redesign of key processes",
-    "project.bid.resp-6":
-      "Design questionnaire system and templates to organize requests",
+    "project.bid.resp-2": "Conduct over 40 in-depth interviews (in English and Spanish)",
+    "project.bid.resp-3": "Lead the systematization and analysis of all 80 interviews",
+    "project.bid.resp-4": "Coordinate and guide the work of the 2 Service Designers on the team",
+    "project.bid.resp-5": "Define strategic opportunities and lead the redesign of key processes",
+    "project.bid.resp-6": "Design questionnaire system and templates to organize requests",
     "project.bid.resp-7": "Plan and supervise all project deliverables",
-    "project.bid.resp-8":
-      "Generate trust environments in sensitive and formal contexts",
+    "project.bid.resp-8": "Generate trust environments in sensitive and formal contexts",
 
     // Process
     "project.bid.process-intro":
       "We implemented a deep research and design process, focused on understanding systemic complexity before proposing solutions.",
     "project.bid.process-1-title": "1. Deep Qualitative Research",
-    "project.bid.process-1-intro":
-      "Total immersion in the Secretariat ecosystem:",
-    "project.bid.process-1-item-1":
-      "80 interviews with people from different regions, hierarchical levels, and units",
-    "project.bid.process-1-item-2":
-      "I personally conducted over 40 interviews in English and Spanish",
+    "project.bid.process-1-intro": "Total immersion in the Secretariat ecosystem:",
+    "project.bid.process-1-item-1": "80 interviews with people from different regions, hierarchical levels, and units",
+    "project.bid.process-1-item-2": "I personally conducted over 40 interviews in English and Spanish",
     "project.bid.process-1-item-3":
       "We interviewed bank employees, Chairs (Board) representatives from 7-10 countries, and Secretariat team",
-    "project.bid.process-1-item-4":
-      "Building trust environments in sensitive and formal contexts",
-    "project.bid.process-1-item-5":
-      "Analysis of structural, emotional, and relational tensions",
-    "project.bid.process-1-item-6":
-      "Exploration of over 50 actively used systems and tools",
+    "project.bid.process-1-item-4": "Building trust environments in sensitive and formal contexts",
+    "project.bid.process-1-item-5": "Analysis of structural, emotional, and relational tensions",
+    "project.bid.process-1-item-6": "Exploration of over 50 actively used systems and tools",
 
-    "project.bid.process-2-title":
-      "2. Diagnosis of Disconnection and Pain Points",
+    "project.bid.process-2-title": "2. Diagnosis of Disconnection and Pain Points",
     "project.bid.process-2-intro": "Deep systematization of findings:",
-    "project.bid.process-2-item-1":
-      "Mapping of broken flows, duplications, blockages, and informal systems",
-    "project.bid.process-2-item-2":
-      "Identification of critical tasks without traceability or clarity of responsibilities",
+    "project.bid.process-2-item-1": "Mapping of broken flows, duplications, blockages, and informal systems",
+    "project.bid.process-2-item-2": "Identification of critical tasks without traceability or clarity of responsibilities",
     "project.bid.process-2-item-3":
       "Documentation of extreme cases: a worker maintaining three Excel tables with the same information due to distrust generated by uncontrolled edits",
-    "project.bid.process-2-item-4":
-      "Analysis of the ecosystem of 50+ tools without integration",
+    "project.bid.process-2-item-4": "Analysis of the ecosystem of 50+ tools without integration",
 
-    "project.bid.process-3-title":
-      "3. Design of Internal Organization Solutions",
-    "project.bid.process-3-intro":
-      "Co-creation of systems that reduce chaos without adding burden:",
+    "project.bid.process-3-title": "3. Design of Internal Organization Solutions",
+    "project.bid.process-3-intro": "Co-creation of systems that reduce chaos without adding burden:",
     "project.bid.process-3-item-1": "Creation of internal user archetypes",
-    "project.bid.process-3-item-2":
-      "Redesign of how tasks are received, organized, and executed in the Secretariat",
-    "project.bid.process-3-item-3":
-      "Design of an entry system with automatic questionnaires to clarify requirements",
-    "project.bid.process-3-item-4":
-      "Proposals for shared tools that reduce rework and increase visibility",
-    "project.bid.process-3-item-5":
-      "Standardized templates for service requests",
-    "project.bid.process-3-item-6":
-      "Redesigned flows with clear traceability of responsible parties and statuses",
+    "project.bid.process-3-item-2": "Redesign of how tasks are received, organized, and executed in the Secretariat",
+    "project.bid.process-3-item-3": "Design of an entry system with automatic questionnaires to clarify requirements",
+    "project.bid.process-3-item-4": "Proposals for shared tools that reduce rework and increase visibility",
+    "project.bid.process-3-item-5": "Standardized templates for service requests",
+    "project.bid.process-3-item-6": "Redesigned flows with clear traceability of responsible parties and statuses",
 
     "project.bid.process-4-title": "4. Delivery and Implementation",
     "project.bid.process-4-intro": "Strategic documentation for action:",
-    "project.bid.process-4-item-1":
-      "Complete strategic document with findings and recommendations",
-    "project.bid.process-4-item-2":
-      "Implementable questionnaires ready for immediate use",
+    "project.bid.process-4-item-1": "Complete strategic document with findings and recommendations",
+    "project.bid.process-4-item-2": "Implementable questionnaires ready for immediate use",
     "project.bid.process-4-item-3": "Redesigned request templates",
     "project.bid.process-4-item-4": "Scalable implementation roadmap",
-    "project.bid.process-4-item-5":
-      "The report was presented in assembly and used to restructure the entire Secretariat in 2021",
+    "project.bid.process-4-item-5": "The report was presented in assembly and used to restructure the entire Secretariat in 2021",
 
     // Findings
     "project.bid.findings-title": "Key Findings",
-    "project.bid.finding-1-title":
-      'The invisible complexity of "invisible" work',
+    "project.bid.finding-1-title": 'The invisible complexity of "invisible" work',
     "project.bid.finding-1-text":
       "We discovered that much of the Secretariat's work was invisible even to the organization itself. Critical processes depended on the institutional memory of specific people, with no documentation or backup.",
     "project.bid.finding-2-title": "The human cost of fragmented systems",
@@ -2152,37 +1736,27 @@ const translations = {
     "project.bid.result-3-value": "Countries represented",
     "project.bid.result-4-value": "Remote and international",
 
-    "project.bid.impact-1":
-      "80 interviews processed and synthesized into actionable insights",
-    "project.bid.impact-2":
-      "Complete analysis of 50+ systems actively used by the Secretariat",
-    "project.bid.impact-3":
-      "Redesigned flows for task request and tracking with clear traceability",
-    "project.bid.impact-4":
-      "Implementable templates and questionnaires to classify and manage requirements",
-    "project.bid.impact-5":
-      "Scalable proposals to improve coordination without overloading the team",
-    "project.bid.impact-6":
-      "Strategic document delivered and used for the next implementation phase",
-    "project.bid.impact-7":
-      "The report was presented in assembly and used to restructure the entire IDB Secretariat in 2021",
+    "project.bid.impact-1": "80 interviews processed and synthesized into actionable insights",
+    "project.bid.impact-2": "Complete analysis of 50+ systems actively used by the Secretariat",
+    "project.bid.impact-3": "Redesigned flows for task request and tracking with clear traceability",
+    "project.bid.impact-4": "Implementable templates and questionnaires to classify and manage requirements",
+    "project.bid.impact-5": "Scalable proposals to improve coordination without overloading the team",
+    "project.bid.impact-6": "Strategic document delivered and used for the next implementation phase",
+    "project.bid.impact-7": "The report was presented in assembly and used to restructure the entire IDB Secretariat in 2021",
 
     // Learnings
-    "project.bid.learning-1-title":
-      "Leading in complex contexts requires structural empathy",
+    "project.bid.learning-1-title": "Leading in complex contexts requires structural empathy",
     "project.bid.learning-1-text":
       "As Lead Service Designer, I learned that leading a team of 6 people in a project of this complexity is not just about distributing tasks, but about sustaining strategic vision while caring for the team's emotional well-being.",
     "project.bid.learning-2-title": "Research is a political act",
     "project.bid.learning-2-text":
       "Interviewing people in positions of power requires a delicate balance between protocol respect and investigative depth. I learned to navigate these dynamics without compromising the quality of findings.",
-    "project.bid.learning-3-title":
-      "Systematization is as important as research",
+    "project.bid.learning-3-title": "Systematization is as important as research",
     "project.bid.learning-3-text":
       "With 80 interviews, the challenge was not just collecting information, but transforming it into actionable insights. I led the analysis process ensuring each finding was supported.",
 
     // Reflections
-    "project.bid.reflection-quote":
-      "The dignity of work deserves a system that doesn't wear people down.",
+    "project.bid.reflection-quote": "The dignity of work deserves a system that doesn't wear people down.",
     "project.bid.reflection-1":
       "This was one of the most challenging and sensitive projects I've participated in. We worked in a multidisciplinary team of 7 people, facing an environment marked by exhaustion and a genuine desire to do things better.",
     "project.bid.reflection-2":
@@ -2193,24 +1767,22 @@ const translations = {
       "Seeing how our work was used in assembly to restructure the entire Secretariat in 2021 was confirmation that when we design with rigor, empathy, and systemic vision, we can generate real changes.",
 
     // Visual Resources
-    "project.bid.visual-journey-desc":
-      "Mapping of the current experience of different users of the Secretariat service.",
-    "project.bid.visual-journey-1":
-      "Journey Maps of internal and external users Annual Meeting",
-    "project.bid.visual-journey-2":
-      "Journey Maps of internal and external users Documentation and translation",
+    "project.bid.visual-journey-desc": "Mapping of the current experience of different users of the Secretariat service.",
+    "project.bid.visual-journey-1": "Journey Maps of internal and external users Annual Meeting",
+    "project.bid.visual-journey-2": "Journey Maps of internal and external users Documentation and translation",
     "project.bid.visual-ecosystem-desc":
       "Visualization of the complex ecosystem of relationships, processes, and tools of the IDB Secretariat.",
-    "project.bid.visual-ecosystem-caption":
-      "Ecosystem Map showing systemic complexity",
+    "project.bid.visual-ecosystem-caption": "Ecosystem Map showing systemic complexity",
 
     // Sidebar
     "sidebar.interested-text-bid":
       "If you want to know more about my work in redesigning complex services and team leadership, let's talk.",
 
+    // ============================================
     // CLÍNICA ALEMANA - AGENDA WEB (EN)
-    "project.agenda.hero-title":
-      "Clínica Alemana Santiago – Web Appointment System",
+    // ============================================
+
+    "project.agenda.hero-title": "Clínica Alemana Santiago – Web Appointment System",
     "project.agenda.hero-subtitle":
       "Redesign of the web appointment system during the pandemic, enabling fully digital medical scheduling coordinated with teleconsultation. A project that transformed care for over 70,000 patients.",
 
@@ -2219,10 +1791,8 @@ const translations = {
     "project.agenda.context-text-2":
       "The challenge wasn't just technological: many people were still unfamiliar with digital environments, and the legacy system made navigation difficult for both patients and clinical staff. Additionally, we worked in a complex ecosystem with multiple teams and consultancies developing complementary solutions.",
     "project.agenda.context-subtitle": "Collaborating teams:",
-    "project.agenda.context-team-1":
-      "Continuum (my team): Web appointment system design",
-    "project.agenda.context-team-2":
-      "Parallel Continuum team: Teleconsultation design",
+    "project.agenda.context-team-1": "Continuum (my team): Web appointment system design",
+    "project.agenda.context-team-2": "Parallel Continuum team: Teleconsultation design",
     "project.agenda.context-team-3": "Globant: Alemana Go app development",
     "project.agenda.context-team-4": "2Brains: Another complementary platform",
     "project.agenda.context-team-5": "Clínica Alemana: Internal design team",
@@ -2237,70 +1807,45 @@ const translations = {
     "project.agenda.team-3": "7 Developers",
     "project.agenda.team-4": "1 Project Manager",
 
-    "project.agenda.resp-1":
-      "Map the appointment journey and its critical points",
-    "project.agenda.resp-2":
-      "Design end-to-end experience, considering in-person and remote cases",
-    "project.agenda.resp-3":
-      "Coordinate parallel design with teleconsultation team and other stakeholders",
-    "project.agenda.resp-4":
-      "Support incremental service deployment, from internal testing to full launch",
-    "project.agenda.resp-5":
-      "Ensure coherence between front and back, focusing on patients, doctors, and administrators",
-    "project.agenda.resp-6":
-      "Facilitate collaboration between Continuum, Globant, 2Brains, and Clínica Alemana's internal team",
+    "project.agenda.resp-1": "Map the appointment journey and its critical points",
+    "project.agenda.resp-2": "Design end-to-end experience, considering in-person and remote cases",
+    "project.agenda.resp-3": "Coordinate parallel design with teleconsultation team and other stakeholders",
+    "project.agenda.resp-4": "Support incremental service deployment, from internal testing to full launch",
+    "project.agenda.resp-5": "Ensure coherence between front and back, focusing on patients, doctors, and administrators",
+    "project.agenda.resp-6": "Facilitate collaboration between Continuum, Globant, 2Brains, and Clínica Alemana's internal team",
 
     "project.agenda.process-intro":
       "We implemented an iterative user-centered design process, constantly adapting to emerging needs during the pandemic and coordinating multiple simultaneous work fronts.",
 
     "project.agenda.process-1-title": "1. Research and Exploration",
-    "project.agenda.process-1-text":
-      "We conducted deep research to understand behaviors, barriers, and expectations:",
-    "project.agenda.process-1-item-1":
-      "Interviews with patients and administrative staff",
-    "project.agenda.process-1-item-2":
-      "Analysis of legacy system and its frictions",
+    "project.agenda.process-1-text": "We conducted deep research to understand behaviors, barriers, and expectations:",
+    "project.agenda.process-1-item-1": "Interviews with patients and administrative staff",
+    "project.agenda.process-1-item-2": "Analysis of legacy system and its frictions",
     "project.agenda.process-1-item-3":
       "Identification of critical points: slowness, duplicate steps, unclear language, difficulty in self-managing changes",
-    "project.agenda.process-1-item-4":
-      "Mapping needs of doctors and administrative teams",
+    "project.agenda.process-1-item-4": "Mapping needs of doctors and administrative teams",
 
     "project.agenda.process-2-title": "2. Collaborative Design",
-    "project.agenda.process-2-text":
-      "We facilitated workshops with multiple stakeholders to co-create the solution:",
-    "project.agenda.process-2-item-1":
-      "Internal workshops to map system and business needs",
-    "project.agenda.process-2-item-2":
-      "Digital experience design for in-person and remote appointments",
-    "project.agenda.process-2-item-3":
-      "Integration of administrative flows (data validation, payment methods, reminders)",
-    "project.agenda.process-2-item-4":
-      "Creation of Service Blueprints to visualize the complete ecosystem",
-    "project.agenda.process-2-item-5":
-      "Constant coordination with Globant and 2Brains teams",
+    "project.agenda.process-2-text": "We facilitated workshops with multiple stakeholders to co-create the solution:",
+    "project.agenda.process-2-item-1": "Internal workshops to map system and business needs",
+    "project.agenda.process-2-item-2": "Digital experience design for in-person and remote appointments",
+    "project.agenda.process-2-item-3": "Integration of administrative flows (data validation, payment methods, reminders)",
+    "project.agenda.process-2-item-4": "Creation of Service Blueprints to visualize the complete ecosystem",
+    "project.agenda.process-2-item-5": "Constant coordination with Globant and 2Brains teams",
 
     "project.agenda.process-3-title": "3. Coordination with Teleconsultation",
-    "project.agenda.process-3-text":
-      "We worked closely with multiple teams to ensure coherence:",
-    "project.agenda.process-3-item-1":
-      "Synchronization with the team developing the telemedicine platform",
-    "project.agenda.process-3-item-2":
-      "Definition of strategic crossing points between scheduling and consulting",
-    "project.agenda.process-3-item-3":
-      "Alignment with Alemana Go app developed by Globant",
-    "project.agenda.process-3-item-4":
-      "Ensure users didn't perceive jumps between platforms",
+    "project.agenda.process-3-text": "We worked closely with multiple teams to ensure coherence:",
+    "project.agenda.process-3-item-1": "Synchronization with the team developing the telemedicine platform",
+    "project.agenda.process-3-item-2": "Definition of strategic crossing points between scheduling and consulting",
+    "project.agenda.process-3-item-3": "Alignment with Alemana Go app developed by Globant",
+    "project.agenda.process-3-item-4": "Ensure users didn't perceive jumps between platforms",
 
     "project.agenda.process-4-title": "4. Incremental Implementation",
-    "project.agenda.process-4-text":
-      "Progressive launch with continuous improvement:",
-    "project.agenda.process-4-item-1":
-      "4 months: Intensive development under health emergency pressure",
-    "project.agenda.process-4-item-2":
-      "Friends & Family: Flow validation in controlled environment",
+    "project.agenda.process-4-text": "Progressive launch with continuous improvement:",
+    "project.agenda.process-4-item-1": "4 months: Intensive development under health emergency pressure",
+    "project.agenda.process-4-item-2": "Friends & Family: Flow validation in controlled environment",
     "project.agenda.process-4-item-3": "6 months: General public launch",
-    "project.agenda.process-4-item-4":
-      "+6 months: Evolutionary improvements based on feedback and new institutional priorities",
+    "project.agenda.process-4-item-4": "+6 months: Evolutionary improvements based on feedback and new institutional priorities",
     "project.agenda.process-4-item-5": "Continuous support for 14 total months",
 
     "project.agenda.result-1-value": "Teleconsultations performed",
@@ -2310,37 +1855,26 @@ const translations = {
     "project.agenda.result-5-value": "Medical areas available",
     "project.agenda.result-6-value": "Launch time",
 
-    "project.agenda.impact-1":
-      "New web appointment channel published in 6 months, during health emergency",
-    "project.agenda.impact-2":
-      "Progressive adoption by patients, even those with little digital experience",
-    "project.agenda.impact-3":
-      "Smooth coordination with teleconsultation platform and Alemana Go app",
-    "project.agenda.impact-4":
-      "Significant improvement in appointment times and reduction of administrative errors",
-    "project.agenda.impact-5":
-      "Greater patient autonomy and less burden on care staff",
-    "project.agenda.impact-6":
-      "Teleconsultation volume equals the activity of a complete physical branch",
-    "project.agenda.impact-7":
-      "Experience without jumps or frictions between multiple platforms and teams",
-    "project.agenda.impact-8":
-      "Constant channel evolution with evidence-based incremental design strategy",
+    "project.agenda.impact-1": "New web appointment channel published in 6 months, during health emergency",
+    "project.agenda.impact-2": "Progressive adoption by patients, even those with little digital experience",
+    "project.agenda.impact-3": "Smooth coordination with teleconsultation platform and Alemana Go app",
+    "project.agenda.impact-4": "Significant improvement in appointment times and reduction of administrative errors",
+    "project.agenda.impact-5": "Greater patient autonomy and less burden on care staff",
+    "project.agenda.impact-6": "Teleconsultation volume equals the activity of a complete physical branch",
+    "project.agenda.impact-7": "Experience without jumps or frictions between multiple platforms and teams",
+    "project.agenda.impact-8": "Constant channel evolution with evidence-based incremental design strategy",
 
-    "project.agenda.learning-1-title":
-      "Multi-team coordination in high-pressure contexts",
+    "project.agenda.learning-1-title": "Multi-team coordination in high-pressure contexts",
     "project.agenda.learning-1-text":
       "Working simultaneously with Continuum, Globant, 2Brains, and Clínica Alemana's internal team taught me the importance of maintaining clear communication channels, shared documentation, and a unified experience vision even when teams work on different components.",
-    "project.agenda.learning-2-title":
-      "Resilient design in times of uncertainty",
+    "project.agenda.learning-2-title": "Resilient design in times of uncertainty",
     "project.agenda.learning-2-text":
       "The pandemic forced us to design with extreme flexibility: requirements changed weekly, priorities adjusted according to the health emergency, and we had to balance speed with quality. I learned to create adaptable design systems that could evolve without collapsing.",
     "project.agenda.learning-3-title": "The importance of incremental design",
     "project.agenda.learning-3-text":
       "The progressive launch approach (friends & family → general public → continuous improvement) allowed validating hypotheses in real environments before scaling, reducing risks and improving the service's final quality.",
 
-    "project.agenda.reflection-quote":
-      "Designing in sync with multiple teams, without losing sight of the user.",
+    "project.agenda.reflection-quote": "Designing in sync with multiple teams, without losing sight of the user.",
     "project.agenda.reflection-1":
       "This project showed me that designing a web appointment system may seem like a technical challenge, but in this case, it was also a deep exercise in empathy, process clarity, and resilience in the midst of chaos. Coordinating with multiple consultancies and internal teams, each with their own methodologies and priorities, required not just design skills but also diplomacy, strategic communication, and a clear vision of the common north.",
     "project.agenda.reflection-2":
@@ -2350,33 +1884,29 @@ const translations = {
 
     "project.agenda.visual-findings-desc":
       "Findings presentation in storytelling mode to communicate insights to the team and stakeholders.",
-    "project.agenda.visual-findings-caption":
-      "Insights communication through visual narrative",
+    "project.agenda.visual-findings-caption": "Insights communication through visual narrative",
     "project.agenda.visual-findings-1": "Carla, patients' mother",
     "project.agenda.visual-findings-2": "Lore, Contact Center employee",
     "project.agenda.visual-findings-3": "Oscar, the pediatrician",
     "project.agenda.visual-findings-4": '"But we\'re already patients!"',
     "project.agenda.visual-blueprint-desc":
       "Understanding the areas, the service, and how it should integrate with the clinic's existing systems.",
-    "project.agenda.visual-blueprint-caption":
-      "Complete Service Blueprint of the appointment system",
+    "project.agenda.visual-blueprint-caption": "Complete Service Blueprint of the appointment system",
     "project.agenda.visual-demo-title": "Search Demo",
-    "project.agenda.visual-demo-desc":
-      "Medical appointment search functionality in action.",
-    "project.agenda.visual-demo-caption":
-      "Demo: Specialty and available doctors search",
+    "project.agenda.visual-demo-desc": "Medical appointment search functionality in action.",
+    "project.agenda.visual-demo-caption": "Demo: Specialty and available doctors search",
 
     "sidebar.collaborating-teams": "Collaborating Teams",
     "sidebar.team-continuum-tele": "Teleconsultation",
     "sidebar.team-globant": "Alemana Go App",
     "sidebar.team-2brains": "Parallel platform",
     "sidebar.team-clinic-internal": "Internal team",
-    "sidebar.interested-text-agenda":
-      "If you want to know more about my work in digital health, let's talk.",
+    "sidebar.interested-text-agenda": "If you want to know more about my work in digital health, let's talk.",
 
+    // ============================================
     // CLÍNICA ALEMANA - TELECONSULTA (EN)
-    "project.teleconsulta.hero-title":
-      "Clínica Alemana Santiago – Teleconsultation Platform",
+    // ============================================
+    "project.teleconsulta.hero-title": "Clínica Alemana Santiago – Teleconsultation Platform",
     "project.teleconsulta.hero-subtitle":
       "Design from scratch of a medical video call platform integrated with the web appointment system. Automation of payments, prescription delivery, and clinical document management with 40% reduction in complaints.",
 
@@ -2395,101 +1925,62 @@ const translations = {
 
     "project.teleconsulta.resp-1": "Lead user research (doctors and patients)",
     "project.teleconsulta.resp-2": "Map complex internal systems and processes",
-    "project.teleconsulta.resp-3":
-      "Identify critical pain points in the teleconsultation experience",
-    "project.teleconsulta.resp-4":
-      "Design video call flows, document automation, and payments",
-    "project.teleconsulta.resp-5":
-      "Facilitate the connection between both projects (Web Appointment and Teleconsultation)",
-    "project.teleconsulta.resp-6":
-      "Work on platform integration from a service perspective",
-    "project.teleconsulta.resp-7":
-      "Communicate findings through visual storytelling (narrative presentations)",
+    "project.teleconsulta.resp-3": "Identify critical pain points in the teleconsultation experience",
+    "project.teleconsulta.resp-4": "Design video call flows, document automation, and payments",
+    "project.teleconsulta.resp-5": "Facilitate the connection between both projects (Web Appointment and Teleconsultation)",
+    "project.teleconsulta.resp-6": "Work on platform integration from a service perspective",
+    "project.teleconsulta.resp-7": "Communicate findings through visual storytelling (narrative presentations)",
 
     "project.teleconsulta.process-intro":
       "The project was carried out in a context of high uncertainty, with a very tight deadline and great challenges for conducting research or field testing. Even so, we designed a process focused on deeply understanding the problems of patients, doctors, and administrative teams.",
 
     "project.teleconsulta.process-1-title": "1. Findings Collection",
-    "project.teleconsulta.process-1-text":
-      "Deep research in emergency context:",
-    "project.teleconsulta.process-1-item-1":
-      "Remote interviews with users (doctors and patients)",
-    "project.teleconsulta.process-1-item-2":
-      "Creation of personas: Mariana and Fernando as archetypes",
-    "project.teleconsulta.process-1-item-3":
-      "Mapping of complex internal systems and processes",
-    "project.teleconsulta.process-1-item-4":
-      "Identification of duplicate tasks, frictions, and breaking points",
-    "project.teleconsulta.process-1-item-5":
-      "Analysis of existing platform (Teladoc) and its limitations",
-    "project.teleconsulta.process-1-item-6":
-      "Complete Service Blueprint of teleconsultation journey",
+    "project.teleconsulta.process-1-text": "Deep research in emergency context:",
+    "project.teleconsulta.process-1-item-1": "Remote interviews with users (doctors and patients)",
+    "project.teleconsulta.process-1-item-2": "Creation of personas: Mariana and Fernando as archetypes",
+    "project.teleconsulta.process-1-item-3": "Mapping of complex internal systems and processes",
+    "project.teleconsulta.process-1-item-4": "Identification of duplicate tasks, frictions, and breaking points",
+    "project.teleconsulta.process-1-item-5": "Analysis of existing platform (Teladoc) and its limitations",
+    "project.teleconsulta.process-1-item-6": "Complete Service Blueprint of teleconsultation journey",
 
-    "project.teleconsulta.process-2-title":
-      "2. Design of Flows and Key Improvements",
-    "project.teleconsulta.process-2-text":
-      "Co-creation of solutions with multidisciplinary teams:",
-    "project.teleconsulta.process-2-item-1":
-      "Own video call platform with clinical metrics",
-    "project.teleconsulta.process-2-item-2":
-      "Automation of document delivery (prescriptions, receipts, certificates)",
-    "project.teleconsulta.process-2-item-3":
-      "Automatic payment at the end of consultation, validated by the doctor",
-    "project.teleconsulta.process-2-item-4":
-      "Redesign of internal flows to eliminate duplicate records",
-    "project.teleconsulta.process-2-item-5":
-      "Creation of virtual waiting room to reduce uncertainty",
-    "project.teleconsulta.process-2-item-6":
-      "Smooth integration with Web Appointment system",
+    "project.teleconsulta.process-2-title": "2. Design of Flows and Key Improvements",
+    "project.teleconsulta.process-2-text": "Co-creation of solutions with multidisciplinary teams:",
+    "project.teleconsulta.process-2-item-1": "Own video call platform with clinical metrics",
+    "project.teleconsulta.process-2-item-2": "Automation of document delivery (prescriptions, receipts, certificates)",
+    "project.teleconsulta.process-2-item-3": "Automatic payment at the end of consultation, validated by the doctor",
+    "project.teleconsulta.process-2-item-4": "Redesign of internal flows to eliminate duplicate records",
+    "project.teleconsulta.process-2-item-5": "Creation of virtual waiting room to reduce uncertainty",
+    "project.teleconsulta.process-2-item-6": "Smooth integration with Web Appointment system",
 
     "project.teleconsulta.process-3-title": "3. Findings Communication",
     "project.teleconsulta.process-3-text": "Storytelling as a strategic tool:",
-    "project.teleconsulta.process-3-item-1":
-      'Narrative presentation structured as a "film" with acts',
-    "project.teleconsulta.process-3-item-2":
-      "Use of personas to generate empathy with stakeholders",
-    "project.teleconsulta.process-3-item-3":
-      "Service Blueprint to visualize the complete ecosystem",
-    "project.teleconsulta.process-3-item-4":
-      "Collaborative workshops to prioritize improvements",
+    "project.teleconsulta.process-3-item-1": 'Narrative presentation structured as a "film" with acts',
+    "project.teleconsulta.process-3-item-2": "Use of personas to generate empathy with stakeholders",
+    "project.teleconsulta.process-3-item-3": "Service Blueprint to visualize the complete ecosystem",
+    "project.teleconsulta.process-3-item-4": "Collaborative workshops to prioritize improvements",
 
     "project.teleconsulta.process-4-title": "4. Launch and Iteration",
-    "project.teleconsulta.process-4-text":
-      "Progressive implementation with continuous learning:",
-    "project.teleconsulta.process-4-item-1":
-      "4 months: Initial development and internal testing (friends & family)",
+    "project.teleconsulta.process-4-text": "Progressive implementation with continuous learning:",
+    "project.teleconsulta.process-4-item-1": "4 months: Initial development and internal testing (friends & family)",
     "project.teleconsulta.process-4-item-2": "6 months: Full public deployment",
-    "project.teleconsulta.process-4-item-3":
-      "+8 months: Progressive improvements based on feedback",
-    "project.teleconsulta.process-4-item-4":
-      "Constant coordination between Web Appointment and Teleconsultation teams",
+    "project.teleconsulta.process-4-item-3": "+8 months: Progressive improvements based on feedback",
+    "project.teleconsulta.process-4-item-4": "Constant coordination between Web Appointment and Teleconsultation teams",
 
-    "project.teleconsulta.result-1-value":
-      "Reduction in billing and document complaints",
+    "project.teleconsulta.result-1-value": "Reduction in billing and document complaints",
     "project.teleconsulta.result-2-value": "Telerehabilitation sessions",
-    "project.teleconsulta.result-3-value":
-      "Total teleconsultations (complete ecosystem)",
+    "project.teleconsulta.result-3-value": "Total teleconsultations (complete ecosystem)",
     "project.teleconsulta.result-4-value": "Alignment with clinical needs",
 
-    "project.teleconsulta.impact-1":
-      "40% reduction in complaints related to billing and document delivery",
-    "project.teleconsulta.impact-2":
-      "Medical operative time freed by reducing repetitive and duplicate tasks",
-    "project.teleconsulta.impact-3":
-      "Patients gained clarity about their care and accessed their documents more easily",
-    "project.teleconsulta.impact-4":
-      "100% platform aligned with clinical and internal management needs",
-    "project.teleconsulta.impact-5":
-      "Smooth integration with Web Appointment, no jumps or frictions in experience",
-    "project.teleconsulta.impact-6":
-      "Automation of administrative processes that were previously done manually",
-    "project.teleconsulta.impact-7":
-      "Virtual waiting room that reduced anxiety for patients and doctors",
-    "project.teleconsulta.impact-8":
-      "Automatic delivery system for prescriptions, receipts, and medical certificates",
+    "project.teleconsulta.impact-1": "40% reduction in complaints related to billing and document delivery",
+    "project.teleconsulta.impact-2": "Medical operative time freed by reducing repetitive and duplicate tasks",
+    "project.teleconsulta.impact-3": "Patients gained clarity about their care and accessed their documents more easily",
+    "project.teleconsulta.impact-4": "100% platform aligned with clinical and internal management needs",
+    "project.teleconsulta.impact-5": "Smooth integration with Web Appointment, no jumps or frictions in experience",
+    "project.teleconsulta.impact-6": "Automation of administrative processes that were previously done manually",
+    "project.teleconsulta.impact-7": "Virtual waiting room that reduced anxiety for patients and doctors",
+    "project.teleconsulta.impact-8": "Automatic delivery system for prescriptions, receipts, and medical certificates",
 
-    "project.teleconsulta.reflection-quote":
-      "Storytelling as a bridge between research and action.",
+    "project.teleconsulta.reflection-quote": "Storytelling as a bridge between research and action.",
     "project.teleconsulta.reflection-1":
       "This project was both a technical and emotional challenge. We worked with urgency, but without losing human focus. The decision to communicate findings through a cinematic narrative (the \"acts\" of Mariana and Fernando) wasn't just a creative choice, but strategic: we needed stakeholders, developers, and medical teams to viscerally understand users' pain points.",
     "project.teleconsulta.reflection-2":
@@ -2501,34 +1992,28 @@ const translations = {
 
     "project.teleconsulta.visual-blueprint-desc":
       "Complete service map showing all touchpoints, actors, and systems involved in the teleconsultation experience.",
-    "project.teleconsulta.visual-blueprint-caption":
-      "Complete Service Blueprint of teleconsultation journey",
-    "project.teleconsulta.visual-storytelling-title":
-      "Findings and Insights Presentation",
+    "project.teleconsulta.visual-blueprint-caption": "Complete Service Blueprint of teleconsultation journey",
+    "project.teleconsulta.visual-storytelling-title": "Findings and Insights Presentation",
     "project.teleconsulta.visual-storytelling-desc":
       "Visual storytelling with Mariana and Fernando's narrative, structured as a film with acts representing service pain points.",
-    "project.teleconsulta.visual-storytelling-caption":
-      "Findings communicated through cinematic storytelling",
+    "project.teleconsulta.visual-storytelling-caption": "Findings communicated through cinematic storytelling",
     "project.teleconsulta.visual-personas-title": "Construction of Personas",
-    "project.teleconsulta.visual-personas-desc":
-      "User profiles created from research, with their main pain points and usage context.",
+    "project.teleconsulta.visual-personas-desc": "User profiles created from research, with their main pain points and usage context.",
     "project.teleconsulta.visual-persona-1": "Fernando - Teleconsultation user",
-    "project.teleconsulta.visual-persona-2":
-      "Camila - Doctor attending patients in teleconsultation",
+    "project.teleconsulta.visual-persona-2": "Camila - Doctor attending patients in teleconsultation",
     "project.teleconsulta.visual-persona-3": "Sergio, Backoffice assistant",
-    "project.teleconsulta.visual-prototypes-title":
-      "Prototypes - First Iteration",
-    "project.teleconsulta.visual-prototypes-desc":
-      "Wireframes and prototypes of main views for both doctors and patients.",
-    "project.teleconsulta.visual-prototype-1":
-      "Doctor view - Consultation panel",
+    "project.teleconsulta.visual-prototypes-title": "Prototypes - First Iteration",
+    "project.teleconsulta.visual-prototypes-desc": "Wireframes and prototypes of main views for both doctors and patients.",
+    "project.teleconsulta.visual-prototype-1": "Doctor view - Consultation panel",
     "project.teleconsulta.visual-prototype-2": "Patient video call interface",
 
     "sidebar.visual-resources": "Visual Resources",
-    "sidebar.interested-text-teleconsulta":
-      "If you want to know more about my work in telemedicine and storytelling, let's talk.",
+    "sidebar.interested-text-teleconsulta": "If you want to know more about my work in telemedicine and storytelling, let's talk.",
 
+    // ============================================
     // CUBICO - IMPROVE YOUR ENERGY (EN)
+    // ============================================
+
     "project.cubico.hero-title": "Cubico - Improve Your Energy Challenge",
     "project.cubico.hero-subtitle":
       "Collaborative educational program that empowered 85 young people in Seville to design sustainable solutions in their community, training 12 teachers in people-centered design methodologies.",
@@ -2546,85 +2031,57 @@ const translations = {
     "project.cubico.role-text":
       "As Service Designer at Fruta, I worked for 5 months on this project, being part of a multidisciplinary team of 4 people.",
 
-    "project.cubico.resp-1":
-      "Lead the conceptualization of the educational program based on Design Thinking",
+    "project.cubico.resp-1": "Lead the conceptualization of the educational program based on Design Thinking",
     "project.cubico.resp-2":
       "Co-design and facilitate 4 initial in-person workshops with young people from the community to understand local issues",
-    "project.cubico.resp-3":
-      "Design and facilitate 2 in-person workshops per school to train teachers",
-    "project.cubico.resp-4":
-      "Coordinate 4 digital sessions with students from schools",
-    "project.cubico.resp-5":
-      "Adapt people-centered design methodologies to the educational context",
-    "project.cubico.resp-6":
-      "Design pedagogical tools (interactive game board, visual materials)",
-    "project.cubico.resp-7":
-      "Coordinate with teachers, students, and institutional representatives",
-    "project.cubico.resp-8":
-      "Facilitate program implementation in the school curriculum",
+    "project.cubico.resp-3": "Design and facilitate 2 in-person workshops per school to train teachers",
+    "project.cubico.resp-4": "Coordinate 4 digital sessions with students from schools",
+    "project.cubico.resp-5": "Adapt people-centered design methodologies to the educational context",
+    "project.cubico.resp-6": "Design pedagogical tools (interactive game board, visual materials)",
+    "project.cubico.resp-7": "Coordinate with teachers, students, and institutional representatives",
+    "project.cubico.resp-8": "Facilitate program implementation in the school curriculum",
 
     "project.cubico.process-intro":
       "We designed a participatory process based on Design Thinking, specifically adapted to the educational context and the needs of young people in training. The program was structured in progressive phases that allowed students to move from observation to action.",
 
     "project.cubico.process-1-title": "1. Discovery with the Community",
     "project.cubico.process-1-text": "Understand the context and real issues:",
-    "project.cubico.process-1-item-1":
-      "4 in-person workshops with young people from Morón de la Frontera",
-    "project.cubico.process-1-item-2":
-      "Exploration of local challenges related to sustainability and energy",
-    "project.cubico.process-1-item-3":
-      "Identification of needs and opportunities in the community",
-    "project.cubico.process-1-item-4":
-      "Building empathy with environmental problems in the area",
-    "project.cubico.process-1-item-5":
-      "Definition of challenges that students would address later",
+    "project.cubico.process-1-item-1": "4 in-person workshops with young people from Morón de la Frontera",
+    "project.cubico.process-1-item-2": "Exploration of local challenges related to sustainability and energy",
+    "project.cubico.process-1-item-3": "Identification of needs and opportunities in the community",
+    "project.cubico.process-1-item-4": "Building empathy with environmental problems in the area",
+    "project.cubico.process-1-item-5": "Definition of challenges that students would address later",
 
-    "project.cubico.process-2-title":
-      "2. Teacher Training (Co-design with Local Actors)",
+    "project.cubico.process-2-title": "2. Teacher Training (Co-design with Local Actors)",
     "project.cubico.process-2-text": "Train teachers in design methodologies:",
-    "project.cubico.process-2-item-1":
-      "2 in-person workshops per school (4 total workshops)",
-    "project.cubico.process-2-item-2":
-      "Training in Design Thinking and people-centered design",
-    "project.cubico.process-2-item-3":
-      "Co-creation of content adapted to the curriculum",
-    "project.cubico.process-2-item-4":
-      "Practical training sessions with pedagogical tools",
+    "project.cubico.process-2-item-1": "2 in-person workshops per school (4 total workshops)",
+    "project.cubico.process-2-item-2": "Training in Design Thinking and people-centered design",
+    "project.cubico.process-2-item-3": "Co-creation of content adapted to the curriculum",
+    "project.cubico.process-2-item-4": "Practical training sessions with pedagogical tools",
     "project.cubico.process-2-item-5": "12 teachers trained in total",
 
     "project.cubico.process-3-title": "3. Development of Pedagogical Tools",
-    "project.cubico.process-3-text":
-      "Creation of interactive resources for the classroom:",
-    "project.cubico.process-3-item-1":
-      "Design of an interactive game board that guided students through the design process phases",
-    "project.cubico.process-3-item-2":
-      "Visual materials that fostered creativity and critical thinking",
-    "project.cubico.process-3-item-3":
-      "Tools adapted for ESO and Vocational Training",
+    "project.cubico.process-3-text": "Creation of interactive resources for the classroom:",
+    "project.cubico.process-3-item-1": "Design of an interactive game board that guided students through the design process phases",
+    "project.cubico.process-3-item-2": "Visual materials that fostered creativity and critical thinking",
+    "project.cubico.process-3-item-3": "Tools adapted for ESO and Vocational Training",
     "project.cubico.process-3-item-4": "Downloadable resources for teachers",
 
     "project.cubico.process-4-title": "4. Classroom Implementation",
     "project.cubico.process-4-text": "Program launch with students:",
-    "project.cubico.process-4-item-1":
-      "4 digital sessions with students from both schools",
-    "project.cubico.process-4-item-2":
-      "85 participating students (ESO and Vocational Training)",
+    "project.cubico.process-4-item-1": "4 digital sessions with students from both schools",
+    "project.cubico.process-4-item-2": "85 participating students (ESO and Vocational Training)",
     "project.cubico.process-4-item-3": "Teamwork to identify local challenges",
-    "project.cubico.process-4-item-4":
-      "Development of concrete sustainable solutions",
-    "project.cubico.process-4-item-5":
-      "Program integration into school curriculum",
+    "project.cubico.process-4-item-4": "Development of concrete sustainable solutions",
+    "project.cubico.process-4-item-5": "Program integration into school curriculum",
 
     "project.cubico.process-5-title": "5. Presentation and Evaluation",
     "project.cubico.process-5-text": "Program closure and follow-up:",
     "project.cubico.process-5-item-1": "12 projects developed and presented",
-    "project.cubico.process-5-item-2":
-      "Evaluation of solutions proposed by students",
+    "project.cubico.process-5-item-2": "Evaluation of solutions proposed by students",
     "project.cubico.process-5-item-3": "Selection of winning project",
-    "project.cubico.process-5-item-4":
-      "Implementation of winning project with tangible benefits for the community",
-    "project.cubico.process-5-item-5":
-      "Follow-up mechanisms to evaluate impact",
+    "project.cubico.process-5-item-4": "Implementation of winning project with tangible benefits for the community",
+    "project.cubico.process-5-item-5": "Follow-up mechanisms to evaluate impact",
 
     "project.cubico.methodology-title": "Design Thinking Adaptation",
     "project.cubico.methodology-intro":
@@ -2650,23 +2107,15 @@ const translations = {
     "project.cubico.result-3-value": "Sustainable projects developed",
     "project.cubico.result-4-value": "Winning project implemented",
 
-    "project.cubico.impact-1":
-      "Training of 12 teachers in people-centered design methodologies",
-    "project.cubico.impact-2":
-      "Active participation of 85 ESO and Vocational Training students",
-    "project.cubico.impact-3":
-      "Development and presentation of 12 projects focused on sustainable solutions",
-    "project.cubico.impact-4":
-      "Implementation of winning project, with tangible benefits for the local community",
-    "project.cubico.impact-5":
-      "Program integration into school curriculum of both schools",
-    "project.cubico.impact-6":
-      "Strengthening of young people's commitment to sustainable development of their community",
-    "project.cubico.impact-7":
-      "Reusable pedagogical tools for future program editions",
+    "project.cubico.impact-1": "Training of 12 teachers in people-centered design methodologies",
+    "project.cubico.impact-2": "Active participation of 85 ESO and Vocational Training students",
+    "project.cubico.impact-3": "Development and presentation of 12 projects focused on sustainable solutions",
+    "project.cubico.impact-4": "Implementation of winning project, with tangible benefits for the local community",
+    "project.cubico.impact-5": "Program integration into school curriculum of both schools",
+    "project.cubico.impact-6": "Strengthening of young people's commitment to sustainable development of their community",
+    "project.cubico.impact-7": "Reusable pedagogical tools for future program editions",
 
-    "project.cubico.reflection-quote":
-      "The power of strategic and participatory design to generate social impact.",
+    "project.cubico.reflection-quote": "The power of strategic and participatory design to generate social impact.",
     "project.cubico.reflection-1":
       "This project reaffirmed my conviction about the power of strategic and participatory design to generate social impact. It was inspiring to see how, through appropriate tools and a collaborative approach, young people can become protagonists of change in their communities.",
     "project.cubico.reflection-2":
@@ -2677,29 +2126,22 @@ const translations = {
       "Seeing the winning project implemented and generate real benefits in Morón de la Frontera was confirmation that when we empower people with design tools, they don't just solve problems: they create possible futures.",
 
     "project.cubico.visual-toolkit-title": "Challenge Toolkit",
-    "project.cubico.visual-toolkit-desc":
-      "Pedagogical tools designed to guide students through Design Thinking phases.",
-    "project.cubico.visual-toolkit-caption":
-      "Board and cards for the design process",
+    "project.cubico.visual-toolkit-desc": "Pedagogical tools designed to guide students through Design Thinking phases.",
+    "project.cubico.visual-toolkit-caption": "Board and cards for the design process",
     "project.cubico.visual-workshops-title": "Workshops with the Community",
-    "project.cubico.visual-workshops-desc":
-      "Initial discovery sessions with young people from Morón de la Frontera.",
+    "project.cubico.visual-workshops-desc": "Initial discovery sessions with young people from Morón de la Frontera.",
     "project.cubico.visual-workshop-1": "First workshop with young people",
     "project.cubico.visual-workshop-2": "Collaborative ideation session",
     "project.cubico.visual-training-title": "Teacher Training",
-    "project.cubico.visual-training-desc":
-      "In-person workshops with teachers to train them in Design Thinking.",
+    "project.cubico.visual-training-desc": "In-person workshops with teachers to train them in Design Thinking.",
     "project.cubico.visual-training-1": "Workshop with teachers - School 1",
     "project.cubico.visual-training-2": "Workshop with teachers - School 2",
     "project.cubico.visual-students-title": "Students in Action",
-    "project.cubico.visual-students-desc":
-      "Young people developing their sustainability projects.",
+    "project.cubico.visual-students-desc": "Young people developing their sustainability projects.",
     "project.cubico.visual-student-1": "Teams working on prototypes",
     "project.cubico.visual-student-2": "Final project presentations",
-    "project.cubico.visual-student-3":
-      "Winning groups in the Improve Your Energy Challenge",
-    "project.cubico.visual-booklet-title":
-      "More information about the challenge",
+    "project.cubico.visual-student-3": "Winning groups in the Improve Your Energy Challenge",
+    "project.cubico.visual-booklet-title": "More information about the challenge",
     "project.cubico.visual-booklet-text":
       "If you want to learn more about what we did with the Morón de la Frontera community, you can read our booklet, is available only in Spanish.",
     "project.cubico.visual-booklet-btn": "Download booklet",
@@ -2717,10 +2159,11 @@ const translations = {
     "sidebar.participants": "participants",
     "sidebar.projects-label": "Projects",
     "sidebar.developed": "developed",
-    "sidebar.interested-text-cubico":
-      "If you want to know more about my work in education and sustainability, let's talk.",
+    "sidebar.interested-text-cubico": "If you want to know more about my work in education and sustainability, let's talk.",
 
+    // ============================================
     // UPC - REDISEÑO DE ADMISIÓN
+    // ============================================
 
     // Hero
     "project.upc.hero-title": "UPC — Admissions Area Redesign",
@@ -2747,17 +2190,12 @@ const translations = {
     "project.upc.team-3": "Me (Service Designer)",
     "project.upc.team-4": "1 Architect",
 
-    "project.upc.resp-1":
-      "Identify key frictions in the current admissions experience",
-    "project.upc.resp-2":
-      "Design a comprehensive solution integrating digital channels, physical spaces, and care teams",
+    "project.upc.resp-1": "Identify key frictions in the current admissions experience",
+    "project.upc.resp-2": "Design a comprehensive solution integrating digital channels, physical spaces, and care teams",
     "project.upc.resp-3": "Facilitate co-creation sessions with the UPC team",
-    "project.upc.resp-4":
-      "Coordinate and participate in real testing at 2 locations with ~30 users",
-    "project.upc.resp-5":
-      "Support translation of insights into practical deliverables for implementation",
-    "project.upc.resp-6":
-      "Map the complete prospective student journey from first contact to enrollment",
+    "project.upc.resp-4": "Coordinate and participate in real testing at 2 locations with ~30 users",
+    "project.upc.resp-5": "Support translation of insights into practical deliverables for implementation",
+    "project.upc.resp-6": "Map the complete prospective student journey from first contact to enrollment",
     "project.upc.resp-7": 'Design the "Genius" role as experience orchestrator',
 
     // Process
@@ -2768,45 +2206,34 @@ const translations = {
     "project.upc.process-1-text": "Deep research of current context:",
     "project.upc.process-1-item-1":
       "Field research: direct observation and interviews with prospective students, parents, and admissions staff",
-    "project.upc.process-1-item-2":
-      "Mapping of prospective student's current journey, from first contact to process closure",
+    "project.upc.process-1-item-2": "Mapping of prospective student's current journey, from first contact to process closure",
     "project.upc.process-1-item-3":
       "Identification of frictions: duplicate information, low visibility of academic offerings, uncomfortable or unintuitive physical environments",
-    "project.upc.process-1-item-4":
-      "Discovery of 3 parallel projects working in silos within the university",
+    "project.upc.process-1-item-4": "Discovery of 3 parallel projects working in silos within the university",
 
     "project.upc.process-2-title": "2. Ideation and Conceptualization",
     "project.upc.process-2-text": "Co-creation of omnichannel vision:",
-    "project.upc.process-2-item-1":
-      "Workshop facilitation with UPC team to imagine an ideal experience",
+    "project.upc.process-2-item-1": "Workshop facilitation with UPC team to imagine an ideal experience",
     "project.upc.process-2-item-2":
       'Generation of improvement concepts: Prospective Student Portal (centralized digital platform), Physical location redesign (welcome areas, career visualization, barrier-free spaces), "Genius" roles redesigned as guide, Ticketing system on iPad, Interactive cost simulator',
 
     "project.upc.process-3-title": "3. Prototyping and Real Testing",
     "project.upc.process-3-text": "Validation with real users in real context:",
-    "project.upc.process-3-item-1":
-      "Physical testing at 2 locations (Monterrico + other)",
-    "project.upc.process-3-item-2":
-      "~30 total users (parents and prospective students)",
+    "project.upc.process-3-item-1": "Physical testing at 2 locations (Monterrico + other)",
+    "project.upc.process-3-item-2": "~30 total users (parents and prospective students)",
     "project.upc.process-3-item-3": "4 hours per location on high-traffic day",
-    "project.upc.process-3-item-4":
-      "Evaluation of digital elements, furniture, care flow, and signage",
-    "project.upc.process-3-item-5":
-      "We tested a complete service with real care, not just prototypes",
+    "project.upc.process-3-item-4": "Evaluation of digital elements, furniture, care flow, and signage",
+    "project.upc.process-3-item-5": "We tested a complete service with real care, not just prototypes",
     "project.upc.process-3-item-6":
       "Identification of aspects increasing perception of closeness: Elimination of counter as barrier, Comfortable living room-style furniture, Shared screen use (iPad/laptops) between advisor and prospective student, Visible and accessible information from entrance",
 
     "project.upc.process-4-title": "4. Final Deliverables and Roadmap",
     "project.upc.process-4-text": "Complete documentation for implementation:",
-    "project.upc.process-4-item-1":
-      "Complete documentation of new admissions journey",
-    "project.upc.process-4-item-2":
-      "Recommendations for physical redesign of 4 locations (Monterrico, San Miguel, San Isidro, Villa)",
-    "project.upc.process-4-item-3":
-      "Functional prototypes: cost simulator, ticketing system",
+    "project.upc.process-4-item-1": "Complete documentation of new admissions journey",
+    "project.upc.process-4-item-2": "Recommendations for physical redesign of 4 locations (Monterrico, San Miguel, San Isidro, Villa)",
+    "project.upc.process-4-item-3": "Functional prototypes: cost simulator, ticketing system",
     "project.upc.process-4-item-4": "Phased implementation guides",
-    "project.upc.process-4-item-5":
-      "Floor plans and layouts for each location with furniture specifications",
+    "project.upc.process-4-item-5": "Floor plans and layouts for each location with furniture specifications",
 
     // Key Findings
     "project.upc.findings-title": "Key Testing Findings",
@@ -2814,8 +2241,7 @@ const translations = {
     "project.upc.finding-1-text":
       "All touchpoints must complement each other and be supported by a single consolidated information base. Channels cannot function in isolation: digital experience must reflect and enhance physical experience, and vice versa.",
 
-    "project.upc.finding-2-title":
-      "👨‍👩‍👧 Prospective Students vs Parents: different needs",
+    "project.upc.finding-2-title": "👨‍👩‍👧 Prospective Students vs Parents: different needs",
     "project.upc.finding-2-text":
       "Prospective students quickly grasp the use and value of the digital platform. Parents need to complement it with human contact. This confirmed the solution had to be hybrid, not just digital.",
 
@@ -2827,13 +2253,11 @@ const translations = {
     "project.upc.finding-4-text":
       "Registration on the prospective student platform should be as early as possible as it's a way to solidify their bond with the university until they decide to enroll.",
 
-    "project.upc.finding-5-title":
-      "🪑 Round tables and comfortable furniture generate closeness",
+    "project.upc.finding-5-title": "🪑 Round tables and comfortable furniture generate closeness",
     "project.upc.finding-5-text":
       "Care at round tables and comfortable furniture generate closeness between prospective student and advisor. This environment also makes waiting more pleasant.",
 
-    "project.upc.finding-6-title":
-      "💻 Shared iPads and laptops improve transparency",
+    "project.upc.finding-6-title": "💻 Shared iPads and laptops improve transparency",
     "project.upc.finding-6-text":
       "Care systems need to be available for laptops and iPads as these improve interaction between prospective student and advisor since both see the same information and it feels more transparent.",
 
@@ -2841,39 +2265,28 @@ const translations = {
     "project.upc.finding-7-text":
       "The Genius fulfills an important role and should orchestrate the entire scene. That's why it's important to arm them with necessary tools and information. This role welcomes, guides, and resolves initial doubts without physical barrier.",
 
-    "project.upc.finding-8-title":
-      "📚 Complete offering visibility from entrance",
+    "project.upc.finding-8-title": "📚 Complete offering visibility from entrance",
     "project.upc.finding-8-text":
       "Showing the complete career offerings from the entrance is important for those seeking information. Users were positively surprised to discover careers they didn't know existed at the university.",
 
     // Problems vs Discoveries
     "project.upc.problems-title": "From Problem to Solution",
     "project.upc.problems-current-title": "❌ Current Space Issues",
-    "project.upc.problems-item-1":
-      "Admissions area not quickly found upon entry",
-    "project.upc.problems-item-2":
-      "Entry generates feeling of suffocation due to furniture arrangement",
-    "project.upc.problems-item-3":
-      "Inappropriate modules with very reduced care space",
+    "project.upc.problems-item-1": "Admissions area not quickly found upon entry",
+    "project.upc.problems-item-2": "Entry generates feeling of suffocation due to furniture arrangement",
+    "project.upc.problems-item-3": "Inappropriate modules with very reduced care space",
     "project.upc.problems-item-4": "Computer blocks client visibility",
     "project.upc.problems-item-5": "Spaces with poor acoustics",
-    "project.upc.problems-item-6":
-      "Tablets with little use in current implementation",
+    "project.upc.problems-item-6": "Tablets with little use in current implementation",
     "project.upc.problems-item-7": "Inappropriate lighting",
 
     "project.upc.discoveries-title": "✅ Prototype Testing Discoveries",
-    "project.upc.discoveries-item-1":
-      "Wall with brochures of all careers surprised positively",
-    "project.upc.discoveries-item-2":
-      "Clients felt much more comfortable in small rooms",
-    "project.upc.discoveries-item-3":
-      "Friendlier treatment without counter barrier",
-    "project.upc.discoveries-item-4":
-      "Advisor approaching client generated greater comfort",
-    "project.upc.discoveries-item-5":
-      "Advisors had more positive feeling moving vs being behind counter",
-    "project.upc.discoveries-item-6":
-      "Small tables with appropriate height created visual continuity",
+    "project.upc.discoveries-item-1": "Wall with brochures of all careers surprised positively",
+    "project.upc.discoveries-item-2": "Clients felt much more comfortable in small rooms",
+    "project.upc.discoveries-item-3": "Friendlier treatment without counter barrier",
+    "project.upc.discoveries-item-4": "Advisor approaching client generated greater comfort",
+    "project.upc.discoveries-item-5": "Advisors had more positive feeling moving vs being behind counter",
+    "project.upc.discoveries-item-6": "Small tables with appropriate height created visual continuity",
 
     // Results
     "project.upc.result-1-value": "Users tested in real context",
@@ -2881,24 +2294,16 @@ const translations = {
     "project.upc.result-3-value": "Locations redesigned",
     "project.upc.result-4-value": "Testing in high traffic",
 
-    "project.upc.impact-1":
-      "Enrollment digitization implemented (flow almost identical to our proposal)",
-    "project.upc.impact-2":
-      "Physical space changes implemented at locations based on our report",
-    "project.upc.impact-3":
-      "Proposed digital tools (cost simulator, ticketing system) validated with real users",
-    "project.upc.impact-4":
-      "Progressive elimination of counters as physical barriers",
-    "project.upc.impact-5":
-      "Implementation of career visualization areas from entrance",
-    "project.upc.impact-6":
-      "Generated information fed strategic decisions despite fragmentation between projects",
-    "project.upc.impact-7":
-      "A clear user-centered vision was delivered for university admissions, with partial but sustainable impact",
+    "project.upc.impact-1": "Enrollment digitization implemented (flow almost identical to our proposal)",
+    "project.upc.impact-2": "Physical space changes implemented at locations based on our report",
+    "project.upc.impact-3": "Proposed digital tools (cost simulator, ticketing system) validated with real users",
+    "project.upc.impact-4": "Progressive elimination of counters as physical barriers",
+    "project.upc.impact-5": "Implementation of career visualization areas from entrance",
+    "project.upc.impact-6": "Generated information fed strategic decisions despite fragmentation between projects",
+    "project.upc.impact-7": "A clear user-centered vision was delivered for university admissions, with partial but sustainable impact",
 
     // Learnings
-    "project.upc.learning-1-title":
-      "Designing in contexts with fragmented structures",
+    "project.upc.learning-1-title": "Designing in contexts with fragmented structures",
     "project.upc.learning-1-text":
       "Discovering 3 parallel projects working in silos was a diplomatic as well as methodological challenge. I learned that in complex organizations, service design must be even more rigorous, empathetic, and diplomatic. Having the best solution isn't enough: you must navigate political dynamics and power tensions.",
 
@@ -2911,38 +2316,28 @@ const translations = {
       "Young people prefer digital control, parents value human contact. Physical experience must be part of the service, not just support. Spaces must reflect trust, transparency, and visual order. No channel can function in isolation.",
 
     // Reflections
-    "project.upc.reflection-quote":
-      "Designing is also navigating complex organizational realities.",
+    "project.upc.reflection-quote": "Designing is also navigating complex organizational realities.",
     "project.upc.reflection-1":
       "This project was a political and operational challenge, but also an opportunity to learn to sustain user vision amid power tensions and institutional priorities. Seeing that part of our physical design was implemented, and that the digital flow was adopted almost intact (though with different visualization), was confirmation that when we design with rigor and real evidence, value imposes itself.",
     "project.upc.reflection-2":
       'I also learned that sometimes the best projects aren\'t those implemented 100%, but those that manage to change conversations, influence decisions, and demonstrate that another way of doing things is possible. Even when our deliverables were "absorbed" by other projects with more political weight, the fact they used our insights and flows is a victory for user-centered design.',
 
     // Visual Resources
-    "project.upc.visual-journey-title":
-      "Service Blueprint of Pre-Project Admissions Process",
-    "project.upc.visual-journey-desc":
-      "Complete experience mapping, from first contact to enrollment.",
-    "project.upc.visual-journey-caption":
-      "Complete admissions process blueprint",
+    "project.upc.visual-journey-title": "Service Blueprint of Pre-Project Admissions Process",
+    "project.upc.visual-journey-desc": "Complete experience mapping, from first contact to enrollment.",
+    "project.upc.visual-journey-caption": "Complete admissions process blueprint",
 
     "project.upc.visual-spaces-title": "Physical Space Redesign",
-    "project.upc.visual-spaces-desc":
-      "Layout proposals for UPC's main locations.",
+    "project.upc.visual-spaces-desc": "Layout proposals for UPC's main locations.",
     "project.upc.visual-space-1": "Monterrico Location Redesign",
 
-    "project.upc.visual-portal-title":
-      "Prospective Student Portal - Prototypes",
-    "project.upc.visual-portal-desc":
-      "Digital platform where prospective students and parents have complete control of their process.",
-    "project.upc.visual-portal-1":
-      "Prospective student portal (cannot show more specific due to NDA)",
+    "project.upc.visual-portal-title": "Prospective Student Portal - Prototypes",
+    "project.upc.visual-portal-desc": "Digital platform where prospective students and parents have complete control of their process.",
+    "project.upc.visual-portal-1": "Prospective student portal (cannot show more specific due to NDA)",
 
     "project.upc.visual-testing-title": "Real Testing at Locations",
-    "project.upc.visual-testing-desc":
-      "Photos from testing with real users in high-traffic context.",
-    "project.upc.visual-test-1":
-      "Testing with prospective students and parents",
+    "project.upc.visual-testing-desc": "Photos from testing with real users in high-traffic context.",
+    "project.upc.visual-test-1": "Testing with prospective students and parents",
     "project.upc.visual-test-2": "Furniture and space validation",
     "project.upc.visual-test-3": '"Genius" role testing',
 
@@ -2951,10 +2346,12 @@ const translations = {
     "project.upc.visual-external-btn": "View case at Continuum",
 
     // Sidebar
-    "sidebar.interested-text-upc":
-      "If you want to know more about my work in omnichannel design and real testing, let's talk.",
+    "sidebar.interested-text-upc": "If you want to know more about my work in omnichannel design and real testing, let's talk.",
 
-    // SPOTIFY - ENGLISH (COMPLETE)
+    // ============================================
+    // SPOTIFY
+    // ============================================
+
     "project.spotify.badge-nda": "Under NDA",
     "project.spotify.hero-title": "Spotify / Ayer Viernes – Premium Experience",
     "project.spotify.hero-subtitle":
@@ -2973,100 +2370,69 @@ const translations = {
       "Why do users in Peru subscribe directly to Spotify Premium without using the freemium space the platform offers? Do they really value the paid plan more, or are there other factors at play?",
 
     // Role
-    "project.spotify.role-text":
-      "I participated as UX Researcher in a core team of 3 people, being the second on the research team.",
+    "project.spotify.role-text": "I participated as UX Researcher in a core team of 3 people, being the second on the research team.",
     "project.spotify.team-1": "Lead Researcher (project leader)",
     "project.spotify.team-2": "Me (UX Researcher)",
     "project.spotify.team-3": "1 Additional Researcher",
-    "project.spotify.team-4":
-      "Jorge Barahona (Director of Ayer Viernes - meeting support)",
+    "project.spotify.team-4": "Jorge Barahona (Director of Ayer Viernes - meeting support)",
 
     // Responsibilities
-    "project.spotify.resp-1":
-      "Participate in research approach design and hypothesis definition",
-    "project.spotify.resp-2":
-      "Co-create the screener for participant recruitment",
-    "project.spotify.resp-3":
-      "Conduct semi-structured interviews in Spanish with Peruvian users",
+    "project.spotify.resp-1": "Participate in research approach design and hypothesis definition",
+    "project.spotify.resp-2": "Co-create the screener for participant recruitment",
+    "project.spotify.resp-3": "Conduct semi-structured interviews in Spanish with Peruvian users",
     "project.spotify.resp-4": "Map insights in collaborative tools (Miro)",
     "project.spotify.resp-5": "Synthesize findings and behavior patterns",
-    "project.spotify.resp-6":
-      "Translate and adapt reports from Spanish to English for the global team",
-    "project.spotify.resp-7":
-      "Create Customer Journey Maps and Jobs To Be Done frameworks",
-    "project.spotify.resp-8":
-      "Identify barriers, misconceptions, and friction points",
+    "project.spotify.resp-6": "Translate and adapt reports from Spanish to English for the global team",
+    "project.spotify.resp-7": "Create Customer Journey Maps and Jobs To Be Done frameworks",
+    "project.spotify.resp-8": "Identify barriers, misconceptions, and friction points",
 
     // Process
     "project.spotify.process-intro":
       "We designed a rigorous, bilingual, and culturally sensitive qualitative research process that would allow us to validate or refute the client's initial hypothesis.",
 
     "project.spotify.process-1-title": "1. Kick-off and Hypothesis Definition",
-    "project.spotify.process-1-text":
-      "Alignment with global team and problem formulation:",
+    "project.spotify.process-1-text": "Alignment with global team and problem formulation:",
     "project.spotify.process-1-item-1":
       'Initial hypothesis: "In Peru, users subscribe directly to Spotify Premium because they perceive more value in the paid plan than in the free one"',
     "project.spotify.process-1-item-2": "Definition of research objectives",
-    "project.spotify.process-1-item-3":
-      "Recruitment criteria for two profiles: Premium users and non-users",
+    "project.spotify.process-1-item-3": "Recruitment criteria for two profiles: Premium users and non-users",
     "project.spotify.process-1-item-4": "Qualitative validation methods",
 
     "project.spotify.process-2-title": "2. Bilingual Recruitment",
     "project.spotify.process-2-text": "Careful participant selection:",
     "project.spotify.process-2-item-1": "Screener: Applied to ~100 people",
-    "project.spotify.process-2-item-2":
-      "10 final participants: 5 Premium users + 5 non-users",
-    "project.spotify.process-2-item-3":
-      "Premium users: recruited from Spotify's base in Peru",
-    "project.spotify.process-2-item-4":
-      "Non-users: captured through screener on social media",
-    "project.spotify.process-2-item-5":
-      "Interviews in Spanish, reports in English for the global team",
+    "project.spotify.process-2-item-2": "10 final participants: 5 Premium users + 5 non-users",
+    "project.spotify.process-2-item-3": "Premium users: recruited from Spotify's base in Peru",
+    "project.spotify.process-2-item-4": "Non-users: captured through screener on social media",
+    "project.spotify.process-2-item-5": "Interviews in Spanish, reports in English for the global team",
 
     "project.spotify.process-3-title": "3. Exploratory Research",
-    "project.spotify.process-3-text":
-      "Deep immersion in behaviors and motivations:",
-    "project.spotify.process-3-item-1":
-      "Semi-structured interviews (1-1.5 hours each)",
+    "project.spotify.process-3-text": "Deep immersion in behaviors and motivations:",
+    "project.spotify.process-3-item-1": "Semi-structured interviews (1-1.5 hours each)",
     "project.spotify.process-3-item-2": "Insight mapping in Miro",
-    "project.spotify.process-3-item-3":
-      "Comparison between Spotify users and non-users",
-    "project.spotify.process-3-item-4":
-      "Identification of cultural, economic, and technological barriers",
-    "project.spotify.process-3-item-5":
-      "Exploration of perceptions about freemium vs premium plans",
-    "project.spotify.process-3-item-6":
-      "Analysis of usage patterns of competing platforms",
+    "project.spotify.process-3-item-3": "Comparison between Spotify users and non-users",
+    "project.spotify.process-3-item-4": "Identification of cultural, economic, and technological barriers",
+    "project.spotify.process-3-item-5": "Exploration of perceptions about freemium vs premium plans",
+    "project.spotify.process-3-item-6": "Analysis of usage patterns of competing platforms",
 
     "project.spotify.process-4-title": "4. Synthesis and Analysis",
-    "project.spotify.process-4-text":
-      "Transformation of qualitative data into strategic insights:",
+    "project.spotify.process-4-text": "Transformation of qualitative data into strategic insights:",
     "project.spotify.process-4-item-1": "Customer Journey Maps",
     "project.spotify.process-4-item-2": "Jobs To Be Done frameworks",
-    "project.spotify.process-4-item-3":
-      "Clustering of insights and behavior patterns",
-    "project.spotify.process-4-item-4":
-      "Evaluation of frictions in onboarding and user experience",
-    "project.spotify.process-4-item-5":
-      "Analysis of language, expectations, and accessibility",
-    "project.spotify.process-4-item-6":
-      "Translation and cultural adaptation of findings for the global team",
+    "project.spotify.process-4-item-3": "Clustering of insights and behavior patterns",
+    "project.spotify.process-4-item-4": "Evaluation of frictions in onboarding and user experience",
+    "project.spotify.process-4-item-5": "Analysis of language, expectations, and accessibility",
+    "project.spotify.process-4-item-6": "Translation and cultural adaptation of findings for the global team",
 
     "project.spotify.process-5-title": "5. Results Delivery",
-    "project.spotify.process-5-text":
-      "Clear communication of findings and recommendations:",
-    "project.spotify.process-5-item-1":
-      "Complete report in English for Spotify and German consultancy",
-    "project.spotify.process-5-item-2":
-      "Presentation of findings with qualitative evidence",
-    "project.spotify.process-5-item-3":
-      "Refutation of initial hypothesis with solid arguments",
-    "project.spotify.process-5-item-4":
-      "Strategic recommendations to improve conversion in Peruvian market",
+    "project.spotify.process-5-text": "Clear communication of findings and recommendations:",
+    "project.spotify.process-5-item-1": "Complete report in English for Spotify and German consultancy",
+    "project.spotify.process-5-item-2": "Presentation of findings with qualitative evidence",
+    "project.spotify.process-5-item-3": "Refutation of initial hypothesis with solid arguments",
+    "project.spotify.process-5-item-4": "Strategic recommendations to improve conversion in Peruvian market",
 
     // Findings
-    "project.spotify.findings-title":
-      "General Findings (without violating NDA)",
+    "project.spotify.findings-title": "General Findings (without violating NDA)",
     "project.spotify.findings-intro":
       "The research revealed important findings that changed the client's understanding of the Peruvian market:",
 
@@ -3092,27 +2458,19 @@ const translations = {
     "project.spotify.result-3-value": "Countries compared",
     "project.spotify.result-4-value": "Languages (ES/EN)",
 
-    "project.spotify.impact-1":
-      "Hypothesis refuted with solid qualitative evidence",
-    "project.spotify.impact-2":
-      "Deep understanding of cultural and technological barriers in Peruvian market",
-    "project.spotify.impact-3":
-      "Identification of unique local market behavior patterns",
-    "project.spotify.impact-4":
-      "Strategic recommendations to improve onboarding and conversion",
-    "project.spotify.impact-5":
-      "Insights on competition and use of alternative platforms",
-    "project.spotify.impact-6":
-      "Bilingual report delivered to Spotify's global team",
+    "project.spotify.impact-1": "Hypothesis refuted with solid qualitative evidence",
+    "project.spotify.impact-2": "Deep understanding of cultural and technological barriers in Peruvian market",
+    "project.spotify.impact-3": "Identification of unique local market behavior patterns",
+    "project.spotify.impact-4": "Strategic recommendations to improve onboarding and conversion",
+    "project.spotify.impact-5": "Insights on competition and use of alternative platforms",
+    "project.spotify.impact-6": "Bilingual report delivered to Spotify's global team",
 
     // Learnings
-    "project.spotify.learning-1-title":
-      "The importance of questioning hypotheses",
+    "project.spotify.learning-1-title": "The importance of questioning hypotheses",
     "project.spotify.learning-1-text":
       "This project taught me that the client's initial hypotheses, although logical, don't always reflect reality. Rigorous qualitative research is essential to reveal users' true motivations and behaviors, especially in markets with different cultural and economic contexts.",
 
-    "project.spotify.learning-2-title":
-      "Bilingual research and cultural sensitivity",
+    "project.spotify.learning-2-title": "Bilingual research and cultural sensitivity",
     "project.spotify.learning-2-text":
       "Working in Spanish with Peruvian users and then translating findings to English for a global team requires not only language proficiency but deep understanding of cultural nuances that aren't always evident in a literal translation.",
 
@@ -3121,8 +2479,7 @@ const translations = {
       'Quantitative data showed a pattern (direct Premium subscription), but only qualitative research revealed the real "why": previous experiences with the platform, not perception of greater value. This project reinforced my conviction about the power of in-depth interviews.',
 
     // Reflections
-    "project.spotify.reflection-quote":
-      "Data without context can reinforce wrong ideas.",
+    "project.spotify.reflection-quote": "Data without context can reinforce wrong ideas.",
     "project.spotify.reflection-1":
       "This study confirmed that listening to users changes business decisions. In this case, it allowed avoiding investing resources in misguided strategies and better aligning with local market realities.",
     "project.spotify.reflection-2":
@@ -3136,11 +2493,11 @@ const translations = {
     "sidebar.premium-users": "Premium Users",
     "sidebar.non-users": "Non-users",
     "sidebar.languages": "Languages",
-    "sidebar.interested-text-spotify":
-      "If you want to know more about my work in qualitative research and user analysis, let's talk.",
+    "sidebar.interested-text-spotify": "If you want to know more about my work in qualitative research and user analysis, let's talk.",
 
-    // MINCETUR PROJECT - ENGLISH
-
+    // ============================================
+    // MINCETUR PROJECT
+    // ============================================
     "project.mincetur.hero-title": "MINCETUR — Future Construction",
     "project.mincetur.hero-subtitle":
       "Intensive 3-day workshop with CITE leaders from all over Peru to co-create a replicable management model. Designed tools remained in use 2 years later.",
@@ -3160,17 +2517,12 @@ const translations = {
     "project.mincetur.role-text":
       "I participated as Service Designer at Creative Lab, being the most junior member of the 4-person team. This was one of my first professional projects, and it allowed me to learn about intensive workshop facilitation and strategic design in governmental contexts.",
 
-    "project.mincetur.resp-1":
-      "Co-design the complete workshop structure during the 2 weeks of preparation",
-    "project.mincetur.resp-2":
-      "Participate in creating and adapting methodological tools",
-    "project.mincetur.resp-3":
-      "Facilitate collaborative dynamics during the 3 days of the workshop",
-    "project.mincetur.resp-4":
-      "Help CITE leaders interpret data and state requirements",
+    "project.mincetur.resp-1": "Co-design the complete workshop structure during the 2 weeks of preparation",
+    "project.mincetur.resp-2": "Participate in creating and adapting methodological tools",
+    "project.mincetur.resp-3": "Facilitate collaborative dynamics during the 3 days of the workshop",
+    "project.mincetur.resp-4": "Help CITE leaders interpret data and state requirements",
     "project.mincetur.resp-5": "Support building roadmaps and management plans",
-    "project.mincetur.resp-6":
-      "Jointly translate technical information into visual and practical language",
+    "project.mincetur.resp-6": "Jointly translate technical information into visual and practical language",
     "project.mincetur.resp-7": "Systematize workshop results and learnings",
 
     "project.mincetur.process-intro":
@@ -3179,70 +2531,50 @@ const translations = {
     "project.mincetur.process-0-title": "Phase 0: Preparation (2 weeks)",
     "project.mincetur.process-0-text": "Needs assessment and workshop design:",
     "project.mincetur.process-0-item-1": "Objective setting with MINCETUR",
-    "project.mincetur.process-0-item-2":
-      "Analysis of budget requirements and state KPIs",
-    "project.mincetur.process-0-item-3":
-      "Challenge definition: build a management model applicable in different realities",
-    "project.mincetur.process-0-item-4":
-      "Methodological adaptation of the double diamond for intensive sessions",
-    "project.mincetur.process-0-item-5":
-      "Creation of own tools: templates, canvas, frameworks",
-    "project.mincetur.process-0-item-6":
-      "Design of collaborative dynamics and work materials",
+    "project.mincetur.process-0-item-2": "Analysis of budget requirements and state KPIs",
+    "project.mincetur.process-0-item-3": "Challenge definition: build a management model applicable in different realities",
+    "project.mincetur.process-0-item-4": "Methodological adaptation of the double diamond for intensive sessions",
+    "project.mincetur.process-0-item-5": "Creation of own tools: templates, canvas, frameworks",
+    "project.mincetur.process-0-item-6": "Design of collaborative dynamics and work materials",
 
     "project.mincetur.process-1-title": "Day 1: Shared Understanding",
     "project.mincetur.process-1-text": "Alignment and context systematization:",
-    "project.mincetur.process-1-item-1":
-      "Presentation of each CITE and their specific realities",
+    "project.mincetur.process-1-item-1": "Presentation of each CITE and their specific realities",
     "project.mincetur.process-1-item-2": "Shared understanding of the problem",
-    "project.mincetur.process-1-item-3":
-      "Systematization of institutional data from each center",
-    "project.mincetur.process-1-item-4":
-      "Mapping of common and particular challenges",
+    "project.mincetur.process-1-item-3": "Systematization of institutional data from each center",
+    "project.mincetur.process-1-item-4": "Mapping of common and particular challenges",
     "project.mincetur.process-1-item-5": "Introduction to work tools",
 
     "project.mincetur.process-2-title": "Day 2: Co-creation of Key Tools",
     "project.mincetur.process-2-text": "Collaborative model building:",
-    "project.mincetur.process-2-item-1":
-      "Co-creation of key tools with CITE teams",
+    "project.mincetur.process-2-item-1": "Co-creation of key tools with CITE teams",
     "project.mincetur.process-2-item-2": "Definition of institutional promises",
-    "project.mincetur.process-2-item-3":
-      "Establishment of concrete and achievable goals",
-    "project.mincetur.process-2-item-4":
-      "Identification and assignment of KPIs",
-    "project.mincetur.process-2-item-5":
-      "Clarification of responsibilities by area",
-    "project.mincetur.process-2-item-6":
-      "Translation of State technical language into accessible format",
+    "project.mincetur.process-2-item-3": "Establishment of concrete and achievable goals",
+    "project.mincetur.process-2-item-4": "Identification and assignment of KPIs",
+    "project.mincetur.process-2-item-5": "Clarification of responsibilities by area",
+    "project.mincetur.process-2-item-6": "Translation of State technical language into accessible format",
 
     "project.mincetur.process-3-title": "Day 3: Iteration and Validation",
     "project.mincetur.process-3-text": "Contextualized refinement by CITE:",
     "project.mincetur.process-3-item-1": "Individual iteration for each CITE",
-    "project.mincetur.process-3-item-2":
-      "Validation of model proposed by each team",
-    "project.mincetur.process-3-item-3":
-      "Adjustments according to specific realities and capacities",
+    "project.mincetur.process-3-item-2": "Validation of model proposed by each team",
+    "project.mincetur.process-3-item-3": "Adjustments according to specific realities and capacities",
     "project.mincetur.process-3-item-4": "Presentation of final roadmaps",
-    "project.mincetur.process-3-item-5":
-      "Definition of next steps and commitments",
+    "project.mincetur.process-3-item-5": "Definition of next steps and commitments",
 
-    "project.mincetur.finding-1-title":
-      "Each CITE operates under very different realities",
+    "project.mincetur.finding-1-title": "Each CITE operates under very different realities",
     "project.mincetur.finding-1-text":
       "Although all are part of the same MINCETUR system, each CITE faced unique challenges according to their region, resources, and local context. Methodological flexibility was crucial for tools to be useful for everyone.",
 
-    "project.mincetur.finding-2-title":
-      "Translating State language is fundamental",
+    "project.mincetur.finding-2-title": "Translating State language is fundamental",
     "project.mincetur.finding-2-text":
       "Government technical requirements were expressed in complex bureaucratic language. Translating this to understandable and visual formats dramatically improved local leaders' appropriation.",
 
-    "project.mincetur.finding-3-title":
-      "Co-creation from day 1 generates real commitment",
+    "project.mincetur.finding-3-title": "Co-creation from day 1 generates real commitment",
     "project.mincetur.finding-3-text":
       "We didn't impose a pre-designed model: we facilitated them building it themselves. This active participation (not just consultative) generated genuine appropriation of the process and tools.",
 
-    "project.mincetur.finding-4-title":
-      "Visualizing objectives strengthens purpose",
+    "project.mincetur.finding-4-title": "Visualizing objectives strengthens purpose",
     "project.mincetur.finding-4-text":
       "Seeing their goals, KPIs, and responsibilities visually represented helped teams understand the complete picture and feel empowered to execute.",
 
@@ -3251,39 +2583,29 @@ const translations = {
     "project.mincetur.result-3-value": "CITE with implemented model",
     "project.mincetur.result-4-value": "Tools in subsequent use",
 
-    "project.mincetur.impact-1":
-      "An adaptable management model was built for each CITE",
-    "project.mincetur.impact-2":
-      "Teams generated an action plan validated by themselves for the next two years",
-    "project.mincetur.impact-3":
-      "Designed tools facilitated the preparation of reports required by the State",
-    "project.mincetur.impact-4":
-      "Real appropriation of the process was achieved through active participation, not just consultative",
-    "project.mincetur.impact-5":
-      "2 years later, CITEs were still using the tools created in the workshop",
+    "project.mincetur.impact-1": "An adaptable management model was built for each CITE",
+    "project.mincetur.impact-2": "Teams generated an action plan validated by themselves for the next two years",
+    "project.mincetur.impact-3": "Designed tools facilitated the preparation of reports required by the State",
+    "project.mincetur.impact-4": "Real appropriation of the process was achieved through active participation, not just consultative",
+    "project.mincetur.impact-5": "2 years later, CITEs were still using the tools created in the workshop",
 
-    "project.mincetur.learning-1-title":
-      "Facilitation is an art learned by doing",
+    "project.mincetur.learning-1-title": "Facilitation is an art learned by doing",
     "project.mincetur.learning-1-text":
       "As the most junior member of the team, this workshop taught me that facilitating isn't just guiding dynamics, but holding safe spaces where people feel capable of creating. Seeing how CITE leaders appropriated the tools was my first great lesson about the power of participatory design.",
 
-    "project.mincetur.learning-2-title":
-      "Adapting is more valuable than imposing",
+    "project.mincetur.learning-2-title": "Adapting is more valuable than imposing",
     "project.mincetur.learning-2-text":
       'There is no "one model" that works for everyone. I learned that the best tools are those users understand, adapt, and make their own. In intensive facilitation processes, adapting the method to the user\'s pace and language is more important than following the perfect structure.',
 
-    "project.mincetur.learning-3-title":
-      "Design impact isn't measured only at the end",
+    "project.mincetur.learning-3-title": "Design impact isn't measured only at the end",
     "project.mincetur.learning-3-text":
       "Finding out 2 years later that CITEs were still using the tools we created was confirmation we designed something truly useful. True success isn't just delivering a workshop, but creating sustainable value.",
 
-    "project.mincetur.learning-4-title":
-      "Designing for the public sector requires special sensitivity",
+    "project.mincetur.learning-4-title": "Designing for the public sector requires special sensitivity",
     "project.mincetur.learning-4-text":
       "Working with government entities involves navigating bureaucracy, technical language, and multiple stakeholders. This project taught me to translate complexity into clarity without losing rigor.",
 
-    "project.mincetur.reflection-quote":
-      "The most powerful tool is one that users make their own.",
+    "project.mincetur.reflection-quote": "The most powerful tool is one that users make their own.",
     "project.mincetur.reflection-1":
       "This project taught me that in intensive facilitation processes, the key is to accompany with empathy and clarity. It's not about arriving with pre-built solutions, but creating the space and tools for people to build their own answers.",
     "project.mincetur.reflection-2":
@@ -3291,10 +2613,11 @@ const translations = {
     "project.mincetur.reflection-3":
       "Seeing that 2 years later CITEs were still using what we co-created together was the greatest validation: we designed something that truly served them. And that, for me, is the true success of strategic design.",
 
-    "sidebar.interested-text-mincetur":
-      "If you want to know more about my work in facilitation and strategic design, let's talk.",
+    "sidebar.interested-text-mincetur": "If you want to know more about my work in facilitation and strategic design, let's talk.",
 
-    // TALI PROJECT - ENGLISH
+    // ============================================
+    // TALI PROJECT
+    // ============================================
 
     "project.tali.hero-title": "TALI — Corporate Travel Agency",
     "project.tali.hero-subtitle":
@@ -3317,77 +2640,53 @@ const translations = {
     "project.tali.team-2": "1 Service Designer",
     "project.tali.team-3": "1 Brand Designer",
 
-    "project.tali.resp-1":
-      "Contextual research on travel habits and corporate management",
-    "project.tali.resp-2":
-      "Conducting qualitative interviews with potential users",
+    "project.tali.resp-1": "Contextual research on travel habits and corporate management",
+    "project.tali.resp-2": "Conducting qualitative interviews with potential users",
     "project.tali.resp-3": "Insight clustering and findings synthesis",
-    "project.tali.resp-4":
-      "Definition of 4 user profiles (personas): traveler, HR manager, supervisor, support",
-    "project.tali.resp-5":
-      "Mapping differentiated interaction flows by user type",
+    "project.tali.resp-4": "Definition of 4 user profiles (personas): traveler, HR manager, supervisor, support",
+    "project.tali.resp-5": "Mapping differentiated interaction flows by user type",
     "project.tali.resp-6": "Co-design of brand, strategy, and service pillars",
     "project.tali.resp-7": "Participation in naming process (result: TALI)",
-    "project.tali.resp-8":
-      "Design of reference screens to visualize general flow",
+    "project.tali.resp-8": "Design of reference screens to visualize general flow",
 
     "project.tali.process-intro":
       "We worked with a user-centered design approach, combining qualitative research with strategic design and brand building.",
 
-    "project.tali.process-1-title":
-      "1. Understanding Challenge and Opportunity",
+    "project.tali.process-1-title": "1. Understanding Challenge and Opportunity",
     "project.tali.process-1-text": "Market and context exploration:",
-    "project.tali.process-1-item-1":
-      "Meetings with stakeholders and potential future clients",
-    "project.tali.process-1-item-2":
-      "Analysis of similar platforms and their limitations",
+    "project.tali.process-1-item-1": "Meetings with stakeholders and potential future clients",
+    "project.tali.process-1-item-2": "Analysis of similar platforms and their limitations",
     "project.tali.process-1-item-3":
       "Detection of common frictions in corporate travel management: visibility, traceability, authorizations, expense reports, support",
-    "project.tali.process-1-item-4":
-      "Identification of opportunities in the Peruvian market",
+    "project.tali.process-1-item-4": "Identification of opportunities in the Peruvian market",
 
     "project.tali.process-2-title": "2. Qualitative Research",
     "project.tali.process-2-text": "Interviews and insight synthesis:",
-    "project.tali.process-2-item-1":
-      "Qualitative interviews with corporate employees, HR managers, and support staff",
-    "project.tali.process-2-item-2":
-      "Clustering of findings in collaborative tools",
-    "project.tali.process-2-item-3":
-      "Identification of pain points for each role",
-    "project.tali.process-2-item-4":
-      "Mapping of differentiated needs before, during, and after the trip",
+    "project.tali.process-2-item-1": "Qualitative interviews with corporate employees, HR managers, and support staff",
+    "project.tali.process-2-item-2": "Clustering of findings in collaborative tools",
+    "project.tali.process-2-item-3": "Identification of pain points for each role",
+    "project.tali.process-2-item-4": "Mapping of differentiated needs before, during, and after the trip",
 
     "project.tali.process-3-title": "3. User and Experience Definition",
     "project.tali.process-3-text": "Profile and flow building:",
-    "project.tali.process-3-item-1":
-      "Creation of 4 key personas: traveler, HR manager, supervisor, support",
-    "project.tali.process-3-item-2":
-      "Mapping of specific flows for each profile, adapted to multiple devices",
-    "project.tali.process-3-item-3":
-      "Identification of crossing points, validations, and role-specific pain points",
-    "project.tali.process-3-item-4":
-      "Journey design considering before, during, and after the trip",
+    "project.tali.process-3-item-1": "Creation of 4 key personas: traveler, HR manager, supervisor, support",
+    "project.tali.process-3-item-2": "Mapping of specific flows for each profile, adapted to multiple devices",
+    "project.tali.process-3-item-3": "Identification of crossing points, validations, and role-specific pain points",
+    "project.tali.process-3-item-4": "Journey design considering before, during, and after the trip",
 
     "project.tali.process-4-title": "4. Brand Building",
     "project.tali.process-4-text": "Identity, naming, and value proposition:",
-    "project.tali.process-4-item-1":
-      "Co-design of value proposition and service mantras",
-    "project.tali.process-4-item-2":
-      "Co-creation dynamics to define the name: TALI",
-    "project.tali.process-4-item-3":
-      "Design of visual identity and first set of guidelines",
-    "project.tali.process-4-item-4":
-      "Visual and technical adjustments to ensure readability in physical and digital formats",
+    "project.tali.process-4-item-1": "Co-design of value proposition and service mantras",
+    "project.tali.process-4-item-2": "Co-creation dynamics to define the name: TALI",
+    "project.tali.process-4-item-3": "Design of visual identity and first set of guidelines",
+    "project.tali.process-4-item-4": "Visual and technical adjustments to ensure readability in physical and digital formats",
 
     "project.tali.process-5-title": "5. Final Delivery",
     "project.tali.process-5-text": "Documentation and deliverables:",
-    "project.tali.process-5-item-1":
-      "Strategic synthesis document and service proposal",
-    "project.tali.process-5-item-2":
-      "4 documented user profiles with pain points and needs",
+    "project.tali.process-5-item-1": "Strategic synthesis document and service proposal",
+    "project.tali.process-5-item-2": "4 documented user profiles with pain points and needs",
     "project.tali.process-5-item-3": "Differentiated flows by user",
-    "project.tali.process-5-item-4":
-      "Key screens to visualize navigation and portal logic",
+    "project.tali.process-5-item-4": "Key screens to visualize navigation and portal logic",
     "project.tali.process-5-item-5": "Base brand identity guide",
     "project.tali.process-5-item-6": "Functional landing page",
 
@@ -3416,14 +2715,10 @@ const translations = {
     "project.tali.result-3-value": "Brand created from scratch",
     "project.tali.result-4-value": "Months of work",
 
-    "project.tali.impact-1":
-      "Complete delivery of research and service experience design",
-    "project.tali.impact-2":
-      "Brand proposal validated with client (name TALI + visual identity)",
-    "project.tali.impact-3":
-      "4 documented user profiles with specific pain points and needs",
-    "project.tali.impact-4":
-      "Detailed mapping of flows, users, and key friction points",
+    "project.tali.impact-1": "Complete delivery of research and service experience design",
+    "project.tali.impact-2": "Brand proposal validated with client (name TALI + visual identity)",
+    "project.tali.impact-3": "4 documented user profiles with specific pain points and needs",
+    "project.tali.impact-4": "Detailed mapping of flows, users, and key friction points",
     "project.tali.impact-5": "Functional landing page",
     "project.tali.impact-6": "Research insight clustering",
 
@@ -3436,8 +2731,7 @@ const translations = {
     "project.tali.reflection-3":
       "Creating the TALI brand from scratch, including naming, identity, and value proposition, was a complete strategic design experience that showed me how service design and branding must walk together from day one.",
 
-    "sidebar.interested-text-tali":
-      "If you want to know more about my work in complex service design and brand creation, let's talk.",
+    "sidebar.interested-text-tali": "If you want to know more about my work in complex service design and brand creation, let's talk.",
   },
 };
 
