@@ -8,20 +8,20 @@
    ================================ */
 :root {
   /* Colores principales */
-  --primary: #5B2C6F;
-  --primary-hover: #7B4C9F;
-  --primary-dark: #4A1F5C;
-  --secondary: #14B8A6;
-  --secondary-hover: #0D9488;
-  
+  --primary: #5b2c6f;
+  --primary-hover: #7b4c9f;
+  --primary-dark: #4a1f5c;
+  --secondary: #14b8a6;
+  --secondary-hover: #0d9488;
+
   /* Colores por categoría de proyecto */
-  --frontend: #5B2C6F;
-  --frontend-accent: #14B8A6;
-  --uxui: #3B82F6;
-  --uxui-accent: #06B6D4;
-  --service: #6366F1;
+  --frontend: #5b2c6f;
+  --frontend-accent: #14b8a6;
+  --uxui: #3b82f6;
+  --uxui-accent: #06b6d4;
+  --service: #6366f1;
   --service-accent: #475569;
-  
+
   /* Colores semánticos */
   --success: #10b981;
   --warning: #f59e0b;
@@ -33,7 +33,7 @@
   --journey-light: rgba(255, 107, 157, 0.08);
   --journey-medium: rgba(255, 107, 157, 0.15);
   --journey-dark: #E5568A;
-  
+
   /* Escala de grises */
   --slate-50: #f8fafc;
   --slate-100: #f1f5f9;
@@ -43,22 +43,22 @@
   --slate-500: #64748b;
   --slate-700: #334155;
   --slate-900: #0f172a;
-  
+
   /* Backgrounds */
   --bg-primary: #ffffff;
   --bg-secondary: var(--slate-50);
   --bg-dark: var(--slate-900);
-  
+
   /* Borders */
   --border: var(--slate-200);
   --border-hover: var(--slate-300);
-  
+
   /* Sombras */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  
+
   /* Espaciado */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -68,7 +68,7 @@
   --space-8: 2rem;
   --space-12: 3rem;
   --space-16: 4rem;
-  
+
   /* Border radius */
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
@@ -76,18 +76,18 @@
   --radius-xl: 1rem;
   --radius-2xl: 1.5rem;
   --radius-full: 9999px;
-  
+
   /* Transiciones */
   --transition-fast: 0.15s ease;
   --transition-base: 0.3s ease;
   --transition-slow: 0.6s ease;
-  
+
   /* Z-index */
   --z-base: 1;
   --z-sticky: 1020;
   --z-modal: 1050;
   --z-tooltip: 1100;
-  
+
   /* Layout */
   --container-width: 1280px;
   --container-padding: 1.5rem;
@@ -96,23 +96,25 @@
 
 /* Colores dinámicos por categoría de proyecto */
 body[data-category="ux-ui"] {
-  --primary: #3B82F6;
-  --primary-hover: #2563EB;
-  --primary-dark: #1E40AF;
-  --secondary: #06B6D4;
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+  --primary-dark: #1e40af;
+  --secondary: #06b6d4;
 }
 
 body[data-category="service-design"] {
-  --primary: #6366F1;
-  --primary-hover: #4F46E5;
-  --primary-dark: #4338CA;
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --primary-dark: #4338ca;
   --secondary: #475569;
 }
 
 /* ================================
    RESET MODERNO
    ================================ */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -125,7 +127,8 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
   line-height: 1.6;
   color: var(--slate-700);
   background: var(--bg-primary);
@@ -133,7 +136,10 @@ body {
   overflow-x: hidden;
 }
 
-img, picture, video, svg {
+img,
+picture,
+video,
+svg {
   max-width: 100%;
   height: auto;
   display: block;
@@ -152,14 +158,20 @@ a {
   transition: color var(--transition-fast);
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
 /* ================================
    TIPOGRAFÍA
    ================================ */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.2;
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -167,12 +179,24 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
-h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
-h2 { font-size: clamp(2rem, 4vw, 3rem); }
-h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
-h4 { font-size: 1.25rem; }
-h5 { font-size: 1.125rem; }
-h6 { font-size: 1rem; }
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+}
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1.125rem;
+}
+h6 {
+  font-size: 1rem;
+}
 
 p {
   margin-bottom: 1rem;
@@ -221,7 +245,7 @@ strong {
 /* ================================
    UTILITIES
    ================================ */
-.hidden { 
+.hidden {
   display: none !important;
 }
 
@@ -273,7 +297,8 @@ strong {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -290,10 +315,22 @@ strong {
 }
 
 /* Delays para animaciones en cadena */
-.delay-1 { animation-delay: 0.1s; opacity: 0; }
-.delay-2 { animation-delay: 0.2s; opacity: 0; }
-.delay-3 { animation-delay: 0.3s; opacity: 0; }
-.delay-4 { animation-delay: 0.4s; opacity: 0; }
+.delay-1 {
+  animation-delay: 0.1s;
+  opacity: 0;
+}
+.delay-2 {
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+.delay-3 {
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+.delay-4 {
+  animation-delay: 0.4s;
+  opacity: 0;
+}
 
 /* ================================
    RESPONSIVE BREAKPOINTS
@@ -308,11 +345,11 @@ strong {
   :root {
     --container-padding: 1.25rem;
   }
-  
+
   .section {
     padding: 5rem 0;
   }
-  
+
   .section-header {
     margin-bottom: 3rem;
   }
@@ -322,7 +359,7 @@ strong {
   :root {
     --container-padding: 1rem;
   }
-  
+
   .section {
     padding: 4rem 0;
   }
@@ -342,4 +379,3 @@ strong {
 .hero__bottom {
   opacity: 1;
 }
-

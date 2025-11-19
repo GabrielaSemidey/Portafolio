@@ -47,7 +47,7 @@
 
 /* Overlays por categoría */
 .project-hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -58,19 +58,35 @@
 }
 
 body[data-category="frontend"] .project-hero::before {
-  background: linear-gradient(135deg, rgba(91, 44, 111, 0.92) 0%, rgba(20, 184, 166, 0.85) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(91, 44, 111, 0.92) 0%,
+    rgba(20, 184, 166, 0.85) 100%
+  );
 }
 
 body[data-category="lumi"] .project-hero::before {
-  background: linear-gradient(135deg, rgba(38, 198, 218, 0.92) 0%, rgba(236, 64, 122, 0.88) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(38, 198, 218, 0.92) 0%,
+    rgba(236, 64, 122, 0.88) 100%
+  );
 }
 
 body[data-category="ux-ui"] .project-hero::before {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.92) 0%, rgba(6, 182, 212, 0.85) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.92) 0%,
+    rgba(6, 182, 212, 0.85) 100%
+  );
 }
 
 body[data-category="service-design"] .project-hero::before {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.92) 0%, rgba(71, 85, 105, 0.88) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.92) 0%,
+    rgba(71, 85, 105, 0.88) 100%
+  );
 }
 
 .project-hero .container {
@@ -87,11 +103,8 @@ body[data-category="service-design"] .project-hero::before {
 
 .project-hero__title {
   color: white;
-  text-shadow: 
-    0 2px 4px rgba(0, 0, 0, 0.5),
-    0 4px 8px rgba(0, 0, 0, 0.4),
-    0 8px 16px rgba(0, 0, 0, 0.3),
-    0 16px 32px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.4),
+    0 8px 16px rgba(0, 0, 0, 0.3), 0 16px 32px rgba(0, 0, 0, 0.2);
   margin-bottom: 1.5rem;
   font-weight: 900;
 }
@@ -100,9 +113,7 @@ body[data-category="service-design"] .project-hero::before {
   color: white;
   font-size: 1.25rem;
   line-height: 1.7;
-  text-shadow: 
-    0 2px 4px rgba(0, 0, 0, 0.6),
-    0 4px 8px rgba(0, 0, 0, 0.4),
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 4px 8px rgba(0, 0, 0, 0.4),
     0 8px 16px rgba(0, 0, 0, 0.3);
   margin-bottom: 2rem;
   font-weight: 500;
@@ -387,7 +398,7 @@ body[data-category="service-design"] .project-hero::before {
 }
 
 .content-list li::before {
-  content: '→';
+  content: "→";
   position: absolute;
   left: 0;
   color: var(--primary);
@@ -859,12 +870,12 @@ body[data-category="service-design"] .project-hero::before {
    ESTILOS ESPECÍFICOS LUMI
    ================================ */
 body[data-category="lumi"] {
-  --lumi-amarillo: #FFD600;
-  --lumi-naranja: #FF8C42;
-  --lumi-rosa: #FF6B9D;
-  --lumi-morado: #8B5CF6;
-  --lumi-azul: #0077FF;
-  --lumi-cyan: #00C896;
+  --lumi-amarillo: #ffd600;
+  --lumi-naranja: #ff8c42;
+  --lumi-rosa: #ff6b9d;
+  --lumi-morado: #8b5cf6;
+  --lumi-azul: #0077ff;
+  --lumi-cyan: #00c896;
 }
 
 .lumi-features {
@@ -949,23 +960,23 @@ body[data-category="lumi"] {
   .content-layout {
     grid-template-columns: 1fr;
   }
-  
+
   .sidebar-sticky {
     position: static;
   }
-  
+
   .project-nav__grid {
     grid-template-columns: 1fr;
   }
-  
+
   .project-nav__item--prev {
     order: 2;
   }
-  
+
   .project-nav__grid > .btn {
     order: 1;
   }
-  
+
   .project-nav__item--next {
     order: 3;
   }
@@ -988,14 +999,14 @@ body[data-category="lumi"] {
   .lightbox__content {
     max-width: 95%;
   }
-  
+
   .lightbox__close {
     top: -45px;
     width: 35px;
     height: 35px;
     font-size: 1.25rem;
   }
-  
+
   .lightbox__caption {
     font-size: 0.8125rem;
     bottom: -50px;
@@ -1005,15 +1016,15 @@ body[data-category="lumi"] {
     min-height: 60vh;
     padding: 6rem 0 2.5rem;
   }
-  
+
   .project-hero__title {
     font-size: 2.5rem;
   }
-  
+
   .project-hero__description {
     font-size: 1rem;
   }
-  
+
   .reading-progress {
     height: 3px;
   }
@@ -1022,16 +1033,16 @@ body[data-category="lumi"] {
     min-height: 30vh;
     padding: 1rem 0 2rem;
   }
-  
+
   .project-hero--simple .back-link {
     display: none !important;
   }
-  
+
   .project-hero--simple .section-title {
     font-size: 1.5rem !important;
     margin-bottom: 0.75rem;
   }
-  
+
   .project-hero--simple .section-description {
     font-size: 0.875rem !important;
     line-height: 1.5;
@@ -1041,21 +1052,21 @@ body[data-category="lumi"] {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
   }
-  
+
   .block-header {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .metrics-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .project-nav__item {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .project-nav__item--next {
     text-align: center;
   }
@@ -1084,11 +1095,11 @@ body[data-category="lumi"] {
     min-height: 25vh;
     padding: 4.5rem 0 1.5rem;
   }
-  
+
   .project-hero--simple .section-title {
     font-size: 1.375rem !important;
   }
-  
+
   .project-hero--simple .section-description {
     font-size: 0.8125rem !important;
   }
