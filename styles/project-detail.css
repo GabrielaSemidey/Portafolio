@@ -58,19 +58,35 @@
 }
 
 body[data-category="frontend"] .project-hero::before {
-  background: linear-gradient(135deg, rgba(91, 44, 111, 0.92) 0%, rgba(20, 184, 166, 0.85) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(91, 44, 111, 0.92) 0%,
+    rgba(20, 184, 166, 0.85) 100%
+  );
 }
 
 body[data-category="lumi"] .project-hero::before {
-  background: linear-gradient(135deg, rgba(38, 198, 218, 0.92) 0%, rgba(236, 64, 122, 0.88) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(38, 198, 218, 0.92) 0%,
+    rgba(236, 64, 122, 0.88) 100%
+  );
 }
 
 body[data-category="ux-ui"] .project-hero::before {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.92) 0%, rgba(6, 182, 212, 0.85) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.92) 0%,
+    rgba(6, 182, 212, 0.85) 100%
+  );
 }
 
 body[data-category="service-design"] .project-hero::before {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.92) 0%, rgba(71, 85, 105, 0.88) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.92) 0%,
+    rgba(71, 85, 105, 0.88) 100%
+  );
 }
 
 .project-hero .container {
@@ -87,7 +103,8 @@ body[data-category="service-design"] .project-hero::before {
 
 .project-hero__title {
   color: white;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.3), 0 16px 32px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.4),
+    0 8px 16px rgba(0, 0, 0, 0.3), 0 16px 32px rgba(0, 0, 0, 0.2);
   margin-bottom: 1.5rem;
   font-weight: 900;
 }
@@ -96,7 +113,8 @@ body[data-category="service-design"] .project-hero::before {
   color: white;
   font-size: 1.25rem;
   line-height: 1.7;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 4px 8px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 4px 8px rgba(0, 0, 0, 0.4),
+    0 8px 16px rgba(0, 0, 0, 0.3);
   margin-bottom: 2rem;
   font-weight: 500;
 }

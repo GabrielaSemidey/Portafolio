@@ -265,7 +265,9 @@
   color: var(--visionauta);
 }
 
-.learning-card[data-style="audioexplorador"] .learning-card__features li::before {
+.learning-card[data-style="audioexplorador"]
+  .learning-card__features
+  li::before {
   color: var(--audioexplorador);
 }
 

@@ -5,7 +5,9 @@ const header = document.getElementById("header");
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".nav-link");
 const projectHero = document.querySelector(".project-hero");
-const projectBanner = projectHero ? projectHero.querySelector(".project-hero__banner") : null;
+const projectBanner = projectHero
+  ? projectHero.querySelector(".project-hero__banner")
+  : null;
 
 let lastScroll = 0;
 let ticking = false;
@@ -45,7 +47,9 @@ function handleScroll() {
     const heroHeight = projectHero.offsetHeight;
 
     if (currentScroll < heroHeight) {
-      projectBanner.style.transform = `scale(1.1) translateY(${currentScroll * 0.3}px)`;
+      projectBanner.style.transform = `scale(1.1) translateY(${
+        currentScroll * 0.3
+      }px)`;
 
       if (currentScroll > 50) {
         projectHero.classList.add("scrolled");
@@ -82,7 +86,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
       const headerOffset = 100;
       const elementPosition = target.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
 
       window.scrollTo({
         top: offsetPosition,
@@ -261,15 +266,22 @@ function debounce(func, wait) {
   };
 }
 
-const debouncedResize = debounce(() => {}, 250);
+const debouncedResize = debounce(() => {
+}, 250);
 
 window.addEventListener("resize", debouncedResize);
 
 // ================================
 // CONSOLE MESSAGE
 // ================================
-console.log("%c👋 ¡Hola! ", "font-size: 20px; font-weight: bold; color: #5B2C6F;");
-console.log("%c¿Interesado en el código? Visita mi GitHub: https://github.com/GabrielaSemidey", "font-size: 12px; color: #14B8A6;");
+console.log(
+  "%c👋 ¡Hola! ",
+  "font-size: 20px; font-weight: bold; color: #5B2C6F;"
+);
+console.log(
+  "%c¿Interesado en el código? Visita mi GitHub: https://github.com/GabrielaSemidey",
+  "font-size: 12px; color: #14B8A6;"
+);
 console.log(
   "%cEste portfolio está hecho con HTML, CSS y JavaScript vanilla. Sin frameworks, solo código limpio. 💜",
   "font-size: 12px; color: #64748b;"
@@ -295,7 +307,9 @@ window.addEventListener("error", (e) => {
 
   if (!lightbox) return;
 
-  const lightboxImages = document.querySelectorAll(".visual-resource img, .gallery-item img");
+  const lightboxImages = document.querySelectorAll(
+    ".visual-resource img, .gallery-item img"
+  );
 
   let currentImages = [];
   let currentIndex = 0;
@@ -307,7 +321,9 @@ window.addEventListener("error", (e) => {
     // Mostrar caption si existe
     const caption =
       imgElement.getAttribute("alt") ||
-      imgElement.closest(".visual-resource, .gallery-item")?.querySelector(".image-caption")?.textContent ||
+      imgElement
+        .closest(".visual-resource, .gallery-item")
+        ?.querySelector(".image-caption")?.textContent ||
       "";
     lightboxCaption.textContent = caption;
 
@@ -338,7 +354,10 @@ window.addEventListener("error", (e) => {
 
     img.setAttribute("tabindex", "0");
     img.setAttribute("role", "button");
-    img.setAttribute("aria-label", `Ver imagen: ${img.alt || "Sin descripción"}`);
+    img.setAttribute(
+      "aria-label",
+      `Ver imagen: ${img.alt || "Sin descripción"}`
+    );
   });
 
   if (closeBtn) {
@@ -426,7 +445,9 @@ window.addEventListener("error", (e) => {
   "use strict";
 
   // Obtener idioma guardado o detectar del navegador
-  const savedLang = localStorage.getItem("preferred-language") || (navigator.language.startsWith("es") ? "es" : "en");
+  const savedLang =
+    localStorage.getItem("preferred-language") ||
+    (navigator.language.startsWith("es") ? "es" : "en");
 
   let currentLang = savedLang;
 
@@ -486,7 +507,10 @@ window.addEventListener("error", (e) => {
     // Aplicar traducciones
     applyTranslations();
 
-    console.log(`%c🌐 Idioma cambiado a: ${currentLang.toUpperCase()}`, "color: #14B8A6; font-weight: bold;");
+    console.log(
+      `%c🌐 Idioma cambiado a: ${currentLang.toUpperCase()}`,
+      "color: #14B8A6; font-weight: bold;"
+    );
   }
 
   // Event listener
@@ -496,7 +520,10 @@ window.addEventListener("error", (e) => {
   applyTranslations();
 
   // Log inicial
-  console.log(`%c🌐 Idioma inicial: ${currentLang.toUpperCase()}`, "color: #5B2C6F; font-weight: bold;");
+  console.log(
+    `%c🌐 Idioma inicial: ${currentLang.toUpperCase()}`,
+    "color: #5B2C6F; font-weight: bold;"
+  );
 })();
 
 // ================================
@@ -524,7 +551,10 @@ window.addEventListener("error", (e) => {
       }
 
       if (leftContent) {
-        leftContent.style.setProperty("--parallax-text", `${scrolled * 0.15}px`);
+        leftContent.style.setProperty(
+          "--parallax-text",
+          `${scrolled * 0.15}px`
+        );
       }
 
       if (stack) {
@@ -591,7 +621,8 @@ window.addEventListener("error", (e) => {
 
   const indicator = document.createElement("div");
   indicator.className = "swipe-indicator";
-  indicator.innerHTML = '<i class="fas fa-arrow-right"></i> Desliza para ver más proyectos';
+  indicator.innerHTML =
+    '<i class="fas fa-arrow-right"></i> Desliza para ver más proyectos';
 
   projectsGrid.parentElement.insertBefore(indicator, projectsGrid.nextSibling);
 
@@ -627,7 +658,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
       const headerOffset = 100;
       const elementPosition = target.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
 
       window.scrollTo({
         top: offsetPosition,
@@ -645,7 +677,10 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-console.log("%c✨ Micro-interacciones activadas", "color: #14B8A6; font-weight: bold;");
+console.log(
+  "%c✨ Micro-interacciones activadas",
+  "color: #14B8A6; font-weight: bold;"
+);
 
 /* ==========================================
    🎯 Funcionalidad del acordeón de LumiCoins
@@ -694,7 +729,9 @@ document.addEventListener("DOMContentLoaded", function () {
         toggleRewards();
 
         // Actualizar aria-expanded
-        const isExpanded = document.getElementById("rewardsAccordion").classList.contains("active");
+        const isExpanded = document
+          .getElementById("rewardsAccordion")
+          .classList.contains("active");
         accordionHeader.setAttribute("aria-expanded", isExpanded);
       }
     });
