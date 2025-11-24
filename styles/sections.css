@@ -707,6 +707,49 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+/* Job Search Section journey */
+.job-search-section-journey {
+  background-color: white;
+  color: var(--slate-900);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.job-search-section-journey h2 {
+  font-size: 2rem;
+  color: var(--slate-900);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.job-search-section-journey h2 i {
+  margin-right: 0.5rem;
+}
+
+.job-search-section-journey p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.job-tags-journey {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.job-tag-journey {
+  color: var(--primary-dark);
+  padding: 0.5rem 1.25rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--primary-dark);
+}
+
 /* ================================
    FOOTER
    ================================ */
@@ -1131,9 +1174,16 @@
 }
 
 .skill-evolution-card:hover {
-  border-color: var(--journey);
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
+  border-color: var(--journey);
+}
+
+.skill-evolution-card:hover .skill-evolution-card__icon {
+  color: var(--journey);
+  transition: all var(--transition-base);
+  background-color: var(--journey-light);
+  box-shadow: 0 0 10px rgba(255, 107, 157, 0.2);
 }
 
 .skill-evolution-card__header {
@@ -1146,13 +1196,13 @@
 .skill-evolution-card__icon {
   width: 48px;
   height: 48px;
-  background: var(--journey-light);
+  background: rgba(91, 44, 111, 0.08);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
-  color: var(--journey);
+  color: var(--primary);
   flex-shrink: 0;
 }
 
@@ -1178,12 +1228,6 @@
   border-radius: var(--radius-lg);
   padding: 2rem;
   transition: all var(--transition-base);
-}
-
-.learning-card:hover {
-  border-color: var(--journey);
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
 }
 
 .learning-card__header {
@@ -1301,16 +1345,23 @@
   transform: translateY(-2px);
 }
 
+.filosofia-item:hover .filosofia-item__icon {
+  background: var(--journey-light);
+  color: var(--journey);
+  box-shadow: 0 0 10px rgba(255, 107, 157, 0.2);
+  transition: all var(--transition-base);
+}
+
 .filosofia-item__icon {
   width: 56px;
   height: 56px;
-  background: var(--journey-light);
+  background: rgba(91, 44, 111, 0.08);
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  color: var(--journey);
+  color: var(--primary);
   margin-bottom: 1.25rem;
 }
 
@@ -1462,6 +1513,9 @@
   gap: 1.5rem;
 }
 
+/* ================================
+   TARJETAS EN PROGRESO
+   ================================ */
 .learning-card--compact {
   background: white;
   border: 1px solid var(--border);
@@ -1476,71 +1530,165 @@
   transform: translateY(-2px);
 }
 
-.learning-card__icon {
+/* Ícono base */
+.learning-card--compact .learning-card__icon {
   width: 48px;
   height: 48px;
-  background: var(--journey-light);
-  border-radius: var(--radius-md);
+  background: rgba(91, 44, 111, 0.08);
+  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
+  transition: all 0.3s ease;
 }
 
-.learning-card__icon i {
+/* Ícono dentro del contenedor */
+.learning-card--compact .learning-card__icon i {
   font-size: 1.5rem;
-  color: var(--journey);
+  color: var(--primary);
+  transition: all 0.3s ease;
 }
 
-.learning-card__title {
+/* HOVER - Cambio a rosa */
+.learning-card--compact:hover .learning-card__icon {
+  background: rgba(255, 107, 157, 0.1) !important;
+  box-shadow: 0 0 15px rgba(255, 107, 157, 0.25) !important;
+}
+
+.learning-card--compact:hover .learning-card__icon i {
+  color: #ff6b9d !important;
+}
+
+/* Título */
+.learning-card--compact .learning-card__title {
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.375rem;
   color: var(--slate-900);
 }
 
-.learning-card__subtitle {
+/* Subtítulo */
+.learning-card--compact .learning-card__subtitle {
   font-size: 0.8125rem;
   color: var(--slate-400);
   margin-bottom: 1rem;
 }
 
-.learning-card__progress {
+/* Progress Container */
+.learning-card--compact .learning-card__progress {
   margin-bottom: 1rem;
 }
 
-.learning-card__progress-label {
+/* Progress Label */
+.learning-card--compact .learning-card__progress-label {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;
   font-size: 0.8125rem;
 }
 
-.learning-card__progress-label-left {
+.learning-card--compact .learning-card__progress-label-left {
   color: var(--slate-600);
   font-weight: 600;
 }
 
-.learning-card__progress-label-right {
-  color: var(--journey);
+.learning-card--compact .learning-card__progress-label-right {
+  color: var(--slate-700);
   font-weight: 700;
 }
 
-.learning-card__progress-bar {
+/* Progress Bar */
+.learning-card--compact .learning-card__progress-bar {
   height: 6px;
-  background: var(--journey-light);
+  background: var(--slate-200);
   border-radius: var(--radius-full);
   overflow: hidden;
 }
 
-.learning-card__progress-fill {
+.learning-card--compact .learning-card__progress-fill {
   height: 100%;
-  background: var(--journey);
+  background: var(--primary);
   border-radius: var(--radius-full);
-  transition: width 1s ease;
+  transition: all 0.6s ease;
 }
 
-.learning-card__tags {
+/* Progress Bar en HOVER */
+.learning-card--compact:hover .learning-card__progress-fill {
+  background: #e5427d !important;
+}
+
+/* Tags */
+.learning-card--compact .learning-card__tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* ================================
+   CERTIFICACIONES COMPLETADAS
+   ================================ */
+.learning-card--certification {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: all var(--transition-base);
+}
+
+.learning-card--certification:hover {
+  border-color: var(--journey);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+/* Ícono base */
+.learning-card--certification .learning-card__icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(91, 44, 111, 0.08);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Ícono dentro del contenedor */
+.learning-card--certification .learning-card__icon i {
+  font-size: 1.5rem;
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+/* HOVER - Cambio a rosa */
+.learning-card--certification:hover .learning-card__icon {
+  background: rgba(255, 107, 157, 0.1) !important;
+  box-shadow: 0 0 15px rgba(255, 107, 157, 0.25) !important;
+}
+
+.learning-card--certification:hover .learning-card__icon i {
+  color: #ff6b9d !important;
+}
+
+/* Título */
+.learning-card--certification .learning-card__title {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  margin-bottom: 0.375rem;
+  color: var(--slate-900);
+}
+
+/* Subtítulo */
+.learning-card--certification .learning-card__subtitle {
+  font-size: 0.8125rem;
+  color: var(--slate-400);
+  margin-bottom: 1rem;
+}
+
+/* Tags */
+.learning-card--certification .learning-card__tags {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
@@ -1656,20 +1804,20 @@
    ================================ */
 
 body.journey-page .geometric-background__canvas .geo-shape {
-  border-color: var(--journey);
+  border-color: var(--primary);
 }
 
 body.journey-page .geometric-background__canvas .geo-shape--line {
-  background: var(--journey);
+  background: var(--primary);
 }
 
 body.journey-page .geometric-background__canvas .geo-shape--dot {
-  background: var(--journey);
-  box-shadow: 0 0 20px var(--journey);
+  background: var(--primary);
+  box-shadow: 0 0 20px var(--primary);
 }
 
 body.journey-page .geometric-background__canvas .geo-shape--line-v {
-  background: var(--journey);
+  background: var(--primary);
 }
 
 /* ================================

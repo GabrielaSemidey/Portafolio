@@ -29,10 +29,10 @@
   --info: #6366f1;
 
   /* 🌸 Color Journey */
-  --journey: #FF6B9D;
+  --journey: #ff6b9d;
   --journey-light: rgba(255, 107, 157, 0.08);
   --journey-medium: rgba(255, 107, 157, 0.15);
-  --journey-dark: #E5568A;
+  --journey-dark: #e5568a;
 
   /* Escala de grises */
   --slate-50: #f8fafc;
@@ -127,8 +127,7 @@ html {
 }
 
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.6;
   color: var(--slate-700);
   background: var(--bg-primary);
@@ -222,7 +221,7 @@ strong {
 }
 
 .section {
-  padding: 6.25rem 0;
+  padding: 4rem 0;
 }
 
 .section-header {
@@ -233,7 +232,7 @@ strong {
 
 .section-title {
   font-size: clamp(2rem, 4vw, 3rem);
-  margin: 4rem 0 1.25rem 0;
+  margin: 2rem 0 1.25rem 0;
 }
 
 .section-description {

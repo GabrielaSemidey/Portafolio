@@ -40,7 +40,6 @@
           <span>&lt;&gt;Gabriela OS</span>
         </a>
         <ul class="nav-links">
-          <ul class="nav-links">
           <li> <a href="../index.html#inicio" class="nav-link" data-i18n="nav.inicio">Inicio</a></li>
           <li> <a href="../index.html#sobre-mi" class="nav-link" data-i18n="nav.sobre-mi">Sobre mí</a></li>
           <li> <a href="../todos-proyectos.html" class="nav-link active" data-i18n="nav.proyectos">Proyectos</a></li>
@@ -48,6 +47,21 @@
           <li> <a href="../journey.html" class="nav-link" data-i18n="nav.journey">Journey</a></li>
           <li> <a href="../index.html#contacto" class="nav-link nav-cta" data-i18n="nav.contacto">Contacto</a></li>
 
+          <!-- 🔥 LANGUAGE TOGGLE -->
+          <li>
+            <div class="language-toggle">
+              <button
+                class="language-toggle__btn"
+                type="button"
+                aria-label="Cambiar idioma"
+                title="Switch language"
+                data-lang="es">
+                <span class="language-toggle__flag">🇪🇸</span>
+                <span class="language-toggle__text">ES</span>
+              </button>
+            </div>
+          </li>
+        </ul>
         <button class="mobile-menu-btn" aria-label="Menú">
           <i class="fas fa-bars"></i>
         </button>
@@ -76,7 +90,7 @@
       <div class="container">
         <a href="../todos-proyectos.html" class="back-link back-link--light">
           <i class="fas fa-arrow-left"></i>
-          <span>Volver a proyectos</span>
+          <span data-i18n="project.back-projects">Volver a proyectos</span>
         </a>
 
         <div class="project-hero__content-wrapper">
@@ -88,15 +102,15 @@
               <i class="fas fa-calendar"></i> 2025
             </span>
             <span class="badge badge--secondary">
-              <i class="fas fa-flask"></i> Caso de Estudio
+              <i class="fas fa-flask"></i> <span data-i18n="badge.case-study">Caso de Estudio</span>
             </span>
           </div>
 
-          <h1 class="project-hero__title">
+          <h1 class="project-hero__title" data-i18n="project.lumi.hero-title">
             Lumi - Aprender nunca fue tan emocionante
           </h1>
 
-          <p class="project-hero__description">
+          <p class="project-hero__description" data-i18n="project.lumi.hero-subtitle">
             Plataforma de aprendizaje personalizado que transforma la educación
             en una experiencia emocionante y llena de propósito, donde cada
             estudiante descubre su propio camino.
@@ -105,7 +119,7 @@
           <div class="btn-actions">
             <a href="#contenido" class="btn btn--hero">
               <i class="fas fa-book-open"></i>
-              <span>Ver caso completo</span>
+              <span data-i18n="project-detail.view-case">Ver caso completo</span>
             </a>
             <a
               href="https://github.com/GabrielaSemidey/Lumi--proyecto-educativo"
@@ -121,7 +135,7 @@
               class="btn btn--hero"
             >
               <i class="fas fa-external-link-alt"></i>
-              <span>Demo en Vivo</span>
+              <span data-i18n="project.link-live">Demo en Vivo</span>
             </a>
           </div>
         </div>
@@ -135,35 +149,35 @@
           <div class="info-item">
             <i class="fas fa-calendar-alt"></i>
             <div>
-              <span class="info-item__label">Año</span>
+              <span class="info-item__label" data-i18n="project-detail.year">Año</span>
               <span class="info-item__value">2025</span>
             </div>
           </div>
           <div class="info-item">
             <i class="fas fa-clock"></i>
             <div>
-              <span class="info-item__label">Duración</span>
-              <span class="info-item__value">4 meses</span>
+              <span class="info-item__label" data-i18n="project-detail.duration">Duración</span>
+              <span class="info-item__value">4 <span data-i18n="time.months">meses</span></span>
             </div>
           </div>
           <div class="info-item">
             <i class="fas fa-map-marker-alt"></i>
             <div>
-              <span class="info-item__label">País</span>
+              <span class="info-item__label" data-i18n="project-detail.location">País</span>
               <span class="info-item__value">Perú</span>
             </div>
           </div>
           <div class="info-item">
             <i class="fas fa-briefcase"></i>
             <div>
-              <span class="info-item__label">Rol</span>
+              <span class="info-item__label" data-i18n="project-detail.role">Rol</span>
               <span class="info-item__value">Service Designer / PM</span>
             </div>
           </div>
           <div class="info-item">
             <i class="fas fa-users"></i>
             <div>
-              <span class="info-item__label">Equipo</span>
+              <span class="info-item__label" data-i18n="project-detail.team">Equipo</span>
               <span class="info-item__value">4 personas</span>
             </div>
           </div>
@@ -183,10 +197,10 @@
                 <div class="block-header__icon block-header__icon--primary">
                   <i class="fas fa-info-circle"></i>
                 </div>
-                <h2>Contexto</h2>
+                <h2 data-i18n="project.bid.context-title">Contexto</h2>
               </div>
               <div class="block-content">
-                <p>
+                <p data-i18n="project.lumi.context-text-1">
                   Lumi nació como un proyecto académico de 4 meses en el que
                   exploramos cómo las tecnologías disruptivas —específicamente
                   la inteligencia artificial— podían transformar la experiencia
@@ -194,7 +208,7 @@
                   herramientas de IA mientras aplicábamos metodologías de Design
                   Thinking.
                 </p>
-                <p>
+                <p data-i18n="project.lumi.context-text-2">
                   El proyecto surgió de problemáticas reales compartidos por dos
                   compañeras del equipo que trabajan en el área de innovación
                   educativa de colegios reconocidos en Perú. Identificamos que
@@ -203,7 +217,7 @@
                   contenido genérico que no considera el estilo cognitivo, el
                   momento vital ni las motivaciones de cada usuario.
                 </p>
-                <p>
+                <p data-i18n="project.lumi.context-text-3">
                   Lumi fue diseñada para poner al ser humano en el centro del
                   proceso educativo, creando rutas de aprendizaje adaptativas,
                   gamificadas y emocionalmente significativas.
@@ -217,10 +231,10 @@
                 <div class="block-header__icon block-header__icon--primary">
                   <i class="fas fa-bullseye"></i>
                 </div>
-                <h2>El Desafío</h2>
+                <h2 data-i18n="project-detail.challenge">El Desafío</h2>
               </div>
               <div class="block-content block-content--quote">
-                <p>
+                <p data-i18n="project.lumi.challenge-text">
                   <i class="fas fa-quote-left"></i>
                   ¿Cómo diseñar una plataforma de aprendizaje que realmente se
                   adapte a cada persona, motivando el progreso constante sin
@@ -235,30 +249,33 @@
                 <div class="block-header__icon block-header__icon--primary">
                   <i class="fas fa-user-tie"></i>
                 </div>
-                <h2>Mi Rol en el Proyecto</h2>
+                <h2 data-i18n="project-detail.my-role">Mi Rol en el Proyecto</h2>
               </div>
               <div class="block-content">
-                <p>
+                <p data-i18n="project.lumi.role-text">
                   Como <strong>Service Designer y Project Manager</strong> del
                   equipo de 4 personas, lideré la conceptualización estratégica
                   de Lumi, coordinando el uso de herramientas de IA y
                   facilitando el proceso de diseño colaborativo.
                 </p>
-                <p>Mis responsabilidades incluyeron:</p>
+                <p data-i18n="project-detail.responsibilities">Mis responsabilidades incluyeron:</p>
                 <ul class="content-list">
-                  <li>
+                  <li data-i18n="project.lumi.resp-1">
                     Liderar las sesiones de Design Thinking (identificación de
                     problemas, ideación, prototipado)
                   </li>
-                  <li>
+                  <li data-i18n="project.lumi.resp-2">
+                    Conceptualizar el sistema de recompensas con tokens educativos (LumiCoins)
+                  </li>
+                  <li data-i18n="project.lumi.resp-3">
                     Coordinar la integración de herramientas de IA en el proceso
                     (ChatGPT, Gemini, Claude, Storm, Manus, Lovable, Zapier)
                   </li>
-                  <li>
+                  <li data-i18n="project.lumi.resp-4">
                     Desarrollar la identidad visual y propuesta de valor basada
                     en los 5 estilos de aprendizaje
                   </li>
-                  <li>
+                  <li data-i18n="project.lumi.resp-5">
                     Actualmente: Desarrollo frontend del home, login y dashboard
                     de estudiantes
                   </li>
@@ -272,10 +289,10 @@
                 <div class="block-header__icon block-header__icon--primary">
                   <i class="fas fa-project-diagram"></i>
                 </div>
-                <h2>Enfoque y Proceso</h2>
+                <h2 data-i18n="project-detail.process">Enfoque y Proceso</h2>
               </div>
               <div class="block-content">
-                <p>
+                <p data-i18n="project.lumi.process-intro">
                   Aplicamos un proceso de
                   <strong>Design Thinking iterativo</strong>, enriquecido con
                   herramientas de inteligencia artificial en cada etapa. El
@@ -290,21 +307,21 @@
                       <i class="fas fa-search"></i>
                     </div>
                     <div class="timeline__content">
-                      <h4>1. Empatizar e Investigar</h4>
-                      <p>
+                      <h4 data-i18n="project.lumi.process-1-title">1. Empatizar e Investigar</h4>
+                      <p data-i18n="project.lumi.process-1-text">
                         Trabajamos directamente con dos expertas en innovación
                         educativa de colegios en Perú para identificar problemas
                         reales:
                       </p>
                       <ul class="content-list">
-                        <li>Deserción y desmotivación estudiantil</li>
-                        <li>Falta de personalización en plataformas LMS</li>
-                        <li>
+                        <li data-i18n="project.lumi.process-1-item-1">Deserción y desmotivación estudiantil</li>
+                        <li data-i18n="project.lumi.process-1-item-2">Falta de personalización en plataformas LMS</li>
+                        <li data-i18n="project.lumi.process-1-item-3">
                           Necesidad de reconocimiento tangible del esfuerzo
                         </li>
-                        <li>Brecha entre aprender y sentirse acompañado</li>
+                        <li data-i18n="project.lumi.process-1-item-4">Brecha entre aprender y sentirse acompañado</li>
                       </ul>
-                      <p>
+                      <p data-i18n="project.lumi.process-1-tools">
                         <strong>Herramientas usadas:</strong> ChatGPT (análisis
                         de insights), Excalidraw (mapeo colaborativo), Miro
                         (brainstorming visual)
@@ -317,29 +334,29 @@
                       <i class="fas fa-lightbulb"></i>
                     </div>
                     <div class="timeline__content">
-                      <h4>2. Definir e Idear</h4>
-                      <p>
+                      <h4 data-i18n="project.lumi.process-2-title">2. Definir e Idear</h4>
+                      <p data-i18n="project.lumi.process-2-text">
                         Definimos el problema central y generamos múltiples
                         conceptos de solución:
                       </p>
                       <ul class="content-list">
-                        <li>
+                        <li data-i18n="project.lumi.process-2-item-1">
                           Sistema de personalización basado en 5 estilos de
                           aprendizaje
                         </li>
-                        <li>
+                        <li data-i18n="project.lumi.process-2-item-2">
                           Gamificación con propósito: LumiCoins canjeables por
                           valor real
                         </li>
-                        <li>
+                        <li data-i18n="project.lumi.process-2-item-3">
                           Visualización del progreso personal y celebración de
                           logros
                         </li>
-                        <li>
+                        <li data-i18n="project.lumi.process-2-item-4">
                           Integración de IA para adaptación en tiempo real
                         </li>
                       </ul>
-                      <p>
+                      <p data-i18n="project.lumi.process-2-tools">
                         <strong>Herramientas usadas:</strong> Gemini (generación
                         de ideas), Claude (refinamiento conceptual), Storm
                         (investigación de mercado)
@@ -352,25 +369,25 @@
                       <i class="fas fa-pencil-ruler"></i>
                     </div>
                     <div class="timeline__content">
-                      <h4>3. Prototipar y Diseñar</h4>
-                      <p>Creamos la propuesta completa de Lumi, incluyendo:</p>
+                      <h4 data-i18n="project.lumi.process-3-title">3. Prototipar y Diseñar</h4>
+                      <p data-i18n="project.lumi.process-3-text">Creamos la propuesta completa de Lumi, incluyendo:</p>
                       <ul class="content-list">
-                        <li>
+                        <li data-i18n="project.lumi.process-3-item-1">
                           Identidad de marca (logo, paleta de colores, tono de
                           voz)
                         </li>
-                        <li>
+                        <li data-i18n="project.lumi.process-3-item-2">
                           Los 5 estilos de aprendizaje: Visionauta,
                           Audioexplorador, Manos a la Obra, LogiMaster, Colab
                           Hero
                         </li>
-                        <li>
+                        <li data-i18n="project.lumi.process-3-item-3">
                           Sistema de recompensas LumiCoins con valor tangible
                         </li>
-                        <li>Arquitectura de información y flujos de usuario</li>
-                        <li>Propuesta de valor y modelo de negocio</li>
+                        <li data-i18n="project.lumi.process-3-item-4">Arquitectura de información y flujos de usuario</li>
+                        <li data-i18n="project.lumi.process-3-item-5">Propuesta de valor y modelo de negocio</li>
                       </ul>
-                      <p>
+                      <p data-i18n="project.lumi.process-3-tools">
                         <strong>Herramientas usadas:</strong> Manus
                         (documentación), Lovable (prototipado), Excalidraw
                         (diagramas)
@@ -383,21 +400,21 @@
                       <i class="fas fa-code"></i>
                     </div>
                     <div class="timeline__content">
-                      <h4>4. Desarrollar e Implementar</h4>
-                      <p>
+                      <h4 data-i18n="project.lumi.process-4-title">4. Desarrollar e Implementar</h4>
+                      <p data-i18n="project.lumi.process-4-text">
                         Actualmente estoy llevando Lumi a código, desarrollando:
                       </p>
                       <ul class="content-list">
-                        <li>
+                        <li data-i18n="project.lumi.process-4-item-1">
                           Homepage con identidad visual completa y los 5 estilos
                         </li>
-                        <li>Sistema de login y onboarding personalizado</li>
-                        <li>
+                        <li data-i18n="project.lumi.process-4-item-2">Sistema de login y onboarding personalizado</li>
+                        <li data-i18n="project.lumi.process-4-item-3">
                           Dashboard de estudiantes con progreso y LumiCoins
                         </li>
-                        <li>Integración con Zapier para automatizaciones</li>
+                        <li data-i18n="project.lumi.process-4-item-4">Integración con Zapier para automatizaciones</li>
                       </ul>
-                      <p>
+                      <p data-i18n="project.lumi.process-4-tech">
                         <strong>Tecnologías:</strong> HTML, CSS, JavaScript,
                         React (planned)
                       </p>
@@ -415,7 +432,7 @@
                 <h2>Propuesta de Valor</h2>
               </div>
               <div class="block-content">
-                <h4>
+                <h4 data-i18n="project.lumi.value-title">
                   Lumi transforma el aprendizaje en una experiencia emocionante,
                   personal y accesible.
                 </h4>
@@ -437,8 +454,8 @@
                         ></i>
                       </i>
                     </div>
-                    <h3 class="value-card__title">Rutas Adaptadas a Ti</h3>
-                    <p class="value-card__description">
+                    <h3 class="value-card__title" data-i18n="project.lumi.value-1-title">Rutas Adaptadas a Ti</h3>
+                    <p class="value-card__description" data-i18n="project.lumi.value-1-text">
                       No más contenido genérico. Lumi identifica cómo aprendes
                       mejor y crea rutas personalizadas según tu estilo
                       cognitivo, intereses y ritmo. Tu camino es único.
@@ -450,8 +467,8 @@
                     <div class="value-card__icon">
                       <i class="far fa-star"></i>
                     </div>
-                    <h3 class="value-card__title">Recompensas Reales</h3>
-                    <p class="value-card__description">
+                    <h3 class="value-card__title" data-i18n="project.lumi.value-2-title">Recompensas Reales</h3>
+                    <p class="value-card__description" data-i18n="project.lumi.value-2-text">
                       Los LumiCoins no son medallas virtuales: se canjean por
                       mentorías con expertos, recursos premium, certificados
                       verificados y becas. Tu esfuerzo tiene valor tangible.
@@ -463,8 +480,8 @@
                     <div class="value-card__icon">
                       <i class="far fa-smile"></i>
                     </div>
-                    <h3 class="value-card__title">Para Todos los Estilos</h3>
-                    <p class="value-card__description">
+                    <h3 class="value-card__title" data-i18n="project.lumi.value-3-title">Para Todos los Estilos</h3>
+                    <p class="value-card__description" data-i18n="project.lumi.value-3-text">
                       Desde estudiantes de 12 años hasta jóvenes adultos de 25+.
                       Materias escolares, habilidades para la vida (adulting) y
                       refuerzo académico en una sola plataforma.
@@ -476,10 +493,10 @@
                     <div class="value-card__icon">
                       <i class="far fa-id-badge"></i>
                     </div>
-                    <h3 class="value-card__title">
+                    <h3 class="value-card__title" data-i18n="project.lumi.value-4-title">
                       IA al Servicio del Aprendiz
                     </h3>
-                    <p class="value-card__description">
+                    <p class="value-card__description" data-i18n="project.lumi.value-4-text">
                       Desde personalización hasta analítica predictiva para
                       anticipar abandonos, cada innovación potencia la
                       experiencia humana sin perder la calidez del
@@ -494,10 +511,10 @@
                 <div class="block-header__icon block-header__icon--secondary">
                   <i class="fas fa-users"></i>
                 </div>
-                <h2>Los 5 Estilos de Aprendizaje</h2>
+                <h2 data-i18n="project.lumi.styles-title">Los 5 Estilos de Aprendizaje</h2>
               </div>
               <div class="block-content">
-                <p>
+                <p data-i18n="project.lumi.styles-intro">
                   Lumi reconoce que no todos aprendemos igual. Por eso creamos 5
                   perfiles únicos que adaptan la experiencia educativa a tu
                   forma natural de procesar información.
@@ -517,15 +534,15 @@
                         alt="Visionauta - Aprendizaje Visual"
                         class="learning-card__illustration"
                       />
-                      <h3 class="learning-card__title">Visionauta</h3>
+                      <h3 class="learning-card__title" data-i18n="project.lumi.style-1-name">Visionauta</h3>
                       <span class="learning-card__badge">Visual</span>
                     </div>
 
                     <!-- Atrás: Información -->
                     <div class="learning-card__back">
-                      <h3 class="learning-card__back-title">Visionauta</h3>
-                      <p class="learning-card__description">
-                        <strong>Aprende viendo:</strong> la información visual
+                      <h3 class="learning-card__back-title" data-i18n="project.lumi.style-1-name">Visionauta</h3>
+                      <p class="learning-card__description" data-i18n="project.lumi.style-1-desc">
+                        <strong>Aprende viendo:</strong> Infografías, diagramas, videos visuales, mapas mentales y contenido gráfico que transforma ideas abstractas en imágenes claras.
                       </p>
                       <ul class="learning-card__features">
                         <li>Infografías interactivas</li>
@@ -544,14 +561,14 @@
                         alt="Audioexplorador - Aprendizaje Auditivo"
                         class="learning-card__illustration"
                       />
-                      <h3 class="learning-card__title">Audioexplorador</h3>
+                      <h3 class="learning-card__title" data-i18n="project.lumi.style-2-name">Audioexplorador</h3>
                       <span class="learning-card__badge">Auditivo</span>
                     </div>
 
                     <div class="learning-card__back">
-                      <h3 class="learning-card__back-title">Audioexplorador</h3>
-                      <p class="learning-card__description">
-                        <strong>Aprende escuchando:</strong> contenido narrado
+                      <h3 class="learning-card__back-title" data-i18n="project.lumi.style-2-name">Audioexplorador</h3>
+                      <p class="learning-card__description" data-i18n="project.lumi.style-2-desc">
+                        <strong>Aprende escuchando:</strong> Podcasts, explicaciones narradas, debates, audiolibros y discusiones que convierten el conocimiento en conversación.
                       </p>
                       <ul class="learning-card__features">
                         <li>Podcasts educativos</li>
@@ -570,14 +587,14 @@
                         alt="Manos a la Obra - Aprendizaje Kinestésico"
                         class="learning-card__illustration"
                       />
-                      <h3 class="learning-card__title">Manos a la Obra</h3>
+                      <h3 class="learning-card__title" data-i18n="project.lumi.style-3-name">Manos a la Obra</h3>
                       <span class="learning-card__badge">Kinestésico</span>
                     </div>
 
                     <div class="learning-card__back">
-                      <h3 class="learning-card__back-title">Manos a la Obra</h3>
-                      <p class="learning-card__description">
-                        <strong>Aprende haciendo:</strong> práctica y acción
+                      <h3 class="learning-card__back-title" data-i18n="project.lumi.style-3-name">Manos a la Obra</h3>
+                      <p class="learning-card__description" data-i18n="project.lumi.style-3-desc">
+                        <strong>Aprende haciendo:</strong> Experimentos prácticos, proyectos reales, simulaciones interactivas y talleres donde la teoría cobra vida.
                       </p>
                       <ul class="learning-card__features">
                         <li>Experimentos prácticos</li>
@@ -596,14 +613,14 @@
                         alt="LogiMaster - Aprendizaje Lógico"
                         class="learning-card__illustration"
                       />
-                      <h3 class="learning-card__title">LogiMaster</h3>
+                      <h3 class="learning-card__title" data-i18n="project.lumi.style-4-name">LogiMaster</h3>
                       <span class="learning-card__badge">Lógico</span>
                     </div>
 
                     <div class="learning-card__back">
-                      <h3 class="learning-card__back-title">LogiMaster</h3>
-                      <p class="learning-card__description">
-                        <strong>Aprende razonando:</strong> lógica y análisis
+                      <h3 class="learning-card__back-title" data-i18n="project.lumi.style-4-name">LogiMaster</h3>
+                      <p class="learning-card__description" data-i18n="project.lumi.style-4-desc">
+                        <strong>Aprende razonando:</strong> Problemas lógicos, análisis estructurado, pensamiento crítico y desafíos que conectan causa y efecto.
                       </p>
                       <ul class="learning-card__features">
                         <li>Problemas lógicos</li>
@@ -622,14 +639,14 @@
                         alt="Colab Hero - Aprendizaje Colaborativo"
                         class="learning-card__illustration"
                       />
-                      <h3 class="learning-card__title">Colab Hero</h3>
+                      <h3 class="learning-card__title" data-i18n="project.lumi.style-5-name">Colab Hero</h3>
                       <span class="learning-card__badge">Colaborativo</span>
                     </div>
 
                     <div class="learning-card__back">
-                      <h3 class="learning-card__back-title">Colab Hero</h3>
-                      <p class="learning-card__description">
-                        <strong>Aprende colaborando:</strong> en equipo
+                      <h3 class="learning-card__back-title" data-i18n="project.lumi.style-5-name">Colab Hero</h3>
+                      <p class="learning-card__description" data-i18n="project.lumi.style-5-desc">
+                        <strong>Aprende colaborando:</strong> Trabajo en equipo, discusiones grupales, proyectos sociales y construcción colectiva del conocimiento.
                       </p>
                       <ul class="learning-card__features">
                         <li>Trabajo en equipo</li>
@@ -648,12 +665,12 @@
                 <div class="block-header__icon block-header__icon--secondary">
                   <i class="fas fa-coins"></i>
                 </div>
-                <h2>Sistema de LumiCoins</h2>
+                <h2 data-i18n="project.lumi.coins-title">Sistema de LumiCoins</h2>
               </div>
               <div class="block-content">
-                <h4>Cada logro en Lumi te acerca a recompensas reales.</h4>
+                <h4 data-i18n="project.lumi.coins-subtitle">Cada logro en Lumi te acerca a recompensas reales.</h4>
 
-                <p>
+                <p data-i18n="project.lumi.coins-intro">
                   Los LumiCoins son la moneda educativa de la plataforma, pero a
                   diferencia de otros sistemas de gamificación,
                   <strong>tienen valor tangible</strong>. No son puntos vacíos
@@ -666,8 +683,8 @@
                   <!-- Paso 1: Gana -->
                   <div class="timeline-step">
                     <div class="timeline-step__number">1</div>
-                    <h5 class="timeline-step__title">Gana</h5>
-                    <p class="timeline-step__description">
+                    <h5 class="timeline-step__title" data-i18n="project.lumi.coins-step-1-title">Gana</h5>
+                    <p class="timeline-step__description" data-i18n="project.lumi.coins-step-1-text">
                       Completa módulos, alcanza metas, mantén tu racha de
                       aprendizaje y participa activamente.
                     </p>
@@ -676,8 +693,8 @@
                   <!-- Paso 2: Acumula -->
                   <div class="timeline-step">
                     <div class="timeline-step__number">2</div>
-                    <h5 class="timeline-step__title">Acumula</h5>
-                    <p class="timeline-step__description">
+                    <h5 class="timeline-step__title" data-i18n="project.lumi.coins-step-2-title">Acumula</h5>
+                    <p class="timeline-step__description" data-i18n="project.lumi.coins-step-2-text">
                       Cada objetivo cumplido suma LumiCoins a tu balance.
                       Visualiza tu progreso y celebra cada logro.
                     </p>
@@ -686,10 +703,9 @@
                   <!-- Paso 3: Canjea -->
                   <div class="timeline-step">
                     <div class="timeline-step__number">3</div>
-                    <h5 class="timeline-step__title">Canjea</h5>
-                    <p class="timeline-step__description">
-                      Usa tus monedas para acceder a recompensas reales con
-                      valor tangible.
+                    <h5 class="timeline-step__title" data-i18n="project.lumi.coins-step-3-title">Canjea</h5>
+                    <p class="timeline-step__description" data-i18n="project.lumi.coins-step-3-text">
+                      Usa tus monedas para acceder a valor real:
                     </p>
                   </div>
                 </div>
@@ -711,24 +727,24 @@
                     </div>
                     <div class="rewards-accordion__content">
                       <ul class="rewards-list">
-                        <li>
+                        <li data-i18n="project.lumi.coins-item-1">
                           <strong>Mentorías con expertos</strong> en tu área de
                           interés
                         </li>
-                        <li>
+                        <li data-i18n="project.lumi.coins-item-2">
                           <strong>Recursos educativos premium</strong> (libros,
                           cursos, herramientas)
                         </li>
-                        <li>
+                        <li data-i18n="project.lumi.coins-item-3">
                           <strong>Certificados verificados</strong> que validan
                           tu aprendizaje
                         </li>
-                        <li>
+                        <li data-i18n="project.lumi.coins-item-4">
                           <strong
                             >Descuentos en programas especializados</strong
                           >
                         </li>
-                        <li>
+                        <li data-i18n="project.lumi.coins-item-5">
                           <strong>Becas parciales</strong> para formación
                           externa
                         </li>
@@ -739,7 +755,7 @@
 
                 <div class="highlight-box">
                   <i class="fas fa-star"></i>
-                  <p style="margin: 0">
+                  <p style="margin: 0" data-i18n="project.lumi.coins-highlight">
                     <strong
                       >Tu esfuerzo importa. Y Lumi lo recompensa con
                       oportunidades reales de crecimiento.</strong
@@ -761,7 +777,7 @@
                 <ul class="checklist">
                   <li>
                     <i class="fas fa-check-circle"></i>
-                    <span
+                    <span data-i18n="project.lumi.diff-1"
                       ><strong>5 Estilos de Aprendizaje:</strong> Sistema único
                       de personalización que adapta contenido según cómo
                       procesas información (visual, auditivo, kinestésico,
@@ -770,7 +786,7 @@
                   </li>
                   <li>
                     <i class="fas fa-check-circle"></i>
-                    <span
+                    <span data-i18n="project.lumi.diff-2"
                       ><strong>LumiCoins con valor real:</strong> Sistema de
                       recompensas que se canjea por mentorías, recursos premium,
                       certificados y becas</span
@@ -778,7 +794,7 @@
                   </li>
                   <li>
                     <i class="fas fa-check-circle"></i>
-                    <span
+                    <span data-i18n="project.lumi.diff-3"
                       ><strong>Rutas dinámicas:</strong> Experiencias que se
                       adaptan continuamente según avance, perfil y feedback del
                       usuario</span
@@ -786,7 +802,7 @@
                   </li>
                   <li>
                     <i class="fas fa-check-circle"></i>
-                    <span
+                    <span data-i18n="project.lumi.diff-4"
                       ><strong>Adulting + Academia:</strong> Combina materias
                       tradicionales con habilidades para la vida real
                       (impuestos, finanzas personales, vida profesional)</span
@@ -794,7 +810,7 @@
                   </li>
                   <li>
                     <i class="fas fa-check-circle"></i>
-                    <span
+                    <span data-i18n="project.lumi.diff-5"
                       ><strong>Tecnología + Humanidad:</strong> Combina IA
                       avanzada con acompañamiento humano cercano y
                       empático</span
@@ -802,7 +818,7 @@
                   </li>
                   <li>
                     <i class="fas fa-check-circle"></i>
-                    <span
+                    <span data-i18n="project.lumi.diff-6"
                       ><strong>Accesibilidad total:</strong> Diseñada para
                       múltiples dispositivos y perfiles, desde nativos digitales
                       hasta personas con baja afinidad tecnológica</span
@@ -818,27 +834,27 @@
                 <div class="block-header__icon block-header__icon--secondary">
                   <i class="fas fa-trophy"></i>
                 </div>
-                <h2>Resultados y Entregables</h2>
+                <h2 data-i18n="project-detail.results">Resultados y Entregables</h2>
               </div>
               <div class="block-content">
                 <div class="metrics-grid">
                   <div class="metric-card">
                     <div class="metric-card__value">5</div>
-                    <div class="metric-card__label">
+                    <div class="metric-card__label" data-i18n="project.lumi.result-1-value">
                       Estilos de aprendizaje personalizados
                     </div>
                   </div>
 
                   <div class="metric-card">
                     <div class="metric-card__value">∞</div>
-                    <div class="metric-card__label">
+                    <div class="metric-card__label" data-i18n="project.lumi.result-2-value">
                       Rutas adaptativas personalizadas
                     </div>
                   </div>
 
                   <div class="metric-card">
                     <div class="metric-card__value">1</div>
-                    <div class="metric-card__label">
+                    <div class="metric-card__label" data-i18n="project.lumi.result-3-value">
                       Sistema de recompensas real (LumiCoins)
                     </div>
                   </div>
@@ -848,48 +864,48 @@
                 <ul class="checklist">
                   <li>
                     <i class="fas fa-check-circle"></i>
-                    <span
+                    <span data-i18n="project.lumi.impact-1"
                       >Documento estratégico completo (propuesta de valor,
                       público objetivo, modelo de negocio)</span
                     >
                   </li>
                   <li>
                     <i class="fas fa-check-circle"></i>
-                    <span
+                    <span data-i18n="project.lumi.impact-2"
                       >Sistema de personalización basado en 5 estilos de
                       aprendizaje</span
                     >
                   </li>
                   <li>
                     <i class="fas fa-check-circle"></i>
-                    <span
+                    <span data-i18n="project.lumi.impact-3"
                       >Identidad visual completa (logo, paleta de colores,
                       tipografía, iconografía)</span
                     >
                   </li>
                   <li>
                     <i class="fas fa-check-circle"></i>
-                    <span
+                    <span data-i18n="project.lumi.impact-4"
                       >Sistema de recompensas LumiCoins con catálogo de
                       canjes</span
                     >
                   </li>
                   <li>
                     <i class="fas fa-check-circle"></i>
-                    <span
+                    <span data-i18n="project.lumi.impact-5"
                       >Arquitectura de funcionalidades y flujos de usuario</span
                     >
                   </li>
                   <li>
                     <i class="fas fa-check-circle"></i>
-                    <span
+                    <span data-i18n="project.lumi.impact-6"
                       >Desarrollo frontend en progreso (home, login,
                       dashboard)</span
                     >
                   </li>
                   <li>
                     <i class="fas fa-check-circle"></i>
-                    <span
+                    <span data-i18n="project.lumi.impact-7"
                       >Validación conceptual con profesores, estudiantes y
                       jóvenes adultos</span
                     >
@@ -906,7 +922,7 @@
                 <h2>Herramientas de IA Utilizadas</h2>
               </div>
               <div class="block-content">
-                <p>
+                <p data-i18n="project.lumi.ai-intro">
                   Uno de los aspectos más innovadores de este proyecto fue la
                   integración estratégica de múltiples herramientas de
                   inteligencia artificial en cada fase del proceso:
@@ -918,9 +934,9 @@
                     <div class="ai-tool-card__icon">
                       <i class="fas fa-comments"></i>
                     </div>
-                    <h5 class="ai-tool-card__title">ChatGPT & Gemini</h5>
-                    <p class="ai-tool-card__description">
-                      Análisis de insights, generación de ideas y refinamiento
+                    <h5 class="ai-tool-card__title" data-i18n="project.lumi.ai-tool-1">ChatGPT & Gemini</h5>
+                    <p class="ai-tool-card__description" data-i18n="project.lumi.ai-tool-1-desc">
+                      Análisis de insights, generación de ideas, refinamiento
                       de conceptos
                     </p>
                   </div>
@@ -929,8 +945,8 @@
                     <div class="ai-tool-card__icon">
                       <i class="fas fa-brain"></i>
                     </div>
-                    <h5 class="ai-tool-card__title">Claude</h5>
-                    <p class="ai-tool-card__description">
+                    <h5 class="ai-tool-card__title" data-i18n="project.lumi.ai-tool-2">Claude</h5>
+                    <p class="ai-tool-card__description" data-i18n="project.lumi.ai-tool-2-desc">
                       Desarrollo de contenido estratégico y documentación
                       técnica
                     </p>
@@ -940,8 +956,8 @@
                     <div class="ai-tool-card__icon">
                       <i class="fas fa-bolt"></i>
                     </div>
-                    <h5 class="ai-tool-card__title">Storm</h5>
-                    <p class="ai-tool-card__description">
+                    <h5 class="ai-tool-card__title" data-i18n="project.lumi.ai-tool-3">Storm</h5>
+                    <p class="ai-tool-card__description" data-i18n="project.lumi.ai-tool-3-desc">
                       Investigación de mercado y análisis de tendencias
                       educativas
                     </p>
@@ -952,8 +968,8 @@
                     <div class="ai-tool-card__icon">
                       <i class="fas fa-file-alt"></i>
                     </div>
-                    <h5 class="ai-tool-card__title">Manus</h5>
-                    <p class="ai-tool-card__description">
+                    <h5 class="ai-tool-card__title" data-i18n="project.lumi.ai-tool-4">Manus</h5>
+                    <p class="ai-tool-card__description" data-i18n="project.lumi.ai-tool-4-desc">
                       Documentación colaborativa y gestión del conocimiento
                     </p>
                   </div>
@@ -962,8 +978,8 @@
                     <div class="ai-tool-card__icon">
                       <i class="fas fa-heart"></i>
                     </div>
-                    <h5 class="ai-tool-card__title">Lovable</h5>
-                    <p class="ai-tool-card__description">
+                    <h5 class="ai-tool-card__title" data-i18n="project.lumi.ai-tool-5">Lovable</h5>
+                    <p class="ai-tool-card__description" data-i18n="project.lumi.ai-tool-5-desc">
                       Prototipado rápido y visualización de interfaces
                     </p>
                   </div>
@@ -972,8 +988,8 @@
                     <div class="ai-tool-card__icon">
                       <i class="fas fa-cogs"></i>
                     </div>
-                    <h5 class="ai-tool-card__title">Zapier</h5>
-                    <p class="ai-tool-card__description">
+                    <h5 class="ai-tool-card__title" data-i18n="project.lumi.ai-tool-6">Zapier</h5>
+                    <p class="ai-tool-card__description" data-i18n="project.lumi.ai-tool-6-desc">
                       Automatizaciones y flujos de trabajo inteligentes
                     </p>
                   </div>
@@ -983,8 +999,8 @@
                     <div class="ai-tool-card__icon">
                       <i class="fas fa-pencil-ruler"></i>
                     </div>
-                    <h5 class="ai-tool-card__title">Excalidraw</h5>
-                    <p class="ai-tool-card__description">
+                    <h5 class="ai-tool-card__title" data-i18n="project.lumi.ai-tool-7">Excalidraw</h5>
+                    <p class="ai-tool-card__description" data-i18n="project.lumi.ai-tool-7-desc">
                       Diagramas colaborativos y mapeo de sistemas
                     </p>
                   </div>
@@ -997,41 +1013,41 @@
                 <div class="block-header__icon block-header__icon--secondary">
                   <i class="fas fa-lightbulb"></i>
                 </div>
-                <h2>Reflexiones</h2>
+                <h2 data-i18n="project-detail.reflections">Reflexiones</h2>
               </div>
               <div class="block-content block-content--quote">
-                <p>
+                <p data-i18n="project.lumi.reflection-quote">
                   <i class="fas fa-quote-left"></i>
                   La IA no reemplaza el diseño centrado en el humano, lo
                   potencia.
                 </p>
-                <p>
+                <p data-i18n="project.lumi.reflection-1">
                   Este proyecto me enseñó que las herramientas de inteligencia
                   artificial son amplificadores extraordinarios del proceso
                   creativo, pero solo cuando se guían con intención estratégica
                   y empatía profunda hacia los usuarios finales.
                 </p>
-                <p>
+                <p data-i18n="project.lumi.reflection-2">
                   Lumi comenzó como un ejercicio académico, pero se transformó
                   en una reflexión sobre cómo diseñamos experiencias educativas
                   en el siglo XXI. Aprendí que la verdadera innovación no está
                   en usar la tecnología más avanzada, sino en ponerla al
                   servicio de las necesidades reales de las personas.
                 </p>
-                <p>
+                <p data-i18n="project.lumi.reflection-3">
                   Crear los 5 estilos de aprendizaje y el sistema de LumiCoins
                   me enseñó que la gamificación tiene sentido solo cuando genera
                   valor tangible. No se trata de agregar puntos y medallas, sino
                   de reconocer el esfuerzo real con oportunidades reales.
                 </p>
-                <p>
+                <p data-i18n="project.lumi.reflection-4">
                   Liderar este proyecto también fortaleció mi capacidad para
                   coordinar equipos multidisciplinarios, integrar herramientas
                   disruptivas en procesos de diseño tradicionales, y mantener el
                   foco en el valor humano sin perder de vista la viabilidad
                   técnica.
                 </p>
-                <p>
+                <p data-i18n="project.lumi.reflection-5">
                   Actualmente, llevando Lumi al código, reafirmo mi convicción:
                   el diseño estratégico y el desarrollo no son etapas separadas,
                   son conversaciones continuas que deben mantenerse conectadas
@@ -1044,14 +1060,14 @@
           <!-- Sidebar -->
           <aside class="sidebar-sticky">
             <div class="sidebar-card">
-              <h3><i class="fas fa-info-circle"></i> Info del Proyecto</h3>
+              <h3><i class="fas fa-info-circle"></i> <span data-i18n="sidebar.project-info">Info del Proyecto</span></h3>
               <div class="sidebar-card__list">
                 <div class="sidebar-card__item">
                   <span class="sidebar-card__icon"
                     ><i class="fas fa-calendar"></i
                   ></span>
                   <div>
-                    <span class="sidebar-card__label">Año</span>
+                    <span class="sidebar-card__label" data-i18n="project-detail.year">Año</span>
                     <span class="sidebar-card__value">2025</span>
                   </div>
                 </div>
@@ -1060,8 +1076,8 @@
                     ><i class="fas fa-clock"></i
                   ></span>
                   <div>
-                    <span class="sidebar-card__label">Duración</span>
-                    <span class="sidebar-card__value">4 meses</span>
+                    <span class="sidebar-card__label" data-i18n="project-detail.duration">Duración</span>
+                    <span class="sidebar-card__value">4 <span data-i18n="time.months">meses</span></span>
                   </div>
                 </div>
                 <div class="sidebar-card__item">
@@ -1069,7 +1085,7 @@
                     ><i class="fas fa-map-marker-alt"></i
                   ></span>
                   <div>
-                    <span class="sidebar-card__label">Ubicación</span>
+                    <span class="sidebar-card__label" data-i18n="project-detail.location">Ubicación</span>
                     <span class="sidebar-card__value">España / Perú</span>
                   </div>
                 </div>
@@ -1078,7 +1094,7 @@
                     ><i class="fas fa-user"></i
                   ></span>
                   <div>
-                    <span class="sidebar-card__label">Rol</span>
+                    <span class="sidebar-card__label" data-i18n="project-detail.role">Rol</span>
                     <span class="sidebar-card__value"
                       >Service Designer / PM</span
                     >
@@ -1089,7 +1105,7 @@
                     ><i class="fas fa-users"></i
                   ></span>
                   <div>
-                    <span class="sidebar-card__label">Equipo</span>
+                    <span class="sidebar-card__label" data-i18n="project-detail.team">Equipo</span>
                     <span class="sidebar-card__value">4 personas</span>
                   </div>
                 </div>
@@ -1106,7 +1122,7 @@
             </div>
 
             <div class="sidebar-card">
-              <h3><i class="fas fa-tools"></i> Habilidades Aplicadas</h3>
+              <h3><i class="fas fa-tools"></i> <span data-i18n="sidebar.skills-applied">Habilidades Aplicadas</span></h3>
               <div class="sidebar-card__tags">
                 <span class="tag">Design Thinking</span>
                 <span class="tag">Service Design</span>
@@ -1115,20 +1131,20 @@
                 <span class="tag">Project Management</span>
                 <span class="tag">Gamificación</span>
                 <span class="tag">Frontend Development</span>
-                <span class="tag">Facilitación</span>
+                <span class="tag" data-i18n="skills.facilitation">Facilitación</span>
                 <span class="tag">Identidad de Marca</span>
               </div>
             </div>
 
             <div class="sidebar-card sidebar-card--cta">
-              <h3><i class="fas fa-rocket"></i> ¿Te interesó este proyecto?</h3>
-              <p>
+              <h3><i class="fas fa-rocket"></i> <span data-i18n="sidebar.interested-title">¿Te interesó este proyecto?</span></h3>
+              <p data-i18n="sidebar.interested-text-lumi">
                 Si quieres conocer más sobre mi trabajo con IA y diseño
                 estratégico, hablemos.
               </p>
               <a href="../index.html#contacto" class="btn btn--hero btn--block">
                 <i class="fas fa-paper-plane"></i>
-                <span>Contactar</span>
+                <span data-i18n="contact.btn-email">Contactar</span>
               </a>
             </div>
           </aside>
@@ -1143,14 +1159,14 @@
           <a href="tali.html" class="project-nav__item project-nav__item--prev">
             <i class="fas fa-arrow-left"></i>
             <div>
-              <span class="project-nav__label">Anterior</span>
-              <span class="project-nav__title">TALI - Agencia de Viajes</span>
+              <span class="project-nav__label" data-i18n="nav.previous">Anterior</span>
+              <span class="project-nav__title">TALI - <span data-i18n="project.tali.title">Agencia de Viajes</span></span>
             </div>
           </a>
 
           <a href="../todos-proyectos.html" class="btn btn--primary">
             <i class="fas fa-th"></i>
-            <span>Ver todos</span>
+            <span data-i18n="nav.view-all">Ver todos</span>
           </a>
 
           <a
@@ -1158,7 +1174,7 @@
             class="project-nav__item project-nav__item--next"
           >
             <div>
-              <span class="project-nav__label">Siguiente</span>
+              <span class="project-nav__label" data-i18n="nav.next">Siguiente</span>
               <span class="project-nav__title"
                 >Clínica Alemana - Teleconsulta</span
               >
@@ -1173,7 +1189,7 @@
       <div class="container">
         <a href="#hero" class="btn btn--primary btn--lg back-to-top-btn">
           <i class="fas fa-arrow-up"></i>
-          <span>Volver al inicio</span>
+          <span data-i18n="nav.back-to-top">Volver al inicio</span>
         </a>
       </div>
     </section>
@@ -1183,7 +1199,7 @@
       <div class="container">
         <p>
           <i class="fas fa-heart"></i>
-          © 2025 Gabriela Ojeda Semidey. Hecho con código y mucho café ☕
+          © 2025 Gabriela Ojeda Semidey. <span data-i18n="footer.text">Hecho con código y mucho café ☕</span>
         </p>
       </div>
     </footer>
@@ -1204,7 +1220,25 @@
       </div>
     </div>
 
-    <script src="../main.js"></script>
     <script src="../translations.js"></script>
+    <script src="../main.js"></script>
+    <script>
+      // Toggle function for LumiCoins rewards accordion
+      function toggleRewards() {
+        const accordion = document.getElementById('rewardsAccordion');
+        const content = accordion.querySelector('.rewards-accordion__content');
+        const icon = accordion.querySelector('.rewards-accordion__icon i');
+        
+        accordion.classList.toggle('active');
+        
+        if (accordion.classList.contains('active')) {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          icon.style.transform = 'rotate(180deg)';
+        } else {
+          content.style.maxHeight = '0';
+          icon.style.transform = 'rotate(0deg)';
+        }
+      }
+    </script>
   </body>
 </html>
