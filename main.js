@@ -25,7 +25,6 @@ function handleScroll() {
     header.classList.remove("scrolled");
   }
 
-  // Active nav link
   let current = "";
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
@@ -444,7 +443,6 @@ window.addEventListener("error", (e) => {
 (function () {
   "use strict";
 
-  // Obtener idioma guardado o detectar del navegador
   const savedLang =
     localStorage.getItem("preferred-language") ||
     (navigator.language.startsWith("es") ? "es" : "en");
@@ -458,7 +456,6 @@ window.addEventListener("error", (e) => {
 
   if (!langBtn) return;
 
-  // Función para traducir un elemento
   function translateElement(element, key) {
     if (!translations[currentLang] || !translations[currentLang][key]) {
       console.warn(`Translation missing for key: ${key}`);
@@ -467,15 +464,12 @@ window.addEventListener("error", (e) => {
     element.textContent = translations[currentLang][key];
   }
 
-  // Función para aplicar todas las traducciones
   function applyTranslations() {
-    // Traducir todos los elementos con data-i18n
     document.querySelectorAll("[data-i18n]").forEach((element) => {
       const key = element.getAttribute("data-i18n");
       translateElement(element, key);
     });
 
-    // Actualizar el botón de idioma
     if (currentLang === "en") {
       langFlag.textContent = "🇬🇧";
       langText.textContent = "EN";
@@ -488,23 +482,18 @@ window.addEventListener("error", (e) => {
       langBtn.setAttribute("data-lang", "es");
     }
 
-    // Actualizar atributo lang del HTML
     document.documentElement.setAttribute("lang", currentLang);
   }
 
-  // Función para cambiar idioma
   function switchLanguage() {
     // Animación
     langBtn.classList.add("changing");
     setTimeout(() => langBtn.classList.remove("changing"), 300);
 
-    // Cambiar idioma
     currentLang = currentLang === "es" ? "en" : "es";
 
-    // Guardar preferencia
     localStorage.setItem("preferred-language", currentLang);
 
-    // Aplicar traducciones
     applyTranslations();
 
     console.log(
@@ -513,13 +502,10 @@ window.addEventListener("error", (e) => {
     );
   }
 
-  // Event listener
   langBtn.addEventListener("click", switchLanguage);
 
-  // Aplicar idioma inicial
   applyTranslations();
 
-  // Log inicial
   console.log(
     `%c🌐 Idioma inicial: ${currentLang.toUpperCase()}`,
     "color: #5B2C6F; font-weight: bold;"
@@ -581,31 +567,51 @@ window.addEventListener("error", (e) => {
 })();
 
 // ================================
-// SKILL PILLS - Tooltips con nivel
+// SKILL PILLS - Tooltips con nivel (Multiidioma)
 // ================================
 (function () {
   "use strict";
 
   const skillPills = document.querySelectorAll(".skill-pill");
 
-  const levelText = {
-    advanced: "⭐ Nivel Avanzado - Uso diario",
-    intermediate: "📚 Nivel Intermedio - Experiencia práctica",
-    learning: "🌱 Aprendiendo - En desarrollo activo",
-  };
+  function getCurrentLanguage() {
+    return localStorage.getItem("preferred-language") || 
+           (navigator.language.startsWith("es") ? "es" : "en");
+  }
 
-  skillPills.forEach((pill) => {
-    // Detectar el nivel según la clase
-    let level = "intermediate";
-    if (pill.classList.contains("skill-pill--advanced")) {
-      level = "advanced";
-    } else if (pill.classList.contains("skill-pill--learning")) {
-      level = "learning";
-    }
+  function updateTooltips() {
+    const currentLang = getCurrentLanguage();
 
-    // Agregar el atributo data-level para el CSS
-    pill.setAttribute("data-level", levelText[level]);
-  });
+    skillPills.forEach((pill) => {
+      let levelKey = "intermediate";
+      if (pill.classList.contains("skill-pill--advanced")) {
+        levelKey = "advanced";
+      } else if (pill.classList.contains("skill-pill--learning")) {
+        levelKey = "learning";
+      }
+
+      const translationKey = `skills.level.${levelKey}`;
+      const levelText = translations[currentLang]?.[translationKey] || 
+                       translations["es"][translationKey]; 
+
+      pill.setAttribute("data-level", levelText);
+    });
+  }
+
+  updateTooltips();
+
+
+  const langBtn = document.querySelector(".language-toggle__btn");
+  if (langBtn) {
+    langBtn.addEventListener("click", function() {
+      setTimeout(updateTooltips, 50);
+    });
+  }
+
+  console.log(
+    "%c✨ Skill Pills tooltips inicializados con soporte multiidioma",
+    "color: #14B8A6; font-weight: bold;"
+  );
 })();
 
 // ================================
@@ -677,13 +683,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-console.log(
-  "%c✨ Micro-interacciones activadas",
-  "color: #14B8A6; font-weight: bold;"
-);
-
 /* ==========================================
-   🎯 Funcionalidad del acordeón de LumiCoins
+   Funcionalidad del acordeón de LumiCoins
    ========================================== */
 
 // Función para toggle del acordeón de recompensas

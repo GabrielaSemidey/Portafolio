@@ -109,6 +109,10 @@ const translations = {
     "skills.process-design": "Diseño de Procesos",
     "skills.qualitative-research": "Investigación Cualitativa",
     "skills.bilingual": "Bilingüe (ES/EN)",
+    "skills.level.advanced": "⭐ Nivel Avanzado - Uso diario",
+    "skills.level.intermediate": "📚 Nivel Intermedio - Experiencia práctica",
+    "skills.level.learning": "🌱 Aprendiendo - En desarrollo activo",
+
 
     // ============================================
     // INDEX.HTML - HERO
@@ -1624,6 +1628,9 @@ const translations = {
     "skills.process-design": "Process Design",
     "skills.qualitative-research": "Qualitative Research",
     "skills.bilingual": "Bilingual (ES/EN)",
+    "skills.level.advanced": "⭐ Advanced Level - Daily use",
+    "skills.level.intermediate": "📚 Intermediate Level - Practical experience",
+    "skills.level.learning": "🌱 Learning - Actively developing",
 
     // ============================================
     // INDEX.HTML - HERO
