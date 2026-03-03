@@ -795,7 +795,7 @@
 
 .geo-shape {
   position: absolute;
-  border: 2px solid var(--journey-dark);
+  border: 2px solid var(--secondary);
   opacity: 0.4;
   animation: float-random 20s ease-in-out infinite;
 }
@@ -810,7 +810,7 @@
 
 .geo-shape--line {
   height: 2px;
-  background: var(--journey-dark);
+  background: var(--secondary);
   border: none;
 }
 
@@ -818,9 +818,9 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--journey-dark);
+  background: var(--secondary);
   border: none;
-  box-shadow: 0 0 20px var(--journey-dark);
+  box-shadow: 0 0 20px var(--secondary);
 }
 
 @keyframes float-random {
@@ -1052,7 +1052,7 @@
    ================================ */
 .inflexion-box {
   background: var(--bg-secondary);
-  border-left: 4px solid var(--primary);
+  border-left: 4px solid var(--journey);
   padding: 2.5rem;
   border-radius: var(--radius-lg);
   position: relative;
@@ -1120,13 +1120,13 @@
 .journey-project-mini__icon {
   width: 48px;
   height: 48px;
-  background: rgba(91, 44, 111, 0.08);
+  background: var(--journey-light);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
-  color: var(--primary);
+  color: var(--journey);
   margin-bottom: 1rem;
 }
 
@@ -1550,13 +1550,14 @@
   transition: all 0.3s ease;
 }
 
+/* HOVER - Cambio a rosa */
 .learning-card--compact:hover .learning-card__icon {
-  background: var(--journey-light) !important;
-    box-shadow: var(--journey-light) !important;
+  background: rgba(255, 107, 157, 0.1) !important;
+  box-shadow: 0 0 15px rgba(255, 107, 157, 0.25) !important;
 }
 
 .learning-card--compact:hover .learning-card__icon i {
-  color: var(--journey) !important;
+  color: #ff6b9d !important;
 }
 
 /* Título */
@@ -1614,7 +1615,7 @@
 
 /* Progress Bar en HOVER */
 .learning-card--compact:hover .learning-card__progress-fill {
-  background: var(--journey-dark) !important;
+  background: #e5427d !important;
 }
 
 /* Tags */
@@ -1661,14 +1662,14 @@
   transition: all 0.3s ease;
 }
 
-/* HOVER */
+/* HOVER - Cambio a rosa */
 .learning-card--certification:hover .learning-card__icon {
-  background: var(--journey-light) !important;
-    box-shadow: var(--journey-light) !important;
+  background: rgba(255, 107, 157, 0.1) !important;
+  box-shadow: 0 0 15px rgba(255, 107, 157, 0.25) !important;
 }
 
 .learning-card--certification:hover .learning-card__icon i {
-  color: var(--journey-dark) !important;
+  color: #ff6b9d !important;
 }
 
 /* Título */

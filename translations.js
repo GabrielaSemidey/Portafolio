@@ -17,7 +17,6 @@ const translations = {
     "nav.next": "Siguiente",
     "nav.view-all": "Ver todos",
     "nav.back-to-top": "Volver al inicio",
-    "nav.skills": "Skills",
 
     // ============================================
     // BADGES Y ESTADOS COMUNES
@@ -118,17 +117,17 @@ const translations = {
     // ============================================
     // INDEX.HTML - HERO
     // ============================================
-    "hero.badge": "Disponible para roles de Product Owner y Estrategia de producto • Remote/Presencial",
-    "hero.title": "From Discovery",
-    "hero.title-2": "to Delivery.",
+    "hero.badge": "Disponible para proyectos Frontend • Remote/Presencial",
+    "hero.title": "Frontend Developer",
+    "hero.title-2": "con visión de diseño",
     "hero.subtitle":
-      "Product Owner especializada en transformar problemas complejos en productos claros y de alto impacto. Trabajo en la intersección de negocio, usuarios y tecnología — priorizando lo que genera valor real.",
-    "hero.exp-1-value": "5+ años",
-    "hero.exp-1-label": "Product & Service Design",
-    "hero.exp-2-value": "3 sectores",
-    "hero.exp-2-label": "3 sectores",
-    "hero.exp-3-value": "End-to-end",
-    "hero.exp-3-label": "Discovery → Delivery",
+      "Creo interfaces funcionales y experiencias digitales centradas en el usuario. Combino código limpio con un profundo entendimiento de UX para construir productos que realmente funcionan.",
+    "hero.exp-1-value": "4+ años",
+    "hero.exp-1-label": "UX/Service Design",
+    "hero.exp-2-value": "1 año",
+    "hero.exp-2-label": "Frontend Development",
+    "hero.exp-3-value": "Junior-Mid",
+    "hero.exp-3-label": "Developer Level",
     "hero.btn-projects": "Ver proyectos",
     "hero.btn-cv": "Descargar CV",
 
@@ -137,38 +136,42 @@ const translations = {
     // ============================================
     "about.badge": "Sobre mí",
     "about.title": "Una perspectiva única",
-    "about.description": "Vengo del mundo del diseño estratégico y me muevo con fluidez entre usuarios, negocio y tecnología. Eso me hace una Product Owner diferente.",
+    "about.description":
+      "Mi transición desde el diseño estratégico hacia el desarrollo frontend me ha dado una ventaja única: entiendo tanto a los usuarios como la tecnología que da vida a sus experiencias.",
     "about.subtitle": "Mi enfoque",
-    "about.text-1": "Antes de definir cualquier feature, me pregunto: ¿esto resuelve un problema real del usuario y genera valor al negocio? Mi background en Service Design y UX Research me permite ir más allá del backlog — identifico las causas raíz, mapeo los sistemas detrás de los problemas y tomo decisiones informadas con datos y contexto.",
-    "about.text-2": "Entiendo el lenguaje de los developers porque sé lo que es construir. Entiendo a los usuarios porque he hecho research durante años. Y entiendo al negocio porque siempre he trabajado alineando ambos. Ese triángulo es donde vivo.",
+    "about.text-1":
+      "Antes de escribir una línea de código, me pregunto: ¿esto realmente resuelve el problema del usuario? Mi background en UX Research y Service Design me permite ver más allá de la interfaz y crear soluciones que tienen sentido tanto técnica como humanamente.",
+    "about.text-2":
+      "Actualmente me enfoco en proyectos frontend donde puedo aplicar esta visión completa: desde entender qué necesita el usuario hasta implementarlo con código limpio, mantenible y escalable.",
 
     // Timeline
-    "timeline.1.title": "Consultora independiente – Product & UX Strategy",
-    "timeline.1.period": "2025 - Presente · Remoto (LATAM y España)",
-    "timeline.1.text": "Asesoría en estrategia de producto, facilitación de workshops y mentoría en UX y Service Design para equipos multidisciplinarios.",
-    "timeline.2.title": "Fruta Global – Service & UX Designer",
-    "timeline.2.period": "Mar 2023 – Jul 2023 · España",
-    "timeline.2.text": "Diseño de blueprints de servicio, talleres de co-creación con comunidades e indicadores de sostenibilidad alineados a objetivos corporativos.",
-    "timeline.3.title": "Continuum HQ – UX & Service Designer",
-    "timeline.3.period": "Ene 2020 – Feb 2022 · Lima, Perú",
-    "timeline.3.text": "Research, Customer Journey Maps y Service Blueprints en proyectos de fintech, salud y educación bajo metodologías ágiles.",
+    "timeline.1.title": "Frontend Developer",
+    "timeline.1.period": "2025 - Presente",
+    "timeline.1.text": "Enfoque en JavaScript, React y desarrollo de interfaces. Proyectos con integración de IA y APIs.",
+    "timeline.2.title": "UX/UI Designer & Service Designer",
+    "timeline.2.period": "2020 - 2025",
+    "timeline.2.text":
+      "Clínica Alemana, BID, Spotify. Research, prototipado y diseño de experiencias para productos digitales y servicios.",
+    "timeline.3.title": "Service Design",
+    "timeline.3.period": "2019 - 2020",
+    "timeline.3.text": "Proyectos de diseño estratégico y consultoría para instituciones públicas y privadas en Perú.",
 
     // Journey
     "journey.btn": "Conoce mi recorrido profesional",
-    "journey.text-1": "Mi evolución desde Service Designer hasta Product Owner, certificaciones y proyectos clave.",
+    "journey.text-1": "Explora mi evolución profesional, certificaciones y transición de diseño a código.",
     "experience.badge": "Experiencia",
     "moment.badge": "Momento Clave",
     "camino.badge": "Mi Camino",
 
     // Highlight Cards
-    "highlight.1.title": "Visión de Producto",
-    "highlight.1.text": "Defino roadmaps y priorizo backlogs con criterios claros: valor para el usuario, viabilidad técnica e impacto en negocio.",
-    "highlight.2.title": "Research & Discovery",
-    "highlight.2.text": "80+ entrevistas de usuarios, pruebas de usabilidad, análisis de datos. Tomo decisiones basadas en evidencia, no en suposiciones.",
-    "highlight.3.title": "Puente entre mundos",
-    "highlight.3.text": "Hablo el idioma de los developers. Sé lo que es posible técnicamente y escribo criterios de aceptación que los equipos entienden de verdad.",
-    "highlight.4.title": "Facilitación & Alineación",
-    "highlight.4.text": "Facilito workshops y design sprints para alinear stakeholders, equipos de diseño, desarrollo y negocio en torno a objetivos comunes.",
+    "highlight.1.title": "Clean Code",
+    "highlight.1.text": "Código semántico, bien documentado y pensado para escalar. Cada función tiene un propósito claro.",
+    "highlight.2.title": "User-Centered",
+    "highlight.2.text": "Cada decisión técnica está guiada por la experiencia del usuario. Accesibilidad y usabilidad no son opcionales.",
+    "highlight.3.title": "Continuous Learning",
+    "highlight.3.text": "El desarrollo web evoluciona rápido. Me mantengo actualizada con nuevas tecnologías y mejores prácticas.",
+    "highlight.4.title": "Team Player",
+    "highlight.4.text": "Experiencia colaborando con equipos multidisciplinarios: developers, designers, product managers.",
 
     // ============================================
     // INDEX.HTML - PROJECTS
@@ -176,7 +179,7 @@ const translations = {
     "projects.badge": "Portafolio",
     "projects.title": "Proyectos destacados",
     "projects.description":
-      "Proyectos que demuestran mi capacidad para ir del problema al producto — con research, estrategia y entrega real.",
+      "Una selección de proyectos que demuestran mis habilidades técnicas, de diseño y mi capacidad para resolver problemas reales.",
     "projects.btn-all": "Ver todos los proyectos",
     "projects.btn-all-text": "Explora mi portafolio completo",
     "projects.btn-case": "Ver caso completo",
@@ -185,12 +188,12 @@ const translations = {
     // ============================================
     // INDEX.HTML - SKILLS
     // ============================================
-    "skills.badge": "Expertise",
-    "skills.title": "Skills & Herramientas",
-    "skills.description": "Mi stack de producto: desde el discovery hasta la entrega, pasando por la estrategia y la alineación de equipos.",
-    "skills.cat-1": "Producto & Estrategia",
-    "skills.cat-2": "Frameworks & Procesos",
-    "skills.cat-3": "Herramientas & Tech",
+    "skills.badge": "Stack Técnico",
+    "skills.title": "Habilidades & Tecnologías",
+    "skills.description": "Mi stack técnico y herramientas actuales. En continuo aprendizaje y actualización.",
+    "skills.frontend": "Frontend Development",
+    "skills.tools": "Tools & Workflow",
+    "skills.design": "Design & UX",
     "skills.legend-advanced": "Advanced",
     "skills.legend-intermediate": "Intermediate",
     "skills.legend-learning": "Learning",
@@ -200,15 +203,17 @@ const translations = {
     // ============================================
     "contact.badge": "Contacto",
     "contact.title": "¿Trabajamos juntos?",
-    "contact.description": "Disponible para posiciones de Product Owner, Service Design y Product Strategy — remoto o presencial en Madrid.",
+    "contact.description": "Disponible para posiciones en diseño, frontend (junior-mid level), proyectos freelance o colaboraciones.",
     "contact.why-title": "¿Por qué trabajar conmigo?",
-    "contact.why-text": "No solo gestiono un backlog. Entiendo el problema de raíz, alinear equipos, tomar decisiones con datos y llevar un producto desde la idea hasta la entrega. Mi background en diseño y tecnología es una ventaja real para tu equipo.",
-    "contact.cta-title": "Buscando nuevas oportunidades",
-    "contact.cta-text": "Abierta a posiciones de Product Owner, Service Design o Product Strategy. Remoto o presencial en Madrid. Inglés C1.",
+    "contact.why-text":
+      "No solo escribo código, entiendo a los usuarios. Mi background en UX me permite crear soluciones técnicas que realmente resuelven problemas.",
+    "contact.cta-title": "Buscando oportunidades",
+    "contact.cta-text":
+      "Actualmente busco posiciones frontend (junior-mid), diseño freelance o full-time. Abierta a remoto o presencial en Madrid.",
     "contact.btn-email": "Enviar mensaje",
     "contact.btn-cv": "Descargar CV",
     "contact.linkedin-text": "Conectemos profesionalmente",
-    "contact.github-text": "Proyectos y código",
+    "contact.github-text": "Revisa mi código",
 
     // ============================================
     // FOOTER
@@ -284,14 +289,14 @@ const translations = {
     "journey.hero.badge": "Mi Camino",
     "journey.hero.title-1": "De diseñar experiencias",
     "journey.hero.title-2": "a ",
-    "journey.hero.title-3": "liderar su construcción",
-    "journey.hero.description": "5+ años diseñando productos y servicios para Clínica Alemana, BID y Spotify. Hoy lidero equipos desde el discovery hasta el delivery como Product Owner.",
-    "journey.hero.subtitle": "Soy Product Owner con raíces profundas en Service Design y UX Research.",
+    "journey.hero.title-3": "construirlas con código",
+    "journey.hero.description":
+      "Durante 4+ años diseñé productos digitales y servicios para empresas como Clínica Alemana, BID y Spotify. Hoy escribo el código que da vida a esas experiencias.",
+    "journey.hero.subtitle": "Soy frontend developer con mentalidad de diseño.",
 
     // === TIMELINE ===
-    "journey.timeline.description": "De service design a Product Owner, pasando por UX research, diseño de productos y facilitación estratégica.",
-    "journey.timeline.2025.meta": "2025 - Presente • Product Owner & UX Strategy",
-    "journey.timeline.2025.description": "Asesoría en estrategia de producto y service design. Definición de roadmaps, facilitación de workshops y mentoría para equipos multidisciplinarios en LATAM y España.",
+    "journey.timeline.title": "Mi Evolución Profesional",
+    "journey.timeline.description": "De service design a frontend development, pasando por UX research y diseño de productos digitales.",
 
     // 2025
     "journey.timeline.2025.title": "Consultora Independiente",
@@ -337,28 +342,26 @@ const translations = {
     "journey.timeline.2017.description":
       "Asesoría en diseño estratégico y de servicios. Definición e implementación de proyectos de servicios y gestión de la innovación para empresas privadas y públicas.",
 
-    //2016
-    "journey.timeline.2016.title": "González, Valdez & Asociados - Asistente de Auditoría Financiera",
-    "journey.timeline.2016.meta": "Feb 2016 - Ago 2017 · 11 meses • Caracas, Venezuela",
-    "journey.timeline.2016.description": "Verificación y evaluación de principios contables en Estados Financieros corporativos, aplicando Normas Internacionales de Auditoría. Base en rigor analítico, trabajo colaborativo y pensamiento crítico orientado a procesos.",
-
-
     // === INFLEXIÓN ===
     "journey.inflexion.badge": "Momento Clave",
     "journey.inflexion.title": "El Punto de Inflexión",
-    "journey.inflexion.subtitle": "Por qué me convertí en Product Owner",
-    "journey.inflexion.p1": "Después de años haciendo research y diseñando servicios, me di cuenta de que el impacto real no estaba solo en el diseño — estaba en las decisiones. Quién prioriza, quién conecta el negocio con los usuarios, quién da claridad al equipo de desarrollo.",
-    "journey.inflexion.p2": "Mi background en Service Design ya me daba esa visión sistémica. Aprender el lenguaje técnico me dio la pieza que faltaba: entender las restricciones reales para tomar mejores decisiones de producto.",
-    "journey.inflexion.p3-bold": "Hoy vivo en ese cruce.",
-    "journey.inflexion.p3-text": "Entiendo a los usuarios, hablo con los developers y alineo al negocio. Eso es lo que hace un buen Product Owner.",
+    "journey.inflexion.subtitle": "Por qué aprendí a programar",
+    "journey.inflexion.p1":
+      "En 2024 me di cuenta de algo: entendía perfectamente cómo podrían verse las interfaces, pero no siempre diseñaba cosas escalables realmente y dependía de otros para construirlas o entender las limitaciones.",
+    "journey.inflexion.p2":
+      "Aprendí un poco de HTML y CSS y descubrí que mi background en UX me daba una ventaja: sé por qué importa cada línea de código.",
+    "journey.inflexion.p3-bold": "Hoy combino ambos mundos.",
+    "journey.inflexion.p3-text": "Diseño con restricciones técnicas en mente, y programo con el usuario como prioridad.",
+
     // === PROJECTS ===
     "journey.projects.title": "Proyectos que me Formaron",
-    "journey.projects.description": "Proyectos clave que moldearon mi forma de entender producto, usuarios y estrategia.",
+    "journey.projects.description": "Algunos trabajos clave que moldearon mi forma de entender diseño, código y usuarios.",
+    "journey.projects.lumi.title": "Lumi - Proyecto con IA",
     "journey.projects.lumi.description":
-      "Proyecto de producto con IA: desde la conceptualización estratégica hasta la implementación. Coordinación de equipo, roadmap y entrega.",
+      "Mi primer proyecto full frontend integrando IA. Aprendí a conectar APIs, manejar estados y pensar en escalabilidad desde el código.",
     "journey.projects.clinica.title": "Clínica Alemana - Teleconsulta",
     "journey.projects.clinica.description":
-      "Discovery completo, blueprints de servicio y coordinación de múltiples equipos para lanzar telemedicina en plena pandemia.",
+      "Diseñar una plataforma de telemedicina desde cero en pandemia me enseñó a trabajar bajo presión con impacto real en miles de usuarios.",
     "journey.projects.bid.title": "BID - Rediseño de Servicios",
     "journey.projects.bid.description":
       "80+ entrevistas, 50 sistemas analizados. Aprendí a mapear complejidad organizacional y proponer soluciones sistémicas.",
@@ -370,14 +373,14 @@ const translations = {
 
     // === SKILLS ===
     "journey.skills.title": "Evolución de Skills",
-    "journey.skills.description": "De service design a Product Owner, construyendo cada capa sobre la anterior.",
+    "journey.skills.description": "Cómo han crecido mis habilidades desde service design hasta frontend development.",
     "journey.skills.service-design":
       "Mapeo de experiencias complejas, customer journeys, blueprints, facilitación de talleres y co-creación con stakeholders.",
     "journey.skills.ux-research":
       "Entrevistas en profundidad, pruebas de usabilidad, análisis cualitativo y cuantitativo, síntesis de insights accionables.",
     "journey.skills.ux-ui":
       "Wireframing, prototipado, diseño de interfaces, design systems, handoff a desarrollo, iteración basada en feedback.",
-    "journey.skills.frontend": "Backlog management, roadmaps, criterios de aceptación, coordinación con desarrollo, priorización con frameworks (RICE, MoSCoW) y métricas de producto.",
+    "journey.skills.frontend": "HTML, CSS, JavaScript ES6+, React, Git, responsive design, integración de APIs, componentes reutilizables.",
     "journey.skills.ai-title": "IA como Herramienta",
     "journey.skills.ai-bold": "Desde 2025",
     "journey.skills.ai-text":
@@ -402,7 +405,7 @@ const translations = {
     "journey.filosofia.description": "Valores y principios que guían mi forma de diseñar y desarrollar.",
     "journey.filosofia.user-centered":
       "Cada decisión técnica está guiada por la experiencia del usuario. No pierdo de vista a las personas detrás de la interfaz.",
-    "journey.filosofia.clean-code": "Las decisiones de producto se toman con datos. Analytics, NPS, A/B testing y métricas de negocio son parte de mi proceso diario.",
+    "journey.filosofia.clean-code": "Código semántico, bien documentado y pensado para escalar. Cada función tiene un propósito claro.",
     "journey.filosofia.curiosidad-title": "Curiosidad Constante",
     "journey.filosofia.curiosidad-text":
       "El desarrollo web evoluciona rápido. Me mantengo actualizada con nuevas tecnologías y mejores prácticas.",
@@ -1534,7 +1537,6 @@ const translations = {
     "nav.next": "Next",
     "nav.view-all": "View all",
     "nav.back-to-top": "Back to top",
-    "nav.skills": "Skills",
 
     // ============================================
     // COMMON BADGES & STATUS
@@ -1633,17 +1635,18 @@ const translations = {
     // ============================================
     // INDEX.HTML - HERO
     // ============================================
-    "hero.badge": "Open to Product Owner & Strategy roles · Remote / Madrid",
-    "hero.title": "From Discovery",
-    "hero.title-2": "to Delivery.",
-    "hero.subtitle": "Product Owner specialized in transforming complex problems into clear, high-impact products. I work at the intersection of business, users, and technology — prioritizing what generates real value.",
-    "hero.exp-1-value": "5+ years",
-    "hero.exp-1-label": "Product & Service Design",
-    "hero.exp-2-value": "3 sectors",
-    "hero.exp-2-label": "Health · Fintech · Education",
-    "hero.exp-3-value": "End-to-end",
-    "hero.exp-3-label": "Discovery → Delivery",
-    "hero.btn-projects": "View case studies",
+    "hero.badge": "Available for Frontend projects • Remote/On-site",
+    "hero.title": "Frontend Developer",
+    "hero.title-2": "with design vision",
+    "hero.subtitle":
+      "I create functional interfaces and user-centered digital experiences. I combine clean code with a deep understanding of UX to build products that truly work.",
+    "hero.exp-1-value": "4+ years",
+    "hero.exp-1-label": "UX/Service Design",
+    "hero.exp-2-value": "1 year",
+    "hero.exp-2-label": "Frontend Development",
+    "hero.exp-3-value": "Junior-Mid",
+    "hero.exp-3-label": "Developer Level",
+    "hero.btn-projects": "View projects",
     "hero.btn-cv": "Download CV",
 
     // ============================================
@@ -1651,37 +1654,38 @@ const translations = {
     // ============================================
     "about.badge": "About me",
     "about.title": "A unique perspective",
-    "about.description": "I come from the strategic design world and move fluidly between users, business, and technology. That makes me a different kind of Product Owner.",
+    "about.description":
+      "My transition from strategic design to frontend development has given me a unique advantage: I understand both users and the technology that brings their experiences to life.",
     "about.subtitle": "My approach",
-    "about.text-1": "Before defining any feature, I ask myself: does this solve a real user problem and generate business value? My background in Service Design and UX Research allows me to go beyond the backlog — I identify root causes, map the systems behind problems, and make informed decisions with data and context.",
-    "about.text-2": "I understand developer language because I know what it's like to build. I understand users because I've been doing research for years. And I understand business because I've always worked aligning both. That triangle is where I live.",
+    "about.text-1":
+      "Before writing a line of code, I ask myself: does this really solve the user's problem? My background in UX Research and Service Design allows me to see beyond the interface and create solutions that make sense both technically and humanly.",
+    "about.text-2":
+      "I currently focus on frontend projects where I can apply this complete vision: from understanding what the user needs to implementing it with clean, maintainable, and scalable code.",
 
     // Timeline
-    "timeline.1.title": "Independent Consultant – Product & UX Strategy",
-    "timeline.1.period": "2025 - Present · Remote (LATAM and Spain)",
-    "timeline.1.text": "Advisory on product strategy, workshop facilitation, and mentoring in UX and Service Design for multidisciplinary teams.",
-    "timeline.2.title": "Fruta Global – Service & UX Designer",
-    "timeline.2.period": "Mar 2023 – Jul 2023 · Spain",
-    "timeline.2.text": "Service blueprint design, co-creation workshops with communities, and sustainability indicators aligned with corporate objectives.",
-    "timeline.3.title": "Continuum HQ – UX & Service Designer",
-    "timeline.3.period": "Jan 2020 – Feb 2022 · Lima, Peru",
-    "timeline.3.text": "Research, Customer Journey Maps, and Service Blueprints for fintech, health, and education projects under agile methodologies.",
-
+    "timeline.1.title": "Frontend Developer",
+    "timeline.1.period": "2025 - Present",
+    "timeline.1.text": "Focus on JavaScript, React, and interface development. Projects with AI and API integration.",
+    "timeline.2.title": "UX/UI Designer & Service Designer",
+    "timeline.2.period": "2020 - 2025",
+    "timeline.2.text": "Clínica Alemana, IDB, Spotify. Research, prototyping, and experience design for digital products and services.",
+    "timeline.3.title": "Service Design",
+    "timeline.3.period": "2019 - 2020",
+    "timeline.3.text": "Strategic design and consulting projects for public and private institutions in Peru.",
 
     // Highlight Cards
-    "highlight.1.title": "Product Vision",
-    "highlight.1.text": "I define roadmaps and prioritize backlogs with clear criteria: user value, technical feasibility, and business impact.",
-    "highlight.2.title": "Research & Discovery",
-    "highlight.2.text": "80+ user interviews, usability testing, data analysis. I make evidence-based decisions, not assumptions.",
-    "highlight.3.title": "Bridge Between Worlds",
-    "highlight.3.text": "I speak the developer's language. I know what's technically possible and write acceptance criteria that teams truly understand.",
-    "highlight.4.title": "Facilitation & Alignment",
-    "highlight.4.text": "I facilitate workshops and design sprints to align stakeholders, design, development, and business around common goals.",
-
+    "highlight.1.title": "Clean Code",
+    "highlight.1.text": "Semantic, well-documented code designed to scale. Every function has a clear purpose.",
+    "highlight.2.title": "User-Centered",
+    "highlight.2.text": "Every technical decision is guided by user experience. Accessibility and usability are not optional.",
+    "highlight.3.title": "Continuous Learning",
+    "highlight.3.text": "Web development evolves fast. I stay updated with new technologies and best practices.",
+    "highlight.4.title": "Team Player",
+    "highlight.4.text": "Experience collaborating with multidisciplinary teams: developers, designers, product managers.",
 
     // Journey
     "journey.btn": "Explore my career path",
-    "journey.text-1": "My evolution from Service Designer to Product Owner, certifications, and key projects.",
+    "journey.text-1": "Dive into my professional evolution, certifications, and my transition from design to code",
 
     // ============================================
     // INDEX.HTML - PROJECTS
@@ -1689,21 +1693,21 @@ const translations = {
     "projects.badge": "Portfolio",
     "projects.title": "Featured projects",
     "projects.description":
-      "Projects that demonstrate my ability to go from problem to product — with research, strategy, and real delivery.",
+      "A selection of projects that demonstrate my technical and design skills, and my ability to solve real problems.",
     "projects.btn-all": "View all projects",
-    "projects.btn-all-text": "Complete product, service design, and UX portfolio",
+    "projects.btn-all-text": "Explore my complete portfolio",
     "projects.btn-case": "View full case",
     "projects.btn-full": "View full project",
 
     // ============================================
     // INDEX.HTML - SKILLS
     // ============================================
-    "skills.badge": "Expertise",
-    "skills.title": "Skills & Tools",
-    "skills.description": "My product stack: from discovery to delivery, through strategy and team alignment.",
-    "skills.cat-1": "Product & Strategy",
-    "skills.cat-2": "Frameworks & Processes",
-    "skills.cat-3": "Tools & Tech",
+    "skills.badge": "Tech Stack",
+    "skills.title": "Skills & Technologies",
+    "skills.description": "My current tech stack and tools. Continuously learning and updating.",
+    "skills.frontend": "Frontend Development",
+    "skills.tools": "Tools & Workflow",
+    "skills.design": "Design & UX",
     "skills.legend-advanced": "Advanced",
     "skills.legend-intermediate": "Intermediate",
     "skills.legend-learning": "Learning",
@@ -1713,15 +1717,17 @@ const translations = {
     // ============================================
     "contact.badge": "Contact",
     "contact.title": "Let's work together?",
-    "contact.description": "Available for Product Owner, Service Design, and Product Strategy positions — remote or on-site in Madrid.",
+    "contact.description": "Available for design positions, frontend (junior-mid level), freelance projects or collaborations.",
     "contact.why-title": "Why work with me?",
-    "contact.why-text": "I don't just manage a backlog. I understand the root problem, align teams, make data-driven decisions, and take a product from idea to delivery. My design and technology background is a real advantage for your team.",
-    "contact.cta-title": "Looking for new opportunities",
-    "contact.cta-text": "Open to Product Owner, Service Design, or Product Strategy positions. Remote or on-site in Madrid. English C1.",
+    "contact.why-text":
+      "I don't just write code, I understand users. My UX background allows me to create technical solutions that truly solve problems.",
+    "contact.cta-title": "Looking for opportunities",
+    "contact.cta-text":
+      "Currently looking for frontend positions (junior-mid), freelance or full-time design. Open to remote or on-site in Madrid.",
     "contact.btn-email": "Send message",
     "contact.btn-cv": "Download CV",
     "contact.linkedin-text": "Let's connect professionally",
-    "contact.github-text": "Projects and code",
+    "contact.github-text": "Check my code",
 
     // ============================================
     // FOOTER
@@ -1796,15 +1802,14 @@ const translations = {
     "journey.hero.badge": "My Journey",
     "journey.hero.title-1": "From designing experiences",
     "journey.hero.title-2": "to ",
-    "journey.hero.title-3": "leading its construction",
-    "journey.hero.description": "5+ years designing products and services for Clínica Alemana, IDB, and Spotify. Today I lead teams from discovery to delivery as Product Owner.",
-    "journey.hero.subtitle": "I'm a Product Owner with deep roots in Service Design and UX Research.",
+    "journey.hero.title-3": "building them with code",
+    "journey.hero.description":
+      "For over 4 years I designed digital products and services for companies like Clínica Alemana, BID, and Spotify. Today I write the code that brings those experiences to life.",
+    "journey.hero.subtitle": "I'm a frontend developer with a design mindset.",
 
     // === TIMELINE ===
-    "journey.timeline.description": "From service design to Product Owner, through UX research, product design, and strategic facilitation.",
-    "journey.timeline.2025.meta": "2025 - Present • Product Owner & UX Strategy",
-    "journey.timeline.2025.description": "Advisory on product strategy and service design. Roadmap definition, workshop facilitation, and mentoring for multidisciplinary teams in LATAM and Spain.",
     "journey.timeline.title": "My Professional Evolution",
+    "journey.timeline.description": "From service design to frontend development, through UX research and digital product design.",
 
     // 2025
     "journey.timeline.2025.title": "Independent Consultant",
@@ -1849,27 +1854,26 @@ const translations = {
     "journey.timeline.2017.description":
       "Strategic and service design consulting. Service project definition and implementation, innovation management for private and public companies.",
 
-    // 2016
-    "journey.timeline.2016.title": "González, Valdez & Asociados - Financial Audit Assistant",
-    "journey.timeline.2016.meta": "Feb 2016 - Aug 2017 · 11 months • Caracas, Venezuela",
-    "journey.timeline.2016.description": "Verification and evaluation of accounting principles in corporate Financial Statements, applying International Auditing Standards. Foundation in analytical rigor, collaborative work, and process-oriented critical thinking.",
-
     // === INFLEXIÓN ===
     "journey.inflexion.badge": "Key Moment",
     "journey.inflexion.title": "The Turning Point",
-    "journey.inflexion.subtitle": "Why I became a Product Owner",
-    "journey.inflexion.p1": "After years doing research and designing services, I realized that real impact wasn't just in the design — it was in the decisions. Who prioritizes, who connects business with users, who gives clarity to the development team.",
-    "journey.inflexion.p2": "My Service Design background already gave me that systemic vision. Learning the technical language gave me the missing piece: understanding real constraints to make better product decisions.",
-    "journey.inflexion.p3-bold": "Today I live at that intersection.",
-    "journey.inflexion.p3-text": "I understand users, speak with developers, and align the business. That's what a good Product Owner does.",
-    
+    "journey.inflexion.subtitle": "Why I learned to code",
+    "journey.inflexion.p1":
+      "In 2024 I realized something: I understood perfectly how interfaces could look, but I didn't always design truly scalable things and depended on others to build them or understand the limitations.",
+    "journey.inflexion.p2":
+      "I learned some HTML and CSS and discovered that my UX background gave me an advantage: I know why every line of code matters.",
+    "journey.inflexion.p3-bold": "Today I combine both worlds.",
+    "journey.inflexion.p3-text": "I design with technical constraints in mind, and code with the user as priority.",
+
     // === PROJECTS ===
     "journey.projects.title": "Projects That Shaped Me",
-    "journey.projects.description": "Key projects that shaped my understanding of product, users, and strategy.",
+    "journey.projects.description": "Key projects that shaped my understanding of design, code, and users.",
     "journey.projects.lumi.title": "Lumi - AI Project",
-    "journey.projects.lumi.description": "AI product project: from strategic conceptualization to implementation. Team coordination, roadmap, and delivery.",
+    "journey.projects.lumi.description":
+      "My first full frontend project integrating AI. I learned to connect APIs, manage state, and think about scalability from code.",
     "journey.projects.clinica.title": "Clínica Alemana - Telemedicine",
-    "journey.projects.clinica.description": "Complete discovery, service blueprints, and coordination of multiple teams to launch telemedicine during the pandemic.",
+    "journey.projects.clinica.description":
+      "Designing a telemedicine platform from scratch during the pandemic taught me to work under pressure with real impact on thousands of users.",
     "journey.projects.bid.title": "BID - Service Redesign",
     "journey.projects.bid.description":
       "80+ interviews, 50 systems analyzed. I learned to map organizational complexity and propose systemic solutions.",
@@ -1881,13 +1885,13 @@ const translations = {
 
     // === SKILLS ===
     "journey.skills.title": "Skills Evolution",
-    "journey.skills.description": "From service design to Product Owner, building each layer on the previous one.",
+    "journey.skills.description": "How my skills have grown from service design to frontend development.",
     "journey.skills.service-design":
       "Complex experience mapping, customer journeys, blueprints, workshop facilitation and co-creation with stakeholders.",
     "journey.skills.ux-research":
       "In-depth interviews, usability testing, qualitative and quantitative analysis, actionable insight synthesis.",
     "journey.skills.ux-ui": "Wireframing, prototyping, interface design, design systems, developer handoff, feedback-based iteration.",
-    "journey.skills.frontend": "Backlog management, roadmaps, acceptance criteria, coordination with development, prioritization frameworks (RICE, MoSCoW), and product metrics.",
+    "journey.skills.frontend": "HTML, CSS, JavaScript ES6+, React, Git, responsive design, API integration, reusable components.",
     "journey.skills.ai-title": "AI as a Tool",
     "journey.skills.ai-bold": "Since 2025",
     "journey.skills.ai-text":
@@ -1911,7 +1915,7 @@ const translations = {
     "journey.filosofia.description": "Values and principles that guide my way of designing and developing.",
     "journey.filosofia.user-centered":
       "Every technical decision is guided by user experience. I never lose sight of the people behind the interface.",
-    "journey.filosofia.clean-code": "Product decisions are made with data. Analytics, NPS, A/B testing, and business metrics are part of my daily process.",
+    "journey.filosofia.clean-code": "Semantic, well-documented code designed to scale. Every function has a clear purpose.",
     "journey.filosofia.curiosidad-title": "Constant Curiosity",
     "journey.filosofia.curiosidad-text": "Web development evolves fast. I stay updated with new technologies and best practices.",
     "journey.filosofia.sistemico-title": "Systems Thinking",

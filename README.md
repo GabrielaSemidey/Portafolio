@@ -1,6 +1,6 @@
 # 💼 Portfolio - Gabriela Ojeda Semidey
 
-> Product Owner | Service Designer · From Discovery to Delivery
+> Service Designer transitioning to Frontend Development | De diseñar experiencias a construirlas con código
 
 [![Live Demo](https://img.shields.io/badge/🌐_Portfolio-Live-success?style=for-the-badge)](https://gabrielasemidey.github.io/Portafolio)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -12,7 +12,7 @@
 
 ## 🌟 Sobre este Portfolio
 
-Portfolio profesional construido **desde cero con HTML, CSS y JavaScript vanilla**. Sin frameworks, solo código limpio y semántico — construido por una Product Owner que entiende tanto el lado del usuario como el del equipo de desarrollo.
+Portfolio profesional construido **desde cero con HTML, CSS y JavaScript vanilla**. Sin frameworks, solo código limpio y semántico que demuestra mi transición desde UX/Service Design hacia el desarrollo frontend.
 
 ### ✨ Features Destacadas
 
@@ -25,45 +25,42 @@ Portfolio profesional construido **desde cero con HTML, CSS y JavaScript vanilla
 
 ---
 
-## 📂 Case Studies & Proyectos
+## 📂 ¿Qué encontrarás aquí?
 
-### **Product Strategy & AI**
-- 🧠 **[Lumi](https://gabrielasemidey.github.io/Portfolio/proyectos/lumi.html)** - Asistente con IA — Product Strategy, roadmap y coordinación de entrega
+### **Frontend Development**
+- 🧠 **[Lumi](https://gabrielasemidey.github.io/Portafolio/proyectos/lumi.html)** - Asistente con IA (JavaScript + Firebase + Claude API)
+- 🌤️ **[Weather Personalities](https://gabrielasemidey.github.io/Portafolio/proyectos/weather.html)** - App del clima con API y personajes animados
+- ⏰ **[Pomodoro Timer](https://gabrielasemidey.github.io/Portafolio/proyectos/pomodoro.html)** - Timer de productividad con gestión de estados
 
-### **Service Design & UX Research**
-- 🏥 **[Clínica Alemana](https://gabrielasemidey.github.io/Portfolio/proyectos/clinica-teleconsulta.html)** - Teleconsulta y agenda web — discovery, blueprints y lanzamiento en pandemia
-- 🌍 **[BID](https://gabrielasemidey.github.io/Portfolio/proyectos/bid-secretaria.html)** - Rediseño de servicios internos (+80 entrevistas, 50 sistemas analizados)
-- ⚡ **[CUBICO](https://gabrielasemidey.github.io/Portfolio/proyectos/cubico.html)** - Programa educativo de sostenibilidad en Sevilla
-- 🎵 **[Spotify](https://gabrielasemidey.github.io/Portfolio/proyectos/spotify.html)** - UX Research sobre usuarios Premium en Perú
-- 🎓 **[UPC](https://gabrielasemidey.github.io/Portfolio/proyectos/upc.html)** - Rediseño de counters de admisión
-- ✈️ **[TALI](https://gabrielasemidey.github.io/Portfolio/proyectos/tali.html)** - Portal de gestión de viajes corporativos
-- 🏗️ **[MINCETUR](https://gabrielasemidey.github.io/Portfolio/proyectos/mincetur.html)** - Consultoría de innovación en sector público
+### **UX/UI Design**
+- 🏥 **[Clínica Alemana](https://gabrielasemidey.github.io/Portafolio/proyectos/clinica-teleconsulta.html)** - Plataforma de teleconsulta y agenda web (2020)
+- 🎵 **[Spotify](https://gabrielasemidey.github.io/Portafolio/proyectos/spotify.html)** - UX Research sobre usuarios en Perú
+- 🎓 **[UPC](https://gabrielasemidey.github.io/Portafolio/proyectos/upc.html)** - Rediseño de counters de admisión
+
+### **Service Design**
+- 🌍 **[BID](https://gabrielasemidey.github.io/Portafolio/proyectos/bid-secretaria.html)** - Rediseño de servicios internos (+80 entrevistas, 50 sistemas)
+- ⚡ **[CUBICO](https://gabrielasemidey.github.io/Portafolio/proyectos/cubico.html)** - Programa educativo de sostenibilidad en Sevilla
+- ✈️ **[TALI](https://gabrielasemidey.github.io/Portafolio/proyectos/tali.html)** - Portal de gestión de viajes corporativos
 
 ---
 
-## 🚀 Stack & Herramientas
+## 🚀 Stack Técnico
 
-**Product & Strategy**
+**Frontend Development**
 ```
-Product Ownership · Roadmaps · Backlog Management
-OKRs · RICE · MoSCoW · Agile · Scrum
-```
-
-**Research & Design**
-```
-Service Design · Customer Journey Maps · Blueprints
-UX Research · User Testing · Figma · Miro
+HTML5 · CSS3 · JavaScript ES6+ · React (learning)
+Git · GitHub · Firebase · REST APIs
 ```
 
-**Tech**
+**Design & Research**
 ```
-HTML5 · CSS3 · JavaScript ES6+ · Git · GitHub
-Firebase · REST APIs · Google Analytics · SQL
+Figma · Miro · UX Research · Service Design
+Prototyping · User Testing · Design Systems
 ```
 
 ---
 
-## 💻 Características Técnicas del Portfolio
+## 💻 Características Técnicas
 
 **🎨 Design System**
 - Variables CSS para colores, espaciado y tipografía
@@ -92,11 +89,11 @@ Firebase · REST APIs · Google Analytics · SQL
 ```
 Portafolio/
 ├── index.html                 # Página principal
-├── journey.html               # Mi camino profesional
+├── journey.html               # Mi transición profesional
 ├── todos-proyectos.html       # Galería completa de proyectos
 ├── proyectos/                 # Casos de estudio individuales
 │   ├── lumi.html
-│   ├── clinica-teleconsulta.html
+│   ├── weather.html
 │   └── ... (más proyectos)
 ├── styles/                    # CSS modular
 │   ├── base.css               # Variables, reset, fuentes
@@ -110,7 +107,7 @@ Portafolio/
 
 ## 📬 Contacto
 
-🌐 **Portfolio:** [gabrielasemidey.github.io/Portafolio](https://gabrielasemidey.github.io/Portfolio)  
+🌐 **Portfolio:** [gabrielasemidey.github.io/Portafolio](https://gabrielasemidey.github.io/Portafolio)  
 💼 **LinkedIn:** [gabrielaojedasemidey](https://www.linkedin.com/in/gabrielaojedasemidey/)  
 📧 **Email:** gabrielaojedasemidey@gmail.com  
 🐙 **GitHub:** [@GabrielaSemidey](https://github.com/GabrielaSemidey)
@@ -119,23 +116,22 @@ Portafolio/
 
 ## 🔍 Buscando Oportunidades
 
-**Rol:** Product Owner · Service Designer · Product Strategy  
+**Rol:** Frontend Developer (Junior-Mid)  
 **Modalidad:** Remote · Híbrido · Presencial  
 **Ubicación:** Madrid, España  
-**Disponibilidad:** Inmediata  
-**Idiomas:** Español (nativo) · Inglés (C1)
+**Disponibilidad:** Inmediata
 
 **Lo que aporto:**
-- 🎯 5+ años en Service Design y UX Research (salud, fintech, educación)
-- 🔍 Visión end-to-end: del discovery al delivery
-- 🤝 Puente natural entre usuarios, negocio y equipo técnico
-- 🧠 Mentalidad de producto con base en pensamiento sistémico
+- 🎨 Background en UX/Service Design (4+ años)
+- 💻 Skills frontend en desarrollo activo
+- 🧠 Mentalidad de producto y pensamiento sistémico
+- 🤝 Experiencia con equipos multidisciplinarios
 
 ---
 
 <div align="center">
 
-**💜 Hecho con código, estrategia y mucha curiosidad**
+**💜 Hecho con código, café y mucha curiosidad**
 
 ⭐ Si te gusta este portfolio, no dudes en darle una estrella
 
