@@ -28,13 +28,13 @@
   --error: #ef4444;
   --info: #6366f1;
 
-  /* 🌸 Color Journey */
-  --journey: #ff6b9d;
-  --journey-light: rgba(255, 107, 157, 0.08);
-  --journey-medium: rgba(255, 107, 157, 0.15);
-  --journey-dark: #e5568a;
-
-  /* Escala de grises */
+  /* Color Journey */
+    --journey: #1e40af;
+    --journey-light: rgba(30, 64, 175, 0.08);
+    --journey-medium: rgba(30, 64, 175, 0.15);
+    --journey-dark: #1e3a8a;
+  
+    /* Escala de grises */
   --slate-50: #f8fafc;
   --slate-100: #f1f5f9;
   --slate-200: #e2e8f0;
